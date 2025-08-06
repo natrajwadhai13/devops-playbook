@@ -1,4 +1,3 @@
-
 ---
 title: "• DevOps Roadmap"
 parent: "DevOps Interview"
