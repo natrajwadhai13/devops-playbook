@@ -2,7 +2,7 @@
 title: "• Useful Resources Link"
 parent: "DevOps Interview"
 nav_order: 2
-has_children: true
+has_children: false
 ---
 
 # 🌐 Useful DevOps Resources
@@ -11,25 +11,49 @@ Here are some handpicked websites and GitHub repositories that can help you in y
 
 ---
 
-## 🔗 Websites
+## 📘 Study Notes
 
-- [Kubernetes Official Docs](https://kubernetes.io/docs/) — The official site for Kubernetes documentation.
-- [Docker Documentation](https://docs.docker.com/) — Docker tutorials and API references.
-- [DevOps Roadmap](https://roadmap.sh/devops) — Visual guides to learn DevOps tools and practices.
-- [Awesome DevOps](https://github.com/aryanguenthner/awesome-devops) — Curated DevOps tools and links.
+- [Python for DevOps Notes](https://github.com/natrajwadhai13/python-for-devops.git)
+- Docker Notes — _Coming soon..._
+- Kubernetes Notes — _Coming soon..._
+- AWS Notes — _Coming soon..._
 
 ---
 
-## 🐙 GitHub Repositories
+## 🚀 DevOps Project GitHub Repos
 
-- [docker/compose](https://github.com/docker/compose) — Define and run multi-container applications with Docker.
-- [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes) — Official Kubernetes GitHub repository.
-- [jenkinsci/jenkins](https://github.com/jenkinsci/jenkins) — Jenkins automation server code.
-- [open-guides/og-aws](https://github.com/open-guides/og-aws) — A practical guide to AWS.
+### 🔧 GitLab CI/CD
+
+1. AWS Pipeline Project — _Coming soon..._
+2. Azure Pipeline Project — _Coming soon..._
+3. GCP Pipeline Project — _Coming soon..._
+
+### 🛠 Jenkins CI/CD
+
+1. AWS Pipeline Project — _Coming soon..._
+2. Azure Pipeline Project — _Coming soon..._
+3. GCP Pipeline Project — _Coming soon..._
+
+---
+
+## 🔗 Useful Websites
+
+- [Kubernetes Official Docs](https://kubernetes.io/docs/) — The official Kubernetes documentation.
+- [Docker Documentation](https://docs.docker.com/) — Docker tutorials and reference materials.
+- [DevOps Roadmap](https://roadmap.sh/devops) — Visual learning paths for DevOps and SRE.
+- [Awesome DevOps](https://github.com/aryanguenthner/awesome-devops) — A curated list of awesome DevOps tools and resources.
+
+---
+
+## 🐙 Popular GitHub Repositories
+
+- [docker/compose](https://github.com/docker/compose) — Define and run multi-container Docker applications.
+- [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes) — Kubernetes container orchestration system.
+- [jenkinsci/jenkins](https://github.com/jenkinsci/jenkins) — Jenkins automation server source code.
+- [open-guides/og-aws](https://github.com/open-guides/og-aws) — A practical guide to AWS best practices.
 
 ---
 
 ## 💡 Tips
 
-> You can bookmark this page and keep adding new links as you explore more tools and projects.
-
+> 🔖 Bookmark this page and keep updating it with the latest tools, study material, and DevOps projects as you grow your skills!
