@@ -1,9 +1,10 @@
 ---
 title: "Kubernetes Basics"
+nav_order: 1
 parent: "• Groovy_Yaml_Json_Roadmap"
 grand_parent: "Scripting"
-nav_order: 1
 ---
+
 
 Here’s a **practical YAML Roadmap** specifically designed for **DevOps engineers like you**, working with tools such as **Ansible, Kubernetes, GitLab CI/CD, Docker, and Terraform**, where YAML is essential.
 

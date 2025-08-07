@@ -1,8 +1,8 @@
 ---
 title: "• Rex_Ansible_roadmap"
+nav_order: 1
 parent: "• Ansible_roadmap"
 grand_parent: "Scripting"
-nav_order: 1
 ---
 
 Here’s a **clear and concise roadmap for Rex-Ansible**, tailored to your DevOps background and aligned with your current use at Infosys (UBS, Credit Suisse), where **Rex-Ansible** is being used alongside tools like GSNOW, GitLab, Axway, and ECMS.

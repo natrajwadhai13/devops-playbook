@@ -1,9 +1,10 @@
 ---
 title: "Kubernetes Basics"
+nav_order: 2
 parent: "• Groovy_Yaml_Json_Roadmap"
 grand_parent: "Scripting"
-nav_order: 2
 ---
+
 
 Here is a **DevOps-focused JSON Roadmap** designed for **hands-on engineers like you** who work with tools such as **Terraform, REST APIs, CloudFormation, Docker, Kubernetes, GitLab, and monitoring systems**.
 
