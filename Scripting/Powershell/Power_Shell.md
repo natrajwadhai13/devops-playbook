@@ -2,7 +2,7 @@
 title: "• Power Shell"
 parent: "Scripting"
 nav_order: 5
-has_children: false
+has_children: true
 ---
 
 Here’s a **Windows PowerShell Roadmap for DevOps Engineers**, especially useful if you work with **Windows servers**, **Active Directory**, **CI/CD on Windows nodes**, or **cloud infrastructure automation** (e.g., with Azure or hybrid environments).

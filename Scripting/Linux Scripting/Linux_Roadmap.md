@@ -2,7 +2,7 @@
 title: "• Linux_Roadmap"
 parent: "Scripting"
 nav_order: 2
-has_children: false
+has_children: true
 ---
 
 Here is a **Linux Roadmap for DevOps Engineers**, tailored to your goal of reaching a 20 LPA package and building on your **data center + DevOps** expertise.

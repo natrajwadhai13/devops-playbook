@@ -2,7 +2,7 @@
 title: "• Groovy_Yaml_Json"
 parent: "Scripting"
 nav_order: 3
-has_children: false
+has_children: true
 ---
 
 Here is a detailed **Groovy, YAML, and JSON Roadmap** for DevOps engineers and automation testers — tailored to reach advanced expertise and potentially target. This roadmap is categorized into beginner, intermediate, and expert levels, with real-world use cases for each.

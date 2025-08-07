@@ -2,7 +2,7 @@
 title: "• Python-scripting-roadmap"
 parent: "Scripting"
 nav_order: 1
-has_children: false
+has_children: true
 ---
 
 [Python for DevOps Notes](https://github.com/natrajwadhai13/python-for-devops.git)

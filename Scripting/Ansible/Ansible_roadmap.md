@@ -2,7 +2,7 @@
 title: "• Ansible_roadmap"
 parent: "Scripting"
 nav_order: 4
-has_children: false
+has_children: true
 ---
 
 Here is a **short, focused Ansible Roadmap** that aligns with your background in Linux, cloud, and DevOps — to help you go from basic to expert in **4–6 weeks**, even with limited time daily (1–1.5 hrs/day).
