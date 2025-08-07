@@ -1,6 +1,6 @@
 ---
 title: "• basics"
-parent: Git
+parent: Git-Github
 nav_order: 1
 has_children: true
 ---

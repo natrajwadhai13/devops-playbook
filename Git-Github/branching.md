@@ -1,6 +1,6 @@
 ---
 title: "• branching"
-parent: Git
+parent: Git-Github
 nav_order: 2
 has_children: true
 ---

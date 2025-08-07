@@ -1,6 +1,6 @@
 ---
 title: "• commands"
-parent: Git
+parent: Git-Github
 nav_order: 3
 has_children: true
 ---
