@@ -1,9 +1,10 @@
 ---
 title: "Groovy"
-parent: "• Groovy_Yaml_Json_Roadmap"
-grand_parent: "Scripting"
 nav_order: 3
+parent: "• Groovy_Yaml_Json"
+grand_parent: "Scripting"
 ---
+
 
 Here is a **Groovy Roadmap for DevOps Engineers**, tailored to your background (Linux, Jenkins, Git, Docker, AWS, Ansible, etc.). Groovy is essential for mastering **Jenkins pipelines**, especially when building complex CI/CD automation.
 

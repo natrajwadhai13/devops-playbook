@@ -1,7 +1,7 @@
 ---
-title: "Kubernetes Basics"
+title: "YAML"
 nav_order: 1
-parent: "• Groovy_Yaml_Json_Roadmap"
+parent: "• Groovy_Yaml_Json"
 grand_parent: "Scripting"
 ---
 
