@@ -5,6 +5,9 @@ nav_order: 1
 has_children: false
 ---
 
+[Python for DevOps Notes](https://github.com/natrajwadhai13/python-for-devops.git)
+
+---
 
 # 🐍 Python for DevOps – Roadmap (2025)
 
