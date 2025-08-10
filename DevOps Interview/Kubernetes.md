@@ -1,131 +1,160 @@
 ---
-title: "• Kubernetes"
+title: "• Kubernetes Que"
 parent: "DevOps Interview"
 nav_order: 3
 has_children: true
 ---
 
 
-# ☸ Kubernetes Roadmap (2025)
+### -------------------------🔁✅**DevOps Interview**✅🔁-------------------------
+                                                   
 
-Kubernetes (K8s) is at the core of modern DevOps. Here's a comprehensive roadmap to master Kubernetes from fundamentals to advanced production use, targeting high-paying DevOps roles.
 
----
+**Kubernetes**
+### 🔁 **Que 4 **Can you explain the basic components of a Kubernetes cluster (Control Plane & Node)? Also, describe a scenario where you deployed an app on Kubernetes — how did you write your manifest or Helm chart?
 
-## 🎯 Beginner Level (Foundations)
+### ✅ **Answer**
 
-### 🔹 What is Kubernetes?
-- Container orchestration
-- Comparison: Docker Swarm vs K8s
-- Architecture: Master vs Worker Nodes
+### 🔹 **1. Basic Components of a Kubernetes Cluster**
 
-### 🔹 Core Concepts
-- Pods, Deployments, ReplicaSets
-- Namespaces
-- Services (ClusterIP, NodePort, LoadBalancer)
-- ConfigMaps & Secrets
-- Volumes & PersistentVolumes (PVC)
-
-### 🔹 Hands-On Tools
-- `kubectl` basics
-- Minikube / Kind / Docker Desktop
-- YAML manifests (Deployments, Services, etc.)
+A Kubernetes cluster consists of two primary components:
 
 ---
 
-## ⚙️ Intermediate Level (Cluster Management)
+#### **A. Control Plane (Master Node)**
 
-### 🔸 Scheduling & Networking
-- Taints & Tolerations
-- Node Affinity & Anti-Affinity
-- Network Policies (Calico, Cilium)
-- Ingress Controller (NGINX, Traefik)
+The **Control Plane** is the brain of the Kubernetes cluster, responsible for managing the overall state and orchestration.
 
-### 🔸 Helm
-- Charts, Templates, Repositories
-- Install and manage applications using Helm
-- Helm vs Kustomize
+**Key components:**
 
-### 🔸 Storage
-- Dynamic Provisioning
-- StorageClasses
-- StatefulSets
+* **kube-apiserver**:
+  Exposes the Kubernetes API; all control commands and cluster communications go through this.
 
-### 🔸 Observability
-- Metrics Server, cAdvisor
-- Prometheus + Grafana
-- Logging with Fluentd, Loki, ELK
+* **etcd**:
+  A consistent, distributed key-value store that saves all cluster state and configuration.
 
----
+* **kube-scheduler**:
+  Assigns newly created pods to nodes based on resource availability, constraints, and policies.
 
-## 🚀 Advanced Topics (Production-Ready Skills)
+* **kube-controller-manager**:
+  Manages controllers like:
 
-### 🔺 Security
-- RBAC (Role-Based Access Control)
-- Network Policies
-- Pod Security Policies (PSP deprecated → use OPA/Gatekeeper)
-- Secrets management with Vault
+  * Node Controller: Handles node availability.
+  * Replication Controller: Ensures the desired number of pods.
+  * Endpoint Controller: Updates services and endpoints.
 
-### 🔺 GitOps
-- ArgoCD or Flux for declarative deployments
-- Syncing Git changes to cluster automatically
-
-### 🔺 Autoscaling
-- HPA (Horizontal Pod Autoscaler)
-- VPA (Vertical Pod Autoscaler)
-- Cluster Autoscaler
-
-### 🔺 CI/CD Integration
-- Jenkins / GitHub Actions / GitLab CI with K8s
-- Deployments via pipelines
-- Canary and Blue-Green deployments
-
-### 🔺 Service Mesh
-- Istio / Linkerd
-- Traffic splitting, retries, mTLS, observability
+* **cloud-controller-manager (optional)**:
+  Interacts with cloud-specific APIs (e.g., for managing load balancers, storage, etc.).
 
 ---
 
-## 📚 Certified Learning Paths
+#### **B. Nodes (Worker Nodes)**
 
-- ✅ **CKA** (Certified Kubernetes Administrator)
-- ✅ **CKAD** (Certified Kubernetes Application Developer)
-- ✅ **CKS** (Certified Kubernetes Security Specialist)
+Nodes are the physical or virtual machines where application workloads (containers) run.
 
----
+**Key components:**
 
-## 🧪 Practice Projects
+* **kubelet**:
+  Agent that runs on each node; ensures the pod containers are running as expected.
 
-- Deploy a full-stack app with Ingress + TLS + Helm
-- Build GitOps pipeline using ArgoCD
-- Secure secrets with HashiCorp Vault
-- Enable autoscaling based on CPU metrics
-- Create K8s clusters on EKS / AKS / GKE via Terraform
+* **kube-proxy**:
+  Maintains networking rules, enabling internal and external communication to services.
 
----
-
-## 💼 Real-World Expectations (20+ LPA)
-
-| Area              | Expectations                        |
-|-------------------|-------------------------------------|
-| Infra Management  | Multi-cluster, HA, DR setup         |
-| Observability     | Proactive alerting and metrics      |
-| Scalability       | Efficient HPA/VPA strategies        |
-| Security          | Secrets mgmt, RBAC, hardened nodes  |
-| DevOps Workflow   | GitOps, CI/CD integration, testing  |
-| Cost Optimization | Spot nodes, resource limits         |
+* **Container Runtime**:
+  Executes containers (e.g., Docker, containerd, CRI-O).
 
 ---
 
-## 📘 Recommended Repos & Docs
+### 🔹 **2. Deployment Scenario: Web Application using Helm**
 
-- [Kubernetes Docs](https://kubernetes.io/docs/)
-- [Awesome Kubernetes GitHub](https://github.com/ramitsurana/awesome-kubernetes)
-- [kubernetes/examples](https://github.com/kubernetes/examples)
-- [ArgoCD GitHub](https://github.com/argoproj/argo-cd)
-- [Helm Charts](https://artifacthub.io/)
+#### ✅ **Scenario:**
+
+Deployed a full-stack web application on Kubernetes using a **Helm chart**, which consisted of:
+
+* Frontend: **Nginx**
+* Backend: **Node.js API**
+* Database: **MongoDB**
 
 ---
 
-> 🔄 **Tip**: Use this roadmap in your README or GitHub Wiki. Update your DevOps notes regularly as new tools and patterns emerge.
+#### **A. Helm Chart Structure**
+
+```
+my-webapp/
+├── Chart.yaml
+├── values.yaml
+├── templates/
+│   ├── deployment-frontend.yaml
+│   ├── service-frontend.yaml
+│   ├── deployment-backend.yaml
+│   ├── service-backend.yaml
+│   ├── statefulset-mongodb.yaml
+│   ├── service-mongodb.yaml
+│   └── _helpers.tpl
+```
+
+---
+
+#### **B. Sample: `deployment-frontend.yaml`**
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "my-webapp.fullname" . }}-frontend
+  labels:
+    {{- include "my-webapp.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.frontend.replicaCount }}
+  selector:
+    matchLabels:
+      {{- include "my-webapp.selectorLabels" . | nindent 6 }}
+      app.kubernetes.io/component: frontend
+  template:
+    metadata:
+      labels:
+        {{- include "my-webapp.selectorLabels" . | nindent 8 }}
+        app.kubernetes.io/component: frontend
+    spec:
+      containers:
+        - name: nginx
+          image: "nginx:{{ .Values.frontend.imageTag }}"
+          ports:
+            - containerPort: 80
+```
+
+---
+
+#### **C. Sample: `values.yaml`**
+
+```yaml
+frontend:
+  replicaCount: 2
+  imageTag: "latest"
+
+backend:
+  replicaCount: 2
+  imageTag: "v1.0"
+
+mongodb:
+  storageSize: "5Gi"
+  replicaCount: 1
+```
+
+---
+
+#### **D. Deployment Steps**
+
+1. **Define**: Created Helm templates for Deployment, Service, and StatefulSet.
+2. **Parameterize**: Configured values in `values.yaml` for flexibility.
+3. **Install**: Ran
+
+   ```bash
+   helm install my-release ./my-webapp
+   ```
+
+   to deploy the application.
+4. **Upgrade/Rollback**: Used `helm upgrade` or `helm rollback` for lifecycle management.
+
+---
 
