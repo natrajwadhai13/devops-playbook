@@ -142,7 +142,7 @@ We maintain a dynamic or static inventory file where we define:
 
 ### ✅ **Answer**
 
-Please visite - https://natrajwadhai13.github.io/devops-notes/DevOps%20Interview/Kubernetes%20Que.html
+[Please visite](https://natrajwadhai13.github.io/devops-notes/DevOps%20Interview/Kubernetes%20Que.html)
 
 
 ### 🔁 Que 5) Let’s test your **troubleshooting skills** now.
@@ -153,10 +153,8 @@ Please answer step by step.
 
 ### ✅ **Answer**
 
-Please visite - https://natrajwadhai13.github.io/devops-notes/DevOps%20Interview/Kubernetes%20Que.html
 
-
-Alright, moving to **Q6** — this one will check your **Terraform & IaC** knowledge, which is a hot topic for ₹20+ LPA DevOps roles.
+[Please visite](https://natrajwadhai13.github.io/devops-notes/DevOps%20Interview/Kubernetes%20Que.html)
 
 ---
 
