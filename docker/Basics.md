@@ -5,35 +5,24 @@ nav_order: 1
 has_children: true
 ---
 
-# Docker Basics
+# Docker Basics Command used in Project 
 
-- docker run  
-- docker ps  
-- docker stop
+```bash
+for Build 
 
----
+docker build --no-cache -t backendcompliance-audit-be-main:9 .
+docker run -d --name Live_backend_container -p 4000:4000 backendcompliance-audit-be-main:1
 
-## Docker Architecture Images
+docker images
+docker ps 
+docker ps -a
 
-### 1. Standard Markdown Image
+docker rm 4c69337792ea
+docker stop 4c69337792ea
+docker logs 107480a1e80a
+docker logs -f 107480a1e80a
+docker exec -it 2ad2f22199fd /bin/bash
 
-![Docker Architecture](/assets/images/ReshmaNatraj.jpg)
-
-### 2. Centered and Resized (500px)
 
 
-<p align="center">
-  <img src="/devops-notes/assets/images/ReshmaNatraj.jpg" width="500"/>
-</p>
-
-### 3. Small Image (200px)
-
-{% raw %}
-<p align="center">
-  <img src="{{ '/assets/images/Natraj.jpg' | relative_url }}" alt="Docker Diagram" width="200"/>
-</p>
-{% endraw %}
-
-### 4. Final Image (Standard)
-
-![Docker Architecture](/assets/images/Reshma.jpg)
+```

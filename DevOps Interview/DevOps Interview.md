@@ -1,9 +1,9 @@
 ---
-title: DevOps Interview
+title: "• DevOps Interview"
+parent: "DevOps"
+nav_order: 4
 has_children: true
-nav_order: 2
 ---
-
 
 ### -------------------------🔁✅**DevOps Interview**✅🔁-------------------------
                                                    
@@ -284,7 +284,3 @@ mongodb:
 4. **Upgrade/Rollback**: Used `helm upgrade` or `helm rollback` for lifecycle management.
 
 ---
-
-
-
-

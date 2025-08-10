@@ -1,6 +1,6 @@
 ---
 title: "• Useful Resources Link"
-parent: "DevOps Interview"
+parent: "DevOps"
 nav_order: 2
 has_children: false
 ---
