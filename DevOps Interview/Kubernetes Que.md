@@ -1,7 +1,7 @@
 ---
 title: "• Kubernetes Que"
 parent: "DevOps"
-nav_order: 3
+nav_order: 4
 has_children: true
 ---
 
@@ -158,3 +158,147 @@ mongodb:
 
 ---
 
+
+Excellent answer! 👏
+
+You're clearly comfortable with **Kubernetes architecture** and also gave an advanced, real-world explanation using **Helm charts** — this is the kind of depth interviewers love to see for ₹20+ LPA roles.
+
+---
+
+### ✅ **Feedback Summary:**
+
+| Area                        | Feedback                                                                                                                       |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **Kubernetes Architecture** | ✅ Very well explained. You correctly listed all control plane and worker node components and their functions.                  |
+| **Helm Chart Deployment**   | ✅ Extremely strong. You covered Helm directory structure, templating, values.yaml, and how Helm manages the release lifecycle. |
+| **Communication Style**     | ✅ Clear, technical, confident. You sound like someone who has done it in real projects.                                        |
+
+---
+
+### ✅ **Bonus Tip:**
+
+You can add that Helm also supports:
+
+* **`helm upgrade`** for zero-downtime deployments
+* **`helm rollback`** for versioning
+* Supports **charts dependency** (e.g., Redis, Mongo as sub-charts)
+
+---
+
+### 🔁 Que 5) Let’s test your **troubleshooting skills** now.
+
+> A Kubernetes pod you deployed is stuck in `CrashLoopBackOff` state. How do you troubleshoot it?
+> What are the steps and `kubectl` commands you would use?
+Please answer step by step.
+
+### ✅ **Answer**
+
+ **clear troubleshooting checklist** .
+
+---
+
+## ✅ **Troubleshooting a Pod in `CrashLoopBackOff`**
+
+### **Step 1 – Describe the Pod**
+
+```bash
+kubectl describe pod <pod-name> -n <namespace>
+```
+
+* Check **Events** at the bottom — you might see image pull errors, failed mounts, missing config maps, or probe failures.
+
+---
+
+### **Step 2 – Check Pod Logs**
+
+```bash
+kubectl logs <pod-name> -n <namespace>
+```
+
+* If multiple containers are in the pod:
+
+```bash
+kubectl logs <pod-name> -c <container-name> -n <namespace>
+```
+
+* Look for errors such as:
+
+  * Application crash (e.g., Node.js syntax error)
+  * Missing environment variables
+  * Port already in use
+
+---
+
+### **Step 3 – Check Previous Logs (if restarting)**
+
+```bash
+kubectl logs --previous <pod-name> -n <namespace>
+```
+
+* Shows logs from the container before it restarted.
+
+---
+
+### **Step 4 – Verify Configuration**
+
+* Check if required ConfigMaps and Secrets exist:
+
+```bash
+kubectl get configmap -n <namespace>
+kubectl get secret -n <namespace>
+```
+
+* View deployment spec:
+
+```bash
+kubectl get deploy <deployment-name> -o yaml
+```
+
+---
+
+### **Step 5 – Check Resource Limits**
+
+* Sometimes pods restart due to **OOMKilled** (Out of Memory).
+
+```bash
+kubectl describe pod <pod-name> | grep -i "oom"
+```
+
+* If yes, increase `resources.requests.memory` and `resources.limits.memory`.
+
+---
+
+### **Step 6 – Liveness/Readiness Probes**
+
+* Misconfigured probes can cause restarts. Example:
+
+```yaml
+livenessProbe:
+  httpGet:
+    path: /health
+    port: 8080
+  initialDelaySeconds: 10
+  periodSeconds: 5
+```
+
+* Increase `initialDelaySeconds` if the app needs more startup time.
+
+---
+
+### **Step 7 – Image Issues**
+
+* Make sure the container image exists and is accessible.
+
+```bash
+kubectl describe pod <pod-name> | grep -i "image"
+```
+
+* Check imagePullSecrets if private registry.
+
+---
+
+💡 **Rule to Remember for Interviews:**
+
+> **Describe → Logs → Config → Resources → Probes → Image**
+
+---

@@ -17,7 +17,6 @@ Use the sidebar to explore Git, Docker, Jenkins, and Kubernetes.
 * **25–60% → Yellow (Intermediate)**
 * **0–25% → Red (Learning)**
 
-Here’s your **color-coded DevOps Skills Table** in Markdown (can also be pasted in Excel or Word and colors will show if formatted there):
 
 | **Category**                           | **Subject**                                                   | **Status %** | **Skill Level** |
 | -------------------------------------- | ------------------------------------------------------------- | ------------ | ---------------------------- |

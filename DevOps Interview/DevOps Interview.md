@@ -1,7 +1,7 @@
 ---
 title: "• DevOps Interview"
 parent: "DevOps"
-nav_order: 4
+nav_order: 3
 has_children: true
 ---
 
@@ -142,145 +142,102 @@ We maintain a dynamic or static inventory file where we define:
 
 ### ✅ **Answer**
 
-### 🔹 **1. Basic Components of a Kubernetes Cluster**
+Please visite - https://natrajwadhai13.github.io/devops-notes/DevOps%20Interview/Kubernetes%20Que.html
 
-A Kubernetes cluster consists of two primary components:
 
----
+### 🔁 Que 5) Let’s test your **troubleshooting skills** now.
 
-#### **A. Control Plane (Master Node)**
+> A Kubernetes pod you deployed is stuck in `CrashLoopBackOff` state. How do you troubleshoot it?
+> What are the steps and `kubectl` commands you would use?
+Please answer step by step.
 
-The **Control Plane** is the brain of the Kubernetes cluster, responsible for managing the overall state and orchestration.
+### ✅ **Answer**
 
-**Key components:**
+Please visite - https://natrajwadhai13.github.io/devops-notes/DevOps%20Interview/Kubernetes%20Que.html
 
-* **kube-apiserver**:
-  Exposes the Kubernetes API; all control commands and cluster communications go through this.
 
-* **etcd**:
-  A consistent, distributed key-value store that saves all cluster state and configuration.
-
-* **kube-scheduler**:
-  Assigns newly created pods to nodes based on resource availability, constraints, and policies.
-
-* **kube-controller-manager**:
-  Manages controllers like:
-
-  * Node Controller: Handles node availability.
-  * Replication Controller: Ensures the desired number of pods.
-  * Endpoint Controller: Updates services and endpoints.
-
-* **cloud-controller-manager (optional)**:
-  Interacts with cloud-specific APIs (e.g., for managing load balancers, storage, etc.).
+Alright, moving to **Q6** — this one will check your **Terraform & IaC** knowledge, which is a hot topic for ₹20+ LPA DevOps roles.
 
 ---
 
-#### **B. Nodes (Worker Nodes)**
+### 🔁 Que 6) In Terraform:
 
-Nodes are the physical or virtual machines where application workloads (containers) run.
+1. How do you manage **different environments** like dev, staging, and prod?
+2. How do you store and secure your Terraform **state file** in a team setup?
 
-**Key components:**
+Answer in your own words, and if you’ve used it in real projects, share that experience.
 
-* **kubelet**:
-  Agent that runs on each node; ensures the pod containers are running as expected.
-
-* **kube-proxy**:
-  Maintains networking rules, enabling internal and external communication to services.
-
-* **Container Runtime**:
-  Executes containers (e.g., Docker, containerd, CRI-O).
+### ✅ **Answer**
 
 ---
 
-### 🔹 **2. Deployment Scenario: Web Application using Helm**
+## ✅ **Terraform — Managing Multiple Environments**
 
-#### ✅ **Scenario:**
+In Terraform, we usually manage **dev, staging, and prod** in **one of two ways**:
 
-Deployed a full-stack web application on Kubernetes using a **Helm chart**, which consisted of:
+### **Option 1 – Separate Workspace**
 
-* Frontend: **Nginx**
-* Backend: **Node.js API**
-* Database: **MongoDB**
+* Terraform has **workspaces** to manage separate state files for different environments.
 
----
-
-#### **A. Helm Chart Structure**
-
-```
-my-webapp/
-├── Chart.yaml
-├── values.yaml
-├── templates/
-│   ├── deployment-frontend.yaml
-│   ├── service-frontend.yaml
-│   ├── deployment-backend.yaml
-│   ├── service-backend.yaml
-│   ├── statefulset-mongodb.yaml
-│   ├── service-mongodb.yaml
-│   └── _helpers.tpl
+```bash
+terraform workspace new dev
+terraform workspace select dev
 ```
 
+* Each workspace keeps its **own state**, so dev changes don’t affect prod.
+
 ---
 
-#### **B. Sample: `deployment-frontend.yaml`**
+### **Option 2 – Directory Structure**
 
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: {{ include "my-webapp.fullname" . }}-frontend
-  labels:
-    {{- include "my-webapp.labels" . | nindent 4 }}
-spec:
-  replicas: {{ .Values.frontend.replicaCount }}
-  selector:
-    matchLabels:
-      {{- include "my-webapp.selectorLabels" . | nindent 6 }}
-      app.kubernetes.io/component: frontend
-  template:
-    metadata:
-      labels:
-        {{- include "my-webapp.selectorLabels" . | nindent 8 }}
-        app.kubernetes.io/component: frontend
-    spec:
-      containers:
-        - name: nginx
-          image: "nginx:{{ .Values.frontend.imageTag }}"
-          ports:
-            - containerPort: 80
+* Create separate folders for each environment.
+
+```
+infra/
+├── dev/
+│   └── main.tf
+├── staging/
+│   └── main.tf
+└── prod/
+    └── main.tf
 ```
 
+* Use **different `variables.tf`** for each environment.
+* This avoids accidental cross-environment changes.
+
 ---
 
-#### **C. Sample: `values.yaml`**
+## ✅ **Terraform State File Management in Teams**
 
-```yaml
-frontend:
-  replicaCount: 2
-  imageTag: "latest"
+Terraform state (`terraform.tfstate`) keeps track of all resources.
+In a **team setup**, we don’t store it locally — instead, we keep it in **remote storage**:
 
-backend:
-  replicaCount: 2
-  imageTag: "v1.0"
+**Example with AWS S3 + DynamoDB Locking**
 
-mongodb:
-  storageSize: "5Gi"
-  replicaCount: 1
+```hcl
+terraform {
+  backend "s3" {
+    bucket         = "my-terraform-state-bucket"
+    key            = "prod/terraform.tfstate"
+    region         = "ap-south-1"
+    dynamodb_table = "terraform-lock-table"
+    encrypt        = true
+  }
+}
 ```
 
----
-
-#### **D. Deployment Steps**
-
-1. **Define**: Created Helm templates for Deployment, Service, and StatefulSet.
-2. **Parameterize**: Configured values in `values.yaml` for flexibility.
-3. **Install**: Ran
-
-   ```bash
-   helm install my-release ./my-webapp
-   ```
-
-   to deploy the application.
-4. **Upgrade/Rollback**: Used `helm upgrade` or `helm rollback` for lifecycle management.
+* **S3 Bucket** → Stores the state file centrally.
+* **DynamoDB Table** → Manages state locking to prevent two people from applying at the same time.
+* **Encryption** → Ensures state file is secure.
 
 ---
+
+💡 **Key points to tell interviewer:**
+
+1. Use **workspaces** or separate folders for environments.
+2. Always keep **state in a remote backend** like S3, GCS, or Terraform Cloud.
+3. Use **locking** to avoid conflicts.
+4. Never commit `.tfstate` to Git.
+
+---
+
