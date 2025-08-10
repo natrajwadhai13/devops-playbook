@@ -13,14 +13,14 @@ Use the sidebar to explore Git, Docker, Jenkins, and Kubernetes.
 
 
 
-* **00–100% → Green (Strong)**
+* **60–100% → Green (Strong)**
 * **25–60% → Yellow (Intermediate)**
 * **0–25% → Red (Learning)**
 
 Here’s your **color-coded DevOps Skills Table** in Markdown (can also be pasted in Excel or Word and colors will show if formatted there):
 
 | **Category**                           | **Subject**                                                   | **Status %** | **Skill Level** |
-| -------------------------------------- | ------------------------------------------------------------- | ------------ | --------------- |
+| -------------------------------------- | ------------------------------------------------------------- | ------------ | ---------------------------- |
 | **Operating System (OS)**              | Linux & Windows                                               | 90           | 🟢 Strong       |
 |                                        | VMWare                                                        | 70           | 🟡 Intermediate |
 |                                        | DataCenter                                                    | 85           | 🟢 Strong       |
