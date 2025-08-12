@@ -1,8 +1,9 @@
 ---
-title: "• Basics"
-parent: Docker
+title: "Docker Basics"
+parent: "• Docker"
+grand_parent: "• 3.1 Containerization"
+great_grand_parent: "3. DevOps Core Tools"
 nav_order: 1
-has_children: true
 ---
 
 # Docker Basics Command used in Project 

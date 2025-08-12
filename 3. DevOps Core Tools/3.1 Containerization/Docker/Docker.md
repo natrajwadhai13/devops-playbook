@@ -1,8 +1,10 @@
 ---
-title: Docker
-nav_order: 3
-has_children: true
+title: "Docker"
+parent: "• 3.1 Containerization"
+grand_parent: "3. DevOps Core Tools"
+nav_order: 1
 ---
+
 
 # Docker Overview
 
