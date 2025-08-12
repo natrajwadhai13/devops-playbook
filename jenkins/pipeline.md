@@ -1,7 +1,7 @@
 ---
 title: "• Pipiline"
 parent: Jenkins
-nav_order: 2
+nav_order: 11
 has_children: true
 ---
 
