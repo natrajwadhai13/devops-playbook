@@ -1,7 +1,8 @@
 ---
 title: "• commands"
 parent: Git-Github
-nav_order: 3
+grand_parent: "8. Repository Management (VCS) Tools"
+nav_order: 1
 has_children: true
 ---
 

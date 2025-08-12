@@ -1,6 +1,7 @@
 ---
 title: Git-Github
-nav_order: 17
+parent: "8. Repository Management (VCS) Tools"
+nav_order: 1
 has_children: true
 ---
 

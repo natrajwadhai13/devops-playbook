@@ -1,6 +1,6 @@
 ---
 title: "• DevOps Roadmap"
-parent: "DevOps"
+parent: "1. DevOps"
 nav_order: 1
 has_children: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: "• DevOps Interview"
-parent: "DevOps"
+parent: "1. DevOps"
 nav_order: 3
 has_children: true
 ---

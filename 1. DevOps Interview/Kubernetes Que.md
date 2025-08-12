@@ -1,6 +1,6 @@
 ---
 title: "• Kubernetes Que"
-parent: "DevOps"
+parent: "1. DevOps"
 nav_order: 4
 has_children: true
 ---

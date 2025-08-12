@@ -1,6 +1,6 @@
 ---
 title: "• Useful Resources Link"
-parent: "DevOps"
+parent: "1. DevOps"
 nav_order: 2
 has_children: false
 ---

@@ -1,6 +1,7 @@
 ---
 title: "• Helm"
-parent: Kubernetes
+parent: "• 3.2 Orchestration"
+grand_parent: 3. DevOps Core Tools
 nav_order: 2
 has_children: true
 ---

@@ -1,7 +1,8 @@
 ---
 title: "• Pipiline"
-parent: Jenkins
-nav_order: 11
+parent: "• Jenkins"
+grand_parent: "2. CICD Tools"
+nav_order: 2
 has_children: true
 ---
 
