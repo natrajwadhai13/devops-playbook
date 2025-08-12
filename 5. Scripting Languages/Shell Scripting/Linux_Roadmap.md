@@ -1,10 +1,9 @@
 ---
-title: "• Linux_Roadmap"
-parent: "5. Scripting Languages"
-nav_order: 1
-has_children: true
+title: "Linux Roadmap"
+nav_order: 2
+parent: "• Shell Scripting"
+grand_parent: "5. Scripting Languages"
 ---
-
 Here is a **Linux Roadmap for DevOps Engineers**, tailored to your goal of reaching a 20 LPA package and building on your **data center + DevOps** expertise.
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Groovy"
-nav_order: 3
-parent: "• Groovy_Yaml_Json"
+nav_order: 4
+parent: "• Groovy"
 grand_parent: "5. Scripting Languages"
 ---
 

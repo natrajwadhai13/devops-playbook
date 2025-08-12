@@ -1,8 +1,8 @@
 ---
 title: "Shell_Scripting_(Bash)"
-nav_order: 1
-parent: "• Linux_Roadmap"
-grand_parent: "Scripting"
+nav_order: 2
+parent: "• Shell Scripting"
+grand_parent: "5. Scripting Languages"
 ---
 Here’s a **Bash Scripting Roadmap** specially designed for DevOps engineers like you, with a solid Linux and data center background, and a goal of scaling to 20 LPA packages in top roles.
 

@@ -1,5 +1,5 @@
 ---
-title: "• Groovy_Yaml_Json"
+title: "• Groovy"
 parent: "Scripting"
 nav_order: 3
 has_children: true
