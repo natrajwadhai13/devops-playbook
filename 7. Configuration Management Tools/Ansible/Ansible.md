@@ -1,6 +1,6 @@
 ---
 title: "• Ansible"
-parent: "• 6. Cloud Automation Tools"
+parent: "7. Configuration Management Tools"
 nav_order: 1
 has_children: true
 ---
