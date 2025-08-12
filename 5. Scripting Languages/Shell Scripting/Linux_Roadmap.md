@@ -1,7 +1,7 @@
 ---
 title: "• Linux_Roadmap"
-parent: "Scripting"
-nav_order: 2
+parent: "5. Scripting Languages"
+nav_order: 1
 has_children: true
 ---
 

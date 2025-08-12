@@ -1,7 +1,8 @@
 ---
 title: "• Ansible_roadmap"
-parent: "Scripting"
-nav_order: 4
+nav_order: 1
+parent: "• Ansible"
+grand_parent: "7. Configuration Management Tools"
 has_children: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "• Power Shell"
-parent: "Scripting"
+parent: "5. Scripting Languages"
 nav_order: 5
 has_children: true
 ---

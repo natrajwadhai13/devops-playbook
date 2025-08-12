@@ -1,8 +1,8 @@
 ---
 title: "YAML"
 nav_order: 1
-parent: "• Groovy_Yaml_Json"
-grand_parent: "Scripting"
+parent: "• YAML & JSON"
+grand_parent: "5. Scripting Languages"
 ---
 
 
