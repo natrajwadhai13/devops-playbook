@@ -3,11 +3,92 @@ title: Home
 nav_order: 1
 ---
 
-# Welcome to DevOps Notes 🚀
 
-This site contains categorized DevOps study notes.
+# DevOps & Cloud Notes – Priority Order
+## 1. DevOps Interview
 
-Use the sidebar to explore Git, Docker, Jenkins, and Kubernetes.
+## 2. CI/CD Tools
+- Jenkins
+- GitLab CI
+- GitHub Actions
+- ArgoCD
+- Spinnaker
+
+## 3. DevOps Core Tools
+### 3.1 Containerization 
+- Docker
+- Docker Compose
+### 3.2 Orchestration 
+- Kubernetes
+- Helm
+- OpenShift
+- Rancher
+
+## 4. Cloud Platforms
+- AWS
+- Azure
+- GCP
+
+## 5. Scripting Languages
+- Shell Scripting
+- Python
+- Groovy
+- YAML & JSON
+
+## 6. Cloud Automation Tools
+- Terraform
+- CloudFormation
+- Pulumi
+
+## 7. Configuration Management Tools
+- Ansible
+- Puppet
+- Chef
+
+## 8. Repository Management (VCS) Tools
+- Git Basics
+- Git Branching & Merging
+- GitHub
+- Bitbucket
+
+## 9. Monitoring & Logging Tools
+- Prometheus & Grafana
+- ELK Stack
+- Splunk
+
+## 10. Build Tools
+- Maven
+- Gradle
+- npm
+
+##11. Operating System (OS)
+- Linux Basics
+- Linux Administration
+
+## 12. Web Server
+- NGINX
+- Apache
+
+## 13. Database
+- MySQL
+- PostgreSQL
+- MongoDB
+
+
+## 14. Ticketing Tools / ITSM
+- Jira
+- ServiceNow
+
+## 15. IDEs for Development & DevOps
+- VS Code
+- IntelliJ
+- PyCharm
+
+## 16. Other Useful Tools
+- Postman
+- SonarQube
+
+
 
 ---
 
