@@ -4,7 +4,11 @@ nav_order: 1
 ---
 
 
-# DevOps & Cloud Notes – Priority Order
+# DevOps & Cloud Tools
+
+- Jenkins --- InProgress
+- GitLab  --- InProgress
+
 ## 1. DevOps Interview
 
 ## 2. CI/CD Tools
@@ -15,9 +19,11 @@ nav_order: 1
 - Spinnaker
 
 ## 3. DevOps Core Tools
+
 ### 3.1 Containerization 
 - Docker
 - Docker Compose
+
 ### 3.2 Orchestration 
 - Kubernetes
 - Helm
