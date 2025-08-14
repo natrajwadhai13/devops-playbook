@@ -1,7 +1,7 @@
 ---
 title: Jenkins
 parent: 2. CICD Tools
-nav_order: 1
+nav_order: 2
 has_children: true
 ---
 

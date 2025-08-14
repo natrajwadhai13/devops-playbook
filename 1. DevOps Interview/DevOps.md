@@ -16,7 +16,7 @@ This is my **24-week plan** to cover all DevOps & Cloud tools, with exact dates 
 
 ### **14 Aug – 27 Aug 2025** ✅
 - [✅] Git Basics, Branching & Merging  
-- [ ] GitHub / GitLab (VCS basics)  
+- [] GitHub / GitLab (VCS basics)  
 - [ ] Finish Jenkins (advanced pipelines, shared libraries)  
 - [ ] Start GitLab CI basics  
 - [ ] YAML & JSON syntax
