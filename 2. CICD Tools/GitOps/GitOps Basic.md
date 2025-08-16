@@ -10,9 +10,12 @@ has_children: true
 🚀 What Is GitOps?
 GitOps is a way to manage infrastructure and application deployments using Git as the single source of truth. It treats infrastructure as code (IaC), meaning all configurations are stored in Git repositories. Any change to infrastructure or applications is made by updating the Git repo, and automation tools apply those changes to the live environment.
 
----
+
 GitOps is a modern DevOps practice that uses **Git** as the single source of truth for deploying and managing infrastructure and applications.
 Think of it as: *"Everything is code, and Git is the control center."*
+( Unable to change manually in like Kubernets side)
+
+* Refrance- https://github.com/open-gitops
 
 ---
 
@@ -30,10 +33,11 @@ A GitOps tool then continuously **syncs** your actual environment to match what�
    * Everything (infrastructure, apps, policies) is written as code in a Git repo.
    * Examples: Kubernetes manifests, Terraform files, Helm charts.
 
-2. **Version Control via Git**
+2. **Version Control via Git and Immutable** 
 
    * Git stores every change with a history.
    * Rollbacks are as easy as reverting to an older commit.
+   * Desired state is Store in a way that enforces immutability, versioning and retains a complte version history.
 
 3. **Automated Sync & Deployment**
 
@@ -43,6 +47,7 @@ A GitOps tool then continuously **syncs** your actual environment to match what�
 4. **Continuous Reconciliation**
 
    * The system self-heals by reverting any manual drift from the Git-defined state.
+   * Software agents continuosly observe actual system state and attempt to apply the desired state.
 
 ---
 
@@ -59,10 +64,13 @@ A GitOps tool then continuously **syncs** your actual environment to match what�
 ## **Benefits of GitOps**
 
 * **Consistency** – Same process for dev, staging, and prod.
-* **Auditability** – Every change is tracked in Git history.
+* **Auditability (Versioning)** – Every change is tracked in Git history.
 * **Rollback** – Revert to a known good state instantly.
 * **Security** – No direct cluster access for developers; all changes go through Git.
 * **Automation** – Less manual deployment, fewer errors.
+* **Auto upgrades** –
+* **Auto Healing of any unwanted changes** –
+* **Continuous Reconciliation** –
 
 ---
 
@@ -72,6 +80,7 @@ A GitOps tool then continuously **syncs** your actual environment to match what�
 * **Flux**
 * Jenkins X (supports GitOps pipelines)
 * Fleet (by Rancher)
+* Spinnaker
 
 ---
 
