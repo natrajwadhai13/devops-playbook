@@ -5,8 +5,8 @@ grand_parent: 2. CICD Tools
 nav_order: 1
 has_children: true
 ---
+- [ArgoCD Documentation](https://argo-cd.readthedocs.io/en/stable/getting_started/)
 
-Getting Started ArgoCD Installation- https://argo-cd.readthedocs.io/en/stable/getting_started/
 
 **Requirements**
 * Installed kubectl command-line tool.
@@ -44,6 +44,7 @@ create tunel for iP address for access
 [argocd argocd-server http/80
 https/443 http://192.168.49.2:30388
 http://192.168.49.2:31385]
+```
 
 ---
 ===========================================================================
