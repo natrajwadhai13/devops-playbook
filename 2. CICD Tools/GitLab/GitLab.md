@@ -89,7 +89,7 @@ has_children: true
 ---
 
 
-=======================================================================================================
+============================================================================
 
 Great 👍 Natraj, here are **real-world company examples** for each so you can confidently mention them in interviews:
 
@@ -157,8 +157,7 @@ Great 👍 Natraj, here are **real-world company examples** for each so you can 
 ---
 
 
-
-============================================================================================
+============================================================================
 
 
 **one-page GitHub vs GitLab vs Bitbucket vs GitOps comparison cheat sheet** you can revise quickly before interviews:
