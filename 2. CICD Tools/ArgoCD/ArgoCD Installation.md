@@ -321,7 +321,7 @@ brew install argocd
 
 ---
 
-## 3. ArgoCD CLI Installation
+## 1 ArgoCD CLI Installation In Ubuntu Server
 
 ```bash
 wget https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
@@ -331,7 +331,7 @@ rm argocd-linux-amd64
 
 ---
 
-## 4. Login to ArgoCD
+## 2. Login to ArgoCD
 
 1. Get initial admin password:
 
@@ -347,7 +347,7 @@ rm argocd-linux-amd64
 
 ---
 
-## 5. Deploy Example Application (Guestbook)
+## 3. Deploy Example Application (Guestbook)
 
 1. Create app:
 
@@ -397,6 +397,8 @@ rm argocd-linux-amd64
 
    ```
    http://<minikube-ip>:<NodePort>
+
+   curl http://<minikube-ip>:<NodePort>
    ```
 
 ---
