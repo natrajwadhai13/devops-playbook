@@ -1,5 +1,5 @@
 ---
-title: • GitLab Pipline
+title: • GitLab Configration
 parent: • GitLab
 grand_parent: 2. CICD Tools
 nav_order: 3
