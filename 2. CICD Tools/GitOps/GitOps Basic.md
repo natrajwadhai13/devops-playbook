@@ -1,5 +1,5 @@
 ---
-title: About GitOps
+title: • About GitOps
 parent: GitOps
 grand_parent: 2. CICD Tools
 nav_order: 1

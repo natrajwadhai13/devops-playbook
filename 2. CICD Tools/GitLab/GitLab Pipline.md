@@ -1,12 +1,12 @@
 ---
-title: GitLab Pipline
+title: • GitLab Pipline
 parent: GitLab
 grand_parent: 2. CICD Tools
 nav_order: 2
 has_children: true
 ---
 
-Got it 👍 You want a **sample GitLab CI/CD script** (`.gitlab-ci.yml`) with explanation.
+**sample GitLab CI/CD script** (`.gitlab-ci.yml`) with explanation.
 
 Here’s a **basic working example** for a Node.js app (you can adapt for Java, Python, etc.):
 
