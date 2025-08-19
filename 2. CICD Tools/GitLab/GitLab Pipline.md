@@ -1,6 +1,6 @@
 ---
 title: • GitLab Pipline
-parent: GitLab
+parent: • GitLab
 grand_parent: 2. CICD Tools
 nav_order: 2
 has_children: true

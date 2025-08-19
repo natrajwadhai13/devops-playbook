@@ -1,6 +1,6 @@
 ---
 title: • About GitLab
-parent: GitLab
+parent: • GitLab
 grand_parent: 2. CICD Tools
 nav_order: 1
 has_children: true

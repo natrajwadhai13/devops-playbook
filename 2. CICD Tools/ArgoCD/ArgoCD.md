@@ -1,5 +1,5 @@
 ---
-title: ArgoCD
+title: • ArgoCD
 parent: 2. CICD Tools
 nav_order: 3
 has_children: true
