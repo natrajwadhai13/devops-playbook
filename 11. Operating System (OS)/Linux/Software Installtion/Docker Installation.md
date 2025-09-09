@@ -1,6 +1,6 @@
 ---
 title: • Docker installation
-parent: ^ Software Installtion
+parent: • Software Installtion
 grand_parent: • Linux
 grand_grand_parent: 11. Operating System (OS)
 nav_order: 2
