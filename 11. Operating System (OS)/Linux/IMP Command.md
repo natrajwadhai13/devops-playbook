@@ -7,6 +7,7 @@ has_children: true
 ---
 ## IMP Command:
 
+```bash
 tar -cvzf /bkp/warbackup/AHD_Full_APP_BACKUP_09_01_2024.tar.gz /data/jboss-6.1.0.Final
 
 tar -cvzf /bkp/warbackup/RDD_Full_APP_BACKUP_11_01_2024.tar.gz /data/wildfly-10.0.0.Final/
@@ -39,7 +40,7 @@ crontab allow
 echo justin > /etc/cron.allow
 /etc/cron.allow
 /etc/cron.deny
-
+```
 ==================================================================
 
 ```bash
