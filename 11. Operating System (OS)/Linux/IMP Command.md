@@ -5,22 +5,34 @@ grand_parent: 11. Operating System (OS)
 nav_order: 1
 has_children: true
 ---
+## IMP Command:
 
 tar -cvzf /bkp/warbackup/AHD_Full_APP_BACKUP_09_01_2024.tar.gz /data/jboss-6.1.0.Final
 
 tar -cvzf /bkp/warbackup/RDD_Full_APP_BACKUP_11_01_2024.tar.gz /data/wildfly-10.0.0.Final/
 
 chage -M -1 username
+
 dlsb_release -a or cat /etc/*release or cat /etc/issue* or cat /proc/version.
+
 nproc
+
 yum install sysstat
+
 mpstat -Cpu Utilization
+
 prefetch
+
 history -c
+
 history -d 
+
 dmesg
+
 !996
+
 jstat -gc <PID>    for heap memory
+
 jmap -heap <PID>   for heap memory
 
 crontab allow
@@ -28,15 +40,17 @@ echo justin > /etc/cron.allow
 /etc/cron.allow
 /etc/cron.deny
 
-=====================================================================
+==================================================================
 
+```bash
 history -d <line number> 
 hostnamectl set-hostname SFTP_APP1
 copy via date: for i in `ls -lrt | grep "Sep" | awk '{print $9}' `; do cp -p $i* /Vol2/custsbicmp_Archive_bkp_last_3month/; done
 Move via date: for i in `ls -lrt | grep "Aug" | awk '{print $9}' `; do mv $i* /Vol2/custsbicmp_Archive_bkp_last_3month/; done
 sed -i -e 's/\r$//' jboss_restart.sh
-
-=====================================================================
+```
+==================================================================
+```bash
 
 1. Clear PageCache only.
 # sync; echo 1 > /proc/sys/vm/drop_caches
@@ -48,9 +62,10 @@ sftp sftp@124.153.117.33
 
 # ps -ef | grep java
 # kill -9 Pid
+```
+==================================================================
 
-=====================================================================
-
+```bash
 cd /data/jboss-eap-6.3/bin/
 #nohup sh standalone.sh -b 0.0.0.0 > /dev/null 2>&1 &
 NOTE IF JBOSS 6.1 THEN to start jboss 6.1
@@ -73,9 +88,9 @@ export  CATALINA_HOME=/vol2/server/tomcat/apache-tomcat-8.5.50
 
 # systemctl enable postgresql-10.service
 # systemctl start postgresql-10.service
-
-=====================================================================
-
+```
+==================================================================
+```bash
 iostat
 shell:startup
 curl ifconfig.co
@@ -96,8 +111,9 @@ how to get heap size in linux
 #ps -ef | grep java | grep Xmx.
 # date -s "Mon Jan 31 15:29:20 IST 2022"
 ./WEB-INF/classes/ApplicationDB.properties
-
-=====================================================================
+```
+```bash
+=================================================================
 firewall-cmd --add-port=port-number/port-type
 firewall-cmd --zone=public --permanent --add-port=50000/tcp
 firewall-cmd --zone=public --permanent --add-port=4990-4999/udp
@@ -123,7 +139,7 @@ sudo netstat -tulpn | grep LISTEN
 sudo ss -tulpn | grep LISTEN
 sudo lsof -i:22 ## see a specific port such as 22 ##
 sudo nmap -sTU -O IP-address-Here
-=====================================================================
+=================================================================
 
 
 vi /etc/ssh/sshd_config
@@ -142,7 +158,7 @@ scp db2inst1@10.187.202.211:/bkp/online_backup/delta_backup/incr_delta_bkpbkp.lo
 scp -r FRM_AUDIT_TRAIL_TRIBAL.msg 10.187.202.211:/root/
 
 scp nohup.out root@13.127.122.161:/vol1
-============================================================================
+==================================================================
 vim /etc/bashrc
 alias mps='free -h'
 source /etc/bashrc
@@ -157,7 +173,7 @@ alias rmlog='rm -rf data log tmp'
 alias cdbin='cd /data/jboss-6.1.0.Final/bin/'
 alias wnohup='nohup sh run.sh -b 0.0.0.0 > /dev/null 2>&1 &'
 alias psjava='ps -ef | grep java'
-====================================================================================
+==================================================================
 
 Please find attached cacerts file and upload on below path 
 jdk1.7/jre/lib/security/cacerts
@@ -181,7 +197,7 @@ db2 LIST UTILITIES show detail
 nohup db2 RESTORE DATABASE IFMSMIGR FROM /Vol1/Backup TAKEN AT 20210131113008 on /Vol2/ifmsmigr/db2inst1 &
 db2ckbkp SALAARTH.0.db2inst1.NODE0000.CATN0000.20231103010003.001
 
-============================================================================================
+==================================================================
 
 
 Zero SSL :- 
@@ -214,7 +230,7 @@ MJP Live Application
 openssl req -new -newkey rsa:2048 -nodes -keyout mjpsevaarth.in.key -out mjpsevaarth.in.csr ...... server csr certificte
 openssl pkcs12 -export -out certificate.pfx -inkey mjpsevaarth.in.key -in bd7a731b4b83c315.crt ........ for pfx file
 
-=====================================================
+==================================================================
 
 ACL Command.
 
@@ -289,3 +305,5 @@ sudo dpkg-reconfigure ca-certificates
 ls -l /etc/ssl/certs | grep -i nsdl.cer
 
 echo 'export no_proxy=http://localhost' | sudo tee -a /etc/profile.d/proxy.sh
+
+```
