@@ -1,0 +1,75 @@
+---
+title: "• Package Verification & Registration Services"
+parent: 3. DevOps Core Tools
+nav_order: 1
+has_children: true
+---
+
+
+# Package Verification & Registration Services
+
+The **Package Verification & Registration Portal** provides end-to-end **Upload, Verification, and Registration** services for various software packages, including:
+
+* Solaris Packages (SV)
+* WHS Java Artefacts (MVN)
+* Linux RPMs (RPM)
+* MAR Artefacts (MAR)
+* DUN Artefacts (DUN)
+* WSA MSI (MSI)
+
+---
+
+## Verification Process
+
+* Performs **Quality Assurance checks** aligned with Packaging Guidelines & Standards.
+* Registers configuration details into **i-SAC** and **RFCFlow**.
+* Copies verified packages to the **Nexus Repository**.
+* Enables **REX** to consume package configuration for deployment.
+* Runs **24/7/365**, executing automated validation on uploaded packages.
+* Provides **consultation** for packages not adhering to guidelines.
+* Regularly maintained to remain compliant with evolving organizational standards.
+
+---
+
+## Package Upload
+
+The **Upload Utility** supports multiple package types:
+
+* **SV** – Solaris Platform
+* **MVN** – WHS Java Artefacts
+* **RPM** – Linux Platform
+* **MAR** – Maven Artefacts
+* **DUN** – Deployment Units Artefacts
+* **MSI** – Windows Platform
+* **NexusCFG** – Configuration files required for Windows installation
+
+---
+
+## Package Verification
+
+The **Verification Utility** provides **live package status** during the verification process.
+
+* Automatically performs data consistency checks per **UBS Guidelines**.
+* On successful verification:
+
+  * Updates package metadata in **i-SAC** & **RFCFlow**
+  * Copies the physical package to **Nexus Repository**
+  * Sends a detailed **verification report** to recipients listed in the package/artefact file
+
+### Live Status by Package Type:
+
+* **SV (Solaris)** – Verification status of Solaris packages
+* **MVN (WHS)** – Verification status of WHS Java bundles
+* **RPM/CNT/DUN/MAR** – Verification status of RPM, CNT, MAR, and DUN artefacts
+* **MSI/NexusCFG (WSA)** – Verification status of Windows packages & Nexus config files
+
+---
+
+## Package Search
+
+The **Search Utility** allows users to:
+
+* Check verification status of **SV, MVN, RPM, MAR, DUN, MSI** packages.
+* Locate package storage paths in **Nexus Repository**.
+* Review package metadata stored in **i-SAC** & **RFCFlow**.
+

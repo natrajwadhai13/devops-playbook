@@ -9,31 +9,18 @@ has_children: true
 
 ```bash
 tar -cvzf /bkp/warbackup/AHD_Full_APP_BACKUP_09_01_2024.tar.gz /data/jboss-6.1.0.Final
-
 tar -cvzf /bkp/warbackup/RDD_Full_APP_BACKUP_11_01_2024.tar.gz /data/wildfly-10.0.0.Final/
-
 chage -M -1 username
-
 dlsb_release -a or cat /etc/*release or cat /etc/issue* or cat /proc/version.
-
 nproc
-
 yum install sysstat
-
 mpstat -Cpu Utilization
-
 prefetch
-
 history -c
-
 history -d 
-
 dmesg
-
 !996
-
 jstat -gc <PID>    for heap memory
-
 jmap -heap <PID>   for heap memory
 
 crontab allow
