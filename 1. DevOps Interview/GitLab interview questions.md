@@ -5,9 +5,6 @@ grand_parent: "1. DevOps"
 nav_order: 1
 ---
 
-Superb ask 👍 Natraj! Since you’re preparing for **DevOps interviews**, here’s a **comprehensive list of GitLab interview questions (basic → advanced)**, grouped by topics.
-
----
 
 # 🔹 **GitLab Interview Questions & Answers**
 
@@ -122,198 +119,218 @@ Superb ask 👍 Natraj! Since you’re preparing for **DevOps interviews**, here
 
 ## 🔹 Basics
 
-1. **Q: What is GitLab?**
-   A: GitLab is a complete DevOps platform providing SCM, CI/CD, security, and project management in one application.
+1. **Q: What is GitLab? and Explain the role of GitLab CI/CD pipelines.**
+
+   Ans: GitLab is a complete DevOps platform providing SCM, CI/CD, security, and project management in one application.
+
    👉 GitLab is a DevOps lifecycle platform that provides Git repository management, CI/CD pipelines, issue tracking, and monitoring in one application.
 
+   👉 GitLab CI/CD automates build, test, and deployment. Pipelines ensure every code change is validated before merging. It reduces manual work and increases delivery speed.
+
 2. **Q: Difference between GitHub, GitLab, and Bitbucket?**
-   A: GitHub → open-source focus, GitLab → all-in-one DevSecOps, Bitbucket → Jira integration.
+
+    Ans: GitHub → open-source focus, GitLab → all-in-one DevSecOps, Bitbucket → Jira integration.
+
    🔹GitHub mainly focuses on Git repo hosting and collaboration.
-   🔹Bitbucket is Atlassian’s Git-based tool with Jira integration.
+
    🔹GitLab is unique because it has built-in CI/CD and DevOps features.
 
+   🔹Bitbucket is Atlassian’s Git-based tool with Jira integration.
+   
+
 3. **Q: GitLab CE vs EE?**
-   A: CE is free/open-source, EE is paid with enterprise features (security, compliance, support).
+
+    Ans: CE is free/open-source, EE is paid with enterprise features (security, compliance, support).
 
 4. **Q: What is `.gitlab-ci.yml` and  why is it important??**
-   A: A YAML file in repo root that defines GitLab CI/CD pipeline.
-   
-   .gitlab-ci.yml is a configuration file in the repo root. It defines jobs, stages, and pipeline behavior (build, test, deploy). Without this file, GitLab CI/CD pipelines cannot run.
+
+    Ans: .gitlab-ci.yml is a configuration file in the repo root. It defines jobs, stages, and pipeline behavior (build, test, deploy). Without this file, GitLab CI/CD pipelines cannot run.
 
 5. **Q: What are GitLab stages?**
-   A: Logical pipeline steps like `build`, `test`, `deploy`.
 
-6. **Explain the role of GitLab CI/CD pipelines.**
-  Ans- GitLab CI/CD automates build, test, and deployment. Pipelines ensure every code change is validated before merging. It reduces manual work and increases delivery speed.
-
-
+   Ans: Logical pipeline steps like `build`, `test`, `deploy`.
 
 ---
 
 ## 🔹 Pipelines & Jobs
 
 6. **Q: What is a GitLab pipeline?**
-   A: A sequence of jobs defined in `.gitlab-ci.yml` executed in stages.
+
+   Ans: A sequence of jobs defined in `.gitlab-ci.yml` executed in stages.
 
 7. **Q: Difference between job and stage?**
-   A: Jobs are tasks, stages group jobs. Jobs in a stage run in parallel; stages run sequentially.
+
+   Ans: Jobs are tasks, stages group jobs. Jobs in a stage run in parallel; stages run sequentially.
 
 8. **Q: What are `before_script` and `after_script`?**
-   A: Commands executed before/after each job.
+
+   Ans: Commands executed before/after each job.
 
 9. **Q: What is `cache` vs `artifacts`?**
-   A: Cache speeds builds (reused), artifacts are outputs shared between jobs.
+
+   Ans: Cache speeds builds (reused), artifacts are outputs shared between jobs.
 
 10. **Q: How to run a job only on main branch?**
-    A: Use `only: [main]` in job config.
+
+    Ans: Use `only: [main]` in job config.
 
 ---
 
 ## 🔹 Variables & Secrets
 
 11. **Q: How do you store secrets in GitLab?**
-    A: Via **CI/CD variables** in GitLab settings.
+    Ans: Via **CI/CD variables** in GitLab settings.
 
 12. **Q: Difference between protected & masked variables?**
-    A: Protected → only on protected branches/tags, Masked → hidden in logs.
+    Ans: Protected → only on protected branches/tags, Masked → hidden in logs.
 
 13. **Q: How to use variables in pipeline?**
-    A: `$VAR_NAME` inside `.gitlab-ci.yml`.
+    Ans: `$VAR_NAME` inside `.gitlab-ci.yml`.
 
 14. **Q: How to scope secrets for different environments?**
-    A: Use **Environment scope** when defining variables.
+    Ans: Use **Environment scope** when defining variables.
 
 15. **Q: How to inject secrets from Vault?**
-    A: Integrate GitLab CI/CD with HashiCorp Vault/AWS Secrets Manager.
+    Ans: Integrate GitLab CI/CD with HashiCorp Vault/AWS Secrets Manager.
 
 ---
 
 ## 🔹 GitLab Runners
 
 16. **Q: What is a GitLab Runner?**
-    A: An agent that executes jobs in a pipeline.
+    Ans: An agent that executes jobs in a pipeline.
 
 17. **Q: Types of Runners?**
-    A: Shared (all projects) & Specific (one project/group).
+    Ans: Shared (all projects) & Specific (one project/group).
 
 18. **Q: Executors supported by GitLab Runner?**
-    A: Shell, Docker, Kubernetes, SSH, VirtualBox, etc.
+    Ans: Shell, Docker, Kubernetes, SSH, VirtualBox, etc.
 
 19. **Q: How to restrict job to a specific runner?**
-    A: Use **tags** in `.gitlab-ci.yml`.
+    Ans: Use **tags** in `.gitlab-ci.yml`.
 
 20. **Q: How do you install GitLab Runner?**
-    A: `sudo apt install gitlab-runner` → `gitlab-runner register`.
+    Ans: `sudo apt install gitlab-runner` → `gitlab-runner register`.
+
+20. **How can you create and manage GitLab runners?**
+
+    👉 A GitLab Runner is an agent that executes CI/CD jobs.
+
+    Install GitLab Runner (shell, Docker, Kubernetes).
+
+    Register it with GitLab using a token.
+
+    Assign runners to specific projects or shared runners for all projects.
 
 ---
 
 ## 🔹 Advanced Pipelines
 
 21. **Q: What is `needs` in GitLab CI?**
-    A: Defines job dependencies, enabling parallel execution.
+    Ans: Defines job dependencies, enabling parallel execution.
 
 22. **Q: What are manual jobs?**
-    A: Jobs triggered manually using `when: manual`.
+    Ans: Jobs triggered manually using `when: manual`.
 
 23. **Q: What are scheduled pipelines?**
-    A: Pipelines triggered on schedule (cron-like).
+    Ans: Pipelines triggered on schedule (cron-like).
 
 24. **Q: How do you run pipelines on tags?**
-    A: Use `only: [tags]`.
+    Ans: Use `only: [tags]`.
 
 25. **Q: What are child pipelines?**
-    A: Pipelines triggered within another pipeline for modularization.
+    Ans: Pipelines triggered within another pipeline for modularization.
 
 26. **Q: What are multi-project pipelines?**
-    A: Triggering pipelines across projects for microservices.
+    Ans: Triggering pipelines across projects for microservices.
 
 27. **Q: How do you skip a pipeline on commit?**
-    A: Add `[ci skip]` in commit message.
+    Ans: Add `[ci skip]` in commit message.
 
 28. **Q: How to retry a failed job?**
-    A: From GitLab UI → "Retry" button.
+    Ans: From GitLab UI → "Retry" button.
 
 29. **Q: How to cancel a running pipeline?**
-    A: From GitLab UI or API.
+    Ans: From GitLab UI or API.
 
 30. **Q: How do you debug failing pipelines?**
-    A: Use `CI_DEBUG_TRACE=true` in variables.
+    Ans: Use `CI_DEBUG_TRACE=true` in variables.
 
 ---
 
 ## 🔹 Deployment & GitOps
 
 31. **Q: What are GitLab Environments?**
-    A: Logical deploy targets (staging, production) with URLs.
+    Ans: Logical deploy targets (staging, production) with URLs.
 
 32. **Q: What is GitLab Auto DevOps?**
-    A: Predefined CI/CD templates that auto-detect app and deploy via Kubernetes.
+    Ans: Predefined CI/CD templates that auto-detect app and deploy via Kubernetes.
 
 33. **Q: How do you deploy using GitLab CI/CD?**
-    A: Add deployment scripts in `.gitlab-ci.yml` under `deploy` stage.
+    Ans: Add deployment scripts in `.gitlab-ci.yml` under `deploy` stage.
 
 34. **Q: How do you integrate GitLab with Kubernetes?**
-    A: Connect K8s cluster via GitLab → Operations → Kubernetes → Deploy with CI/CD.
+    Ans: Connect K8s cluster via GitLab → Operations → Kubernetes → Deploy with CI/CD.
 
 35. **Q: How does GitLab support GitOps?**
-    A: By storing infra as code in Git and syncing via ArgoCD/Flux.
+    Ans: By storing infra as code in Git and syncing via ArgoCD/Flux.
 
 ---
 
 ## 🔹 Security
 
 36. **Q: What is GitLab SAST?**
-    A: Static Application Security Testing (checks code vulnerabilities).
+    Ans: Static Application Security Testing (checks code vulnerabilities).
 
 37. **Q: What is DAST?**
-    A: Dynamic Application Security Testing (scans running app).
+    Ans: Dynamic Application Security Testing (scans running app).
 
 38. **Q: What is dependency scanning?**
-    A: Finds vulnerable libraries in dependencies.
+    Ans: Finds vulnerable libraries in dependencies.
 
 39. **Q: What is container scanning?**
-    A: Scans Docker images for vulnerabilities.
+    Ans: Scans Docker images for vulnerabilities.
 
 40. **Q: How do you secure secrets in GitLab CI/CD?**
-    A: Use masked + protected variables, external secret managers.
+    Ans: Use masked + protected variables, external secret managers.
 
 ---
 
 ## 🔹 Admin & Maintenance
 
 41. **Q: How to backup GitLab?**
-    A: `gitlab-backup create` command (for self-hosted GitLab).
+    Ans: `gitlab-backup create` command (for self-hosted GitLab).
 
 42. **Q: How to restore GitLab from backup?**
-    A: `gitlab-backup restore`.
+    Ans: `gitlab-backup restore`.
 
 43. **Q: How to upgrade GitLab?**
-    A: Follow GitLab upgrade documentation, often via Omnibus packages.
+    Ans: Follow GitLab upgrade documentation, often via Omnibus packages.
 
 44. **Q: What is GitLab Registry?**
-    A: Built-in container registry to store Docker images.
+    Ans: Built-in container registry to store Docker images.
 
 45. **Q: How to monitor GitLab?**
-    A: Use GitLab Monitoring (Prometheus, Grafana integration).
+    Ans: Use GitLab Monitoring (Prometheus, Grafana integration).
 
 ---
 
 ## 🔹 Scenario-Based
 
 46. **Q: Your pipeline is very slow – how do you optimize?**
-    A: Use caching, parallel jobs, `needs`, and optimized Docker images.
+    Ans: Use caching, parallel jobs, `needs`, and optimized Docker images.
 
 47. **Q: A secret leaked in logs – what do you do?**
-    A: Revoke secret immediately, rotate keys, update masked variable.
+    Ans: Revoke secret immediately, rotate keys, update masked variable.
 
 48. **Q: How to deploy microservices with GitLab?**
-    A: Use multi-project pipelines + Kubernetes.
+    Ans: Use multi-project pipelines + Kubernetes.
 
 49. **Q: How do you roll back deployment in GitLab?**
-    A: Use GitOps (revert commit) or keep rollback job in pipeline.
+    Ans: Use GitOps (revert commit) or keep rollback job in pipeline.
 
 50. **Q: How do you integrate GitLab with Jira/Slack?**
-    A: Via GitLab integrations in project settings.
+    Ans: Via GitLab integrations in project settings.
 
 ---
 
