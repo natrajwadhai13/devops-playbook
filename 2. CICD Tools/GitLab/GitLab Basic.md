@@ -1,7 +1,4 @@
 ---
-
-```markdown
----
 title: • About GitLab  
 parent: • GitLab  
 grand_parent: 2. CICD Tools  
@@ -151,7 +148,6 @@ has_children: true
 - Leverage predefined variables for dynamic pipelines.
 
 ---
-```
 
 
 
