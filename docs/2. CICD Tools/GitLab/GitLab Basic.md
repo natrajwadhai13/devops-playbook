@@ -1,0 +1,172 @@
+---
+title: • About GitLab  
+parent: • GitLab  
+grand_parent: 2. CICD Tools  
+nav_order: 1  
+has_children: true  
+---
+
+# 🚀 About GitLab
+
+## 🔸 IMP Questions
+
+1. **What is GitLab?**
+2. **How is it different from GitHub/Bitbucket?**
+3. **How to use GitLab?**
+4. **How to create/manage Projects/Groups?**
+5. **How to create Pipelines in GitLab?**
+6. **Variables - Secrets, Artifacts?**
+7. **Self-hosted Runners vs SaaS Runners?**
+8. **Project Deployment via CI/CD Pipelines in GitLab?**
+
+---
+
+## 🔹 What Is GitLab?
+
+- GitLab is a **web-based DevOps lifecycle platform** that provides a complete set of tools for **source code management (SCM), CI/CD, security, and project management** in one application.
+- It is an alternative to **GitHub** and **Bitbucket**, but GitLab focuses heavily on **end-to-end DevOps workflows**.
+- Diffrent GitLab we can run in docker hub but GitHub Not. GitLab is Open Source and GitHub is used by Microshoft. ( GitLab can be **self-hosted** (e.g., via Docker), while GitHub cannot).
+
+- GitLab uses **Projects** under **Groups**, whereas GitHub uses **Repositories** under **Usernames**.
+
+| Platform | Structure | URL Format |
+|----------|-----------|------------|
+| GitLab   | Groups → Projects | `https://gitlab.com/groups/project` |
+| GitHub   | Username → Repository | `https://github.com/Username/reponame` |
+
+---
+
+## 🚀 GitLab vs GitHub vs Bitbucket: Key Differences & Capabilities
+
+### 🧭 Hosting & Deployment
+- **GitHub**:
+  - Cannot be hosted on your own server.
+  - Must use [GitHub.com](https://github.com) or purchase **GitHub Enterprise** for private hosting.
+- **GitLab**:
+  - Can be self-hosted on your own server.
+  - Offers flexibility for on-premise deployments.
+- **Bitbucket**:
+  - Also supports integration with Jira and offers additional features compared to GitLab.
+
+
+### 🔗 Integration with Jira
+- **GitLab** and **Bitbucket** both support integration with **Jira**.
+- **Bitbucket** provides **extra features** for Jira integration, such as deeper issue linking and smart commits.
+
+
+### 🤖 GitLab Duo
+- GitLab Duo is an **AI-powered DevOps assistant**.
+- Learn more: [GitLab Duo](https://about.gitlab.com/gitlab-duo/)
+
+---
+
+## 🔹 GitLab Editions
+
+- **GitLab CE (Community Edition)** → Free, open-source.
+- **GitLab EE (Enterprise Edition)** → Paid, extra features for enterprises.
+- **GitLab.com Free/Premium/Ultimate** → SaaS versions with tiered pricing.
+
+---
+
+## 🔹 Key Features of GitLab
+
+1. **Source Code Management (SCM)**
+   - Git-based version control.
+   - Merge Requests (MRs), code reviews, branching.
+   - pull requests Code reviews, inline comments, approvals.
+
+2. **CI/CD Pipelines**
+   - Defined via `.gitlab-ci.yml`.
+   - Automates build → test → deploy.
+   - Supports Docker, Kubernetes, cloud deployments.
+
+3. **DevOps Platform**
+   - Everything from planning → coding → testing → security → deployment → monitoring in one platform.
+   - Reduces the need to integrate multiple tools.
+
+4. **Security & Compliance**
+   - Built-in SAST, DAST, dependency scanning, and container scanning.
+   - Audit logs, role-based access control.
+
+5. **Project & Issue Management**
+   - Kanban boards, milestones, epics, labels.
+   - Integrated issue tracking and planning.
+
+6. **Container & Cloud Native Support**
+   - Built-in Docker registry.
+   - GitLab Container Registry (built-in private Docker registry).
+   - Easy integration with **Kubernetes** for auto-deploy.
+
+7. **Self-Hosted or SaaS**
+   - GitLab.com (SaaS) or GitLab CE/EE (self-hosted).
+   - GitLab.com → SaaS (hosted by GitLab).
+   - GitLab CE/EE → Self-hosted (install on your own servers, cloud, or VM).
+
+---
+
+## 🔹 GitLab Workflow (High-Level)
+
+1. **Code** → Developer pushes code to GitLab repo.
+2. **Review** → Code is reviewed via Merge Requests (MRs).
+3. **CI/CD** → GitLab runs automated tests/builds via pipeline.
+4. **Security** → Scans code & dependencies.
+5. **Deploy** → Deploys to staging/prod (VM, Docker, Kubernetes, cloud).
+6. **Monitor** → Track performance and issues.
+7. **Plan** → Manage issues, tasks, and sprints.
+
+---
+
+## 🔹 CI/CD Concepts in GitLab
+
+- **Pipeline**: Sequence of automated steps.
+- **Stages**: Logical groupings of jobs (e.g., build, test, deploy).
+- **Jobs**: Individual tasks within stages.
+- **Artifacts**: Store logs or output files from jobs.
+- **Tags**: Used to assign specific runners.
+- **Scripts**: Shell commands executed in jobs.
+
+---
+
+## 🔹 GitLab Variables
+
+- **Types**:
+  - User-defined
+  - Predefined
+- **Attributes**:
+  - Protected: Only for protected branches.
+  - Masked: Hidden in logs.
+  - Expanded: Can reference other variables.
+
+---
+
+## 🔹 GitLab Runners
+
+- **SaaS Runners**: Provided by GitLab.com.
+- **Self-hosted Runners**: You install and manage them on your infrastructure.
+
+---
+
+## 🔹 Deployment via GitLab CI/CD
+
+- Define pipeline in `.gitlab-ci.yml`.
+- Use stages like `build`, `test`, `deploy`.
+- Deploy to cloud, VM, Docker, or Kubernetes.
+- Use artifacts and variables for secrets and logs.
+
+---
+
+## 🔹 Why Companies Use GitLab
+
+* **All-in-one platform** → No need for Jenkins, Jira, DockerHub, SonarQube separately.
+* **Open-source friendly**.
+* **Enterprise-ready** with security, compliance, and scalability.
+* Strong **DevSecOps** capabilities.
+---
+
+## 🔹 GitLab Tips
+
+- Use `>` to overwrite a file.
+- Use `>>` to append to a file.
+- Use [GitLab Cheatsheet](https://docs.gitlab.com/ee/topics/gitlab_cheat_sheet.html).
+- Leverage predefined variables for dynamic pipelines.
+

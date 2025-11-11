@@ -9,10 +9,7 @@ layout: none
   <title>Natraj DevOps Notes</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    /* Global */
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -53,9 +50,7 @@ layout: none
       margin: 0 15px;
       transition: color 0.2s;
     }
-    nav a:hover {
-      color: #0b5ed7;
-    }
+    nav a:hover { color: #0b5ed7; }
 
     /* Main Content */
     main {
@@ -66,15 +61,13 @@ layout: none
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     }
-    section {
-      margin-bottom: 35px;
-    }
+    section { margin-bottom: 35px; }
     h2 {
       color: #0d6efd;
       margin-bottom: 10px;
     }
 
-    /* Topics List */
+    /* Topics */
     ul {
       list-style: none;
       padding-left: 0;
@@ -88,9 +81,7 @@ layout: none
       font-weight: 600;
       transition: color 0.2s;
     }
-    ul li a:hover {
-      color: #0d6efd;
-    }
+    ul li a:hover { color: #0d6efd; }
 
     /* Button */
     .button {
@@ -103,9 +94,7 @@ layout: none
       text-decoration: none;
       transition: background 0.2s;
     }
-    .button:hover {
-      background: #0b5ed7;
-    }
+    .button:hover { background: #0b5ed7; }
 
     /* Footer */
     footer {
@@ -116,10 +105,7 @@ layout: none
       font-size: 0.9rem;
       margin-top: 40px;
     }
-    footer a {
-      color: #fff;
-      text-decoration: underline;
-    }
+    footer a { color: #fff; text-decoration: underline; }
   </style>
 </head>
 
@@ -150,16 +136,29 @@ layout: none
     <section>
       <h2>🧩 Topics Covered</h2>
       <ul>
-        <li><a href="#">Docker & Containers</a></li>
-        <li><a href="#">Kubernetes (K8s) & EKS</a></li>
-        <li><a href="#">CI/CD with GitLab & Jenkins</a></li>
-        <li><a href="#">Infrastructure as Code (Terraform / Ansible)</a></li>
-        <li><a href="#">Cloud Platforms (AWS / Azure / GCP)</a></li>
-        <li><a href="#">Monitoring (Prometheus / Grafana)</a></li>
-        <li><a href="#">Security & Best Practices</a></li>
+        <li><a href="docs/1-devops/">1️⃣ DevOps</a></li>
+        <ul style="margin-left:20px;">
+          <li><a href="docs/1-devops/devops-interview/">• DevOps Interview</a></li>
+          <ul style="margin-left:20px;">
+            <li><a href="docs/1-devops/devops-interview/gitlab.html">→ GitLab</a></li>
+          </ul>
+          <li><a href="docs/1-devops/tools.html">• DevOps Tools</a></li>
+        </ul>
+
+        <li><a href="docs/2-cicd-tools/">2️⃣ CI/CD Tools</a></li>
+        <ul style="margin-left:20px;">
+          <li><a href="docs/2-cicd-tools/jenkins.html">• Jenkins</a></li>
+        </ul>
+
+        <li><a href="docs/3-core-tools/">3️⃣ DevOps Core Tools</a></li>
+        <ul style="margin-left:20px;">
+          <li><a href="docs/3-core-tools/ansible.html">• Ansible</a></li>
+        </ul>
       </ul>
 
-      <p><a href="https://natrajwadhai13.github.io/devops-notes/docs/" class="button">👉 Explore Full Notes</a></p>
+      <p style="margin-top:20px;">
+        <a href="docs/" class="button">👉 Explore Full Notes</a>
+      </p>
     </section>
 
     <section>
