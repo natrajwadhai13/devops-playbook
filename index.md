@@ -3,6 +3,123 @@ title: Home
 nav_order: 1
 ---
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Natraj DevOps Notes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f5f6fa;
+      color: #333;
+    }
+    header {
+      background: #0d6efd;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    main {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #0d6efd;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      padding: 8px 0;
+    }
+    ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    ul li a:hover {
+      color: #0d6efd;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0d6efd;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚀 Natraj DevOps Study Notes</h1>
+    <p>All-in-one resource for mastering real-world DevOps interview topics</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>📘 About This Site</h2>
+      <p>
+        Welcome to my personal DevOps Notes collection!  
+        This site contains practical, interview-oriented notes from my learning and work experience — covering tools like AWS, Docker, Kubernetes, Jenkins, Ansible, Terraform, GitLab CI/CD, and more.
+      </p>
+    </section>
+
+    <section>
+      <h2>🧩 Topics Covered</h2>
+      <ul>
+        <li><a href="#">Docker & Containers</a></li>
+        <li><a href="#">Kubernetes (K8s) & EKS</a></li>
+        <li><a href="#">CI/CD with GitLab & Jenkins</a></li>
+        <li><a href="#">Infrastructure as Code (Terraform / Ansible)</a></li>
+        <li><a href="#">Cloud Platforms (AWS / Azure / GCP)</a></li>
+        <li><a href="#">Monitoring (Prometheus / Grafana)</a></li>
+        <li><a href="#">Security & Best Practices</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>💡 My Goal</h2>
+      <p>
+        My focus is to build complete DevOps pipelines integrating automation, CI/CD, and cloud deployments — while continuously improving performance, security, and scalability.
+      </p>
+    </section>
+
+    <section>
+      <h2>🙏 Thank You</h2>
+      <p>
+        Thanks for visiting my DevOps Notes Website!  
+        Feel free to connect or explore my GitLab/GitHub repositories for real project examples.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Natraj | DevOps Engineer | <a href="mailto:natraj@example.com" style="color: #fff;">Contact</a>
+  </footer>
+</body>
+</html>
+
+
+
+
+======================================================
 
 # DevOps & Cloud Tools
 
