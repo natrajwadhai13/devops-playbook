@@ -1,4 +1,4 @@
-title: DevOps Notes
+title: 🏠 Home
 description: Your complete DevOps study reference.
 remote_theme: just-the-docs/just-the-docs
 
@@ -21,7 +21,7 @@ just_the_docs:
 
   collections:
     devops:
-      name: "🏠 Home"
+      name: "DevOps Notes"
       permalink: /:path/
 
   nav_sort: case_insensitive
