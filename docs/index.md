@@ -110,19 +110,33 @@ nav_order: 1
       <h2>📚 Complete Toolset Overview</h2>
 
 - **1. DevOps Interview Topics**
+
 - **2. CI/CD Tools:** Jenkins, GitLab, GitHub Actions, ArgoCD, Spinnaker  
-- **3. Core Tools:** Docker, Kubernetes, Helm, Rancher, OpenShift  
-- **4. Cloud Platforms:** AWS, Azure, GCP  
-- **5. Scripting:** Shell, Python, Groovy, YAML, JSON  
-- **6. IaC Tools:** Terraform, CloudFormation, Pulumi  
-- **7. Configuration Management:** Ansible, Puppet, Chef  
-- **8. Version Control:** Git, GitHub, Bitbucket  
+
+- **3. Core Tools:** Docker, Kubernetes, Helm, Rancher, OpenShift 
+
+- **4. Cloud Platforms:** AWS, Azure, GCP 
+
+- **5. Scripting:** Shell, Python, Groovy, YAML, JSON
+
+- **6. IaC Tools:** Terraform, CloudFormation, Pulumi
+
+- **7. Configuration Management:** Ansible, Puppet, Chef
+
+- **8. Version Control:** Git, GitHub, Bitbucket 
+
 - **9. Monitoring:** Prometheus, Grafana, ELK, Splunk  
+
 - **10. Build Tools:** Maven, Gradle, npm  
-- **11. OS & Web:** Linux, NGINX, Apache  
+
+- **11. OS & Web:** Linux, NGINX, Apache 
+
 - **12. Database:** MySQL, PostgreSQL, MongoDB  
-- **13. ITSM:** Jira, ServiceNow  
-- **14. IDEs:** VS Code, IntelliJ, PyCharm  
+
+- **13. ITSM:** Jira, ServiceNow
+
+- **14. IDEs:** VS Code, IntelliJ, PyCharm 
+ 
 - **15. QA Tools:** Postman, SonarQube  
 
     </section>
