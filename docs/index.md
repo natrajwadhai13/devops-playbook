@@ -103,132 +103,106 @@ nav_order: 1
         <li><a href="#">Infrastructure as Code (Terraform / Ansible)</a></li>
         <li><a href="#">Monitoring (Prometheus / Grafana)</a></li>
         <li><a href="#">Security & Best Practices</a></li>
+      
+
+        <li>
+        <a href="https://natrajwadhai13.github.io/devops-playbook/1.%20DevOps%20Interview/DevOps.html" target="_blank">
+        <strong>1. DevOps :</strong> DevOps Roadmap, DevOps Interview, Useful DevOps Resources
+        </a>
+        </li>
+
+        <li>
+        <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+       <strong>2. CI/CD Tools:</strong> Jenkins, GitLab, GitHub Actions, ArgoCD, Spinnaker
+        </a>
+        </li>
+
+        <li>
+        <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+        <strong>3. Core Tools:</strong> Docker, Kubernetes, Helm, Rancher, OpenShift
+        </a>
+        </li>
+
+        <li>
+        <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+        <strong>4. Cloud Platforms:</strong> AWS, Azure, GCP
+        </a>
+        </li>
+
+        <li>
+          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+            <strong>5. Scripting:</strong> Shell, Python, Groovy, YAML, JSON
+          </a>
+        </li>
+
+        <li>
+          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+            <strong>6. IaC Tools:</strong> Terraform, CloudFormation, Pulumi
+          </a>
+        </li>
+
+        <li>
+          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+            <strong>7. Configuration Management:</strong> Ansible, Puppet, Chef
+          </a>
+        </li>
+
+        <li>
+          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+            <strong>8. Version Control:</strong> Git, GitHub, Bitbucket
+          </a>
+        </li>
+
+        <li>
+          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+            <strong>9. Monitoring:</strong>  Prometheus, Grafana, ELK, Splunk
+          </a>
+        </li>
+
+        <li>
+          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+            <strong>10. Build Tools:</strong> Maven, Gradle, NPM
+          </a>
+        </li>
+
+        <li>
+          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+            <strong>11. OS & Web:</strong> Linux, NGINX, Apache
+          </a>
+        </li>
+
+        <li>
+          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+            <strong>12. Database:</strong> MySQL, PostgreSQL, MongoDB
+          </a>
+        </li>
+
+        <li>
+          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+            <strong>13. ITSM:</strong> Jira, ServiceNow
+          </a>
+        </li>
+
+        <li>
+          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+            <strong>14. IDEs:</strong> VS Code, IntelliJ, PyCharm
+          </a>
+        </li>
+
+        <li>
+          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+            <strong>15. QA Tools:</strong> Postman, SonarQube
+          </a>
+        </li>
+
       </ul>
-
-      <li>
-  <a href="https://natrajwadhai13.github.io/devops-playbook/1.%20DevOps%20Interview/DevOps.html" target="_blank">
-    <strong>1. DevOps :</strong> DevOps Roadmap, DevOps Interview, Useful DevOps Resources
-  </a>
-</li>
-
-<li>
-  <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
-    <strong>2. CI/CD Tools:</strong> Jenkins, GitLab, GitHub Actions, ArgoCD, Spinnaker
-  </a>
-</li>
-
-<li>
-  <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
-    <strong>3. Core Tools:</strong> Docker, Kubernetes, Helm, Rancher, OpenShift
-  </a>
-</li>
-
-<li>
-  <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
-    <strong>4. Cloud Platforms:</strong> AWS, Azure, GCP
-  </a>
-</li>
-
-<li>
-  <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
-    <strong>5. Scripting:</strong> Shell, Python, Groovy, YAML, JSON
-  </a>
-</li>
-
-<li>
-  <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
-    <strong>6. IaC Tools:</strong> Terraform, CloudFormation, Pulumi
-  </a>
-</li>
-
-<li>
-  <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
-    <strong>7. Configuration Management:</strong> Ansible, Puppet, Chef
-  </a>
-</li>
-
-<li>
-  <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
-    <strong>8. Version Control:</strong> Git, GitHub, Bitbucket
-  </a>
-</li>
-
-<li>
-  <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
-    <strong>9. Monitoring:</strong>  Prometheus, Grafana, ELK, Splunk
-  </a>
-</li>
-
-<li>
-  <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
-    <strong>10. Build Tools:</strong> Maven, Gradle, NPM
-  </a>
-</li>
-
-<li>
-  <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
-    <strong>11. OS & Web:</strong> Linux, NGINX, Apache
-  </a>
-</li>
-
-<li>
-  <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
-    <strong>12. Database:</strong> MySQL, PostgreSQL, MongoDB
-  </a>
-</li>
-
-<li>
-  <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
-    <strong>13. ITSM:</strong> Jira, ServiceNow
-  </a>
-</li>
-
-<li>
-  <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
-    <strong>14. IDEs:</strong> VS Code, IntelliJ, PyCharm
-  </a>
-</li>
-
-<li>
-  <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
-    <strong>15. QA Tools:</strong> Postman, SonarQube
-  </a>
-</li>
 
     </section>
 
     <section>
       <h2>📚 Complete Toolset Overview</h2>
 
-- **1. DevOps Interview Topics**
 
-- **2. CI/CD Tools:** Jenkins, GitLab, GitHub Actions, ArgoCD, Spinnaker  
-
-- **3. Core Tools:** Docker, Kubernetes, Helm, Rancher, OpenShift 
-
-- **4. Cloud Platforms:** AWS, Azure, GCP 
-
-- **5. Scripting:** Shell, Python, Groovy, YAML, JSON
-
-- **6. IaC Tools:** Terraform, CloudFormation, Pulumi
-
-- **7. Configuration Management:** Ansible, Puppet, Chef
-
-- **8. Version Control:** Git, GitHub, Bitbucket 
-
-- **9. Monitoring:** Prometheus, Grafana, ELK, Splunk  
-
-- **10. Build Tools:** Maven, Gradle, npm  
-
-- **11. OS & Web:** Linux, NGINX, Apache 
-
-- **12. Database:** MySQL, PostgreSQL, MongoDB  
-
-- **13. ITSM:** Jira, ServiceNow
-
-- **14. IDEs:** VS Code, IntelliJ, PyCharm 
- 
-- **15. QA Tools:** Postman, SonarQube  
 
     </section>
 
