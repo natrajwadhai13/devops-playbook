@@ -11,23 +11,36 @@ sass:
   style: compressed
 
 just_the_docs:
-  logo: "/assets/images/devops-logo.png"
-  favicon_ico: "/assets/images/favicon.ico"
+  logo: "/assets/images/devops-logo.png" # Add your own image here
+  favicon_ico: "/assets/images/favicon.ico" # Optional small browser tab icon
   search_enabled: true
   search_tokenizer_separator: /[\s/]+/
   heading_anchors: true
   last_edit_timestamp: false
   show_last_modified_time: false
 
+  # Navigation Behavior
   collections:
     devops:
       name: "DevOps Notes"
       permalink: /:path/
 
   nav_sort: case_insensitive
+
+# Custom CSS (Optional)
+just_the_docs:
   custom_css: custom/custom.scss
 
+# Useful resource links on top-right
 aux_links:
-  🏠 Home: https://natrajwadhai13.github.io/devops-notes/
   GitHub Repo: https://github.com/natrajwadhai13/devops-notes
-  Portfolio: https://your-portfolio.com
+  Portfolio: https://your-portfolio.com # <- optional, add if you want
+
+# Optional default nav (if needed)
+# nav:
+#   - title: Home
+#     url: /
+#   - title: Git
+#     children:
+#       - title: Git Basics
+#         url: /git/basics
