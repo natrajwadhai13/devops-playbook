@@ -21,7 +21,7 @@ just_the_docs:
 
   collections:
     devops:
-      name: "DevOps Notes"
+      name: "🏠 Home"
       permalink: /:path/
 
   nav_sort: case_insensitive
