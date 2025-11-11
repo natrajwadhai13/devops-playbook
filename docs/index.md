@@ -96,15 +96,7 @@ nav_order: 1
     <section>
       <h2>🧩 Study Topics</h2>
       <ul>
-        <li><a href="https://natrajwadhai13.github.io/devops-notes/1.%20DevOps%20Interview/DevOps.html" target="_blank">Docker & Containers</a></li>
-        <li><a href="https://natrajwadhai13.github.io/devops-notes/3.%20DevOps%20Core%20Tools/3.2%20Orchestration/Kubernetes/Kubernetes.html" target="_blank">Kubernetes (K8s) & EKS</a></li>
-        <li><a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">CI/CD with GitLab & Jenkins</a></li>
-        <li><a href="https://natrajwadhai13.github.io/devops-notes/4.%20Cloud%20Platforms/4.%20Cloud%20Platforms.html" target="_blank">Cloud Platforms (AWS / Azure / GCP)</a></li>
-        <li><a href="#">Infrastructure as Code (Terraform / Ansible)</a></li>
-        <li><a href="#">Monitoring (Prometheus / Grafana)</a></li>
-        <li><a href="#">Security & Best Practices</a></li>
       
-
         <li>
         <a href="https://natrajwadhai13.github.io/devops-playbook/1.%20DevOps%20Interview/DevOps.html" target="_blank">
         <strong>1. DevOps :</strong> DevOps Roadmap, DevOps Interview, Useful DevOps Resources
@@ -112,43 +104,43 @@ nav_order: 1
         </li>
 
         <li>
-        <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+        <a href="https://natrajwadhai13.github.io/devops-playbook/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
        <strong>2. CI/CD Tools:</strong> Jenkins, GitLab, GitHub Actions, ArgoCD, Spinnaker
         </a>
         </li>
 
         <li>
-        <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+        <a href="https://natrajwadhai13.github.io/devops-playbook/3.%20DevOps%20Core%20Tools/3.%20DevOps%20Core%20Tools.html" target="_blank">
         <strong>3. Core Tools:</strong> Docker, Kubernetes, Helm, Rancher, OpenShift
         </a>
         </li>
 
         <li>
-        <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+        <a href="https://natrajwadhai13.github.io/devops-playbook/4.%20Cloud%20Platforms/4.%20Cloud%20Platforms.html" target="_blank">
         <strong>4. Cloud Platforms:</strong> AWS, Azure, GCP
         </a>
         </li>
 
         <li>
-          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+          <a href="https://natrajwadhai13.github.io/devops-playbook/5.%20Scripting%20Languages/5.%20Scripting%20Languages.html" target="_blank">
             <strong>5. Scripting:</strong> Shell, Python, Groovy, YAML, JSON
           </a>
         </li>
 
         <li>
-          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+          <a href="https://natrajwadhai13.github.io/devops-playbook/6.%20Cloud%20Automation%20Tools/6.%20Cloud%20Automation%20Tools.html" target="_blank">
             <strong>6. IaC Tools:</strong> Terraform, CloudFormation, Pulumi
           </a>
         </li>
 
         <li>
-          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+          <a href="https://natrajwadhai13.github.io/devops-playbook/7.%20Configuration%20Management%20Tools/7.%20Configuration%20Management%20Tools.html" target="_blank">
             <strong>7. Configuration Management:</strong> Ansible, Puppet, Chef
           </a>
         </li>
 
         <li>
-          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+          <a href="https://natrajwadhai13.github.io/devops-playbook/8.%20Repository%20Management%20(VCS)%20Tools/8.%20Repository%20Management%20(VCS)%20Tools.html" target="_blank">
             <strong>8. Version Control:</strong> Git, GitHub, Bitbucket
           </a>
         </li>
@@ -160,38 +152,44 @@ nav_order: 1
         </li>
 
         <li>
-          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+          <a href="https://natrajwadhai13.github.io/devops-playbook/10.%20Build%20Tools/10.%20Build%20Tools.html" target="_blank">
             <strong>10. Build Tools:</strong> Maven, Gradle, NPM
           </a>
         </li>
 
         <li>
-          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+          <a href="https://natrajwadhai13.github.io/devops-playbook/11.%20Operating%20System%20(OS)/11.%20Operating%20System%20(OS).html" target="_blank">
             <strong>11. OS & Web:</strong> Linux, NGINX, Apache
           </a>
         </li>
 
         <li>
-          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+          <a href="https://natrajwadhai13.github.io/devops-playbook/12.%20Web%20Server/12.%20Web%20Server.html" target="_blank">
             <strong>12. Database:</strong> MySQL, PostgreSQL, MongoDB
           </a>
         </li>
 
         <li>
-          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+          <a href="https://natrajwadhai13.github.io/devops-playbook/13.%20Database/13.%20Database.html" target="_blank">
             <strong>13. ITSM:</strong> Jira, ServiceNow
           </a>
         </li>
 
         <li>
-          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+          <a href="https://natrajwadhai13.github.io/devops-playbook/14.%20Ticketing%20Tools%20%20ITSM/14.%20Ticketing%20Tools%20_ITSM.html" target="_blank">
             <strong>14. IDEs:</strong> VS Code, IntelliJ, PyCharm
           </a>
         </li>
 
         <li>
-          <a href="https://natrajwadhai13.github.io/devops-notes/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
+          <a href="https://natrajwadhai13.github.io/devops-playbook/15.%20IDEs%20for%20Development%20&%20DevOps/15.%20IDEs%20for%20Development%20&%20DevOps.html" target="_blank">
             <strong>15. QA Tools:</strong> Postman, SonarQube
+          </a>
+        </li>
+
+        <li>
+          <a href="https://natrajwadhai13.github.io/devops-playbook/16.%20Other%20Useful%20Tools/16.%20Other%20Useful%20Tools.html" target="_blank">
+            <strong>15. Other Tools:</strong> Coming soon...
           </a>
         </li>
 
@@ -216,7 +214,8 @@ nav_order: 1
     <section>
       <h2>📂 Portfolio & Contact</h2>
       <p>
-        Explore my <a href="https://github.com/natrajwadhai13" target="_blank">GitHub Projects</a> or connect with me for collaboration opportunities.  
+        Explore my <a href="https://github.com/natrajwadhai13" target="_blank">GitHub Projects</a> or connect with me for collaboration opportunities.
+
         Coming soon: personal portfolio & resume integration into this hub.
       </p>
     </section>
@@ -224,7 +223,7 @@ nav_order: 1
 
   <footer>
     © 2025 <strong>Natraj</strong> | DevOps Engineer  
-    <br><a href="mailto:natraj@example.com">Contact Me</a> | <a href="https://github.com/natrajwadhai13/devops-playbook" target="_blank">GitHub Repo</a>
+    <br><a href="mailto:natrajwadhai13@gmail.com.com">Contact Me</a> | <a href="https://github.com/natrajwadhai13/devops-playbook" target="_blank">GitHub Repo</a>
   </footer>
 </body>
 </html>
