@@ -21,13 +21,13 @@ just_the_docs:
 
   collections:
     devops:
-      name: "DevOps Notes"
+      name: "DevOps Playbook"
       permalink: /:path/
 
   nav_sort: case_insensitive
   custom_css: custom/custom.scss
 
 aux_links:
-  🏠 Home: https://natrajwadhai13.github.io/devops-notes/
-  GitHub Repo: https://github.com/natrajwadhai13/devops-notes
+  🏠 Home: https://natrajwadhai13.github.io/devops-playbook/
+  GitHub Repo: https://github.com/natrajwadhai13/devops-playbook
   Portfolio: https://your-portfolio.com
