@@ -223,7 +223,7 @@ nav_order: 1
 
   <footer>
     © 2025 <strong>Natraj</strong> | DevOps Engineer  
-    <br><a href="mailto:natrajwadhai13@gmail.com.com">Contact Me</a> | <a href="https://github.com/natrajwadhai13/devops-playbook" target="_blank">GitHub Repo</a>
+    <br><a href="mailto:natrajwadhai13@gmail.com.com">Contact Me</a> | <a href="https://natrajwadhai13.github.io/devops-playbook/" target="_blank">GitHub Repo</a>
   </footer>
 </body>
 </html>
