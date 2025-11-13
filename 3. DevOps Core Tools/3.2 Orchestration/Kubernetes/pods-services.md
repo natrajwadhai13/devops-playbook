@@ -1,9 +1,9 @@
 ---
 title: "• Pods-Services"
 parent: "• Kubernetes"
-grand_parent: "• 3.1 Containerization"
-great_grand_parent: "3. DevOps Core Tools"
-nav_order: 2
+grand_parent: "• 3.2 Orchestration"
+great_grand_parent: 3. DevOps Core Tools
+nav_order: 3
 has_children: true
 ---
 

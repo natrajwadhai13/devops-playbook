@@ -5,7 +5,222 @@ grand_parent: 3. DevOps Core Tools
 nav_order: 1
 has_children: true
 ---
+# 🚀 Kubernetes & Kubectl Complete Course Content
 
+---
+
+## 🧭 Top-Level Summary
+
+| **Module** | **Topics Covered** | **Hands-On / Practical** |
+|-------------|--------------------|---------------------------|
+| **1. Containers & Kubernetes Setup** | Containers, Minikube, Docker Client, Kops, Kubeadm, Docker Image Registry, LoadBalancer | Setup K8s using Minikube, Build Images, Deploy First App, Load Balancing |
+| **2. Kubernetes Basics** | Architecture, Services, Secrets, Scaling, Rolling Updates, Ingress | Deploy Services, Health Checks, ReplicaSets |
+| **3. Advanced Topics** | Persistent Volumes, Taints & Tolerations, ConfigMaps, Ingress Controller, Affinity, StatefulSets, CRDs | Using Volumes, StatefulSets, Monitoring, Tolerations |
+| **4. Kubernetes Administration** | Namespaces, RBAC, Resource Quotas, Networking, Node Maintenance, TLS | Managing Users, HA Setup, Resource Quotas |
+| **5. Packaging with Helm** | Helm Charts, Templates, Repositories | Working with Helm, Create Own Charts |
+| **6. Continuous Development (Skaffold)** | Skaffold Setup & CI/CD Flow | Using Skaffold |
+| **7. Serverless on Kubernetes** | Serverless Concepts, Kuberless Framework | Deploy Serverless Apps |
+| **8. Microservices with Istio** | Istio, Mutual TLS, RBAC, JWT Authentication | Working with Istio & Authentication |
+| **9. Installing Kubernetes using Kubeadm** | Cluster Bootstrap with Kubeadm | Running Basic Commands |
+| **10. Cloud & Monitoring** | TLS, Dashboard, Prometheus | Using Certs, Dashboard, Prometheus |
+
+---
+
+## 🎯 Learning Objective
+> Introduction to Kubernetes, setting up and running Docker containers, deploying your first app in Kubernetes, and load balancing using LoadBalancer services.
+
+---
+
+## 🧱 Containers & Kubernetes Setup
+
+| Topic | Description |
+|--------|-------------|
+| **Containers Introduction** | Overview of containerization concepts |
+| **Kubernetes Setup** | Installing and configuring Kubernetes |
+| **Local Setup with Minikube** | Setting up a single-node local cluster |
+| **Installing Kubernetes using Docker Client** | Use Docker for lightweight K8s setup |
+| **Minikube vs Docker Client vs Kops vs Kubeadm** | Comparison of popular Kubernetes tools |
+| **Introduction to Kops** | Setup production-grade clusters on cloud |
+| **Building Docker Images** | Creating and pushing Docker images |
+| **Docker Image Registry** | Working with Docker Hub / ECR / GCR |
+| **Running First App on Kubernetes** | Deploying simple apps via Pods |
+| **Service with LoadBalancer** | Exposing services using K8s LoadBalancer |
+| **Service with AWS ELB LoadBalancer** | Integrating AWS ELB with Kubernetes |
+
+### 🧪 Hands-On
+- Setup Kubernetes using **Minikube**  
+- Build **Docker Images**  
+- Run Applications on Kubernetes  
+- Load Balance using **ClusterIP / NodePort / LoadBalancer**  
+- AWS ELB Integration  
+
+---
+
+## 📚 Kubernetes Basics
+
+| Concept | Description |
+|----------|--------------|
+| **Architecture & Pod Lifecycle** | Core structure and how pods run |
+| **Kubernetes Services** | Scheduling, self-healing, load balancing, scaling |
+| **Secrets & Config Management** | Manage configuration and credentials |
+| **Auto Scaling (HPA)** | Horizontal scaling based on CPU/memory |
+| **Rolling Updates / Rollback** | Version management and rollback |
+| **Ingress / API Gateway** | Managing external access to services |
+
+### 🧩 Core Components
+- Node Architecture  
+- Replication Controller  
+- Deployments  
+- Services  
+- Labels  
+- Health Checks  
+- Readiness Probes  
+- Pod Lifecycle & State  
+- Secrets  
+- Web UI  
+
+### 🧪 Hands-On
+- Deploy multiple services  
+- Create ReplicaSets and Controllers  
+- Implement health checks  
+
+---
+
+## ⚡ Advanced Kubernetes Topics
+
+| Concept | Description |
+|----------|--------------|
+| **Persistent Volumes** | Manage storage using PV/PVC |
+| **Auto Scaling** | Scale pods dynamically |
+| **Taints & Tolerations** | Control where pods run |
+| **Affinity / Anti-Affinity** | Pod placement logic |
+| **Service Directory** | Internal DNS and discovery |
+| **ConfigMap** | Key-value configuration |
+| **Ingress Controller** | Manage HTTP/S routing |
+| **External DNS** | Map domains to services |
+| **StatefulSets** | Handle persistent workloads |
+| **DaemonSets** | Run pods on all nodes |
+| **Monitoring Resource Usage** | Track cluster performance |
+| **Custom Resource Definitions (CRDs)** | Extend Kubernetes API |
+| **Operators** | Automate app management |
+
+### 🧪 Hands-On
+- Work with Volumes & DaemonSets  
+- Configure Auto Scaling  
+- Deploy StatefulSets  
+- Monitor Resources  
+- Create Affinity & Interpod Affinity  
+
+---
+
+## 🧑‍💼 Kubernetes Administration
+
+| Concept | Description |
+|----------|--------------|
+| **Kubernetes Master Services** | API Server, Scheduler, Controller Manager |
+| **Resource Quotas** | Manage resource usage per namespace |
+| **Namespaces** | Logical segmentation of resources |
+| **User Management** | Manage users and access |
+| **RBAC** | Fine-grained role control |
+| **Networking** | CNI plugins and pod networking |
+| **Node Maintenance** | Drain and cordon nodes |
+| **High Availability** | Redundancy and fault tolerance |
+| **TLS on ELB using Annotations** | Secure communication with HTTPS |
+
+### 🧪 Hands-On
+- Manage Users and RBAC  
+- Configure Networking  
+- View Resource Quotas  
+- Maintain Nodes & Ensure HA  
+
+---
+
+## 📦 Packaging with Helm
+
+| Concept | Description |
+|----------|--------------|
+| **Introduction to Helm** | Kubernetes package manager |
+| **Creating Helm Charts** | Build reusable templates |
+| **Using Repositories** | Store and share Helm charts |
+
+### 🧪 Hands-On
+- Working with Helm  
+- Create your own Helm Charts  
+
+---
+
+## 🔄 Continuous Development (Skaffold)
+
+| Concept | Description |
+|----------|--------------|
+| **Introduction to Skaffold** | Tool for continuous development |
+| **CI/CD Workflow** | Automate build and deploy process |
+
+### 🧪 Hands-On
+- Using Skaffold for quick iteration  
+
+---
+
+## ☁️ Serverless on Kubernetes
+
+| Concept | Description |
+|----------|--------------|
+| **Introduction to Serverless** | Event-driven architecture |
+| **Introduction to Kuberless** | Combining Kubernetes with serverless |
+
+### 🧪 Hands-On
+- Deploy Serverless Functions  
+- Explore Kuberless  
+
+---
+
+## 🧩 Microservices with Istio
+
+| Concept | Description |
+|----------|--------------|
+| **Introduction to Istio** | Service mesh fundamentals |
+| **Mutual TLS** | Secure pod-to-pod communication |
+| **RBAC with Istio** | Access control within service mesh |
+| **JWT Authentication** | End-user auth with JSON Web Tokens |
+
+### 🧪 Hands-On
+- Setup Istio  
+- Configure Authentication with JWT  
+
+---
+
+## 🏗️ Installing Kubernetes using Kubeadm
+
+| Concept | Description |
+|----------|--------------|
+| **Introduction to Kubeadm** | Bootstrap clusters manually |
+| **Cluster Setup** | Setup master and worker nodes |
+
+### 🧪 Hands-On
+- Run basic Kubeadm commands  
+
+---
+
+## 🌎 Cloud / On-Prem Kubernetes Monitoring
+
+| Concept | Description |
+|----------|--------------|
+| **Managing TLS Certificates** | Using Cert-Manager |
+| **Kubernetes Dashboard** | Visual cluster management |
+| **Prometheus Integration** | Collect metrics and alerts |
+
+### 🧪 Hands-On
+- Manage TLS Certificates  
+- Use Kubernetes Dashboard  
+- Integrate Prometheus  
+
+---
+
+🎓 **End of Kubernetes Course Content – Ready for Real-World Projects**
+
+
+
+---------------------------------------------
 
 # ☸ Kubernetes Roadmap (2025)
 
