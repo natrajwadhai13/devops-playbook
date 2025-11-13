@@ -1,15 +1,10 @@
 ---
 title: "• Basics"
 parent: "• Kubernetes"
-grand_parent: "• 3.1 Containerization"
-great_grand_parent: "3. DevOps Core Tools"
+grand_parent: "• 3.2 Orchestration"
+great_grand_parent: 3. DevOps Core Tools
 nav_order: 1
 has_children: true
----
-Perfect ✅
-Here’s your entire **Kubernetes Masterclass** chapter — fully cleaned, structured, and formatted for **GitHub Markdown (`.md`)** usage.
-It’s designed to look great on **GitHub Pages** or any markdown viewer — with proper headings, TOC, code formatting, and easy navigation.
-
 ---
 
 # 📘 Comprehensive Kubernetes (K8s) Mastery
@@ -305,16 +300,3 @@ Hands-on learning with **Kind**, **Minikube**, and **EKS** prepares engineers fo
 * **Projects:** Chat App, Voting App, Monitoring Stack, CI/CD.
 
 ---
-
-✅ **Ready to Use:**
-You can now save this as
-`Kubernetes_Masterclass.md`
-and upload it directly to your GitHub Pages site (for example:
-`/3. DevOps Core Tools/3.2 Orchestration/Kubernetes/Kubernetes_Masterclass.md`).
-
----
-
-Would you like me to:
-
-* Add **syntax-highlighted YAML and bash examples** for key topics (setup, deployment, RBAC, Helm)?
-  That would make it more interactive for learners.

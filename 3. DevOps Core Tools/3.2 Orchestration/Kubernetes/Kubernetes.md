@@ -91,6 +91,4 @@ Kubernetes (K8s) is at the core of modern DevOps. Here's a comprehensive roadmap
 
 ---
 
-> 🔄 **Tip**: Use this roadmap in your README or GitHub Wiki. Update your DevOps notes regularly as new tools and patterns emerge.
-
 
