@@ -1,0 +1,49 @@
+site_name: DevOps Notes
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  features:
+    - navigation.tabs
+    - navigation.expand
+
+nav:
+  - Home: index.md
+  - Kubernetes:
+      - Overview: Kubernetes/Kubernetes.md
+      - Basics: Kubernetes/Basics.md
+      - Kubernetes Commands: Kubernetes/Kubernetes-Commands.md
+      - Pods & Services: Kubernetes/Pods-Services.md
+      - Storage: Kubernetes/Storage.md
+      - Scheduling & Networking: Kubernetes/Scheduling-Networking.md
+      - Security: Kubernetes/Security.md
+      - Helm: Kubernetes/Helm.md
+      - GitOps: Kubernetes/GitOps.md
+      - Observability: Kubernetes/Observability.md
+      - Autoscaling: Kubernetes/Autoscaling.md
+      - Service Mesh: Kubernetes/Service-Mesh.md
+
+  - Hands-On:
+      - Kubernetes Commands: Hands-On/Kubernetes-Commands.md
+      - YAML Practice: Hands-On/YAML-Practice.md
+      - Minikube Setup: Hands-On/Minikube-Setup.md
+      - Helm Practice: Hands-On/Helm-Practice.md
+      - ArgoCD Setup: Hands-On/ArgoCD-Setup.md
+
+  - Interview:
+      - K8s Interview Questions: Interview/K8s-Interview-Questions.md
+      - Helm Interview: Interview/Helm-Interview.md
+      - DevOps + K8s Integration: Interview/DevOps-K8s-Integration.md
+      - Real-Time Scenarios: Interview/Real-Time-Scenarios.md
+
+  - Advanced:
+      - Architecture Deep Dive: Advanced/Kubernetes-Architecture-DeepDive.md
+      - Operators & CRDs: Advanced/Operators-and-CRD.md
+      - Multi-Cluster Setup: Advanced/Multi-Cluster-Setup.md
+      - Advanced Security: Advanced/Kubernetes-Security-Advanced.md
+      - Troubleshooting: Advanced/K8s-Troubleshooting.md
+
+  - Summary:
+      - Overview: Summary/Kubernetes-Overview.md
+      - Quick Revision: Summary/Kubernetes-Quick-Revision.md
+      - Notes: Summary/Kubernetes-Notes.md

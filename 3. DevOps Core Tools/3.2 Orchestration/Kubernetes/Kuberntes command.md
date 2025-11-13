@@ -7,8 +7,7 @@ nav_order: 3
 has_children: true
 ---
 
-Perfect 👍 Let’s convert and **rearrange your Kubernetes commands** into a clean, professional **Markdown (.md)** table format — ideal for GitHub Pages or your documentation site.
-I’ll also expand it slightly with missing commonly used commands and organize it section-wise.
+
 
 ---
 
