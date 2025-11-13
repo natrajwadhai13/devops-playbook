@@ -1,7 +1,7 @@
 ---
 title: "• Package Verification & Registration Services"
 parent: 3. DevOps Core Tools
-nav_order: 1
+nav_order: 3
 has_children: true
 ---
 
