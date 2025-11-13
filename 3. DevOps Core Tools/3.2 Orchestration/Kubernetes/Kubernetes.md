@@ -15,75 +15,38 @@ Kubernetes (K8s) is at the core of modern DevOps. Here's a comprehensive roadmap
 
 ## 🎯 Beginner Level (Foundations)
 
-### 🔹 What is Kubernetes?
-- Container orchestration
-- Comparison: Docker Swarm vs K8s
-- Architecture: Master vs Worker Nodes
+| 🔹 What is Kubernetes? | 🔹 Core Concepts | 🔹 Hands-On Tools |
+|------------------------|-----------------|------------------|
+| - Container orchestration | - Pods, Deployments, ReplicaSets | - `kubectl` basics |
+| - Comparison: Docker Swarm vs K8s | - Namespaces | - Minikube / Kind / Docker Desktop |
+| - Architecture: Master vs Worker Nodes | - Services (ClusterIP, NodePort, LoadBalancer) | - YAML manifests (Deployments, Services, etc.) |
+|  | - ConfigMaps & Secrets |  |
+|  | - Volumes & PersistentVolumes (PVC) |  |
 
-### 🔹 Core Concepts
-- Pods, Deployments, ReplicaSets
-- Namespaces
-- Services (ClusterIP, NodePort, LoadBalancer)
-- ConfigMaps & Secrets
-- Volumes & PersistentVolumes (PVC)
-
-### 🔹 Hands-On Tools
-- `kubectl` basics
-- Minikube / Kind / Docker Desktop
-- YAML manifests (Deployments, Services, etc.)
 
 ---
 
 ## ⚙️ Intermediate Level (Cluster Management)
 
-### 🔸 Scheduling & Networking
-- Taints & Tolerations
-- Node Affinity & Anti-Affinity
-- Network Policies (Calico, Cilium)
-- Ingress Controller (NGINX, Traefik)
+| 🔸 Scheduling & Networking | 🔸 Helm | 🔸 Storage | 🔸 Observability |
+|-----------------------------|---------|-------------|------------------|
+| - Taints & Tolerations | - Charts, Templates, Repositories | - Dynamic Provisioning | - Metrics Server, cAdvisor |
+| - Node Affinity & Anti-Affinity | - Install and manage applications using Helm | - StorageClasses | - Prometheus + Grafana |
+| - Network Policies (Calico, Cilium) | - Helm vs Kustomize | - StatefulSets | - Logging with Fluentd, Loki, ELK |
+| - Ingress Controller (NGINX, Traefik) |  |  |  |
 
-### 🔸 Helm
-- Charts, Templates, Repositories
-- Install and manage applications using Helm
-- Helm vs Kustomize
-
-### 🔸 Storage
-- Dynamic Provisioning
-- StorageClasses
-- StatefulSets
-
-### 🔸 Observability
-- Metrics Server, cAdvisor
-- Prometheus + Grafana
-- Logging with Fluentd, Loki, ELK
 
 ---
 
 ## 🚀 Advanced Topics (Production-Ready Skills)
 
-### 🔺 Security
-- RBAC (Role-Based Access Control)
-- Network Policies
-- Pod Security Policies (PSP deprecated → use OPA/Gatekeeper)
-- Secrets management with Vault
+| 🔺 Security | 🔺 GitOps | 🔺 Autoscaling | 🔺 CI/CD Integration | 🔺 Service Mesh |
+|--------------|-----------|----------------|----------------------|----------------|
+| - RBAC (Role-Based Access Control) | - ArgoCD or Flux for declarative deployments | - HPA (Horizontal Pod Autoscaler) | - Jenkins / GitHub Actions / GitLab CI with K8s | - Istio / Linkerd |
+| - Network Policies | - Syncing Git changes to cluster automatically | - VPA (Vertical Pod Autoscaler) | - Deployments via pipelines | - Traffic splitting, retries, mTLS, observability |
+| - Pod Security Policies (PSP deprecated → use OPA/Gatekeeper) |  | - Cluster Autoscaler | - Canary and Blue-Green deployments |  |
+| - Secrets management with Vault |  |  |  |  |
 
-### 🔺 GitOps
-- ArgoCD or Flux for declarative deployments
-- Syncing Git changes to cluster automatically
-
-### 🔺 Autoscaling
-- HPA (Horizontal Pod Autoscaler)
-- VPA (Vertical Pod Autoscaler)
-- Cluster Autoscaler
-
-### 🔺 CI/CD Integration
-- Jenkins / GitHub Actions / GitLab CI with K8s
-- Deployments via pipelines
-- Canary and Blue-Green deployments
-
-### 🔺 Service Mesh
-- Istio / Linkerd
-- Traffic splitting, retries, mTLS, observability
 
 ---
 
