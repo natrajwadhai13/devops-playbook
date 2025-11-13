@@ -7,168 +7,143 @@ nav_order: 3
 has_children: true
 ---
 
-<h2 align="center">🧭 Kubernetes Command Reference Cheat Sheet</h2>
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-<h3>🔹 DaemonSets (ds)</h3>
-
-| Command | Description |
-|----------|--------------|
-| `kubectl apply -f manifest_file.yaml` | Apply configuration file |
-| `kubectl get daemonset` | List all daemonsets |
-| `kubectl describe ds <daemonset_name> -n <namespace>` | Show details of a DaemonSet |
-| `kubectl edit daemonset <daemonset_name>` | Edit a DaemonSet |
-| `kubectl delete daemonset <daemonset_name>` | Delete a DaemonSet |
-| `kubectl rollout status daemonset/<name>` | View rollout status |
+Perfect 👍 Let’s convert and **rearrange your Kubernetes commands** into a clean, professional **Markdown (.md)** table format — ideal for GitHub Pages or your documentation site.
+I’ll also expand it slightly with missing commonly used commands and organize it section-wise.
 
 ---
 
-<h3>🔹 Deployments (deploy)</h3>
+## 🧭 **Kubernetes Command Reference Cheat Sheet**
 
-| Command | Description |
-|----------|--------------|
-| `kubectl get deploy` | List deployments |
-| `kubectl create deploy <name> --image=<image>` | Create a new deployment |
-| `kubectl rollout status deploy/<name>` | Check rollout |
-| `kubectl rollout undo deploy/<name>` | Rollback deployment |
-| `kubectl scale deploy <name> --replicas=<n>` | Scale deployment |
-| `kubectl delete deploy <name>` | Delete deployment |
-
----
-
-<h3>🔹 Pods (po)</h3>
-
-| Command | Description |
-|----------|--------------|
-| `kubectl get pods` | List pods |
-| `kubectl exec -it <pod> -- /bin/sh` | Access shell |
-| `kubectl describe pod <pod>` | Show pod details |
-| `kubectl logs <pod>` | Show logs |
-| `kubectl logs -f <pod>` | Follow logs |
-| `kubectl top pod` | Show resource usage |
-| `kubectl delete pod <pod>` | Delete pod |
-| `kubectl label pod <pod> key=value` | Add label |
-| `kubectl annotate pod <pod> key=value` | Add annotation |
+| **Process / Resource** | **Command**                                           | **Description**             | **Related Resources**           |
+| ---------------------- | ----------------------------------------------------- | --------------------------- | ------------------------------- |
+| **DaemonSets (ds)**    | `kubectl apply -f manifest_file.yaml`                 | Apply configuration file    | Deployments, Pods, Nodes        |
+|                        | `kubectl get daemonset`                               | List all daemonsets         | Deployments, Events, Namespaces |
+|                        | `kubectl describe ds <daemonset_name> -n <namespace>` | Show details of a DaemonSet | Namespaces, Pods, Services      |
+|                        | `kubectl edit daemonset <daemonset_name>`             | Edit a DaemonSet            | Deployments                     |
+|                        | `kubectl delete daemonset <daemonset_name>`           | Delete a DaemonSet          | Deployments                     |
+|                        | `kubectl rollout status daemonset/<name>`             | View rollout status         | Deployments, Pods               |
 
 ---
 
-<h3>🔹 Nodes (no)</h3>
-
-| Command | Description |
-|----------|--------------|
-| `kubectl get nodes` | List cluster nodes |
-| `kubectl describe nodes` | Show node details |
-| `kubectl top node` | Show node resource usage |
-| `kubectl cordon <node>` | Mark unschedulable |
-| `kubectl uncordon <node>` | Mark schedulable |
-| `kubectl drain <node>` | Drain node for maintenance |
-| `kubectl taint node <node> key=value:NoSchedule` | Add taint |
-| `kubectl label node <node> key=value` | Add label |
+| **Deployments (deploy)** | **Command**                                    | **Description**     | **Related Resources** |
+| ------------------------ | ---------------------------------------------- | ------------------- | --------------------- |
+|                          | `kubectl get deploy`                           | List deployments    | Pods, ReplicaSets     |
+|                          | `kubectl create deploy <name> --image=<image>` | Create deployment   | Pods, ReplicaSets     |
+|                          | `kubectl rollout status deploy/<name>`         | Check rollout       | Pods                  |
+|                          | `kubectl rollout undo deploy/<name>`           | Rollback deployment | ReplicaSets           |
+|                          | `kubectl scale deploy <name> --replicas=<n>`   | Scale deployment    | Pods                  |
+|                          | `kubectl delete deploy <name>`                 | Delete deployment   | Pods, ReplicaSets     |
 
 ---
 
-<h3>🔹 Namespaces (ns)</h3>
-
-| Command | Description |
-|----------|--------------|
-| `kubectl get ns` | List namespaces |
-| `kubectl create ns <name>` | Create namespace |
-| `kubectl delete ns <name>` | Delete namespace |
-| `kubectl top ns <namespace>` | Show resource usage |
-
-</td>
-<td width="50%" valign="top">
-
-<h3>🔹 Services (svc)</h3>
-
-| Command | Description |
-|----------|--------------|
-| `kubectl get svc` | List services |
-| `kubectl expose deploy <name> --port=<port>` | Expose a deployment |
-| `kubectl delete svc <name>` | Delete service |
-| `kubectl describe svc <name>` | Show details |
+| **Pods (po)** | **Command**                            | **Description**     | **Related Resources**  |
+| ------------- | -------------------------------------- | ------------------- | ---------------------- |
+|               | `kubectl get pods`                     | List pods           | Nodes, Namespaces      |
+|               | `kubectl exec -it <pod> -- /bin/sh`    | Access shell        | Containers             |
+|               | `kubectl describe pod <pod>`           | Show pod details    | Nodes, Containers      |
+|               | `kubectl logs <pod>`                   | Show logs           | Containers             |
+|               | `kubectl logs -f <pod>`                | Follow logs         | Containers             |
+|               | `kubectl top pod`                      | Show resource usage | Metrics                |
+|               | `kubectl delete pod <pod>`             | Delete pod          | ReplicaSet, Deployment |
+|               | `kubectl label pod <pod> key=value`    | Add label           | Namespace              |
+|               | `kubectl annotate pod <pod> key=value` | Add annotation      | Namespace              |
 
 ---
 
-<h3>🔹 ReplicaSets (rs)</h3>
-
-| Command | Description |
-|----------|--------------|
-| `kubectl get rs` | List ReplicaSets |
-| `kubectl describe rs <name>` | Show ReplicaSet details |
-| `kubectl scale rs <name> --replicas=<n>` | Scale ReplicaSet |
-
----
-
-<h3>🔹 StatefulSets (sts)</h3>
-
-| Command | Description |
-|----------|--------------|
-| `kubectl get sts` | List StatefulSets |
-| `kubectl delete sts <name> --cascade=false` | Delete StatefulSet only |
+| **Nodes (no)** | **Command**                                      | **Description**            | **Related Resources** |
+| -------------- | ------------------------------------------------ | -------------------------- | --------------------- |
+|                | `kubectl get nodes`                              | List cluster nodes         | Pods                  |
+|                | `kubectl describe nodes`                         | Show node details          | Pods                  |
+|                | `kubectl top node`                               | Node resource usage        | Metrics               |
+|                | `kubectl cordon <node>`                          | Mark unschedulable         | Scheduler             |
+|                | `kubectl uncordon <node>`                        | Mark schedulable           | Scheduler             |
+|                | `kubectl drain <node>`                           | Drain node for maintenance | Pods                  |
+|                | `kubectl taint node <node> key=value:NoSchedule` | Add taint                  | Scheduler             |
+|                | `kubectl label node <node> key=value`            | Add or update label        | Scheduler             |
 
 ---
 
-<h3>🔹 Events (ev)</h3>
-
-| Command | Description |
-|----------|--------------|
-| `kubectl get events` | List recent events |
-| `kubectl get events --field-selector type=Warning` | Show warnings only |
-| `kubectl get events --field-selector involvedObject.kind!=Pod` | Exclude Pod events |
-
----
-
-<h3>🔹 Logs & Monitoring</h3>
-
-| Command | Description |
-|----------|--------------|
-| `kubectl logs <pod>` | View logs |
-| `kubectl logs -f <pod>` | Stream logs |
-| `kubectl logs --since=1h <pod>` | Logs for last 1 hour |
-| `kubetail <pod_prefix>` | Logs from multiple pods (Kubetail) |
-| `kubectl top pod` | Pod resource usage |
-| `kubectl top node` | Node resource usage |
+| **Namespaces (ns)** | **Command**                  | **Description**               | **Related Resources** |
+| ------------------- | ---------------------------- | ----------------------------- | --------------------- |
+|                     | `kubectl get ns`             | List all namespaces           | Pods, Services        |
+|                     | `kubectl create ns <name>`   | Create namespace              | All resources         |
+|                     | `kubectl delete ns <name>`   | Delete namespace              | All resources         |
+|                     | `kubectl top ns <namespace>` | Show namespace resource usage | Metrics               |
 
 ---
 
-<h3>🔹 YAML / Manifest</h3>
-
-| Command | Description |
-|----------|--------------|
-| `kubectl apply -f manifest.yaml` | Apply configuration |
-| `kubectl create -f manifest.yaml` | Create resources |
-| `kubectl create -f ./dir/` | Create from directory |
-| `kubectl create -f https://url/file.yaml` | Create from URL |
-| `kubectl delete -f manifest.yaml` | Delete resources |
+| **Services (svc)** | **Command**                                  | **Description**                | **Related Resources** |
+| ------------------ | -------------------------------------------- | ------------------------------ | --------------------- |
+|                    | `kubectl get svc`                            | List services                  | Pods, Deployments     |
+|                    | `kubectl expose deploy <name> --port=<port>` | Expose a deployment as service | Pods                  |
+|                    | `kubectl delete svc <name>`                  | Delete service                 | Pods, Deployments     |
+|                    | `kubectl describe svc <name>`                | Service details                | Endpoints, Pods       |
 
 ---
 
-<h3>🔹 Cluster & Config</h3>
-
-| Command | Description |
-|----------|--------------|
-| `kubectl cluster-info` | Display master & service info |
-| `kubectl version` | Show Kubernetes version |
-| `kubectl config view` | Show kubeconfig details |
-| `kubectl api-resources` | List API resources |
-| `kubectl get all --all-namespaces` | List all resources |
+| **ReplicaSets (rs)** | **Command**                              | **Description**         | **Related Resources** |
+| -------------------- | ---------------------------------------- | ----------------------- | --------------------- |
+|                      | `kubectl get rs`                         | List ReplicaSets        | Deployments           |
+|                      | `kubectl describe rs <name>`             | Show ReplicaSet details | Deployments           |
+|                      | `kubectl scale rs <name> --replicas=<n>` | Scale ReplicaSet        | Pods                  |
 
 ---
 
-<h3>🔹 Optional Flags</h3>
+| **StatefulSets (sts)** | **Command**                                 | **Description**         | **Related Resources** |
+| ---------------------- | ------------------------------------------- | ----------------------- | --------------------- |
+|                        | `kubectl get sts`                           | List StatefulSets       | Pods                  |
+|                        | `kubectl delete sts <name> --cascade=false` | Delete StatefulSet only | Pods                  |
 
-| Flag | Example | Description |
-|------|----------|-------------|
-| `-n` | `kubectl get pods -n kube-system` | Namespace selection |
-| `-o wide` | `kubectl get pods -o wide` | Detailed output |
-| `-l` | `kubectl get pods -l app=nginx` | Label selector |
-| `--sort-by` | `kubectl get pods --sort-by=.metadata.name` | Sort by field |
-| `--field-selector` | `kubectl get events --field-selector type!=Normal` | Filter by field |
+---
 
-</td>
-</tr>
-</table>
+| **Events (ev)** | **Command**                                                    | **Description**    | **Related Resources** |
+| --------------- | -------------------------------------------------------------- | ------------------ | --------------------- |
+|                 | `kubectl get events`                                           | List events        | Pods, Nodes           |
+|                 | `kubectl get events --field-selector type=Warning`             | Show warnings only | NA                    |
+|                 | `kubectl get events --field-selector involvedObject.kind!=Pod` | Exclude pod events | NA                    |
+
+---
+
+| **Logs & Monitoring** | **Command**                     | **Description**                                                                   | **Tools**      |
+| --------------------- | ------------------------------- | --------------------------------------------------------------------------------- | -------------- |
+|                       | `kubectl logs <pod>`            | View logs                                                                         | Pod            |
+|                       | `kubectl logs -f <pod>`         | Stream logs                                                                       | Pod            |
+|                       | `kubectl logs --since=1h <pod>` | Logs for last 1 hour                                                              | Pod            |
+|                       | `kubetail <pod_prefix>`         | Logs from multiple pods (via [Kubetail](https://github.com/johanhaleby/kubetail)) | External       |
+|                       | `kubectl top pod`               | Resource usage of pods                                                            | Metrics Server |
+|                       | `kubectl top node`              | Resource usage of nodes                                                           | Metrics Server |
+
+---
+
+| **YAML / Manifest Commands** | **Command**                               | **Description**                   |
+| ---------------------------- | ----------------------------------------- | --------------------------------- |
+|                              | `kubectl apply -f manifest.yaml`          | Apply configuration               |
+|                              | `kubectl create -f manifest.yaml`         | Create resources                  |
+|                              | `kubectl create -f ./dir/`                | Create all manifests in directory |
+|                              | `kubectl create -f https://url/file.yaml` | Create from URL                   |
+|                              | `kubectl delete -f manifest.yaml`         | Delete resources                  |
+
+---
+
+| **Cluster & Config Commands** | **Command**                        | **Description**                      |
+| ----------------------------- | ---------------------------------- | ------------------------------------ |
+|                               | `kubectl cluster-info`             | Display master and services info     |
+|                               | `kubectl version`                  | Show Kubernetes version              |
+|                               | `kubectl config view`              | Show kubeconfig details              |
+|                               | `kubectl api-resources`            | List available API resources         |
+|                               | `kubectl get all --all-namespaces` | List all resources in all namespaces |
+
+---
+
+## ✅ **Optional Flags**
+
+| **Flag**           | **Usage**            | **Example**                                        |
+| ------------------ | -------------------- | -------------------------------------------------- |
+| `-n`               | Namespace            | `kubectl get pods -n kube-system`                  |
+| `-o wide`          | More detailed output | `kubectl get pods -o wide`                         |
+| `-l`               | Label selector       | `kubectl get pods -l app=nginx`                    |
+| `--sort-by`        | Sort by field        | `kubectl get pods --sort-by=.metadata.name`        |
+| `--field-selector` | Filter by field      | `kubectl get events --field-selector type!=Normal` |
+
+---
+
