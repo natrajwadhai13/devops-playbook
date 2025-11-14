@@ -4,37 +4,28 @@
   <title>Natraj Wadhai - DevOps & Portfolio Hub</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-
-  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/templatemo-style.css">
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-
+  
   <style>
-    /* Custom Styling */
+    /* NEW STYLES */
     .hero-devops {
       background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: white;
       padding: 100px 0;
       text-align: center;
     }
-    .hero-devops h1 { font-size: 48px; font-weight: 700; }
-    .hero-devops p { font-size: 18px; margin: 20px 0 30px; }
-
+    .hero-devops h1 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+    .hero-devops p {
+      font-size: 18px;
+      margin: 20px 0 30px;
+    }
     .devops-section {
       background-color: #f4f7fa;
       padding: 80px 0;
@@ -48,26 +39,29 @@
       transition: 0.3s;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
-    .devops-box:hover { transform: translateY(-8px); }
+    .devops-box:hover {
+      transform: translateY(-8px);
+    }
     .devops-box i {
       font-size: 40px;
       color: #007bff;
       margin-bottom: 20px;
     }
-
     .study-goals {
       background: linear-gradient(90deg, #1CB5E0, #000851);
       color: white;
       padding: 80px 0;
     }
-    .study-goals h2 { font-size: 32px; font-weight: 600; }
+    .study-goals h2 {
+      font-size: 32px;
+      font-weight: 600;
+    }
     .study-card {
       background: rgba(255,255,255,0.15);
       padding: 20px;
       border-radius: 10px;
       margin-top: 20px;
     }
-
     footer {
       background: #111;
       color: #aaa;
@@ -101,72 +95,75 @@
 
   <!-- HERO SECTION -->
   <section class="hero-devops" id="home">
-    <div class="container" data-aos="fade-up">
+    <div class="container">
       <h1>🚀 Learn | Build | Deploy</h1>
       <p>Personal Portfolio + DevOps Study Platform — Learn, Practice & Grow</p>
-      <img src="images/devops-education.jpg" class="img-responsive center-block" alt="DevOps Study" style="border-radius:15px; margin-top:30px;" loading="lazy">
+      <img src="images/devops-education.jpg" class="img-responsive center-block" alt="DevOps Study" style="border-radius:15px; margin-top:30px;">
       <a href="#devops" class="btn btn-primary" style="margin-top:30px;">Start Learning</a>
     </div>
   </section>
 
   <!-- DEVOPS SECTION -->
-  <section class="devops-section" id="devops">
-    <div class="container text-center">
-      <h2 data-aos="fade-up">Popular DevOps Tools</h2>
-      <p data-aos="fade-up" data-aos-delay="100">Master the tools that power modern automation and deployment pipelines.</p>
-      <div class="row">
-        <!-- Docker -->
-        <div class="col-md-3 col-sm-6" data-aos="zoom-in">
-          <a href="https://natrajwadhai13.github.io/devops-playbook/3.%20DevOps%20Core%20Tools/3.1%20Containerization/3.1%20Containerization.html" target="_blank">
-            <div class="devops-box">
-              <i class="fa fa-docker"></i>
-              <h4>Docker</h4>
-              <p>Containerize applications for reliable deployments.</p>
-            </div>
-          </a>
-        </div>
-        <!-- AWS -->
-        <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
-          <a href="https://natrajwadhai13.github.io/devops-playbook/4.%20Cloud%20Platforms/4.%20Cloud%20Platforms.html" target="_blank">
-            <div class="devops-box">
-              <i class="fa fa-aws"></i>
-              <h4>AWS Cloud</h4>
-              <p>Build and scale apps with Amazon Web Services.</p>
-            </div>
-          </a>
-        </div>
-        <!-- CI/CD -->
-        <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
-          <a href="https://natrajwadhai13.github.io/devops-playbook/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank">
-            <div class="devops-box">
-              <i class="fa fa-cogs"></i>
-              <h4>CI/CD Pipelines</h4>
-              <p>Automate build, test, and deployment with GitLab CI/CD.</p>
-            </div>
-          </a>
-        </div>
-        <!-- Kubernetes -->
-        <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
-          <a href="https://natrajwadhai13.github.io/devops-playbook/3.%20DevOps%20Core%20Tools/3.2%20Orchestration/Kubernetes/1.%20Kubernetes.html" target="_blank">
-            <div class="devops-box">
-              <i class="fa fa-server"></i>
-              <h4>Kubernetes</h4>
-              <p>Orchestrate containers at scale with K8s and Helm.</p>
-            </div>
-          </a>
-        </div>
+<section class="devops-section" id="devops">
+  <div class="container text-center">
+    <h2>Popular DevOps Tools</h2>
+    <p>Master the tools that power modern automation and deployment pipelines.</p>
+    <div class="row">
+
+      <div class="col-md-3 col-sm-6">
+        <a href="https://natrajwadhai13.github.io/devops-playbook/3.%20DevOps%20Core%20Tools/3.1%20Containerization/3.1%20Containerization.html" target="_blank" style="text-decoration:none; color:inherit;">
+          <div class="devops-box">
+            <i class="fa fa-docker"></i>
+            <h4>Docker</h4>
+            <p>Containerize applications for reliable deployments.</p>
+          </div>
+        </a>
       </div>
-      <a href="https://natrajwadhai13.github.io/devops-playbook/docs/" target="_blank" class="btn btn-primary">View All Notes</a>
+
+      <div class="col-md-3 col-sm-6">
+        <a href="https://natrajwadhai13.github.io/devops-playbook/4.%20Cloud%20Platforms/4.%20Cloud%20Platforms.html" target="_blank" style="text-decoration:none; color:inherit;">
+          <div class="devops-box">
+            <i class="fa fa-aws"></i>
+            <h4>AWS Cloud</h4>
+            <p>Build and scale apps with Amazon Web Services.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <a href="https://natrajwadhai13.github.io/devops-playbook/2.%20CICD%20Tools/2.%20CICD%20Tools.html" target="_blank" style="text-decoration:none; color:inherit;">
+          <div class="devops-box">
+            <i class="fa fa-cogs"></i>
+            <h4>CI/CD Pipelines</h4>
+            <p>Automate build, test, and deployment with GitLab CI/CD.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <a href="https://natrajwadhai13.github.io/devops-playbook/3.%20DevOps%20Core%20Tools/3.2%20Orchestration/Kubernetes/1.%20Kubernetes.html">
+          <div class="devops-box">
+            <i class="fa fa-server"></i>
+            <h4>Kubernetes</h4>
+            <p>Orchestrate containers at scale with K8s and Helm.</p>
+          </div>
+        </a>
+      </div>
+
     </div>
-  </section>
+    <a href="https://natrajwadhai13.github.io/devops-playbook/docs/" target="_blank" class="btn btn-primary">View All Notes</a>
+  </div>
+</section>
+
+
 
   <!-- PORTFOLIO SECTION -->
   <section class="study-goals" id="portfolio">
-    <div class="container text-center" data-aos="fade-up">
+    <div class="container text-center">
       <h2>💼 Professional Portfolio</h2>
       <p>Showcasing my DevOps journey, skills, and achievements.</p>
       <div class="row">
-        <div class="col-md-6 offset-md-3">
+        <div class="col-md-6 col-md-offset-3">
           <div class="study-card">
             <h4>View My Resume</h4>
             <p>Check my experience, tools expertise, and certifications.</p>
@@ -180,4 +177,44 @@
   <!-- STUDY GOALS -->
   <section class="devops-section" id="study">
     <div class="container text-center">
-      <h2 data-aos="
+      <h2>Your Study Tracker</h2>
+      <p>Track progress, set goals, and stay consistent in learning.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="devops-box">
+            <h4>Daily Learning</h4>
+            <p>Set daily goals and monitor progress.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="devops-box">
+            <h4>Practice Projects</h4>
+            <p>Hands-on work with automation and deployment setups.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="devops-box">
+            <h4>Certifications</h4>
+            <p>Prepare for AWS, Azure, and GCP exams.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONAL SECTION -->
+  <section class="study-goals" id="personal">
+    <div class="container text-center">
+      <h2>🌱 Personal Section</h2>
+      <p>Future section for blog posts, experiences, and learning journey.</p>
+      <div class="study-card">
+        <p><em>Coming soon...</em></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Natraj Wadhai — DevOps | Portfolio | Study Notes
+  </footer>
+</body>
+</html>
