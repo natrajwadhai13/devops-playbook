@@ -3,28 +3,30 @@ title: • Docker installation
 parent: • Software Installtion
 grand_parent: • Linux
 grand_grand_parent: 11. Operating System (OS)
-nav_order: 2
+nav_order: 1
 has_children: true
 ---
 
-👍 **Amazon Linux 2023 (AL2023)**, so Docker installation is slightly different than Amazon Linux 2 (where we used `amazon-linux-extras`).
+👍 **Amazon Linux 2023 (AL2023)**
 
-Here’s how you can install **Docker on Amazon Linux 2023**:
-
----
 
 ### ✅ Steps to Install Docker on Amazon Linux 2023
 
 1. **Update system packages**
 
    ```bash
-   sudo dnf update -y
+   sudo dnf update -y or sudo apt update
    ```
 
 2. **Install Docker**
 
    ```bash
    sudo dnf install -y docker
+
+for ubuntu 
+
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
+
    ```
 
 3. **Start and Enable Docker Service**
@@ -38,12 +40,17 @@ Here’s how you can install **Docker on Amazon Linux 2023**:
 
    ```bash
    docker --version
+   docker ps
    ```
 
 5. **Add EC2 User to Docker Group (optional, so you don’t need `sudo`)**
 
    ```bash
    sudo usermod -aG docker ec2-user
+
+   sudo usermod -aG docker $USER
+   newgrp docker
+   
    ```
 
    Then log out and back in:
@@ -72,5 +79,3 @@ sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 ```
-
----

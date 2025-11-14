@@ -56,6 +56,10 @@ But if you really want to **enable root password login**, you need to change bot
 
    ```bash
    systemctl restart sshd
+
+   for ubuntu 
+   
+   systemctl restart ssh
    ```
 
 6. **Update Security Group in AWS**

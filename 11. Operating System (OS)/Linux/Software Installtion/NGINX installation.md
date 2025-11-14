@@ -3,7 +3,7 @@ title: • NGINX installation
 parent: • Software Installtion
 grand_parent: • Linux
 grand_grand_parent: 11. Operating System (OS)
-nav_order: 2
+nav_order: 3
 has_children: true
 ---
 
