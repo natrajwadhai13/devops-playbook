@@ -1,4 +1,3 @@
-
 ---
 title: • Kuberntes installation
 parent: • Software Installtion
