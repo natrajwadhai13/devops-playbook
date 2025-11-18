@@ -1,0 +1,496 @@
+---
+title: "• Core Concepts"
+parent: "• Kubernetes-Basics"
+grand_parent: "• Kubernetes"
+great_grand_parent: "• 3.2 Orchestration"
+great_great_grand_parent: 3. DevOps Core Tools
+nav_order: 1
+has_children: true
+---
+
+## 👉 Overview — What you’ll learn
+
+Short theory + practical commands for:
+
+* Setting up clusters (kind, minikube, kubeadm, EKS/GKE)
+* Creating Namespaces, Pods, Deployments, ReplicaSets, DaemonSets
+* Jobs & CronJobs
+* Common errors, fixes, and interview talking points
+
+Keep these mental checkpoints when explaining in interviews: **purpose**, **how it works**, **example command**, **use-case**.
+
+---
+
+## Step 1 — Software installation & options (theory + why)
+
+**Goal:** know the tools companies use and why.
+
+* **Docker** — container runtime (use containerd/CRI-O in prod). Needed for local clusters.
+* **Kubernetes** — orchestration system (control-plane + worker nodes).
+* **Local / learning tools**
+
+  * **kind** — Kubernetes-in-Docker, great for multi-node test clusters and CI.
+  * **minikube** — single-node local cluster (easy for demos).
+  * **k3s** / **microk8s** — lightweight distros for edge/dev.
+* **Production & managed**
+
+  * **kubeadm** — bootstrap production-ready clusters (on VMs / on-prem).
+  * **EKS (AWS)**, **GKE (Google Cloud)**, **AKS (Azure)** — managed K8s (control plane managed for you).
+
+**Interview points:** explain where you would use each tool (local dev vs. prod vs. cloud-managed).
+
+---
+
+## Step 2 — Create a Kind cluster (example + tips)
+
+**What is kind?**
+A tool to run real Kubernetes clusters in Docker containers. Useful to simulate multi-node clusters locally.
+
+**Kind config (example)** — `config.yml`
+
+```yaml
+# Multi-node (1 control-plane + 3 workers) Kind cluster config
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+  - role: control-plane
+    image: kindest/node:v1.31.2
+
+  - role: worker
+    image: kindest/node:v1.31.2
+
+  - role: worker
+    image: kindest/node:v1.31.2
+
+  - role: worker
+    image: kindest/node:v1.31.2
+    extraPortMappings:
+      - containerPort: 80
+        hostPort: 80
+        protocol: TCP
+      - containerPort: 443
+        hostPort: 443
+        protocol: TCP
+```
+
+**Create the cluster**
+
+```bash
+sudo kind create cluster --name=tws-cluster --config=config.yml
+```
+
+**Verify**
+
+```bash
+sudo kubectl cluster-info --context kind-tws-cluster
+sudo kubectl get nodes
+```
+
+**Common Kind tips**
+
+* Use `--config` to create multiple workers.
+* `extraPortMappings` allows exposing host ports (80/443) to a node for testing Ingress.
+
+---
+
+## Troubleshooting (common errors + fixes)
+
+### Error: permission denied connecting to Docker socket
+
+```
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+```
+
+**Fix**
+
+```bash
+sudo usermod -aG docker $USER
+newgrp docker
+# then re-run kind command (or log out & in)
+```
+
+### Error: RSRC_INSUFFICIENT_CORES — Docker has < 2 CPUs
+
+Kubernetes needs at least 2 CPUs (kind/minikube constraints).
+**Check Docker limits**
+
+```bash
+docker info | grep -i cpu
+```
+
+**Workaround** — adjust Docker daemon CPU limits (or Docker Desktop settings):
+
+```json
+# /etc/docker/daemon.json
+{
+  "default-runtime": "runc",
+  "runtimes": { "runc": { "path": "runc" } },
+  "cpu-period": 100000,
+  "cpu-quota": 200000
+}
+```
+
+Then:
+
+```bash
+sudo systemctl restart docker
+# Retry minikube or kind
+minikube start --driver=docker
+```
+
+---
+
+## Step 3 — Kubernetes basics: Namespace → Pod → Deployment → Service (theory + commands)
+
+### Namespaces (theory)
+
+* Logical partitions within a cluster (e.g., `dev`, `test`, `prod`).
+* Useful for multi-team isolation, resource quotas, RBAC scoping.
+
+**Create namespace**
+
+```bash
+kubectl create ns nginx
+kubectl get ns
+kubectl delete ns nginx
+```
+
+---
+
+### Pods (theory)
+
+* **Smallest deployable unit** — one or more containers that share network & storage.
+* Imperative vs declarative creation.
+
+**Imperative (one-off)**
+
+```bash
+kubectl run nginx --image=nginx
+kubectl get pods
+kubectl delete pod nginx
+```
+
+**In a namespace**
+
+```bash
+kubectl run nginx -n nginx --image=nginx
+kubectl get pods -n nginx
+```
+
+**Declarative (manifest)** — `pod.yml`
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  namespace: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+```
+
+**Apply / verify**
+
+```bash
+kubectl apply -f namespace.yml   # namespace manifest (if not created)
+kubectl apply -f pod.yml
+kubectl get pod -n nginx
+kubectl exec -it nginx-pod -n nginx -- bash
+curl 127.0.0.1
+kubectl describe pod/nginx-pod -n nginx
+kubectl delete -f pod.yml
+```
+
+**Interview tip:** describe difference between Pod restartPolicy values and how containers share network namespace.
+
+---
+
+## Step 4 — Deployments (theory + manifest)
+
+### Theory
+
+* **Deployment** manages ReplicaSets and Pods.
+* Provides declarative updates, rolling updates, rollbacks, scaling.
+
+**Deployment manifest** — `deployment.yml`
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  namespace: nginx
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+```
+
+**Commands**
+
+```bash
+kubectl apply -f deployment.yml
+kubectl get deployment -n nginx
+kubectl get pods -n nginx
+kubectl get pods -n nginx -o wide    # see node placement
+kubectl scale deployment/nginx-deployment -n nginx --replicas=5
+kubectl set image deployment/nginx-deployment nginx=nginx:1.29.0 -n nginx  # rolling update
+kubectl rollout undo deployment/nginx-deployment -n nginx  # rollback
+kubectl delete -f deployment.yml
+```
+
+**Common error**
+
+* `no matches for kind "Deploymeent" in version "apps/v1"` → Typo in `kind` or invalid API version. Use `kind: Deployment` and `apiVersion: apps/v1`.
+
+**Interview tip:** explain how Deployment → ReplicaSet → Pods relationship works, and how rolling updates are handled (maxSurge / maxUnavailable).
+
+---
+
+## Step 5 — ReplicaSet (theory + manifest)
+
+### Theory
+
+* ReplicaSet ensures a specified number of pod replicas are running.
+* Usually controlled by Deployments; rarely created directly in production.
+
+**ReplicaSet manifest** — `replicaset.yml`
+
+```yaml
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nginx-replicasets
+  namespace: nginx
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+```
+
+**Commands**
+
+```bash
+kubectl apply -f replicaset.yml
+kubectl get replicasets -n nginx
+kubectl delete -f replicaset.yml
+```
+
+**Interview tip:** explain why Deployments are preferred (adds update management).
+
+---
+
+## Step 6 — DaemonSet (theory + manifest)
+
+### Theory
+
+* DaemonSet runs one pod **on every (or selected) node**.
+* Use-cases: logging agents (Fluentd), monitoring agents (Prometheus Node Exporter), network plugins.
+
+**DaemonSet manifest** — `daemonset.yml`
+
+```yaml
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: nginx-daemonsets
+  namespace: nginx
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+```
+
+**Commands**
+
+```bash
+kubectl apply -f daemonset.yml
+kubectl get pods -n nginx
+kubectl get pods -n nginx -o wide    # verify one-per-node
+kubectl delete -f daemonset.yml
+```
+
+**Interview tip:** discuss node selectors, tolerations and when DaemonSet won't schedule (taints).
+
+---
+
+## Step 7 — Jobs (theory + manifest)
+
+### Theory
+
+* **Job** runs one-off batch tasks until completion.
+* **CronJob** schedules Jobs.
+
+**Job manifest** — `job.yml`
+
+```yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: demo-job
+  namespace: nginx
+spec:
+  completions: 1
+  parallelism: 1
+  template:
+    metadata:
+      labels:
+        app: batch-task
+    spec:
+      containers:
+      - name: batch-container
+        image: busybox:latest
+        command: ["sh", "-c", "echo hello Dosto ! && sleep 10"]
+      restartPolicy: Never
+```
+
+**Commands**
+
+```bash
+kubectl apply -f job.yml
+kubectl get job -n nginx
+kubectl get pods -n nginx
+kubectl logs pod/<job-pod-name> -n nginx
+kubectl delete -f job.yml
+```
+
+**Interview tip:** discuss `backoffLimit`, `completions`, `parallelism`.
+
+---
+
+## Step 8 — CronJob (theory + manifest)
+
+### Theory
+
+* **CronJob** schedules Jobs like cron (supports Kubernetes time format).
+* Useful for backups, periodic reports, cleanup tasks.
+
+**CronJob manifest** — `cron-job.yml`
+
+```yaml
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: minute-backup
+  namespace: nginx
+spec:
+  schedule: "* * * * *"  # every minute (example)
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: minute-backup
+        spec:
+          containers:
+          - name: backup-container
+            image: busybox
+            command:
+            - sh
+            - -c
+            - >
+              echo "Backup Started" ;
+              mkdir -p /backups &&
+              mkdir -p /demo-data &&
+              cp -r /demo-data /backups &&
+              echo "Backup Completed" ;
+            volumeMounts:
+            - name: data-volume
+              mountPath: /demo-data
+            - name: backup-volume
+              mountPath: /backups
+          restartPolicy: OnFailure
+          volumes:
+          - name: data-volume
+            hostPath:
+              path: /demo-data
+              type: DirectoryOrCreate
+          - name: backup-volume
+            hostPath:
+              path: /backup
+              type: DirectoryOrCreate
+```
+
+**Commands**
+
+```bash
+kubectl apply -f cron-job.yml
+kubectl get cronjob -n nginx
+kubectl get pods -n nginx
+kubectl logs pod/<cronjob-pod-name> -n nginx
+kubectl delete -f cron-job.yml
+```
+
+**Interview tip:** mention concurrencyPolicy and successfulJobsHistoryLimit / failedJobsHistoryLimit.
+
+---
+
+## Quick Cheatsheet — Useful `kubectl` commands
+
+```bash
+kubectl get all -n <ns>                 # list resources in namespace
+kubectl describe pod <pod> -n <ns>      # detailed pod info
+kubectl logs <pod> -n <ns>              # get logs
+kubectl port-forward pod/<pod> 8080:80  # local access to pod
+kubectl apply -f <file>.yml             # apply manifest (create/update)
+kubectl delete -f <file>.yml            # delete resource(s)
+kubectl rollout status deployment/<name> -n <ns>  # check rollout
+kubectl top pod                          # resource usage (requires metrics-server)
+```
+
+---
+
+## Small theory clarifications to mention in interviews
+
+* **Pod vs Container:** A Pod can hold 1+ containers sharing network & storage. Containers alone are runtime units; Pods are K8s units.
+* **ReplicaSet vs Deployment:** ReplicaSet enforces replica count; Deployment manages ReplicaSet lifecycle and updates.
+* **DaemonSet vs Deployment:** DaemonSet → one pod per node; Deployment → desired replicas across cluster.
+* **StatefulSet:** use for stateful apps (stable network IDs, stable storage).
+* **Services:** ClusterIP (internal), NodePort (host port mapping), LoadBalancer (cloud LB).
+* **Ingress:** L7 HTTP routing, TLS termination. IngressController required (NGINX, Traefik).
+* **ConfigMap vs Secret:** ConfigMap for non-sensitive config; Secret for sensitive data (base64 encoded). Use external secret managers in prod (Vault, AWS Secrets Manager).
+* **RBAC:** Roles & RoleBindings (namespace) / ClusterRoles & ClusterRoleBindings (cluster-wide).
+* **Storage:** PV and PVC abstractions; dynamic provisioners using CSI drivers.
+
+---
+
+## Extra: How to present this in an interview (phrasing)
+
+* “I created multi-node test clusters using **kind**, used **kubeadm** to bootstrap VMs, and provisioned production clusters using **eksctl/Terraform**. I deployed NGINX using a Deployment + Service, performed rolling updates (`kubectl set image`), and used DaemonSets for node-level agents. For scheduled tasks I used CronJobs, and for batch I used Jobs. I also handled common Docker/Kubernetes environment issues such as Docker socket permissions and CPU resource limits.”
+
