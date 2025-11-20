@@ -1,7 +1,7 @@
 ---
-title: "• Package Verification & Registration Services"
+title: "• Build Tools"
 parent: 3. DevOps Core Tools
-nav_order: 3
+nav_order: 6
 has_children: true
 ---
 
