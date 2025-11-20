@@ -1,6 +1,6 @@
 ---
 title: "Docker Compose"
-parent: "• 3.1 Containerization"
+parent: "• Docker"
 grand_parent: "3. DevOps Core Tools"
 nav_order: 2
 ---
