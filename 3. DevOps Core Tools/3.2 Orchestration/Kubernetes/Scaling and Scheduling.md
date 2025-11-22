@@ -50,7 +50,7 @@ They prevent:
 
 ---
 
-# 1️⃣ Create Namespace
+### 1️⃣ **Create Namespace**
 
 `namespace.yml`
 
@@ -69,7 +69,7 @@ kubectl apply -f namespace.yml
 
 ---
 
-# 2️⃣ Create Resource Quota
+### 2️⃣ **Create Resource Quota**
 
 `resourceQuota.yml`
 
@@ -104,7 +104,7 @@ kubectl describe quota -n nginx
 
 ---
 
-# 3️⃣ Create Persistent Volume (PV)
+### 3️⃣ **Create Persistent Volume (PV)**
 
 `persistentVolume.yml`
 
@@ -143,7 +143,7 @@ kubectl apply -f persistentVolume.yml
 
 ---
 
-# 4️⃣ Persistent Volume Claim (PVC)
+### 4️⃣ **Persistent Volume Claim (PVC)**
 
 `persistentVolumeClaim.yml`
 
@@ -169,7 +169,7 @@ kubectl apply -f persistentVolumeClaim.yml
 
 ---
 
-# 5️⃣ **Deployment with Requests & Limits (Quota Required)**
+### 5️⃣ **Deployment with Requests & Limits (Quota Required)**
 
 `deployment.yml`
 
@@ -225,7 +225,7 @@ kubectl apply -f deployment.yml
 
 ---
 
-# 6️⃣ Verification Commands
+### 6️⃣ **Verification Commands**
 
 ### List pods:
 
@@ -253,7 +253,7 @@ Requests:
 
 ---
 
-# 7️⃣ Resource Quota Validation
+### 7️⃣ **Resource Quota Validation**
 
 To verify quota enforcement:
 
