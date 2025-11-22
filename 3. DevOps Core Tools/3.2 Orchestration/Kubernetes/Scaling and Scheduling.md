@@ -9,22 +9,25 @@ has_children: true
 ---
 
 
-✅ Scaling & Scheduling
-✅ HPA
-✅ VPA
+✅ Scaling → Automatically or manually increasing or decreasing the number of pods or resources based on workload demand.
+
+✅ Scheduling → Deciding which node a pod should run on by matching resource needs and placement rules.
+
+✅ HPA → Horizontal scaling (replicas increase/decrease)
+
+✅ VPA → Vertical scaling (increase CPU/Memory of pod)
+
 ✅ Node Affinity
+
 ✅ Taints & Tolerations
+
 ✅ Resource Quotas
+
 ✅ Limits & Requests
+
 ✅ Probes
 
-
-**Scaling:** Automatically or manually increasing or decreasing the number of pods or resources based on workload demand.
-
-**Scheduling:** Deciding which node a pod should run on by matching resource needs and placement rules.
-
-
-====================
+======================================
 
 # ✅ **Kubernetes Resource Quotas**
 
@@ -274,11 +277,11 @@ This confirms your Deployment is counted against the Namespace Quota.
 ==============================
 
 
-✅ Probes
+# ✅  **Probes**
 
-Liveness Probe
-Readiness Probe
-startup Probe
+1) Liveness Probe, 
+2) Readiness Probe, 
+3) startup Probe
 
 
 
@@ -367,7 +370,7 @@ All probes support these methods:
 
 
 
-✅ Taints & Tolerations
+# ✅ **Taints & Tolerations**
 
 ## **1️⃣ What Are Taints & Tolerations?**
 
@@ -395,7 +398,7 @@ sudo kubectl taint node tws-cluster-worker3 prod=true:NoSchedule
 
 ---
 
-# **3️⃣ Create Namespace & Pod**
+## **3️⃣ Create Namespace & Pod**
 
 ```bash
 sudo kubectl apply -f namespace.yml
@@ -418,7 +421,7 @@ Output:
 
 ---
 
-# **4️⃣ Check Why Pod is Pending**
+## **4️⃣ Check Why Pod is Pending**
 
 ```bash
 sudo kubectl describe pod nginx-pod -n nginx
@@ -434,7 +437,7 @@ Output will show:
 
 ---
 
-# **5️⃣ Remove Taint (Un-taint a Node)**
+## **5️⃣ Remove Taint (Un-taint a Node)**
 
 To allow pod scheduling, remove taint using **trailing hyphen (-)**:
 
@@ -457,7 +460,7 @@ But new pods cannot be scheduled.
 
 ---
 
-# **7️⃣ Re-apply Taint Again**
+## **7️⃣ Re-apply Taint Again**
 
 ```bash
 sudo kubectl taint node tws-cluster-worker2 prod=true:NoSchedule
@@ -473,7 +476,7 @@ Now pod cannot run unless tolerations are added.
 
 ---
 
-# **8️⃣ Add Tolerations in Pod YAML**
+## **8️⃣ Add Tolerations in Pod YAML**
 
 ### **pod.yml**
 
@@ -498,7 +501,7 @@ spec:
 
 ---
 
-# **9️⃣ Apply Pod With Tolerations**
+## **9️⃣ Apply Pod With Tolerations**
 
 ```bash
 sudo kubectl apply -f pod.yml
@@ -509,7 +512,7 @@ sudo kubectl get pod -n nginx
 
 ---
 
-# **🔟 Summary for Interview**
+### **🔟 Summary for Interview**
 
 | Feature                                 | Meaning                                          |
 | --------------------------------------- | ------------------------------------------------ |
@@ -529,7 +532,7 @@ sudo kubectl get pod -n nginx
 
 ---
 
-# **1️⃣ What is AutoScaling?**
+### **1️⃣ What is AutoScaling?**
 
 **AutoScaling** means Kubernetes automatically increases or decreases:
 
@@ -544,9 +547,9 @@ AutoScaling improves:
 
 ---
 
-# **2️⃣ Types of AutoScaling in Kubernetes**
+## **2️⃣ Types of AutoScaling in Kubernetes**
 
-## **A. HPA – Horizontal Pod Autoscaler**
+### **A. HPA – Horizontal Pod Autoscaler**
 
 * Pod count automatically increases or decreases based on **CPU/Memory metrics**.
 * Example:
@@ -560,7 +563,7 @@ AutoScaling improves:
 
 ---
 
-## **B. VPA – Vertical Pod Autoscaler**
+### **B. VPA – Vertical Pod Autoscaler**
 
 * Automatically adjusts **requests & limits**.
 * Used for **Stateful applications**, like:
@@ -575,7 +578,7 @@ Why Stateful?
 
 ---
 
-## **C. KEDA – Kubernetes Event-Driven Autoscaler**
+### **C. KEDA – Kubernetes Event-Driven Autoscaler**
 
 * Autoscaling based on **events**, not CPU/Memory.
 * Works with 60+ event sources:
@@ -635,9 +638,9 @@ kubectl top pod -n nginx
 
 ---
 
-# **4️⃣ HPA Practical (Apache HTTPD Example)**
+## **4️⃣ HPA Practical (Apache HTTPD Example)**
 
-## **Step 1 — Create Namespace**
+### **Step 1 — Create Namespace**
 
 `namespace.yml`
 
@@ -654,7 +657,7 @@ kubectl apply -f namespace.yml
 
 ---
 
-## **Step 2 — Create Deployment**
+### **Step 2 — Create Deployment**
 
 `deployment.yml`
 
@@ -694,7 +697,7 @@ kubectl apply -f deployment.yml
 
 ---
 
-## **Step 3 — Create Service**
+### **Step 3 — Create Service**
 
 `service.yml`
 
@@ -720,7 +723,7 @@ kubectl apply -f service.yml
 
 ---
 
-## **Access Service Inside Cluster**
+### **Access Service Inside Cluster**
 
 ```bash
 curl http://apache-service.apache.svc.cluster.local
@@ -728,7 +731,7 @@ curl http://apache-service.apache.svc.cluster.local
 
 ---
 
-## **Port Forward for Browser Access**
+### **Port Forward for Browser Access**
 
 ```bash
 kubectl port-forward service/apache-service -n apache 82:80 --address=0.0.0.0
@@ -742,7 +745,7 @@ http://<node-ip>:82/
 
 ---
 
-# **5️⃣ Create HPA**
+## **5️⃣ Create HPA**
 
 `hpa.yml`
 
@@ -782,7 +785,7 @@ kubectl get hpa -n apache
 
 ---
 
-# **6️⃣ Generate Load to Trigger HPA**
+## **6️⃣ Generate Load to Trigger HPA**
 
 Run load generator:
 
@@ -798,7 +801,7 @@ while true; do wget -q -O- http://apache-service.apache.svc.cluster.local; done
 
 ---
 
-# **Check if Pods Scale**
+### **Check if Pods Scale**
 
 ```bash
 kubectl get hpa -n apache
@@ -813,7 +816,7 @@ apache-hpa  cpu: 23%/5%   Replicas: 5
 
 ---
 
-# **7️⃣ Stop Autoscaling**
+### **7️⃣ Stop Autoscaling**
 
 ```bash
 kubectl delete -f hpa.yml
@@ -821,7 +824,7 @@ kubectl delete -f hpa.yml
 
 ---
 
-# 🎯 **Interview Summary (Short Notes)**
+## 🎯 **Interview Summary (Short Notes)**
 
 | AutoScaler         | Works On           | Best For                                |
 | ------------------ | ------------------ | --------------------------------------- |
@@ -836,11 +839,11 @@ kubectl delete -f hpa.yml
 
 ---
 
-# ✅ **Vertical Pod Autoscaler (VPA)**
+## ✅ **Vertical Pod Autoscaler (VPA)**
 
 ---
 
-# **1️⃣ What is VPA?**
+### **1️⃣ What is VPA?**
 
 **Vertical Pod Autoscaler (VPA)** automatically adjusts:
 
@@ -862,7 +865,7 @@ Why?
 
 ---
 
-# **2️⃣ VPA Components**
+### **2️⃣ VPA Components**
 
 Installing VPA creates 3 components:
 
@@ -877,7 +880,7 @@ Installing VPA creates 3 components:
 
 ---
 
-# **3️⃣ Pre-requisites (From Kubernetes Official GitHub)**
+### **3️⃣ Pre-requisites (From Kubernetes Official GitHub)**
 
 Official repo:
 [https://github.com/kubernetes/autoscaler.git](https://github.com/kubernetes/autoscaler.git)
@@ -914,7 +917,7 @@ This script installs:
 
 ---
 
-# **4️⃣ Create a VPA Object**
+## **4️⃣ Create a VPA Object**
 
 `vpa.yml`
 
@@ -937,51 +940,41 @@ spec:
 
 ---
 
-# **5️⃣ Apply & Verify**
+## **5️⃣ Apply & Verify**
 
 ### Apply VPA
 
 ```bash
 kubectl apply -f vpa.yml
-```
 
 ### Check VPA
 
-```bash
 kubectl get vpa -n apache
-```
 
 ### Check Services
 
-```bash
 kubectl get svc -n apache
-```
 
 ### Check Pods
 
-```bash
 kubectl get pods -n apache
-```
 
 ### Watch VPA recommendations
 
-```bash
 watch kubectl get vpa -n apache
 ```
 
 ---
 
-# **6️⃣ Verify Pod Resource Changes**
-
-Check pod CPU/Memory usage:
+### **6️⃣ Verify Pod Resource Changes**
 
 ```bash
+Check pod CPU/Memory usage:
+
 kubectl top pod -n apache
-```
 
 Watch live changes:
 
-```bash
 watch kubectl get vpa -n apache
 ```
 
@@ -993,7 +986,7 @@ What will change?
 
 ---
 
-# **7️⃣ VPA Modes (Very Important)**
+## **7️⃣ VPA Modes (Very Important)**
 
 | Mode        | Meaning                                            | Restarts Pods? |
 | ----------- | -------------------------------------------------- | -------------- |
@@ -1009,7 +1002,7 @@ updateMode: Auto
 
 ---
 
-# **8️⃣ When to Use VPA?**
+### **8️⃣ When to Use VPA?**
 
 Use VPA when:
 
@@ -1022,7 +1015,7 @@ Do NOT use VPA with HPA (for CPU/Memory) on the **same workload** → conflict.
 
 ---
 
-# **9️⃣ Node Affinity — Clean Notes**
+### **9️⃣ Node Affinity — Clean Notes**
 
 Node Affinity means:
 
@@ -1056,13 +1049,3 @@ workload=database
 
 ---
 
-# 🔟 Final Summary for Interview
-
-* **HPA** → Horizontal scaling (replicas increase/decrease)
-* **VPA** → Vertical scaling (increase CPU/Memory of pod)
-* **KEDA** → Event-driven autoscaling
-* **Metrics Server** → Required for HPA
-* **VPA** uses: Recommender, Updater, Admission Controller
-* **Best mode**: Auto (fully automated)
-
----
