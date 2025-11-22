@@ -31,7 +31,7 @@ has_children: true
 
 # ✅ **Kubernetes Resource Quotas**
 
-## 📌 **What are Resource Quotas?**
+## 📌 What are Resource Quotas?
 
 Resource Quotas limit how much compute power, memory, storage, and number of objects a **namespace** can use.
 
@@ -41,7 +41,7 @@ They prevent:
 * Over-provisioning of CPU/Memory
 * Uncontrolled creation of Pods, PVCs, Services, etc.
 
-### **Why Resource Quotas Are Used?**
+### Why Resource Quotas Are Used?
 
 ✔ Shared multi-team clusters
 ✔ Cost control
@@ -50,7 +50,7 @@ They prevent:
 
 ---
 
-# 1️⃣ **Create Namespace**
+# 1️⃣ Create Namespace
 
 `namespace.yml`
 
@@ -69,7 +69,7 @@ kubectl apply -f namespace.yml
 
 ---
 
-# 2️⃣ **Create Resource Quota**
+# 2️⃣ Create Resource Quota
 
 `resourceQuota.yml`
 
@@ -104,7 +104,7 @@ kubectl describe quota -n nginx
 
 ---
 
-# 3️⃣ **Create Persistent Volume (PV)**
+# 3️⃣ Create Persistent Volume (PV)
 
 `persistentVolume.yml`
 
@@ -143,7 +143,7 @@ kubectl apply -f persistentVolume.yml
 
 ---
 
-# 4️⃣ **Persistent Volume Claim (PVC)**
+# 4️⃣ Persistent Volume Claim (PVC)
 
 `persistentVolumeClaim.yml`
 
@@ -225,7 +225,7 @@ kubectl apply -f deployment.yml
 
 ---
 
-# 6️⃣ **Verification Commands**
+# 6️⃣ Verification Commands
 
 ### List pods:
 
@@ -253,7 +253,7 @@ Requests:
 
 ---
 
-# 7️⃣ **Resource Quota Validation**
+# 7️⃣ Resource Quota Validation
 
 To verify quota enforcement:
 
