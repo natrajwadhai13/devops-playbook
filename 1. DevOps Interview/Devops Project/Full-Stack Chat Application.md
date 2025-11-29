@@ -11,7 +11,9 @@ nav_order: 1
 # **🚀 Kubernetes Project: Full-Stack Chat Application (3-Tier Architecture on Minikube)**
 
 **Tech Stack:** React (Frontend), Node.js (Backend), MongoDB (Database)
+
 **Kubernetes Objects:** Namespace, Deployment, Service, Ingress, PV, PVC, Secrets
+
 **Tools:** Docker, Minikube, kubectl, VS Code, Docker Hub
 
 
@@ -32,6 +34,59 @@ nav_order: 1
 Frontend → Backend API (/api) → MongoDB
 
 ---
+
+### **IMP Command **
+
+```bash
+# kubectl create -f namespace.yml
+# kubectl get ns
+# kubectl apply -f backend-deployment.yml 
+# kubectl get pods -n chat-app
+# kubectl apply -f frontend-deployment.yml  
+# kubectl get pods -n chat-app
+# kubectl describe pod backend-deployment-598bb7556f-vlplv -n chat-app
+# kubectl apply -f mongodb-pv.yml
+# kubectl get pv -n chat-app
+# kubectl apply -f mongodb-pvc.yml
+# kubectl get pv -n chat-app
+# kubectl apply -f mongodb-deployment.yml
+# kubectl get pods -n chat-app
+# watch kubectl get pods -n chat-app
+# kubectl apply -f backend-service.yml
+# kubectl apply -f frontend-service.yml
+# kubectl apply -f mongodb-service.yml
+# kubectl apply -f secrets.yml
+# kubectl apply -f ingress.yml
+# kubectl get ing -n chat-app
+# minikube addons enable ingress
+# kubectl get ns
+# kubectl get svc -n ingress-nginx
+# kubectl port-forward svc/ingress-nginx-controller -n ingress-nginx 80:80 &
+# kubectl get svc -n chat-app
+# kubectl port-forward service/backend -n chat-app 5001:5001 & 
+# kubectl port-forward service/frontend -n chat-app 80:80 &
+ permition issue 
+# sudo -E kubectl port-forward service/frontend -n chat-app 80:80 &
+
+rename images
+
+# docker tag natrajwadhai13/chatapp-fronted:latest natrajwadhai13/chatapp-frontend:latest
+# docker push natrajwadhai13/chatapp-frontend:latest
+
+delete all
+
+# kubectl delete -f .
+# kubectl create -f namespace.yml
+# kubectl apply -f mongodb-pv.yml
+# kubectl apply -f mongodb-pvc.yml
+# kubectl apply -f .
+# kubectl port-forward svc/ingress-nginx-controller -n ingress-nginx 80:80
+# kubectl delete -f frontend-deployment.yml
+# kubectl delete -f backend-deployment.yml
+```
+---
+
+kubectl get ns
 
 # **2️⃣ Prerequisites**
 
@@ -95,6 +150,7 @@ Apply:
 
 ```bash
 kubectl apply -f namespace.yml
+
 ```
 
 ---
@@ -380,7 +436,7 @@ http://chat-tws.com/
 
 ---
 
-# **5️⃣ Important Theory to Speak in Interview**
+## **5️⃣ Important Theory to Speak in Interview**
 
 ### **Why We Use Namespace?**
 
