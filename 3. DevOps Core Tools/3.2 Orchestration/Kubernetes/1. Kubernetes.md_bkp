@@ -4,29 +4,31 @@ parent: 3. DevOps Core Tools
 nav_order: 1
 has_children: true
 ---
-
-# 🚀 **Kubernetes Documentation – Home Page**
-
-| **Module**                                 | **Topics Included**                                                   | **Sub-Sections / Deep-Dive Areas**                                                                |
-| ------------------------------------------ | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| **1. Kubernetes & Container Fundamentals** | Docker Basics, Kubernetes Basics, Architecture                        | Containerization, Monolithic vs Microservices, Master & Worker Nodes, API Server, etcd, Scheduler |
-| **2. Installation & Setup**                | Local Setup (Minikube, Kind), Cloud Setup (EC2), Kubeadm, Kops        | kubectl installation, Cluster creation, Kubeconfig, Load Balancer setup                           |
-| **3. Core Kubernetes Concepts**            | Pods, ReplicaSets, Deployments, Namespaces, Labels, Selectors         | Annotations, Pod lifecycle, Multi-container pods                                                  |
-| **4. Workloads**                           | Deployments, StatefulSets, DaemonSets, Jobs, CronJobs                 | Rolling updates, Rollbacks, Workload behavior                                                     |
-| **5. Networking**                          | Cluster Networking, Services, Ingress, DNS                            | Service Types, Ingress Controllers, Network Policies                                              |
-| **6. Storage & Configuration**             | Persistent Volumes (PV), Persistent Volume Claims (PVC), StorageClass | ConfigMaps, Secrets, Volume types (hostPath, NFS, CSI)                                            |
-| **7. Scaling & Scheduling**                | HPA, VPA, Cluster Autoscaling, Resource Requests/Limits               | Node Affinity, Taints/Tolerations, Probes (Liveness/Readiness)                                    |
-| **8. Cluster Administration**              | RBAC, Cluster Upgrade, CRDs, Node Maintenance                         | Service Accounts, Admission Controllers, API Access Control                                       |
-| **9. Monitoring & Logging**                | Metrics Server, Prometheus, Grafana, Node Monitoring                  | Logs, Events, Resource usage analysis, Alerting                                                   |
-| **10. Security**                           | Pod Security Standards (PSS), Image Scanning, Network Policies        | Secrets Encryption, mTLS, RBAC Hardening                                                          |
-| **11. Advanced Kubernetes Features**       | Operators, Helm, Kubernetes API, Service Mesh                         | Istio, Linkerd, Mutual TLS, Traffic Splitting                                                     |
-| **12. Cloud-Native Kubernetes**            | Managed Services (EKS, AKS, GKE)                                      | Spot/Preemptible Nodes, IAM Integration, Cloud Networking                                         |
-| **13. CI/CD & DevOps Integration**         | Helm CI/CD, Skaffold, GitOps (ArgoCD / Flux)                          | Pipelines, Blue-Green Deployments, Canary Releases                                                |
-| **14. Debugging & Troubleshooting**        | kubectl debug, Logs, Pod/Node Debugging                               | Resource Usage Analysis, CrashLoopBackOff fixes                                                   |
-| **15. Kubernetes Projects**                | Personal Projects, Microservices Demo, End-to-End Deployments         | Full architecture + YAML files                                                                    |
+# 🚀 Kubernetes & Kubectl Complete Course Content
 
 ---
 
+## 🧭 Top-Level Summary
+
+| **Module** | **Topics Covered** | **Hands-On / Practical** |
+|-------------|--------------------|---------------------------|
+| **1. Containers & Kubernetes Setup** | Containers, Minikube, Docker Client, Kops, Kubeadm, Docker Image Registry, LoadBalancer | Setup K8s using Minikube, Build Images, Deploy First App, Load Balancing |
+| **2. Kubernetes Basics** | Architecture, Services, Secrets, Scaling, Rolling Updates, Ingress | Deploy Services, Health Checks, ReplicaSets |
+| **3. Advanced Topics** | Persistent Volumes, Taints & Tolerations, ConfigMaps, Ingress Controller, Affinity, StatefulSets, CRDs | Using Volumes, StatefulSets, Monitoring, Tolerations |
+| **4. Kubernetes Administration** | Namespaces, RBAC, Resource Quotas, Networking, Node Maintenance, TLS | Managing Users, HA Setup, Resource Quotas |
+| **5. Packaging with Helm** | Helm Charts, Templates, Repositories | Working with Helm, Create Own Charts |
+| **6. Continuous Development (Skaffold)** | Skaffold Setup & CI/CD Flow | Using Skaffold |
+| **7. Serverless on Kubernetes** | Serverless Concepts, Kuberless Framework | Deploy Serverless Apps |
+| **8. Microservices with Istio** | Istio, Mutual TLS, RBAC, JWT Authentication | Working with Istio & Authentication |
+| **9. Installing Kubernetes using Kubeadm** | Cluster Bootstrap with Kubeadm | Running Basic Commands |
+| **10. Cloud & Monitoring** | TLS, Dashboard, Prometheus | Using Certs, Dashboard, Prometheus |
+
+---
+
+## 🎯 Learning Objective
+> Introduction to Kubernetes, setting up and running Docker containers, deploying your first app in Kubernetes, and load balancing using LoadBalancer services.
+
+---
 
 ## 🧱 Containers & Kubernetes Setup
 
@@ -44,6 +46,12 @@ has_children: true
 | **Service with LoadBalancer** | Exposing services using K8s LoadBalancer |
 | **Service with AWS ELB LoadBalancer** | Integrating AWS ELB with Kubernetes |
 
+### 🧪 Hands-On
+- Setup Kubernetes using **Minikube**  
+- Build **Docker Images**  
+- Run Applications on Kubernetes  
+- Load Balance using **ClusterIP / NodePort / LoadBalancer**  
+- AWS ELB Integration  
 
 ---
 
