@@ -4,8 +4,20 @@ nav_order: 4
 parent: "• AWS"
 grand_parent: "4. Cloud Platforms"
 ---
+# **VPC**
 
+**What is it?** Your own isolated network in the AWS cloud.
 
+ **Why care?** Full control over subnets, IPs, routes, firewalls
+ (security groups), NATs.
+
+ **Pro Tip:** Separate public & private subnets for
+ security + efficiency.
+
+ **Bonus Insight:** Use VPC Peering or Transit Gateway to
+ connect multiple VPCs across regions/accounts.
+ Enable Flow Logs to monitor network traffic
+ for compliance or debugging
 
 ---
 
