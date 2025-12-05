@@ -11,7 +11,7 @@ Here are some handpicked websites and GitHub repositories that can help you in y
 
 ---
 
-## 📘 Study Notes
+## 📘 Study Notes GitHub repositories
 
 - [Python for DevOps Notes](https://github.com/natrajwadhai13/python-for-devops.git)
 - Docker Notes — _Coming soon..._
@@ -19,22 +19,7 @@ Here are some handpicked websites and GitHub repositories that can help you in y
 - AWS Notes — _Coming soon..._
 
 ---
-
-## 🚀 DevOps Project GitHub Repos
-
-### 🔧 GitLab CI/CD
-
-1. AWS Pipeline Project — _Coming soon..._
-2. Azure Pipeline Project — _Coming soon..._
-3. GCP Pipeline Project — _Coming soon..._
-
-### 🛠 Jenkins CI/CD
-
-1. AWS Pipeline Project — _Coming soon..._
-2. Azure Pipeline Project — _Coming soon..._
-3. GCP Pipeline Project — _Coming soon..._
-
----
+===========================================================
 
 ## 🔗 Useful Websites
 
@@ -44,6 +29,7 @@ Here are some handpicked websites and GitHub repositories that can help you in y
 - [Awesome DevOps](https://github.com/aryanguenthner/awesome-devops) — A curated list of awesome DevOps tools and resources.
 
 ---
+===========================================================
 
 ## 🐙 Popular GitHub Repositories
 
@@ -53,6 +39,50 @@ Here are some handpicked websites and GitHub repositories that can help you in y
 - [open-guides/og-aws](https://github.com/open-guides/og-aws) — A practical guide to AWS best practices.
 
 ---
+===========================================================
+# **cheatsheets:**
+
+- [cheatsheets URL](https://cheatsheets.zip/)
+
+- [java/cheatsheets](https://cheatsheets.zip/java)
+
+- [Selenium/cheatsheets](https://cheatsheets.zip/selenium)
+
+- [Git/cheatsheets](https://cheatsheets.zip/git)
+
+- [Kubernetes/cheatsheets](https://cheatsheets.zip/kubernetes)
+
+- [Terraform/cheatsheets](https://cheatsheets.zip/terraform)
+
+- [Nginx/cheatsheets](https://cheatsheets.zip/nginx)
+
+- [Github Actions/cheatsheets](https://cheatsheets.zip/github-actions)
+
+- [Github CLI/cheatsheets](https://cheatsheets.zip/github-cli)
+
+- [Docker/cheatsheets](https://cheatsheets.zip/docker)
+
+- [Bash/cheatsheets](https://cheatsheets.zip/bash)
+
+- [PowerShell/cheatsheets](https://cheatsheets.zip/powershell)
+
+- [Python/cheatsheets](https://cheatsheets.zip/python)
+
+- [PowerShell/cheatsheets](https://cheatsheets.zip/powershell)
+
+ **Database**
+
+- [MySQL/cheatsheets](https://cheatsheets.zip/mysql)
+
+- [PostgreSQL/cheatsheets](https://cheatsheets.zip/postgres)
+
+- [Redis/cheatsheets](https://cheatsheets.zip/redis)
+
+- [MongoDB/cheatsheets](https://cheatsheets.zip/mongodb)
+
+- [Neo4j/cheatsheets](https://cheatsheets.zip/neo4j)
+
+
 
 ## 💡 Tips
 

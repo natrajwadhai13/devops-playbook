@@ -1,7 +1,7 @@
 ---
 title: "• Study Roadmap"
 parent: "20. Testing"
-nav_order: 2
+nav_order: 1
 has_children: true
 ---
 
@@ -14,6 +14,9 @@ Below is **a complete, step-by-step QA Testing Roadmap** designed for someone pr
 # ✅ **QA Testing Roadmap (Beginner → 3 Years Experience Level)**
 
 ![Image](https://miro.medium.com/1%2A9iilv57EuWZFIeFqp6twyw.png?utm_source=chatgpt.com)
+
+![Testing Roadmap](images/Testing_Roadmap.png)
+![QA Roadmap](images/QA_eng_Roadmap.png)
 
 ![Image](https://media.licdn.com/dms/image/v2/D5612AQGo4OMGk7eWPg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1691292641299?e=2147483647\&t=ZTJ47WvU6qXyNYmg6D3GT0POKksziTOnLC044G2Q1-4\&v=beta\&utm_source=chatgpt.com)
 
