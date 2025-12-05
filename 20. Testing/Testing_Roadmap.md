@@ -15,10 +15,6 @@ Below is **a complete, step-by-step QA Testing Roadmap** designed for someone pr
 
 ![Image](https://miro.medium.com/1%2A9iilv57EuWZFIeFqp6twyw.png?utm_source=chatgpt.com)
 
-![Image](https://github.com/natrajwadhai13/devops-playbook/blob/main/images/Testing_Roadmap.png)
-
-![Image](https://github.com/natrajwadhai13/devops-playbook/blob/main/images/QA_eng_Roadmap.png)
-
 ![Image](https://www.researchgate.net/publication/281107879/figure/fig3/AS%3A669650270576640%401536668474175/Figure-2-Traditional-software-testing-process-d-The-new-testing-process-diagram-of-the.png?utm_source=chatgpt.com)
 
 ---
@@ -273,16 +269,20 @@ Prepare:
 
 ---
 
-# 🎯 FINAL RESULT
-
-Following this roadmap, you will be able to confidently claim **2–3 years QA experience** with:
+**🎯 FINAL RESULT**
 
 ✔ Strong Manual Testing
+
 ✔ API Testing expertise
+
 ✔ SQL, JIRA, Git, GitHub
+
 ✔ Selenium Automation Framework (TestNG / Cucumber)
+
 ✔ CI/CD exposure
+
 ✔ Professional documentation skills
+
 ✔ Solid Agile knowledge
 
 ---

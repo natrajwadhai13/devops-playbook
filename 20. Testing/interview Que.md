@@ -11,15 +11,8 @@ Here are **30 Technical QA Interview Questions with clear & simple answers** —
 
 # ✅ **30 Technical QA Interview Questions & Answers**
 
-![Image](https://i.ytimg.com/vi/yRokoAy9Cog/hq720.jpg?rs=AOn4CLAwv5sPF6ziR5joKwGNdG0nh2zi3w\&sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD\&utm_source=chatgpt.com)
 
-![Image](https://media.geeksforgeeks.org/wp-content/uploads/20240529151025/Selenium-features--660.webp?utm_source=chatgpt.com)
-
-![Image](https://images.ctfassets.net/vztl6s0hp3ro/7zfHYM9IOABrGl5bAuUNH2/2a649cfcc97356bd7708b8a1168ef34d/5-basic-software-testing-questions-1024x1024.jpg?utm_source=chatgpt.com)
-
----
-
-# 🔹 **MANUAL TESTING – TECHNICAL QUESTIONS**
+## 🔹 **MANUAL TESTING – TECHNICAL QUESTIONS**
 
 ### **1. What are the different types of testing?**
 

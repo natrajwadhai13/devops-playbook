@@ -11,8 +11,6 @@ has_children: true
 
 ![Image](https://browserstack.wpenginepowered.com/wp-content/uploads/2021/09/Selenium-WebDriver-for-Automation-Testing.webp?utm_source=chatgpt.com)
 
-![Image](https://i.ytimg.com/vi/uZMO9Z27tck/hq720.jpg?rs=AOn4CLC3fDeyYNwXwXNqBIXJ-0YNvbwydg\&sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD\&utm_source=chatgpt.com)
-
 ---
 
 ## **1. How will you handle a dynamic element whose ID keeps changing?**

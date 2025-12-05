@@ -6,19 +6,8 @@ has_children: true
 ---
 
 
-
-Below are **top basic & general interview questions** that every tester must know (non-technical, easy, most commonly asked).
-These questions help you clear interviews up to **2–3 years experience**.
-
----
-
 # ✅ **Top Basic QA Testing Interview Questions (General + Simple)**
 
-![Image](https://jaro-website.s3.ap-south-1.amazonaws.com/2025/07/maxresdefault.jpg?utm_source=chatgpt.com)
-
-![Image](https://image.slidesharecdn.com/manualtestinginterviewquestions-150723123012-lva1-app6891/75/Manual-testing-interview-questions-1-2048.jpg?utm_source=chatgpt.com)
-
----
 
 ## **1. Tell me about yourself (Testing profile)**
 
@@ -257,19 +246,9 @@ Testing request-response using tools like Postman.
 ========================================
 
 
-Here are **30 Mock Interview Questions with Simple & Clear Answers** — perfect for **2–3 years QA experience** (Manual + Basic API + Basic Automation Understanding).
-
----
-
 # ✅ **30 QA Mock Interview Questions & Answers**
 
-![Image](https://i.ytimg.com/vi/G3ZpdVgkZAo/hq720.jpg?rs=AOn4CLCpdolvNqSTMxbzRHKikhvChnoMJg\&sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD\&utm_source=chatgpt.com)
 
-![Image](https://codequotient.com/blog/wp-content/uploads/2024/01/Panel-Interview-Questions-What-to-Expect-and-How-to-Handle-Group-Interviews.jpg?utm_source=chatgpt.com)
-
-![Image](https://cms-cdn.katalon.com/QA_interview_questions_and_answers_updated_2023_152abc1015.png?utm_source=chatgpt.com)
-
----
 
 # **1. Tell me about yourself.**
 
