@@ -7,7 +7,7 @@ has_children: true
 
 
 
-# ✅ ** QA Interview Questions & Answers **
+# ✅ **QA Interview Questions & Answers**
 
 # **1. Tell me about yourself (Testing Profile).**
 
