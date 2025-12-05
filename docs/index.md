@@ -4,6 +4,7 @@ nav_order: 1
 ---
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -13,7 +14,8 @@ nav_order: 1
   <meta name="author" content="Natraj" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <script src="https://t.contentsquare.net/uxa/c622506447d4b.js"></script>
+<script src="https://t.contentsquare.net/uxa/c622506447d4b.js"></script>
+
   <style>
     body {
       margin: 0;
@@ -79,6 +81,7 @@ nav_order: 1
     }
     footer a { color: #fff; text-decoration: underline; }
   </style>
+
 </head>
 <body>
   <header>
@@ -98,7 +101,7 @@ nav_order: 1
     <section>
       <h2>🧩 Study Topics</h2>
       <ul>
-      
+
         <li>
         <a href="https://natrajwadhai13.github.io/devops-playbook/1.%20DevOps%20Interview/DevOps.html" target="_blank">
         <strong>1. DevOps :</strong> DevOps Roadmap, DevOps Interview, Useful DevOps Resources
@@ -221,6 +224,7 @@ nav_order: 1
         Coming soon: personal portfolio & resume integration into this hub.
       </p>
     </section>
+
   </main>
 
   <footer>
