@@ -12,6 +12,8 @@ nav_order: 1
   <meta name="description" content="Natraj's complete DevOps and Cloud Playbook — Study notes, interview prep, and real-world automation pipelines." />
   <meta name="author" content="Natraj" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://t.contentsquare.net/uxa/c622506447d4b.js"></script>
   <style>
     body {
       margin: 0;
