@@ -15,14 +15,9 @@ Below is **a complete, step-by-step QA Testing Roadmap** designed for someone pr
 
 ![Image](https://miro.medium.com/1%2A9iilv57EuWZFIeFqp6twyw.png?utm_source=chatgpt.com)
 
-<p align="center">
-  <img src="images/Testing_Roadmap.png" alt="Testing Roadmap" width="80%" style="border-radius:15px; margin-top:30px;">
-</p>
+![Image](https://github.com/natrajwadhai13/devops-playbook/blob/main/images/Testing_Roadmap.png)
 
-<p align="center">
-  <img src="images/QA_eng_Roadmap.png" alt="QA Roadmap" width="80%" style="border-radius:15px; margin-top:30px;">
-</p>
-![Image](https://media.licdn.com/dms/image/v2/D5612AQGo4OMGk7eWPg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1691292641299?e=2147483647\&t=ZTJ47WvU6qXyNYmg6D3GT0POKksziTOnLC044G2Q1-4\&v=beta\&utm_source=chatgpt.com)
+![Image](https://github.com/natrajwadhai13/devops-playbook/blob/main/images/QA_eng_Roadmap.png)
 
 ![Image](https://www.researchgate.net/publication/281107879/figure/fig3/AS%3A669650270576640%401536668474175/Figure-2-Traditional-software-testing-process-d-The-new-testing-process-diagram-of-the.png?utm_source=chatgpt.com)
 
