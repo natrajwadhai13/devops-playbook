@@ -1,7 +1,7 @@
 ---
 title: "• VPC"
 nav_order: 1
-parent: "• VPC"
+parent: "• VPC & Networking"
 grand_parent: "• AWS"
 grand_grand_parent: "4. Cloud Platforms"
 ---
