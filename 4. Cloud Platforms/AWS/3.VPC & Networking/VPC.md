@@ -1,10 +1,11 @@
 ---
-title: "• VPC & Networking"
-nav_order: 4
+title: "• VPC"
+nav_order: 1
 parent: "• VPC"
 grand_parent: "• AWS"
 grand_grand_parent: "4. Cloud Platforms"
 ---
+
 # **VPC**
 
 **What is it?** Your own isolated network in the AWS cloud.

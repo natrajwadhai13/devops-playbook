@@ -1,7 +1,7 @@
 ---
 title: "• RDS"
 nav_order: 1
-parent: "• RDS, DynamoDB, ElastiCache"
+parent: "• Databases"
 grand_parent: "• AWS"
 grand_grand_parent: "4. Cloud Platforms"
 ---
