@@ -1,5 +1,5 @@
 ---
-title: "• Non-RDS"
+title: "📌 Non-RDS"
 nav_order: 2
 parent: "• Databases"
 grand_parent: "• AWS"
