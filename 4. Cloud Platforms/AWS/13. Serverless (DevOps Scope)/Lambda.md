@@ -1,5 +1,5 @@
 ---
-title: "• Lambda"
+title: "📌 Lambda"
 nav_order: 13
 parent: "• Serverless (DevOps Scope)"
 grand_parent: "• AWS"
