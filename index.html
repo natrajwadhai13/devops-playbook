@@ -15,57 +15,112 @@
 <style>
 
 /* ============================================
-   🔥 HERO SECTION + UNLIMITED BUBBLES
+   🌟 UPGRADE V2 — HERO SECTION + EFFECTS
 ============================================ */
 
+/* HERO MAIN */
 .hero-devops {
   position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, #050a14 0%, #0a1a28 100%);
   color: white;
-  padding: 120px 0;
+  padding: 140px 0 120px;
   text-align: center;
 }
 
-/* Bubble Base Style */
+/* GLASS CARD */
+.hero-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 25px 30px;
+  width: fit-content;
+  margin: 0 auto;
+  border: 1px solid rgba(0,255,255,0.15);
+  box-shadow: 0 0 25px rgba(0,255,255,0.15);
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* HERO IMAGE */
+.hero-devops img {
+  max-height: 480px;
+  width: 900px;
+  border-radius: 15px;
+  margin-top: 30px;
+  object-fit: cover;
+  box-shadow: 0 0 25px #00eaff80;
+  z-index: 5;
+  position: relative;
+}
+
+/* TYPING TEXT */
+.typing {
+  font-size: 22px;
+  color: #64ffda;
+  margin-top: 10px;
+  height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #64ffda;
+  animation: cursorBlink 0.7s infinite;
+}
+
+@keyframes cursorBlink {
+  0%, 50% { border-color: #64ffda; }
+  51%, 100% { border-color: transparent; }
+}
+
+/* UNLIMITED BUBBLES */
 .bubble {
   position: absolute;
   bottom: -60px;
-  background: radial-gradient(circle, rgba(0, 255, 255, 0.40), transparent);
+  background: radial-gradient(circle, rgba(0,255,255,0.40), transparent);
   border-radius: 50%;
   animation: rise 8s linear infinite;
   opacity: 0.85;
   filter: blur(1px);
 }
 
-/* Bubbles Animation */
 @keyframes rise {
-  0%   { transform: translateY(0) scale(1); opacity: 0.4; }
+  0%   { transform: translateY(0) scale(1); opacity: 0.3; }
   50%  { opacity: 1; }
   100% { transform: translateY(-110vh) scale(1.4); opacity: 0; }
 }
 
-/* Content stays above bubbles */
-.hero-devops h1,
-.hero-devops p,
-.hero-devops img {
-  position: relative;
-  z-index: 5;
+/* FLOATING PARTICLES */
+.particle {
+  position: absolute;
+  background: rgba(0,255,255,0.15);
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 8px #00eaff;
+  animation: particleFloat 6s infinite ease-in-out;
 }
 
-/* Hero Image Styling */
-.hero-devops img {
-  max-height: 500px;
-  width: 900px;
-  object-fit: cover;
-  border-radius: 15px;
-  margin-top: 30px;
-  box-shadow: 0 0 25px #00eaff80;
+@keyframes particleFloat {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-40px) scale(1.4); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+/* ============================================
+   🌟 GLASS NAVBAR
+============================================ */
+
+.custom-navbar {
+  backdrop-filter: blur(12px);
+  background: rgba(0,0,0,0.65) !important;
+  border-bottom: 1px solid rgba(0,255,255,0.25);
 }
 
 
 /* ============================================
-   OTHER SECTIONS
+   OTHER SECTIONS (unchanged)
 ============================================ */
 
 .devops-section {
@@ -77,19 +132,13 @@
   background: white;
   border-radius: 12px;
   padding: 30px;
-  margin-bottom: 30px;
   text-align: center;
-  transition: 0.3s;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s;
 }
 .devops-box:hover { transform: translateY(-8px); }
 
-.devops-box img {
-  height: 40px;
-  width: auto;
-  object-fit: contain;
-  margin-bottom: 20px;
-}
+.devops-box img { height: 40px; margin-bottom: 20px; }
 
 .study-goals {
   background: linear-gradient(90deg, #1CB5E0, #000851);
@@ -102,14 +151,6 @@
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
-}
-
-footer {
-  background: #111;
-  color: #aaa;
-  padding: 20px;
-  text-align: center;
-  font-size: 14px;
 }
 
 .portfolio-section { padding: 60px 0; }
@@ -131,13 +172,20 @@ footer {
   margin-bottom: 30px;
 }
 
+footer {
+  background: #111;
+  color: #aaa;
+  padding: 20px;
+  text-align: center;
+}
 </style>
 </head>
 
 
-<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+<body id="top">
 
-<!-- NAVIGATION -->
+
+<!-- NAVBAR -->
 <section class="navbar custom-navbar navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -150,7 +198,6 @@ footer {
         <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
         <li><a href="#study" class="smoothScroll">Study Goals</a></li>
         <li><a href="#personal" class="smoothScroll">Personal</a></li>
-        <li><a href="#contact" class="smoothScroll">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -160,37 +207,80 @@ footer {
 <!-- HERO SECTION -->
 <section class="hero-devops" id="home">
 
-  <!-- Unlimited Bubbles Auto Generated -->
+  <!-- AUTO BUBBLES -->
   <div id="bubble-container"></div>
 
-  <div class="container">
+  <!-- HERO CONTENT -->
+  <div class="hero-card">
     <h1>🚀 Learn | Build | Deploy</h1>
-    <p>Personal Portfolio + DevOps Study Platform — Learn, Practice & Grow</p>
-    <img src="images/devops-education.gif" class="img-responsive center-block" alt="DevOps Study">
-     <a href="#devops" class="btn btn-primary" style="margin-top:30px;">Start Learning</a>
+    <p>Personal Portfolio + DevOps Study Platform</p>
+    <div class="typing" id="typing"></div>
   </div>
+
+  <!-- HERO IMAGE -->
+  <img src="images/devops-education.gif" alt="DevOps Study">
 
 </section>
 
-<!-- JS: Unlimited Bubble Generator -->
+
+<!-- UNLIMITED BUBBLE + PARTICLE SCRIPT -->
 <script>
-function createBubble() {
-  const bubble = document.createElement("div");
-  bubble.classList.add("bubble");
+/* Typing Animation */
+const typingElement = document.getElementById("typing");
+const words = [
+  "DevOps Engineer",
+  "Cloud Enthusiast",
+  "CI/CD Automator",
+  "Linux Expert",
+  "Docker & Kubernetes User"
+];
 
-  const size = Math.random() * 35 + 10;   // 10 - 45 px
-  bubble.style.width = size + "px";
-  bubble.style.height = size + "px";
+let wordIndex = 0, charIndex = 0, deleting = false;
 
-  bubble.style.left = Math.random() * 100 + "%";  
-  bubble.style.animationDuration = (Math.random() * 4 + 6) + "s";
+function typeEffect() {
+  const current = words[wordIndex];
+  typingElement.textContent = current.substring(0, charIndex);
 
-  document.getElementById("bubble-container").appendChild(bubble);
+  if (!deleting && charIndex < current.length) charIndex++;
+  else if (deleting && charIndex > 0) charIndex--;
+  else deleting = !deleting, !deleting && (wordIndex = (wordIndex+1)%words.length);
 
-  setTimeout(() => bubble.remove(), 10000);
+  setTimeout(typeEffect, deleting ? 70 : 120);
 }
+typeEffect();
 
-setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
+/* Floating Particles */
+function createParticle() {
+  const p = document.createElement("div");
+  p.classList.add("particle");
+
+  const size = Math.random()*8 + 4;
+  p.style.width = size+"px";
+  p.style.height = size+"px";
+  p.style.left = Math.random()*100+"%";
+  p.style.top = Math.random()*100+"%";
+  p.style.animationDuration = (Math.random()*6+4)+"s";
+
+  document.querySelector(".hero-devops").appendChild(p);
+  setTimeout(()=>p.remove(), 9000);
+}
+setInterval(createParticle, 150);
+
+/* Unlimited Neon Bubbles */
+function createBubble() {
+  const b = document.createElement("div");
+  b.classList.add("bubble");
+
+  const size = Math.random()*35 + 10;
+  b.style.width = size+"px";
+  b.style.height = size+"px";
+  b.style.left = Math.random()*100+"%";
+  b.style.animationDuration = (Math.random()*4+6)+"s";
+
+  document.getElementById("bubble-container").appendChild(b);
+  setTimeout(()=>b.remove(), 9000);
+}
+setInterval(createBubble, 250);
 </script>
 
 
@@ -198,7 +288,7 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
 <section class="devops-section" id="devops">
   <div class="container text-center">
     <h2>Popular DevOps Tools</h2>
-    <p>Master the tools that power modern automation and deployment pipelines.</p>
+    <p>Master the tools that power automation & deployment.</p>
 
     <div class="row">
 
@@ -206,7 +296,7 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
         <div class="devops-box">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">
           <h4>Docker</h4>
-          <p>Containerize applications for reliable deployments.</p>
+          <p>Containerize apps for reliable deployments.</p>
         </div>
       </div>
 
@@ -214,7 +304,7 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
         <div class="devops-box">
           <img src="https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg">
           <h4>Kubernetes</h4>
-          <p>Orchestrate containers at scale with K8s and Helm.</p>
+          <p>Orchestrate apps at scale.</p>
         </div>
       </div>
 
@@ -222,15 +312,15 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
         <div class="devops-box">
           <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg">
           <h4>AWS Cloud</h4>
-          <p>Build and scale apps with Amazon Web Services.</p>
+          <p>Build & scale with AWS.</p>
         </div>
       </div>
 
       <div class="col-md-3 col-sm-6">
         <div class="devops-box">
-          <i class="fa fa-cogs"></i>
+          <i class="fa fa-cogs" style="font-size:40px;color:#007bff;"></i>
           <h4>CI/CD Pipelines</h4>
-          <p>Automate build, test, and deployment with GitLab CI/CD.</p>
+          <p>Automate build, test & deploy.</p>
         </div>
       </div>
 
@@ -243,61 +333,27 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
 <section class="portfolio-section" id="portfolio">
   <div class="container">
     <h2 class="text-center">💼 Professional Portfolio</h2>
-    <p class="text-center">Showcasing my DevOps journey, skills, and achievements.</p>
 
-    <!-- PROFILE CARD -->
     <div class="profile-card">
       <h3>Natraj Wadhai</h3>
-      <p>Pune, Kharadi</p>
-
-      <div class="profile-links">
-        <a href="mailto:natrajwadhai@rediffmail.com">📧 Email</a>
-        <a href="tel:+918421027168">📞 Phone</a>
-        <a href="https://linkedin.com/in/natraj-wadhai-311589110">🔗 LinkedIn</a>
-        <a href="https://github.com/natrajwadhai13">💻 GitHub</a>
-      </div>
+      <p>Pune, India</p>
     </div>
 
-    <!-- EXPERIENCE -->
     <div class="portfolio-block">
-      <h3>Professional Experience</h3>
-
-      <div class="exp-card">
-        <h4>Software Engineer – Infosys Ltd, Pune</h4>
-        <span>July 2024 – Present</span>
-        <p><b>Client:</b> Credit Suisse & UBS | <b>Tools:</b> Gsnow, Rex-Ansible, Autosys, GitLab, Axway, Splunk</p>
-      </div>
-
-      <div class="exp-card">
-        <h4>Senior Linux Administrator – IDEMIA, Mumbai</h4>
-        <span>April 2024 – July 2024</span>
-      </div>
-
-      <div class="exp-card">
-        <h4>Software Engineer – S2 InfoTech, Mumbai</h4>
-        <span>Jan 2022 – Apr 2024</span>
-      </div>
-
-      <div class="exp-card">
-        <h4>Data Center Engineer – Credit Suisse, Pune</h4>
-        <span>Feb 2020 – Jan 2022</span>
-      </div>
-
-      <div class="exp-card">
-        <h4>Data Center Engineer – Wipro Technologies, Pune</h4>
-        <span>Jan 2019 – Feb 2020</span>
-      </div>
+      <h3>Experience</h3>
+      <ul>
+        <li>Software Engineer – Infosys Ltd (UBS Project)</li>
+        <li>Senior Linux Admin – IDEMIA</li>
+        <li>Software Engineer – S2 InfoTech</li>
+        <li>Data Center Engineer – Credit Suisse</li>
+      </ul>
     </div>
 
-
-    <!-- EDUCATION -->
     <div class="portfolio-block">
       <h3>Education</h3>
       <ul>
-        <li><b>M.Tech – Electronics & Communication</b>, RTM Nagpur University (2019)</li>
-        <li><b>B.E – Electronics & Communication</b>, RTM Nagpur University (2017)</li>
-        <li><b>HSC – Science</b>, 2012</li>
-        <li><b>SSC</b>, 2010</li>
+        <li>M.Tech – Electronics & Communication</li>
+        <li>B.E – Electronics & Communication</li>
       </ul>
     </div>
 
@@ -309,29 +365,31 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
 <section class="study-goals" id="study">
   <div class="container text-center">
     <h2>Your Study Tracker</h2>
-    <p>Track progress, set goals, and stay consistent in learning.</p>
+    <p>Stay consistent, grow daily.</p>
 
     <div class="row">
+
       <div class="col-md-4">
         <div class="devops-box">
           <h4>Daily Learning</h4>
-          <p>Set daily goals and monitor progress.</p>
+          <p>Track your growth.</p>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="devops-box">
           <h4>Practice Projects</h4>
-          <p>Hands-on work with automation and deployment setups.</p>
+          <p>Hands-on deployment work.</p>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="devops-box">
           <h4>Certifications</h4>
-          <p>Prepare for AWS, Azure, and GCP exams.</p>
+          <p>Prepare for AWS, Azure, GCP.</p>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -341,14 +399,16 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
 <section class="study-goals" id="personal">
   <div class="container text-center">
     <h2>🌱 Personal Section</h2>
-    <p>Coming soon...</p>
+    <p><em>Coming Soon...</em></p>
   </div>
 </section>
 
 
+<!-- FOOTER -->
 <footer>
   © 2025 Natraj Wadhai — DevOps | Portfolio | Study Notes
 </footer>
+
 
 </body>
 </html>
