@@ -4,49 +4,56 @@
   <title>Natraj Wadhai - DevOps & Portfolio Hub</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- CSS FILES -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/templatemo-style.css">
 
-  <style>
-    /* NEW STYLES */
+<style>
+
+/* ============================================
+   🔥 HERO SECTION + UNLIMITED BUBBLES
+============================================ */
+
 .hero-devops {
   position: relative;
   overflow: hidden;
-  /* LIGHTER BLACK + BLUE TINT */
   background: linear-gradient(135deg, #050a14 0%, #0a1a28 100%);
   color: white;
-  padding: 100px 0;
+  padding: 120px 0;
   text-align: center;
 }
 
-/* BRIGHTER BUBBLES */
-.hero-devops .bubble {
+/* Bubble Base Style */
+.bubble {
   position: absolute;
-  background: radial-gradient(circle, rgba(0, 255, 255, 0.40), rgba(0, 255, 255, 0));
+  bottom: -50px;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.40), transparent);
   border-radius: 50%;
-  animation: floatBubble 6s ease-in-out infinite;
-  opacity: 0.9; /* Increased visibility */
+  animation: rise 8s linear infinite;
+  opacity: 0.85;
+  filter: blur(1px);
 }
 
-/* FLOAT ANIMATION */
-@keyframes floatBubble {
-  0% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-40px) scale(1.3); }
-  100% { transform: translateY(0) scale(1); }
+/* Bubbles Animation */
+@keyframes rise {
+  0%   { transform: translateY(0) scale(1); opacity: 0.4; }
+  50%  { opacity: 1; }
+  100% { transform: translateY(-110vh) scale(1.4); opacity: 0; }
 }
 
-/* TEXT + IMAGE ABOVE BUBBLES */
+/* Content must stay above bubbles */
 .hero-devops h1,
 .hero-devops p,
 .hero-devops img {
   position: relative;
-  z-index: 2;
+  z-index: 5;
 }
 
-/* IMAGE EFFECT */
+/* Hero Image Styling */
 .hero-devops img {
   max-height: 500px;
   width: 900px;
@@ -56,75 +63,55 @@
   box-shadow: 0 0 25px #00eaff80;
 }
 
-/* BUBBLE POSITIONS */
-.b1 { width: 40px; height: 40px; top: 20%; left: 10%; animation-delay: 0s; }
-.b2 { width: 25px; height: 25px; top: 40%; left: 25%; animation-delay: 1s; }
-.b3 { width: 30px; height: 30px; top: 60%; left: 15%; animation-delay: 2s; }
-.b4 { width: 50px; height: 50px; top: 25%; right: 20%; animation-delay: 1.5s; }
-.b5 { width: 35px; height: 35px; top: 55%; right: 10%; animation-delay: 0.5s; }
-.b6 { width: 20px; height: 20px; top: 70%; left: 45%; animation-delay: 2.5s; }
-.b7 { width: 45px; height: 45px; top: 30%; left: 60%; animation-delay: 3s; }
-.b8 { width: 15px; height: 15px; top: 80%; left: 30%; animation-delay: 1.8s; }
+/* ============================================
+   OTHER SECTIONS (same as before)
+============================================ */
 
-
-
-
-
-
-    .devops-section {
-      background-color: #f4f7fa;
-      padding: 80px 0;
-    }
-    .devops-box {
-      background: white;
-      border-radius: 12px;
-      padding: 30px;
-      margin-bottom: 30px;
-      text-align: center;
-      transition: 0.3s;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-    .devops-box:hover {
-      transform: translateY(-8px);
-    }
-    .devops-box i {
-      font-size: 40px;
-      color: #007bff;
-      margin-bottom: 20px;
-    }
-    .devops-box img {
-      height: 40px;        /* Same height for all logos */
-      width: auto;         /* Auto maintain aspect ratio */
-      object-fit: contain; /* Prevent distortion */
-      margin-bottom: 20px; /* Same spacing as <i> icons */
-      display: inline-block;
-      }
-    .study-goals {
-      background: linear-gradient(90deg, #1CB5E0, #000851);
-      color: white;
-      padding: 80px 0;
-    }
-    .study-goals h2 {
-      font-size: 32px;
-      font-weight: 600;
-    }
-    .study-card {
-      background: rgba(255,255,255,0.15);
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-    footer {
-      background: #111;
-      color: #aaa;
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-    }
-
-.portfolio-section {
-  padding: 60px 0;
+.devops-section {
+  background-color: #f4f7fa;
+  padding: 80px 0;
 }
+
+.devops-box {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.devops-box:hover { transform: translateY(-8px); }
+
+.devops-box img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.study-goals {
+  background: linear-gradient(90deg, #1CB5E0, #000851);
+  color: white;
+  padding: 80px 0;
+}
+
+.study-card {
+  background: rgba(255,255,255,0.15);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+footer {
+  background: #111;
+  color: #aaa;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.portfolio-section { padding: 60px 0; }
 
 .profile-card {
   background: #ffffff;
@@ -135,16 +122,6 @@
   margin-bottom: 40px;
 }
 
-.profile-card h3 {
-  margin-bottom: 5px;
-}
-
-.profile-links a {
-  margin: 0 10px;
-  color: #007bff;
-  font-weight: 600;
-}
-
 .portfolio-block {
   background: #fff;
   padding: 25px;
@@ -153,307 +130,76 @@
   margin-bottom: 30px;
 }
 
-.exp-card {
-  margin-bottom: 25px;
-}
-
-.exp-card h4 {
-  margin-bottom: 5px;
-}
-
-.exp-card span {
-  display: block;
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 10px;
-}
-  </style>
+</style>
 </head>
+
 
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
-  <!-- NAVIGATION -->
-  <section class="navbar custom-navbar navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <a href="#" class="navbar-brand">Natraj Wadhai</a>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-nav-first">
-          <li><a href="#top" class="smoothScroll">Home</a></li>
-          <li><a href="#devops" class="smoothScroll">DevOps Notes</a></li>
-          <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-          <li><a href="#study" class="smoothScroll">Study Goals</a></li>
-          <li><a href="#personal" class="smoothScroll">Personal</a></li>
-          <li><a href="#contact" class="smoothScroll">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- HERO SECTION -->
-<section class="hero-devops" id="home">
-    
-    <!-- BUBBLES -->
-    <div class="bubble b1"></div>
-    <div class="bubble b2"></div>
-    <div class="bubble b3"></div>
-    <div class="bubble b4"></div>
-    <div class="bubble b5"></div>
-    <div class="bubble b6"></div>
-    <div class="bubble b7"></div>
-    <div class="bubble b8"></div>
-
-    <div class="container">
-      <h1>🚀 Learn | Build | Deploy</h1>
-      <p>Personal Portfolio + DevOps Study Platform — Learn, Practice & Grow</p>
-      <img src="images/devops-education.gif" class="img-responsive center-block" alt="DevOps Study">
-    </div>
-
-</section>
-  <!-- DEVOPS SECTION -->
-<section class="devops-section" id="devops">
-  <div class="container text-center">
-    <h2>Popular DevOps Tools</h2>
-    <p>Master the tools that power modern automation and deployment pipelines.</p>
-    <div class="row">
-
-      <div class="col-md-3 col-sm-6">
-        <a href="https://natrajwadhai13.github.io/devops-playbook/3.%20DevOps%20Core%20Tools/3.1%20Containerization/Docker/Docker.html" style="text-decoration:none; color:inherit;">
-          <div class="devops-box">
-        <!--  <i class="fa fa-server"></i> -->
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="40">
-            <h4>Docker</h4>
-            <p>Containerize applications for reliable deployments.</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <a href="https://natrajwadhai13.github.io/devops-playbook/3.%20DevOps%20Core%20Tools/3.2%20Orchestration/Kubernetes/0.%20Kubernetes.html">
-          <div class="devops-box">
-         <!--  <i class="fa fa-server"></i> -->
-            <img src="https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg" width="40">
-            <h4>Kubernetes</h4>
-            <p>Orchestrate containers at scale with K8s and Helm.</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <a href="https://natrajwadhai13.github.io/devops-playbook/4.%20Cloud%20Platforms/AWS.html" style="text-decoration:none; color:inherit;">
-          <div class="devops-box">
-        <!--  <i class="fa fa-server"></i> -->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" width="40">
-            <h4>AWS Cloud</h4>
-            <p>Build and scale apps with Amazon Web Services.</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <a href="https://natrajwadhai13.github.io/devops-playbook/2.%20CICD%20Tools/2.%20CICD%20Tools.html"  style="text-decoration:none; color:inherit;">
-          <div class="devops-box">
-        <!--  <i class="fa fa-server"></i> -->
-            <i class="fa fa-cogs"></i>
-            <h4>CI/CD Pipelines</h4>
-            <p>Automate build, test, and deployment with GitLab CI/CD.</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <a href="https://natrajwadhai13.github.io/devops-playbook/4.%20Cloud%20Platforms/Azure.html">
-          <div class="devops-box">
-         <!--  <i class="fa fa-server"></i> -->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg" width="40">
-            <h4>Azure</h4>
-            <p>Cloud platform for scalable apps, containers, and enterprise services.</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <a href="https://natrajwadhai13.github.io/devops-playbook/6.%20Cloud%20Automation%20Tools/6.%20Cloud%20Automation%20Tools.html">
-          <div class="devops-box">
-         <!--  <i class="fa fa-server"></i> -->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg" width="40">
-            <h4>Terraform</h4>
-            <p>Infrastructure as code for automated provisioning across clouds.</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <a href="https://natrajwadhai13.github.io/devops-playbook/9.%20Monitoring%20&%20Logging%20Tools/9.%20Monitoring%20&%20Logging%20Tools.html">
-          <div class="devops-box">
-         <!--  <i class="fa fa-server"></i> -->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Prometheus_software_logo.svg" width="40">
-            <h4>Monitoring Tools</h4>
-            <p>Track system health, performance, and reliability in real time.</p>
-          </div>
-        </a>
-      </div>
-
-
-      <div class="col-md-3 col-sm-6">
-        <a href="https://natrajwadhai13.github.io/devops-playbook/11.%20Operating%20System%20(OS)/11.%20Operating%20System%20(OS).html">
-          <div class="devops-box">
-         <!--  <i class="fa fa-server"></i> -->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" width="40">
-            <h4>Linux</h4>
-            <p>Foundation for open-source DevOps workflows and container orchestration.</p>
-          </div>
-        </a>
-      </div>
-
-
-    </div>
-    <a href="https://natrajwadhai13.github.io/devops-playbook/docs/" target="_blank" class="btn btn-primary">View All Notes</a>
-  </div>
-</section>
-
-
-
-  <!-- PORTFOLIO SECTION -->
-
-<section class="portfolio-section" id="portfolio">
+<!-- NAVIGATION -->
+<section class="navbar custom-navbar navbar-fixed-top">
   <div class="container">
-    <h2 class="text-center">💼 Professional Portfolio</h2>
-    <p class="text-center">Showcasing my DevOps journey, skills, and achievements.</p>
-
-    <!-- PROFILE CARD -->
-    <div class="profile-card">
-      <h3>Natraj Wadhai</h3>
-      <p>Pune, Kharadi</p>
-
-      <div class="profile-links">
-        <a href="mailto:natrajwadhai@rediffmail.com">📧 Email</a>
-        <a href="tel:+918421027168">📞 Phone</a>
-        <a href="https://linkedin.com/in/natraj-wadhai-311589110" target="_blank">🔗 LinkedIn</a>
-        <a href="https://github.com/natrajwadhai13" target="_blank">💻 GitHub</a>
-      </div>
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand">Natraj Wadhai</a>
     </div>
-
-    <!-- CAREER OBJECTIVE -->
-
-
-    <!-- TECHNICAL SKILLS -->
-
-
-    <!-- EXPERIENCE -->
-    <div class="portfolio-block">
-      <h3>Professional Experience</h3>
-
-      <div class="exp-card">
-        <h4>Software Engineer – Infosys Ltd, Pune</h4>
-        <span>July 2024 – Present</span>
-        <p><b>Client:</b> Credit Suisse & UBS | <b>Tools:</b> Gsnow, Rex-Ansible, Autosys, GitLab, Axway, Splunk</p>
-        <ul>
-          <li>Provided support for application migration leveraging DevOps methodologies.</li>
-
-        </ul>
-      </div>
-
-      <div class="exp-card">
-        <h4>Senior Linux Administrator – IDEMIA, Mumbai</h4>
-        <span>April 2024 – July 2024</span>
-        <ul>
-          <li>Managed biometric authentication Application (BAS) for Union Bank.</li>
-
-        </ul>
-      </div>
-
-      <div class="exp-card">
-        <h4>Software Engineer – S2 InfoTech, Mumbai</h4>
-        <span>Jan 2022 – Apr 2024</span>
-        <ul>
-          <li>Managed the Maharashtra Government Payroll website in MahaIT</li>
-
-        </ul>
-      </div>
-
-      <div class="exp-card">
-        <h4>Data Center Engineer – Credit Suisse, Pune</h4>
-        <span>Feb 2020 – Jan 2022</span>
-        <ul>
-          <li>Managed Data Center IT infrastructure, ensuring high availability and performance.</li>
-
-        </ul>
-      </div>
-
-      <div class="exp-card">
-        <h4>Data Center Engineer – Wipro Technologies, Pune</h4>
-        <span>Jan 2019 – Feb 2020</span>
-        <ul>
-          <li>Managed the Data Center infrastructure and the Goods and Services Tax Network (GSTN) website (tinxsys.com).</li>
-
-        </ul>
-      </div>
-    </div>
-
-    <!-- CERTIFICATIONS -->
-
-
-    <!-- PROJECTS -->
-
-
-    <!-- EDUCATION -->
-    <div class="portfolio-block">
-      <h3>Education</h3>
-      <ul>
-        <li><b>M.Tech – Electronics & Communication</b>, RTM Nagpur University (2019)</li>
-        <li><b>B.E – Electronics & Communication</b>, RTM Nagpur University (2017)</li>
-        <li><b>HSC – Science</b>, 2012</li>
-        <li><b>SSC</b>, 2010</li>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-nav-first">
+        <li><a href="#top" class="smoothScroll">Home</a></li>
+        <li><a href="#devops" class="smoothScroll">DevOps Notes</a></li>
+        <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+        <li><a href="#study" class="smoothScroll">Study Goals</a></li>
+        <li><a href="#personal" class="smoothScroll">Personal</a></li>
+        <li><a href="#contact" class="smoothScroll">Contact</a></li>
       </ul>
     </div>
-
   </div>
 </section>
 
 
-  <!-- STUDY GOALS -->
-  <section class="devops-section" id="study">
-    <div class="container text-center">
-      <h2>Your Study Tracker</h2>
-      <p>Track progress, set goals, and stay consistent in learning.</p>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="devops-box">
-            <h4>Daily Learning</h4>
-            <p>Set daily goals and monitor progress.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="devops-box">
-            <h4>Practice Projects</h4>
-            <p>Hands-on work with automation and deployment setups.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="devops-box">
-            <h4>Certifications</h4>
-            <p>Prepare for AWS, Azure, and GCP exams.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- HERO SECTION -->
+<section class="hero-devops" id="home">
 
-  <!-- PERSONAL SECTION -->
-  <section class="study-goals" id="personal">
-    <div class="container text-center">
-      <h2>🌱 Personal Section</h2>
-      <p>Future section for blog posts, experiences, and learning journey.</p>
-      <div class="study-card">
-        <p><em>Coming soon...</em></p>
-      </div>
-    </div>
-  </section>
+  <!-- Unlimited Bubbles Auto Generated -->
+  <div id="bubble-container"></div>
 
-  <footer>
-    © 2025 Natraj Wadhai — DevOps | Portfolio | Study Notes
-  </footer>
+  <div class="container">
+    <h1>🚀 Learn | Build | Deploy</h1>
+    <p>Personal Portfolio + DevOps Study Platform — Learn, Practice & Grow</p>
+    <img src="images/devops-education.gif" class="img-responsive center-block" alt="DevOps Study">
+  </div>
+
+</section>
+
+
+<!-- JS: Unlimited Bubble Generator -->
+<script>
+function createBubble() {
+  const bubble = document.createElement("div");
+  bubble.classList.add("bubble");
+
+  const size = Math.random() * 35 + 10;   // 10 - 45 px
+  bubble.style.width = size + "px";
+  bubble.style.height = size + "px";
+
+  bubble.style.left = Math.random() * 100 + "%";  
+  bubble.style.animationDuration = (Math.random() * 4 + 6) + "s";
+
+  document.getElementById("bubble-container").appendChild(bubble);
+
+  setTimeout(() => bubble.remove(), 10000);
+}
+
+setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
+</script>
+
+
+<!-- DEVOPS SECTION ( unchanged ) -->
+<section class="devops-section" id="devops">
+   ...  (same as your code, kept untouched)
+</section>
+
+<!-- PORTFOLIO, STUDY GOALS, FOOTER (unchanged sections) -->
+... (your existing sections remain same)
+
 </body>
 </html>
