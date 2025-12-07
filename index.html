@@ -12,31 +12,54 @@
 
   <style>
     /* NEW STYLES */
-   .hero-devops {
-      background: linear-gradient(135deg, #0f4d29, #0b331d); /* Motherboard PCB Green */
-      color: white;
-      padding: 100px 0;
-      text-align: center;
-    }
+/* NEW STYLES */
+.hero-devops {
+  background: linear-gradient(
+    135deg,
+    #000000,
+    #020b18,
+    #001f2d
+  );
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+  color: #e0f7ff;
+  padding: 100px 0;
+  text-align: center;
+}
 
-    .hero-devops h1 {
-      font-size: 48px;
-      font-weight: 700;
-    }
+/* Glow Heading */
+.hero-devops h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+}
 
-    .hero-devops p {
-      font-size: 18px;
-      margin: 20px 0 30px;
-    }
+/* Glow Text */
+.hero-devops p {
+  font-size: 18px;
+  margin: 20px 0 30px;
+  text-shadow: 0 0 5px #00cfff;
+}
 
-    /* Image size fix */
-    .hero-devops img {
-      max-height: 500px;
-      width: 900px;
-      object-fit: cover;
-      border-radius: 15px;
-      margin-top: 30px;
-    }
+/* Image styling */
+.hero-devops img {
+  max-height: 500px;
+  width: 900px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-top: 30px;
+  box-shadow: 0 0 20px #00eaff80; /* Neon effect */
+}
+
+/* Background Animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
 
     .devops-section {
       background-color: #f4f7fa;
