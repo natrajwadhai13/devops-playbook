@@ -1,15 +1,12 @@
 ---
-title: "• Interview Quetion"
+title: "• MANUAL TESTING"
 parent: "20. Testing"
 nav_order: 3
 has_children: true
 ---
 
-Here are **30 Technical QA Interview Questions with clear & simple answers** — suitable for **2–3 years experience** (Manual + API + SQL + Selenium basics + Framework knowledge).
 
----
-
-# ✅ **30 Technical QA Interview Questions & Answers**
+# ✅ **18 Technical QA Interview Questions & Answers**
 
 
 ## 🔹 **MANUAL TESTING – TECHNICAL QUESTIONS**
@@ -137,113 +134,5 @@ Using **Tests** tab:
 ```
 pm.expect(responseCode).to.equal(200);
 ```
-
----
-
-# 🔹 **SQL – TECHNICAL QUESTIONS**
-
-### **19. What is JOIN? Name types.**
-
-JOIN combines data from multiple tables.
-Types: INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN.
-
----
-
-### **20. Write a query to fetch employee name & department.**
-
-```
-SELECT emp.name, dept.dept_name 
-FROM employee emp 
-INNER JOIN department dept 
-ON emp.dept_id = dept.id;
-```
-
----
-
-### **21. How do you check duplicate records?**
-
-```
-SELECT name, COUNT(*) 
-FROM users 
-GROUP BY name 
-HAVING COUNT(*) > 1;
-```
-
----
-
-### **22. How do you delete a record safely?**
-
-Use WHERE:
-
-```
-DELETE FROM employee WHERE id = 10;
-```
-
----
-
-### **23. How do you find the second highest salary?**
-
-```
-SELECT MAX(salary) 
-FROM employee 
-WHERE salary < (SELECT MAX(salary) FROM employee);
-```
-
----
-
-# 🔹 **SELENIUM – TECHNICAL QUESTIONS**
-
-### **24. What are Selenium locators?**
-
-ID, Name, ClassName, Xpath, CSS Selector, LinkText, PartialLinkText, TagName.
-
----
-
-### **25. What is the difference between Xpath & CSS?**
-
-* Xpath → Can traverse both forward/backward
-* CSS → Faster, cannot traverse backward
-
----
-
-### **26. What are Types of Waits?**
-
-* Implicit Wait
-* Explicit Wait (WebDriverWait)
-* Fluent Wait
-
----
-
-### **27. How do you handle dropdowns?**
-
-```
-Select select = new Select(element);
-select.selectByVisibleText("Option");
-```
-
----
-
-### **28. How do you handle alerts in Selenium?**
-
-```
-Alert alert = driver.switchTo().alert();
-alert.accept();
-```
-
----
-
-### **29. What is Page Object Model (POM)?**
-
-Design pattern where each page is represented as a **class** → helps reduce duplication & increases maintainability.
-
----
-
-### **30. What is TestNG? Why do we use it?**
-
-Test framework used for:
-✔ Annotations
-✔ Assertions
-✔ Parallel execution
-✔ Test suites
 
 ---

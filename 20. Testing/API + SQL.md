@@ -111,7 +111,7 @@ Reverse API — server sends automatic data to client.
 Used to run multiple test cases with **data files (CSV/JSON)**.
 
 ---
-
+===========================
 ---
 
 # 🔹 **SQL – 15 Advanced Questions**
@@ -242,6 +242,57 @@ SELECT EXISTS(SELECT 1 FROM users WHERE id=5);
 SELECT * FROM employee 
 ORDER BY salary DESC 
 LIMIT 5;
+```
+
+---
+
+# 🔹 **SQL – TECHNICAL QUESTIONS**
+
+### **19. What is JOIN? Name types.**
+
+JOIN combines data from multiple tables.
+Types: INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN.
+
+---
+
+### **20. Write a query to fetch employee name & department.**
+
+```
+SELECT emp.name, dept.dept_name 
+FROM employee emp 
+INNER JOIN department dept 
+ON emp.dept_id = dept.id;
+```
+
+---
+
+### **21. How do you check duplicate records?**
+
+```
+SELECT name, COUNT(*) 
+FROM users 
+GROUP BY name 
+HAVING COUNT(*) > 1;
+```
+
+---
+
+### **22. How do you delete a record safely?**
+
+Use WHERE:
+
+```
+DELETE FROM employee WHERE id = 10;
+```
+
+---
+
+### **23. How do you find the second highest salary?**
+
+```
+SELECT MAX(salary) 
+FROM employee 
+WHERE salary < (SELECT MAX(salary) FROM employee);
 ```
 
 ---

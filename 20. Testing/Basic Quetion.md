@@ -123,13 +123,6 @@ Bug = Accepted defect
 
 ---
 
-# **19. Verification vs Validation.**
-
-Verification = Process check
-Validation = Actual product testing
-
----
-
 # **20. What is RTM?**
 
 Requirement Traceability Matrix maps requirements to test cases.
@@ -244,11 +237,6 @@ Tool to track code changes.
 Build → For internal testing
 Release → For production users
 
----
-
-# **39. What is Defect Clustering?**
-
-Most defects found in a few modules.
 
 ---
 

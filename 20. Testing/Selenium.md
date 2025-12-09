@@ -6,12 +6,68 @@ has_children: true
 ---
 
 
-
-# 🟦  30 Selenium Scenario-Based Questions (with Answers)**
-
 ![Image](https://browserstack.wpenginepowered.com/wp-content/uploads/2021/09/Selenium-WebDriver-for-Automation-Testing.webp?utm_source=chatgpt.com)
 
 ---
+
+# 🔹 **SELENIUM – TECHNICAL QUESTIONS**
+
+### **1. What are Selenium locators?**
+
+ID, Name, ClassName, Xpath, CSS Selector, LinkText, PartialLinkText, TagName.
+
+---
+
+### **2. What is the difference between Xpath & CSS?**
+
+* Xpath → Can traverse both forward/backward
+* CSS → Faster, cannot traverse backward
+
+---
+
+### **3. What are Types of Waits?**
+
+* Implicit Wait
+* Explicit Wait (WebDriverWait)
+* Fluent Wait
+
+---
+
+### **4. How do you handle dropdowns?**
+
+```
+Select select = new Select(element);
+select.selectByVisibleText("Option");
+```
+
+---
+
+### **5. How do you handle alerts in Selenium?**
+
+```
+Alert alert = driver.switchTo().alert();
+alert.accept();
+```
+
+---
+
+### **6. What is Page Object Model (POM)?**
+
+Design pattern where each page is represented as a **class** → helps reduce duplication & increases maintainability.
+
+---
+
+### **7. What is TestNG? Why do we use it?**
+
+Test framework used for:
+✔ Annotations
+✔ Assertions
+✔ Parallel execution
+✔ Test suites
+
+---
+
+# 🟦  30 Selenium Scenario-Based Questions (with Answers)**
 
 ## **1. How will you handle a dynamic element whose ID keeps changing?**
 

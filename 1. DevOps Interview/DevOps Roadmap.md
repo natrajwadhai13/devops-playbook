@@ -7,7 +7,7 @@ has_children: true
 
 # 🚀 DevOps Roadmap 💸
 
-If you're aiming for a high-paying DevOps job (20 LPA+), you must combine **technical expertise**, **automation**, and **business impact**. Here's a roadmap to guide your preparation:
+If you're aiming for a high-paying DevOps job, you must combine **technical expertise**, **automation**, and **business impact**. Here's a roadmap to guide your preparation:
 
 ---
 
