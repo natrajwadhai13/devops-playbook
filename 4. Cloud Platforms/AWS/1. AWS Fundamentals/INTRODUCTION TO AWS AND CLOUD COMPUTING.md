@@ -1,5 +1,5 @@
 ---
-title: "• AWS Global"
+title: "📌 AWS Global"
 nav_order: 1
 parent: "• AWS Fundamentals"
 grand_parent: "• AWS"
