@@ -95,82 +95,143 @@
   transform: scale(1.05);
 }
 
+
+/* ===== STUDY GOALS GRID ===== */
+
+.study-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.study-box {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  border-top: 5px solid #4CAF50;
+}
+
+.study-box:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.study-box i {
+  font-size: 36px;
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+.study-box h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.study-box .en {
+  font-weight: bold;
+}
+
+.study-box .hi {
+  font-size: 0.9rem;
+  color: #555;
+}
+
   </style>
 </head>
 
 <body>
   
 <a href="../index.html#portfolio" class="back-home">
-  ←🏠 Back to Home 
+  ← Back to Home 
 </a>
 
 <h1>🌱 Study Success System – From Goal to Mastery</h1>
 
-<div class="section">
-  <h2><i class="fa-solid fa-bullseye icon"></i>1️⃣ Define Your Study Goal</h2>
-  <p class="en">Set a clear goal with time and outcome.</p>
-  <p class="hi">Apna study goal clear rakhiye – kya, kab aur kaise apply karna hai.</p>
+<div class="study-grid">
+
+  <div class="study-box">
+    <i class="fa-solid fa-bullseye"></i>
+    <h3>Define Goal</h3>
+    <p class="en">Set clear goal with deadline.</p>
+    <p class="hi">Study goal clear rakhiye.</p>
+  </div>
+
+  <div class="study-box">
+    <i class="fa-solid fa-list-check"></i>
+    <h3>Daily Goals</h3>
+    <p class="en">Small daily tasks.</p>
+    <p class="hi">Daily chhote goals banaiye.</p>
+  </div>
+
+  <div class="study-box">
+    <i class="fa-solid fa-chair"></i>
+    <h3>Study Space</h3>
+    <p class="en">Fixed place for focus.</p>
+    <p class="hi">Ek hi jagah padhai.</p>
+  </div>
+
+  <div class="study-box">
+    <i class="fa-solid fa-calendar-days"></i>
+    <h3>Schedule Time</h3>
+    <p class="en">Plan study in calendar.</p>
+    <p class="hi">Study time fix kijiye.</p>
+  </div>
+
+  <div class="study-box">
+    <i class="fa-solid fa-user-check"></i>
+    <h3>Accountability</h3>
+    <p class="en">Track progress weekly.</p>
+    <p class="hi">Progress track karein.</p>
+  </div>
+
+  <div class="study-box">
+    <i class="fa-solid fa-pen-nib"></i>
+    <h3>Smart Notes</h3>
+    <p class="en">Notes for revision.</p>
+    <p class="hi">Revision ke liye notes.</p>
+  </div>
+
+  <div class="study-box">
+    <i class="fa-solid fa-comments"></i>
+    <h3>Discuss & Teach</h3>
+    <p class="en">Explain to learn better.</p>
+    <p class="hi">Samjhaane se seekhte hain.</p>
+  </div>
+
+  <div class="study-box">
+    <i class="fa-solid fa-stopwatch"></i>
+    <h3>Deep Focus</h3>
+    <p class="en">One task at a time.</p>
+    <p class="hi">Ek kaam ek time.</p>
+  </div>
+
+  <div class="study-box">
+    <i class="fa-solid fa-mug-hot"></i>
+    <h3>Take Breaks</h3>
+    <p class="en">Avoid burnout.</p>
+    <p class="hi">Break lena zaroori.</p>
+  </div>
+
+  <div class="study-box">
+    <i class="fa-solid fa-road"></i>
+    <h3>Long-Term Plan</h3>
+    <p class="en">Weekly & monthly review.</p>
+    <p class="hi">Long-term planning.</p>
+  </div>
+
+  <div class="study-box">
+    <i class="fa-solid fa-key"></i>
+    <h3>Golden Rule</h3>
+    <p class="en">Consistency wins.</p>
+    <p class="hi">Consistency sabse strong.</p>
+  </div>
+
 </div>
 
-<div class="section">
-  <h2><i class="fa-solid fa-list-check icon"></i>2️⃣ Daily Study Goals</h2>
-  <p class="en">Break big goals into small daily tasks.</p>
-  <p class="hi">Bade goal ko chhote daily tasks me tod dijiye.</p>
-</div>
-
-<div class="section">
-  <h2><i class="fa-solid fa-chair icon"></i>3️⃣ Dedicated Study Space</h2>
-  <p class="en">Study at the same place daily to build focus.</p>
-  <p class="hi">Roz ek hi jagah padhai karne se focus strong hota hai.</p>
-</div>
-
-<div class="section">
-  <h2><i class="fa-solid fa-calendar-days icon"></i>4️⃣ Schedule Study Time</h2>
-  <p class="en">Block study time like an office meeting.</p>
-  <p class="hi">Study time ko meeting ki tarah calendar me fix kijiye.</p>
-</div>
-
-<div class="section">
-  <h2><i class="fa-solid fa-user-check icon"></i>5️⃣ Stay Accountable</h2>
-  <p class="en">Track progress to stay motivated.</p>
-  <p class="hi">Progress track karne se motivation bani rehti hai.</p>
-</div>
-
-<div class="section">
-  <h2><i class="fa-solid fa-pen-nib icon"></i>6️⃣ Smart Note-Taking</h2>
-  <p class="en">Write only what helps you revise later.</p>
-  <p class="hi">Sirf wahi likhiye jo future me revision me kaam aaye.</p>
-</div>
-
-<div class="section">
-  <h2><i class="fa-solid fa-comments icon"></i>7️⃣ Discuss & Teach</h2>
-  <p class="en">Teaching others improves understanding.</p>
-  <p class="hi">Dusron ko samjhaane se khud ki understanding strong hoti hai.</p>
-</div>
-
-<div class="section">
-  <h2><i class="fa-solid fa-stopwatch icon"></i>8️⃣ One Task at a Time</h2>
-  <p class="en">Focus on one topic without multitasking.</p>
-  <p class="hi">Ek time par ek hi topic par focus kijiye.</p>
-</div>
-
-<div class="section">
-  <h2><i class="fa-solid fa-mug-hot icon"></i>9️⃣ Take Breaks</h2>
-  <p class="en">Short breaks refresh your brain.</p>
-  <p class="hi">Chhote breaks lene se dimag fresh rehta hai.</p>
-</div>
-
-<div class="section">
-  <h2><i class="fa-solid fa-road icon"></i>🔟 Long-Term Preparation</h2>
-  <p class="en">Plan weekly, monthly, and long-term growth.</p>
-  <p class="hi">Weekly, monthly aur long-term planning zaroori hai.</p>
-</div>
-
-<div class="section">
-  <h2><i class="fa-solid fa-key icon"></i>🔑 Golden Rules</h2>
-  <p class="en">Consistency beats motivation.</p>
-  <p class="hi">Consistency, motivation se zyada powerful hoti hai.</p>
-</div>
 
 </body>
 </html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Study Success System</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fa;
+      margin: 30px;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+
+    .section {
+      background: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 6px solid #4CAF50;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transform: translateY(20px);
+      opacity: 0;
+      animation: slideUp 0.8s ease forwards;
+    }
+
+    .section:nth-child(even) {
+      animation-delay: 0.2s;
+    }
+
+    .section:hover {
+      transform: scale(1.02);
+      transition: 0.3s ease;
+    }
+
+    h2 {
+      color: #2c3e50;
+    }
+
+    .icon {
+      color: #4CAF50;
+      margin-right: 10px;
+    }
+
+    .en {
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .hi {
+      color: #555;
+      margin-top: 4px;
+      font-size: 0.95em;
+    }
+
+    @keyframes slideUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .back-home {
+  display: inline-block;
+  margin: 20px auto 40px;
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.back-home:hover {
+  background: #43a047;
+  transform: scale(1.05);
+}
+
+  </style>
+</head>
+
+<body>
+  
+<a href="../index.html#portfolio" class="back-home">
+  ← Back to Home 
+</a>
+
+<h1>🌱 Study Success System – From Goal to Mastery</h1>
+
+<div class="section">
+  <h2><i class="fa-solid fa-bullseye icon"></i>1️⃣ Define Your Study Goal</h2>
+  <p class="en">Set a clear goal with time and outcome.</p>
+  <p class="hi">Apna study goal clear rakhiye – kya, kab aur kaise apply karna hai.</p>
+</div>
+
+<div class="section">
+  <h2><i class="fa-solid fa-list-check icon"></i>2️⃣ Daily Study Goals</h2>
+  <p class="en">Break big goals into small daily tasks.</p>
+  <p class="hi">Bade goal ko chhote daily tasks me tod dijiye.</p>
+</div>
+
+<div class="section">
+  <h2><i class="fa-solid fa-chair icon"></i>3️⃣ Dedicated Study Space</h2>
+  <p class="en">Study at the same place daily to build focus.</p>
+  <p class="hi">Roz ek hi jagah padhai karne se focus strong hota hai.</p>
+</div>
+
+<div class="section">
+  <h2><i class="fa-solid fa-calendar-days icon"></i>4️⃣ Schedule Study Time</h2>
+  <p class="en">Block study time like an office meeting.</p>
+  <p class="hi">Study time ko meeting ki tarah calendar me fix kijiye.</p>
+</div>
+
+<div class="section">
+  <h2><i class="fa-solid fa-user-check icon"></i>5️⃣ Stay Accountable</h2>
+  <p class="en">Track progress to stay motivated.</p>
+  <p class="hi">Progress track karne se motivation bani rehti hai.</p>
+</div>
+
+<div class="section">
+  <h2><i class="fa-solid fa-pen-nib icon"></i>6️⃣ Smart Note-Taking</h2>
+  <p class="en">Write only what helps you revise later.</p>
+  <p class="hi">Sirf wahi likhiye jo future me revision me kaam aaye.</p>
+</div>
+
+<div class="section">
+  <h2><i class="fa-solid fa-comments icon"></i>7️⃣ Discuss & Teach</h2>
+  <p class="en">Teaching others improves understanding.</p>
+  <p class="hi">Dusron ko samjhaane se khud ki understanding strong hoti hai.</p>
+</div>
+
+<div class="section">
+  <h2><i class="fa-solid fa-stopwatch icon"></i>8️⃣ One Task at a Time</h2>
+  <p class="en">Focus on one topic without multitasking.</p>
+  <p class="hi">Ek time par ek hi topic par focus kijiye.</p>
+</div>
+
+<div class="section">
+  <h2><i class="fa-solid fa-mug-hot icon"></i>9️⃣ Take Breaks</h2>
+  <p class="en">Short breaks refresh your brain.</p>
+  <p class="hi">Chhote breaks lene se dimag fresh rehta hai.</p>
+</div>
+
+<div class="section">
+  <h2><i class="fa-solid fa-road icon"></i>🔟 Long-Term Preparation</h2>
+  <p class="en">Plan weekly, monthly, and long-term growth.</p>
+  <p class="hi">Weekly, monthly aur long-term planning zaroori hai.</p>
+</div>
+
+<div class="section">
+  <h2><i class="fa-solid fa-key icon"></i>🔑 Golden Rules</h2>
+  <p class="en">Consistency beats motivation.</p>
+  <p class="hi">Consistency, motivation se zyada powerful hoti hai.</p>
+</div>
+
+</body>
+</html>
