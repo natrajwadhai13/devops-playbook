@@ -1,8 +1,9 @@
 ---
 title: "📌 AZ-900-KeyWord"
-parent: "• Azure"
-grand_parent: "4. Cloud Platforms"
-nav_order: 41
+parent: "• AZ-900"
+grand_parent: "• Azure"
+grand_grand_parent: "4. Cloud Platforms"
+nav_order: 3
 has_children: true
 ---
 
