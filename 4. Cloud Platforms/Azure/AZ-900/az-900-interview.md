@@ -685,3 +685,202 @@ HTML, CSS, JavaScript
 * Azure Storage is encrypted by default
 
 ---
+
+
+=======================================
+
+
+# 📘 **AZ-900 – Azure Resource Manager (ARM) Exam Questions & Answers**
+
+Below are **exam-oriented ARM questions** with **clear, simple answers**.
+These are **very common in AZ-900**.
+
+---
+
+## 🔹 **Q1. What is Azure Resource Manager (ARM)?**
+
+**Answer:**
+Azure Resource Manager (ARM) is the **management layer and API** that Azure uses to **create, update, and manage resources**.
+
+---
+
+## 🔹 **Q2. ARM is an API – True or False?**
+
+**Answer:**
+✅ **True**
+
+ARM provides REST APIs used by all Azure tools.
+
+---
+
+## 🔹 **Q3. Which tools use Azure Resource Manager?**
+
+**Answer:**
+
+* Azure Portal
+* Azure CLI
+* Azure PowerShell
+* ARM Templates
+* Bicep
+* SDKs
+* Terraform
+
+📌 All communicate with Azure **through ARM**.
+
+---
+
+## 🔹 **Q4. What is the main benefit of ARM?**
+
+**Answer:**
+Provides **standardized, consistent management** of Azure resources across all tools.
+
+---
+
+## 🔹 **Q5. What is an ARM template?**
+
+**Answer:**
+An ARM template is a **JSON file** used to **define and deploy Azure resources declaratively**.
+
+---
+
+## 🔹 **Q6. ARM templates are an example of what concept?**
+
+**Answer:**
+✅ **Infrastructure as Code (IaC)**
+
+---
+
+## 🔹 **Q7. What does “declarative” mean in ARM templates?**
+
+**Answer:**
+You define **what resources you want**, not **how to create them**.
+
+---
+
+## 🔹 **Q8. Which format is used by ARM templates?**
+
+**Answer:**
+✅ **JSON**
+
+---
+
+## 🔹 **Q9. What are the main components of an ARM template?**
+
+**Answer:**
+
+* Parameters
+* Variables
+* Resources
+* Outputs
+
+---
+
+## 🔹 **Q10. What is Bicep?**
+
+**Answer:**
+Bicep is a **simpler language** that compiles into **ARM templates**.
+
+---
+
+## 🔹 **Q11. Bicep replaces ARM – True or False?**
+
+**Answer:**
+❌ **False**
+
+Bicep **uses ARM internally**.
+
+---
+
+## 🔹 **Q12. Which is easier to write: ARM template or Bicep?**
+
+**Answer:**
+✅ **Bicep**
+
+---
+
+## 🔹 **Q13. Can ARM templates be version-controlled?**
+
+**Answer:**
+✅ **Yes**
+
+They are stored in **Git repositories**.
+
+---
+
+## 🔹 **Q14. Which service ensures RBAC, tags, and policies during deployment?**
+
+**Answer:**
+✅ **Azure Resource Manager (ARM)**
+
+---
+
+## 🔹 **Q15. Which Azure service provides consistent deployment across environments?**
+
+**Answer:**
+✅ **Azure Resource Manager**
+
+---
+
+## 🔹 **Q16. Which editor is commonly used for ARM templates?**
+
+**Answer:**
+✅ **Visual Studio Code**
+
+(with Azure Resource Manager Tools extension)
+
+---
+
+## 🔹 **Q17. Which command-line tool can deploy ARM templates?**
+
+**Answer:**
+✅ **Azure CLI**
+
+---
+
+## 🔹 **Q18. Which deployment method is best for automation?**
+
+**Answer:**
+✅ **ARM templates / Bicep**
+
+---
+
+## 🔹 **Q19. Terraform uses ARM internally – True or False?**
+
+**Answer:**
+❌ **False**
+
+Terraform uses **providers**, not ARM templates directly.
+
+---
+
+## 🔹 **Q20. Which statement is TRUE?**
+
+A. Azure Portal bypasses ARM
+B. Azure CLI does not use ARM
+C. ARM provides a single management layer
+D. ARM is only for templates
+
+**Correct Answer:**
+✅ **C. ARM provides a single management layer**
+
+---
+
+## ⚠️ **Common Exam Traps (Very Important)**
+
+* ARM ≠ only templates
+* Portal, CLI, SDK → **ALL use ARM**
+* ARM is **API + management layer**
+* Bicep ≠ replacement of ARM
+* Terraform ≠ Azure-native tool
+
+---
+
+## 🧠 **One-Line Exam Revision**
+
+* ARM = Azure management API
+* ARM templates = JSON IaC
+* Bicep = simplified ARM
+* Portal/CLI/SDK → ARM → Azure
+
+---
+======================================================

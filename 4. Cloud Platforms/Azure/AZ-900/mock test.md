@@ -7,10 +7,6 @@ nav_order: 5
 has_children: true
 ---
 
-Below is a **FULL AZ-900 Mock Test (MCQs)** covering **almost all exam areas**.
-Level = **real exam**, answers provided **at the end** (not after every question, like real test).
-
----
 
 # 🧪 **AZ-900 Full Mock Test (Microsoft Azure Fundamentals)**
 
@@ -1618,3 +1614,527 @@ D. A billing service
 * Cloud Shell has CLI **pre-installed**
 
 ==============================================
+
+![Image](https://learn.microsoft.com/en-us/azure/architecture/identity/media/identity-basic-architecture.png)
+
+![Image](https://learn.microsoft.com/en-us/entra/architecture/media/authentication-patterns/oauth.png)
+
+![Image](https://learn.microsoft.com/en-us/azure/role-based-access-control/media/scope-overview/rbac-scope-no-label.png)
+
+# 🧪 **AZ-900 – Azure IAM MCQs (Exam-Focused)**
+
+*Questions first → answers at the end (real exam style).*
+
+---
+
+## **Section A: Basics (Authentication & Authorization)**
+
+**Q1.** Authentication in Azure answers which question?
+A. What can you do?
+B. Who are you?
+C. Which resource is used?
+D. Where is the resource located?
+
+**Q2.** Authorization in Azure determines:
+A. Identity verification
+B. Network security
+C. Permissions on resources
+D. Subscription billing
+
+**Q3.** Which service provides identity management in Azure?
+A. Azure Monitor
+B. Microsoft Entra ID
+C. Azure Policy
+D. Azure Firewall
+
+**Q4.** Authentication and authorization are the same.
+A. True
+B. False
+
+---
+
+## **Section B: Users & Groups**
+
+**Q5.** What is the best practice for assigning permissions?
+A. Assign roles to individual users
+B. Assign roles to groups
+C. Assign roles to resources only
+D. Use access keys
+
+**Q6.** Which group type is commonly used for RBAC?
+A. Microsoft 365 group
+B. Distribution group
+C. Security group
+D. Dynamic group only
+
+**Q7.** Multi-Factor Authentication (MFA) improves:
+A. Authorization
+B. Authentication security
+C. Network performance
+D. Storage durability
+
+---
+
+## **Section C: RBAC (Roles & Scope)**
+
+**Q8.** What does RBAC stand for?
+A. Resource Based Access Control
+B. Role Based Access Control
+C. Regional Based Access Control
+D. Rule Based Access Control
+
+**Q9.** Which role can assign roles to others?
+A. Reader
+B. Contributor
+C. Owner
+D. Security Admin
+
+**Q10.** Which role provides view-only access?
+A. Owner
+B. Contributor
+C. Reader
+D. User Access Administrator
+
+**Q11.** At which levels can RBAC be applied?
+A. Resource only
+B. Subscription only
+C. Management Group, Subscription, Resource Group, Resource
+D. Tenant only
+
+---
+
+## **Section D: Service Principal & Managed Identity**
+
+**Q12.** What is a Service Principal?
+A. Human user account
+B. Azure resource
+C. Identity for applications/automation
+D. Storage authentication key
+
+**Q13.** Which scenario typically uses a Service Principal?
+A. User logging into the portal
+B. CI/CD pipeline deploying resources
+C. Reading Azure Monitor logs
+D. Browsing the Azure Portal
+
+**Q14.** What is a Managed Identity?
+A. User account in Entra ID
+B. App password stored in Key Vault
+C. Azure-managed identity for resources
+D. On-prem Active Directory account
+
+**Q15.** Main advantage of Managed Identity?
+A. Faster login
+B. No credentials to manage
+C. Cross-cloud access
+D. Manual key rotation
+
+**Q16.** Which managed identity type is reusable across resources?
+A. System-assigned
+B. User-assigned
+C. Temporary
+D. External
+
+---
+
+## **Section E: Security & Exam Traps**
+
+**Q17.** RBAC controls:
+A. Authentication
+B. Authorization
+C. Network traffic
+D. Encryption
+
+**Q18.** Entra ID is the same as on-prem Active Directory.
+A. True
+B. False
+
+**Q19.** Best way for an Azure VM to access Azure Storage securely?
+A. Access keys
+B. SAS token
+C. Managed Identity + RBAC
+D. Public access
+
+**Q20.** Least privilege means:
+A. Give admin access to all users
+B. Grant minimum required permissions
+C. Disable RBAC
+D. Use shared accounts
+
+---
+
+# ✅ **ANSWER KEY**
+
+1. **B**
+2. **C**
+3. **B**
+4. **B**
+5. **B**
+6. **C**
+7. **B**
+8. **B**
+9. **C**
+10. **C**
+11. **C**
+12. **C**
+13. **B**
+14. **C**
+15. **B**
+16. **B**
+17. **B**
+18. **B**
+19. **C**
+20. **B**
+
+---
+
+## 🧠 **Last-Minute IAM Facts (Exam Gold)**
+
+* Authentication = **Who are you**
+* Authorization = **What can you do**
+* Entra ID = Azure identity service
+* RBAC = Authorization
+* **Owner** can assign roles
+* **Managed Identity** = most secure Azure-to-Azure access
+
+
+=======================
+
+# 🧪 **AZ-900 – IAM Scenario MCQs (Real Exam Traps)**
+
+*Attempt first → answers at the end. Each question is written like the real exam with “almost-correct” options.*
+
+---
+
+## **Scenario Set 1: Authentication vs Authorization**
+
+**Q1.** A user can successfully sign in to Azure Portal but cannot create a virtual machine. What is missing?
+A. Authentication
+B. Authorization
+C. MFA
+D. Network access
+
+**Q2.** A policy requires users to provide a second verification step at login. Which feature is used?
+A. RBAC
+B. Conditional Access
+C. MFA
+D. Azure Policy
+
+---
+
+## **Scenario Set 2: Users, Groups & Best Practice**
+
+**Q3.** You need to grant the same permissions to 20 developers. What is the recommended approach?
+A. Assign roles to each user
+B. Share admin credentials
+C. Create a group and assign the role
+D. Use access keys
+
+**Q4.** A new employee joins the team and needs the same access as others. What is the fastest and safest method?
+A. Assign Owner role directly
+B. Add user to an existing group
+C. Create a new subscription
+D. Disable MFA temporarily
+
+---
+
+## **Scenario Set 3: RBAC Roles & Scope (Tricky)**
+
+**Q5.** A user must create and delete resources but should NOT assign roles to others. Which role fits best?
+A. Owner
+B. Contributor
+C. Reader
+D. User Access Administrator
+
+**Q6.** You assign a role at the **Resource Group** scope. What happens?
+A. Access applies only to one resource
+B. Access applies to all subscriptions
+C. Access applies to all resources in that group
+D. Access applies only to the tenant
+
+---
+
+## **Scenario Set 4: Service Principal vs Managed Identity**
+
+**Q7.** A CI/CD pipeline needs to deploy Azure resources automatically. Which identity should be used?
+A. User account
+B. Access key
+C. Service Principal
+D. Managed Identity (only)
+
+**Q8.** An Azure VM must access Azure Storage securely without storing secrets. What should you use?
+A. Storage access keys
+B. SAS token
+C. Service Principal with password
+D. Managed Identity + RBAC
+
+---
+
+## **Scenario Set 5: Managed Identity Types (Exam Trap)**
+
+**Q9.** You want a single identity that can be used by multiple Azure resources. Which type is required?
+A. System-assigned Managed Identity
+B. User-assigned Managed Identity
+C. Service Principal
+D. Guest user
+
+**Q10.** If a VM with a **system-assigned managed identity** is deleted, what happens to the identity?
+A. It remains available
+B. It is disabled
+C. It is deleted automatically
+D. It converts to user-assigned
+
+---
+
+## **Scenario Set 6: Entra ID & Security**
+
+**Q11.** Which service handles authentication for Azure Portal and Azure CLI sign-ins?
+A. Azure Policy
+B. Microsoft Entra ID
+C. Azure Monitor
+D. Azure Firewall
+
+**Q12.** You want to enforce access based on user location and device state. Which feature is required?
+A. RBAC
+B. Conditional Access
+C. NSG
+D. Azure Firewall
+
+---
+
+## **Scenario Set 7: Least Privilege & Common Traps**
+
+**Q13.** A user only needs to view resources and settings. Which role should be assigned?
+A. Owner
+B. Contributor
+C. Reader
+D. Security Admin
+
+**Q14.** Which statement best describes the **principle of least privilege**?
+A. Grant admin access to all users
+B. Grant minimum permissions required
+C. Disable RBAC
+D. Use shared accounts
+
+---
+
+## **Scenario Set 8: Exam “Looks Right” Traps**
+
+**Q15.** RBAC is mainly responsible for:
+A. Authentication
+B. Authorization
+C. Network security
+D. Encryption
+
+**Q16.** Which option is the **most secure** for Azure-to-Azure service access?
+A. Access keys
+B. SAS tokens
+C. Service Principal with secret
+D. Managed Identity
+
+---
+
+# ✅ **ANSWER KEY (Don’t peek early!)**
+
+1. **B**
+2. **C**
+3. **C**
+4. **B**
+5. **B**
+6. **C**
+7. **C**
+8. **D**
+9. **B**
+10. **C**
+11. **B**
+12. **B**
+13. **C**
+14. **B**
+15. **B**
+16. **D**
+
+---
+
+## 🧠 **Why Candidates Fail These (Quick Tips)**
+
+* Sign-in works but actions fail → **Authorization**, not authentication
+* Pipelines/apps → **Service Principal**
+* Azure resource to Azure resource → **Managed Identity**
+* Assign roles to **groups**, not users
+* **Owner** assigns roles; **Contributor** cannot
+* Conditional Access ≠ RBAC
+
+===========================================
+
+
+# 🧪 **AZ-900 – Azure DevOps MCQs (Exam-Focused)**
+
+*Questions first → answers at the end (real exam style).*
+
+---
+
+## **Section A: Basics**
+
+**Q1.** What is Azure DevOps primarily used for?
+A. Monitoring Azure resources
+B. Managing identities
+C. Planning, building, testing, and deploying applications
+D. Creating virtual machines
+
+**Q2.** Azure DevOps supports which DevOps lifecycle?
+A. Plan → Code → Build → Test → Release
+B. Build → Release only
+C. Monitor → Backup
+D. Deploy → Delete
+
+**Q3.** Azure DevOps is best described as:
+A. A single CI tool
+B. A cloud-based DevOps platform
+C. A storage service
+D. A networking service
+
+---
+
+## **Section B: Azure DevOps Services**
+
+**Q4.** Which Azure DevOps service is used for work tracking and planning?
+A. Azure Repos
+B. Azure Pipelines
+C. Azure Boards
+D. Azure Artifacts
+
+**Q5.** Which service provides Git repositories?
+A. Azure Boards
+B. Azure Repos
+C. Azure Pipelines
+D. Azure Test Plans
+
+**Q6.** Which Azure DevOps service is used for CI/CD?
+A. Azure Boards
+B. Azure Repos
+C. Azure Pipelines
+D. Azure Artifacts
+
+**Q7.** Which service is used to host and share packages (npm, NuGet, Maven)?
+A. Azure Repos
+B. Azure Artifacts
+C. Azure Pipelines
+D. Azure Test Plans
+
+**Q8.** Which Azure DevOps service supports manual and exploratory testing?
+A. Azure Boards
+B. Azure Repos
+C. Azure Test Plans
+D. Azure Artifacts
+
+---
+
+## **Section C: Pipelines & Automation**
+
+**Q9.** What does CI stand for in Azure Pipelines?
+A. Continuous Improvement
+B. Continuous Integration
+C. Continuous Installation
+D. Continuous Inspection
+
+**Q10.** What does CD stand for in Azure DevOps?
+A. Continuous Delivery/Deployment
+B. Code Development
+C. Cloud Deployment
+D. Continuous Design
+
+**Q11.** Which pipeline type is recommended by Microsoft?
+A. Classic pipelines
+B. YAML pipelines
+C. Manual pipelines
+D. GUI-only pipelines
+
+**Q12.** Which file is used to define a YAML pipeline?
+A. `pipeline.xml`
+B. `azure-pipelines.yml`
+C. `build.json`
+D. `deploy.txt`
+
+---
+
+## **Section D: Agents & Integration**
+
+**Q13.** What executes jobs in Azure Pipelines?
+A. Runners
+B. Executors
+C. Agents
+D. Workers
+
+**Q14.** Which type of agent is managed by Microsoft?
+A. Self-hosted agent
+B. On-prem agent
+C. Microsoft-hosted agent
+D. Private agent
+
+**Q15.** Azure DevOps can integrate with which version control system?
+A. Only TFVC
+B. Only SVN
+C. Git and GitHub
+D. CVS only
+
+---
+
+## **Section E: Security & Access**
+
+**Q16.** Azure DevOps integrates with which identity service?
+A. AWS IAM
+B. Local Active Directory only
+C. Microsoft Entra ID (Azure AD)
+D. LDAP only
+
+**Q17.** Access control in Azure DevOps is based on:
+A. RBAC
+B. Network rules
+C. Storage keys
+D. Firewall policies
+
+**Q18.** Where should secrets (passwords, tokens) be stored for pipelines?
+A. In source code
+B. In plain text files
+C. Variable Groups / Key Vault
+D. Commit messages
+
+---
+
+## **Section F: Exam Traps**
+
+**Q19.** Azure DevOps and GitHub are the same service.
+A. True
+B. False
+
+**Q20.** Azure Boards is used to run CI/CD pipelines.
+A. True
+B. False
+
+---
+
+# ✅ **ANSWER KEY**
+
+1. **C**
+2. **A**
+3. **B**
+4. **C**
+5. **B**
+6. **C**
+7. **B**
+8. **C**
+9. **B**
+10. **A**
+11. **B**
+12. **B**
+13. **C**
+14. **C**
+15. **C**
+16. **C**
+17. **A**
+18. **C**
+19. **B**
+20. **B**
+
+---
+=============================

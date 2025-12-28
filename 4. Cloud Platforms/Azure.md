@@ -7,6 +7,8 @@ has_children: true
 
 - [GitHub Repo URL](https://github.com/natrajwadhai13/Azure-zero-to-hero.git)
 
+- [Youtube URL complete Azure cource "Abhishek.Veeramalla"](https://www.youtube.com/watch?v=10jm7Waan8M&list=PLdpzxOOAlwvIcxgCUyBHVOcWs0Krjx9xR)
+
 
 
 # 🚀 **Azure Complete Course (A → Z) | DevOps-Friendly Roadmap**
@@ -14,8 +16,6 @@ has_children: true
 ![Image](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/enterprise-integration/_images/simple-enterprise-integration.png?utm_source=chatgpt.com)
 
 ![Image](https://miro.medium.com/1%2AR_Hb_aAkXZQeOgwc8r52gQ.png?utm_source=chatgpt.com)
-
-![Image](https://learn.microsoft.com/en-us/azure/devops/pipelines/architectures/media/azure-devops-ci-cd-architecture.svg?view=azure-devops\&utm_source=chatgpt.com)
 
 ---
 
@@ -156,8 +156,6 @@ has_children: true
 ---
 
 # 🧩 **📌 Module 6: Azure DevOps (MOST IMPORTANT)**
-
-*DevOps engineer ke liye must-learn*
 
 ![Image](https://learn.microsoft.com/en-us/azure/devops/pipelines/architectures/media/azure-devops-ci-cd-architecture.svg?view=azure-devops\&utm_source=chatgpt.com)
 
