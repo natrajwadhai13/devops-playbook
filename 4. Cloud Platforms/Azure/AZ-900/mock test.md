@@ -15,6 +15,8 @@ has_children: true
 - [Level 5 Azure IAM MCQs](#Azure IAM MCQs)
 - [Level 6 IAM Scenario Questions](#IAM Scenario Questions)
 - [Level 7 Azure DevOps MCQs](#Azure DevOps MCQs)
+- [Level 8 Security & Governance MCQs](#Security & Governance MCQs)
+- [Level 9 Pricing & SLA MCQs](#Pricing & SLA MCQs)
 
 -----------------
 <a id="Level 1 (Basic)"></a>
@@ -2170,5 +2172,410 @@ B. False
 19. **B**
 20. **B**
 
----
+
 =============================
+---
+
+
+<a id="Security & Governance MCQs"></a>
+
+# 🧪 **AZ-900 – Security & Governance MCQs (Exam-Focused)**
+
+*Attempt first → answers at the end (real exam style).*
+
+---
+
+## **Section A: Identity & Access (Entra ID, RBAC)**
+
+**Q1.** Which service provides authentication for Azure Portal and Azure CLI?
+A. Azure Policy
+B. Microsoft Entra ID
+C. Azure Monitor
+D. Azure Firewall
+
+**Q2.** Authentication answers which question?
+A. What can you do?
+B. Who are you?
+C. Where is the resource?
+D. How much does it cost?
+
+**Q3.** Authorization in Azure is primarily implemented using:
+A. Azure Policy
+B. RBAC
+C. Azure Monitor
+D. Azure Advisor
+
+**Q4.** Which built-in role can assign roles to others?
+A. Reader
+B. Contributor
+C. Owner
+D. Security Reader
+
+---
+
+## **Section B: RBAC Scope & Best Practices**
+
+**Q5.** At which levels can RBAC be applied?
+A. Resource only
+B. Subscription only
+C. Management Group, Subscription, Resource Group, Resource
+D. Tenant only
+
+**Q6.** Best practice for granting access to many users is to:
+A. Assign roles to each user
+B. Use shared admin accounts
+C. Assign roles to groups
+D. Disable MFA
+
+**Q7.** A user needs view-only access to resources. Which role should be assigned?
+A. Owner
+B. Contributor
+C. Reader
+D. User Access Administrator
+
+---
+
+## **Section C: Governance (Azure Policy)**
+
+**Q8.** Which service **prevents** non-compliant resources from being created?
+A. Microsoft Defender for Cloud
+B. Azure Policy
+C. Azure Monitor
+D. Azure Advisor
+
+**Q9.** You must ensure all resources have a specific tag (e.g., `Environment`). Which service should you use?
+A. RBAC
+B. Azure Policy
+C. Defender for Cloud
+D. Azure Monitor
+
+**Q10.** What is an Azure Policy *initiative*?
+A. A single policy
+B. A group of policies
+C. A role definition
+D. A compliance report
+
+---
+
+## **Section D: Security Posture (Defender for Cloud)**
+
+**Q11.** Which service provides security recommendations and a Secure Score?
+A. Azure Policy
+B. Azure Monitor
+C. Microsoft Defender for Cloud
+D. Azure Advisor
+
+**Q12.** Defender for Cloud mainly helps you to:
+A. Assign permissions
+B. Enforce naming standards
+C. Identify and remediate security risks
+D. Manage billing
+
+**Q13.** Which statement is TRUE?
+A. Defender for Cloud enforces rules
+B. Azure Policy detects threats
+C. Defender for Cloud provides recommendations
+D. RBAC blocks malware
+
+---
+
+## **Section E: Compliance & Traps**
+
+**Q14.** Azure compliance means:
+A. Azure automatically secures your resources
+B. Azure provides compliance reports and frameworks
+C. Users have no responsibility
+D. Policies are optional
+
+**Q15.** Which service is used to **recommend** cost and security best practices (not enforce)?
+A. Azure Policy
+B. Azure Advisor
+C. Defender for Cloud
+D. Azure Monitor
+
+**Q16.** RBAC controls:
+A. Authentication
+B. Authorization
+C. Network traffic
+D. Encryption
+
+---
+
+## **Section F: Real Exam Traps**
+
+**Q17.** Azure Policy and RBAC serve the same purpose.
+A. True
+B. False
+
+**Q18.** Which service should you use to **deny** creation of public IPs?
+A. RBAC
+B. Defender for Cloud
+C. Azure Policy
+D. Azure Monitor
+
+**Q19.** A user can sign in but cannot create resources. What is missing?
+A. Authentication
+B. Authorization
+C. MFA
+D. Compliance
+
+**Q20.** Which service continuously monitors security posture across Azure resources?
+A. Azure Policy
+B. Microsoft Defender for Cloud
+C. Azure Advisor
+D. Azure Cost Management
+
+---
+
+# ✅ **ANSWER KEY**
+
+1. **B**
+2. **B**
+3. **B**
+4. **C**
+5. **C**
+6. **C**
+7. **C**
+8. **B**
+9. **B**
+10. **B**
+11. **C**
+12. **C**
+13. **C**
+14. **B**
+15. **B**
+16. **B**
+17. **B**
+18. **C**
+19. **B**
+20. **B**
+
+---
+
+## 🧠 **Last-Minute Security & Governance Facts (Exam Gold)**
+
+* **Entra ID** → Authentication
+* **RBAC** → Authorization
+* **Azure Policy** → Prevent & enforce rules
+* **Defender for Cloud** → Detect risks & recommend fixes
+* **Advisor** → Best practices (not enforcement)
+
+================================================
+
+<a id="Pricing & SLA MCQs"></a>
+
+![Image](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/media/pricing-calculator/product-picker.png)
+
+![Image](https://learn.microsoft.com/en-us/azure/well-architected/reliability/media/metrics/example-architecture-targets.svg)
+
+![Image](https://miro.medium.com/0%2AhyCazUZ7_hMy4r6Z)
+
+# 🧪 **AZ-900 – Pricing & SLA MCQs + Real Exam Cost Traps**
+
+---
+
+## 🔢 **PART 1: Pricing & SLA MCQs (Exam-Focused)**
+
+*(Questions first → answers at the end)*
+
+---
+
+### **Pricing MCQs**
+
+**Q1.** Azure follows which pricing model?
+A. Fixed cost
+B. Capital expenditure (CapEx)
+C. Pay-as-you-go (OpEx)
+D. Lifetime license
+
+---
+
+**Q2.** Which Azure tool helps estimate costs **before deployment**?
+A. Azure Cost Management
+B. Azure Advisor
+C. Azure Pricing Calculator
+D. Azure Monitor
+
+---
+
+**Q3.** Which data transfer is FREE in Azure?
+A. Outbound data
+B. Inter-region data
+C. Inbound data
+D. Internet data
+
+---
+
+**Q4.** Which pricing option offers discounts for 1-year or 3-year commitment?
+A. Spot instances
+B. Pay-as-you-go
+C. Reserved Instances
+D. Free tier
+
+---
+
+**Q5.** Which Azure service helps identify underutilized resources to reduce cost?
+A. Azure Monitor
+B. Azure Policy
+C. Azure Advisor
+D. Azure Security Center
+
+---
+
+### **SLA MCQs**
+
+**Q6.** What does SLA stand for?
+A. Service Load Agreement
+B. System Level Agreement
+C. Service Level Agreement
+D. Software License Agreement
+
+---
+
+**Q7.** Higher SLA generally means:
+A. Lower cost
+B. More downtime
+C. Higher cost
+D. Free services
+
+---
+
+**Q8.** Which design improves VM SLA the most?
+A. Single VM
+B. VM with backup
+C. VM in Availability Set
+D. VM in Availability Zones
+
+---
+
+**Q9.** If Azure fails to meet SLA, what does the customer receive?
+A. Automatic refund
+B. Free subscription
+C. Service credits
+D. No compensation
+
+---
+
+**Q10.** If a solution uses multiple Azure services, the total SLA is:
+A. Higher than individual SLAs
+B. Equal to highest SLA
+C. Lower than individual SLAs
+D. Not affected
+
+---
+
+---
+
+## ⚠️ **PART 2: Real Exam Cost Traps (VERY IMPORTANT)**
+
+*(These are the questions people usually get wrong)*
+
+---
+
+### 🔴 **TRAP 1: OpEx vs CapEx**
+
+**Question:**
+A company wants to avoid upfront hardware cost and pay monthly based on usage.
+Which cost model is this?
+
+✅ **Answer:** **OpEx**
+
+❌ Trap: Many choose **CapEx**
+
+---
+
+### 🔴 **TRAP 2: Inbound vs Outbound Data**
+
+**Question:**
+Which data transfer is free in Azure?
+
+✅ **Answer:** **Inbound data**
+
+❌ Trap: People think “internal Azure data is free” (not always)
+
+---
+
+### 🔴 **TRAP 3: Advisor vs Policy**
+
+**Question:**
+Which service **recommends** cost optimization but does NOT enforce it?
+
+✅ **Answer:** **Azure Advisor**
+
+❌ Trap: Azure Policy enforces, Advisor only suggests
+
+---
+
+### 🔴 **TRAP 4: SLA Credits**
+
+**Question:**
+When Azure fails to meet SLA, what happens?
+
+✅ **Answer:** **Service credits (must be claimed)**
+
+❌ Trap: Credits are **NOT automatic refunds**
+
+---
+
+### 🔴 **TRAP 5: Composite SLA**
+
+**Question:**
+Your solution uses VM + Storage. What happens to SLA?
+
+✅ **Answer:** **Combined SLA is LOWER**
+
+❌ Trap: Many think “Azure handles everything, SLA stays same”
+
+---
+
+### 🔴 **TRAP 6: Higher SLA Assumption**
+
+**Question:**
+Which statement is TRUE?
+
+A. Higher SLA always costs less
+B. Higher SLA usually costs more
+C. SLA does not affect cost
+D. SLA is same for all services
+
+✅ **Correct:** **B**
+
+---
+
+### 🔴 **TRAP 7: Cost Management Tool**
+
+**Question:**
+Which service tracks and controls **current spending**?
+
+✅ **Answer:** **Azure Cost Management**
+
+❌ Trap: Pricing Calculator is **before deployment**
+
+---
+
+## ✅ **ANSWER KEY (MCQs)**
+
+1. **C**
+2. **C**
+3. **C**
+4. **C**
+5. **C**
+6. **C**
+7. **C**
+8. **D**
+9. **C**
+10. **C**
+
+---
+
+## 🧠 **Last-Minute Pricing & SLA Golden Rules**
+
+* Azure = **OpEx**
+* Pay only for what you use
+* Inbound data = **Free**
+* Advisor = Recommend, Policy = Enforce
+* SLA credits ≠ automatic
+* Multiple services = **lower combined SLA**
+
+---
+
