@@ -7,8 +7,9 @@ nav_order: 5
 has_children: true
 ---
 
+<details>
 
-# 🧪 **AZ-900 Full Mock Test (Microsoft Azure Fundamentals)**
+<summary>🔽 # 🧪 **AZ-900 Full Mock Test (Microsoft Azure Fundamentals)** </summary>
 
 **Total Questions: 50**
 **Time: 60 minutes**
@@ -404,8 +405,16 @@ D. Load Balancer
 49-A
 50-B
 
+</details>
+
 ---
 ==================================
+
+
+</details> 
+
+
+<summary>🔽 Process Management</summary>
 
 Below is **AZ-900 – SECOND MOCK TEST (HARDER LEVEL)**
 Questions include **traps, scenario-based MCQs, and exam-style wording**.
@@ -809,9 +818,13 @@ D. Azure DNS
 49-B
 50-B
 
----
+</details> 
 
+
+---
 ==================
+
+
 
 Below is **AZ-900 – THIRD MOCK TEST (VERY HARD / TRAPS ONLY)**
 This one focuses on **exam traps, wording tricks, close options, and scenario confusion**.
