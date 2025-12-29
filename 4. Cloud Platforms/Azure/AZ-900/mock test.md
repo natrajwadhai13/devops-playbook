@@ -7,9 +7,32 @@ nav_order: 5
 has_children: true
 ---
 
-<details>
+🧪 AZ-900 Mock Tests – Complete Collection
 
-<summary>🔽 # 🧪 **AZ-900 Full Mock Test (Microsoft Azure Fundamentals)** </summary>
+Includes:
+
+• Level 1 (Basic)
+
+• Level 2 (Hard)
+
+• Level 3 (Very Hard / Traps)
+
+• Real Exam Trap Questions
+
+• Azure CLI MCQs
+
+• Azure IAM MCQs
+
+• IAM Scenario Questions
+
+• Azure DevOps MCQs
+
+-----------------
+
+<a id="Level 1 (Basic)"></a>
+
+
+<details> <summary>🔽 # 🧪 **AZ-900 Full Mock Test (Microsoft Azure Fundamentals)** </summary>
 
 **Total Questions: 50**
 **Time: 60 minutes**
@@ -410,11 +433,9 @@ D. Load Balancer
 ---
 ==================================
 
+<a id="mock-test-level-2"></a>
 
-</details> 
-
-
-<summary>🔽 Process Management</summary>
+</details>  <summary>🔽 Process Management</summary>
 
 Below is **AZ-900 – SECOND MOCK TEST (HARDER LEVEL)**
 Questions include **traps, scenario-based MCQs, and exam-style wording**.
@@ -824,7 +845,9 @@ D. Azure DNS
 ---
 ==================
 
+<a id="mock-test-level-3"></a>
 
+<details> <summary>🔽 🧪 <b>AZ-900 Mock Test – Level 3 (Very Hard / Traps Only)</b></summary>
 
 Below is **AZ-900 – THIRD MOCK TEST (VERY HARD / TRAPS ONLY)**
 This one focuses on **exam traps, wording tricks, close options, and scenario confusion**.
@@ -1151,6 +1174,9 @@ D. Azure DNS
 38-B
 39-B
 40-B
+
+</details>
+
 
 ---
 Below are **REAL AZ-900 EXAM TRAP QUESTIONS** —
