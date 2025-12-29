@@ -826,7 +826,7 @@ D. Azure DNS
 
 ---
 ==================
-
+---
 <a id="Real Exam Trap Questions"></a>
 
 Below is **AZ-900 – THIRD MOCK TEST (VERY HARD / TRAPS ONLY)**
@@ -1154,9 +1154,10 @@ D. Azure DNS
 38-B
 39-B
 40-B
----
+
 ===========================
 
+---
 
 <a id="Level 3 (Very Hard / Traps)"></a>
 
@@ -1635,6 +1636,8 @@ D. A billing service
 * Cloud Shell has CLI **pre-installed**
 
 ==============================================
+---
+
 
 <a id="Azure IAM MCQs"></a>
 
@@ -1823,7 +1826,7 @@ D. Use shared accounts
 
 
 =======================
-
+---
 
 <a id="IAM Scenario Questions"></a>
 
@@ -1992,6 +1995,9 @@ D. Managed Identity
 * Conditional Access ≠ RBAC
 
 ===========================================
+
+---
+
 
 <a id="Azure DevOps MCQs"></a>
 
