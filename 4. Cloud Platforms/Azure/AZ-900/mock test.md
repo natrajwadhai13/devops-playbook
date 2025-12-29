@@ -8,34 +8,16 @@ has_children: true
 ---
 
 ## 📌 Jump to Section
-- [Level 1 (Basic)](#Level 1 (Basic))
-- [Level 2 (Hard)](#Level 2 (Basic))
-- [Level 3 (Very Hard / Traps)](#Level 3 (Basic))
-
-<a id="Level 1 (Basic)"></a>
-
-🧪 AZ-900 Mock Tests – Complete Collection
-
-Includes:
-
-• Level 1 (Basic)
-
-• Level 2 (Hard)
-
-• Level 3 (Very Hard / Traps)
-
-• Real Exam Trap Questions
-
-• Azure CLI MCQs
-
-• Azure IAM MCQs
-
-• IAM Scenario Questions
-
-• Azure DevOps MCQs
+- [Level 1 (Basic): AZ-900 Full Mock Test 50 Que ](#Level 1 (Basic))
+- [Level 2 (Hard)](#Level 2 (Hard))
+- [Level 3 (Very Hard / Traps)](#Level 3 (Very Hard / Traps))
+- [Level 4 Real Exam Trap Questions](#Real Exam Trap Questions)
+- [Level 5 Azure IAM MCQs](#Azure IAM MCQs)
+- [Level 6 IAM Scenario Questions](#IAM Scenario Questions)
+- [Level 7 Azure DevOps MCQs](#Azure DevOps MCQs)
 
 -----------------
-<a id="Level 2 (Basic)"></a>
+<a id="Level 1 (Basic)"></a>
 
  ## 🧪 **AZ-900 Full Mock Test (Microsoft Azure Fundamentals)** 
 
@@ -436,7 +418,8 @@ D. Load Balancer
 
 ---
 ==================================
-<a id="Level 3 (Basic)"></a>
+
+<a id="Level 2 (Hard)"></a>
 
 Below is **AZ-900 – SECOND MOCK TEST (HARDER LEVEL)**
 Questions include **traps, scenario-based MCQs, and exam-style wording**.
@@ -844,6 +827,7 @@ D. Azure DNS
 ---
 ==================
 
+<a id="Real Exam Trap Questions"></a>
 
 Below is **AZ-900 – THIRD MOCK TEST (VERY HARD / TRAPS ONLY)**
 This one focuses on **exam traps, wording tricks, close options, and scenario confusion**.
@@ -1170,9 +1154,13 @@ D. Azure DNS
 38-B
 39-B
 40-B
-
-
 ---
+===========================
+
+
+<a id="Level 3 (Very Hard / Traps)"></a>
+
+
 Below are **REAL AZ-900 EXAM TRAP QUESTIONS** —
 These are **wording traps**, **confusing options**, and **“almost correct” answers** that candidates usually fail on.
 Each question includes **WHY the correct answer is correct** and **WHY others are wrong**.
@@ -1648,6 +1636,9 @@ D. A billing service
 
 ==============================================
 
+<a id="Azure IAM MCQs"></a>
+
+
 ![Image](https://learn.microsoft.com/en-us/azure/architecture/identity/media/identity-basic-architecture.png)
 
 ![Image](https://learn.microsoft.com/en-us/entra/architecture/media/authentication-patterns/oauth.png)
@@ -1833,6 +1824,9 @@ D. Use shared accounts
 
 =======================
 
+
+<a id="IAM Scenario Questions"></a>
+
 # 🧪 **AZ-900 – IAM Scenario MCQs (Real Exam Traps)**
 
 *Attempt first → answers at the end. Each question is written like the real exam with “almost-correct” options.*
@@ -1999,6 +1993,7 @@ D. Managed Identity
 
 ===========================================
 
+<a id="Azure DevOps MCQs"></a>
 
 # 🧪 **AZ-900 – Azure DevOps MCQs (Exam-Focused)**
 
