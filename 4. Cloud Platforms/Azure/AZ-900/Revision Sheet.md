@@ -267,3 +267,50 @@ has_children: true
 * Cost model → **OpEx**
 
 ---
+
+==========================================
+1. What service helps you manage your Azure, on-premises, and multicloud environments?
+
+A. Azure Arc 
+
+B. Azure Policy
+
+C. Azure Cloud Manager
+
+Ans- A
+---
+
+2. What two components could you use to implement a “infrastructure as code” deployment?
+
+A. Bicep and ARM Templates
+
+B. Azure Policy and Azure Arc
+
+C. Azure Monitor and Azure Arc
+
+Ans- A
+---
+
+1. Which is not one of the recommendation categories for Azure Advisor?
+
+A. Reliability
+
+B. Capacity
+
+C. Cost
+
+Ans- B
+
+---
+
+2. You receive an email notification that virtual machines (VMs) in an Azure region where you have VMs deployed is experiencing an outage. Which component of Azure Service Health will let you know if your application is impacted?
+
+A. Azure Status
+
+B. Service Health
+
+C. Resource Health
+
+Ans- C
+
+---
