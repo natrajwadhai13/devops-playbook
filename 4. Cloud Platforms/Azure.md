@@ -11,7 +11,7 @@ has_children: true
 
 
 
-# 🚀 **Azure Complete Course (A → Z) | DevOps-Friendly Roadmap**
+## 🚀 **Azure Complete Course (A → Z) | DevOps-Friendly Roadmap**
 
 ![Image](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/enterprise-integration/_images/simple-enterprise-integration.png?utm_source=chatgpt.com)
 
@@ -19,7 +19,7 @@ has_children: true
 
 ---
 
-# 🧩 **📌 Module 1: Azure Fundamentals (AZ-900)**
+## 🧩 **📌 Module 1: Azure Fundamentals (AZ-900)**
 
 *Cloud basics + Azure core services*
 
@@ -63,7 +63,7 @@ has_children: true
 
 ---
 
-# 🧩 **📌 Module 2: Azure Compute Deep Dive**
+## 🧩 **📌 Module 2: Azure Compute Deep Dive**
 
 *For DevOps & Application Deployment*
 
@@ -94,7 +94,7 @@ has_children: true
 
 ---
 
-# 🧩 **📌 Module 3: Azure Networking**
+## 🧩 **📌 Module 3: Azure Networking**
 
 ### 3.1 Virtual Network Concepts
 
@@ -117,7 +117,7 @@ has_children: true
 
 ---
 
-# 🧩 **📌 Module 4: Azure Storage & Database**
+## 🧩 **📌 Module 4: Azure Storage & Database**
 
 ### 4.1 Storage
 
@@ -134,7 +134,7 @@ has_children: true
 
 ---
 
-# 🧩 **📌 Module 5: Azure Monitoring & Logs**
+## 🧩 **📌 Module 5: Azure Monitoring & Logs**
 
 ### 5.1 Monitoring
 
@@ -155,7 +155,7 @@ has_children: true
 
 ---
 
-# 🧩 **📌 Module 6: Azure DevOps (MOST IMPORTANT)**
+## 🧩 **📌 Module 6: Azure DevOps (MOST IMPORTANT)**
 
 ![Image](https://learn.microsoft.com/en-us/azure/devops/pipelines/architectures/media/azure-devops-ci-cd-architecture.svg?view=azure-devops\&utm_source=chatgpt.com)
 
@@ -191,7 +191,7 @@ has_children: true
 
 ---
 
-# 🧩 **📌 Module 7: Serverless (Azure Functions)**
+## 🧩 **📌 Module 7: Serverless (Azure Functions)**
 
 ### 7.1 Function App Basics
 
@@ -207,7 +207,7 @@ has_children: true
 
 ---
 
-# 🧩 **📌 Module 8: Azure Identity & Security (AZ-500)**
+## 🧩 **📌 Module 8: Azure Identity & Security (AZ-500)**
 
 ### 8.1 Identity
 
@@ -224,7 +224,7 @@ has_children: true
 
 ---
 
-# 🧩 **📌 Module 9: Infrastructure as Code (IaC)**
+## 🧩 **📌 Module 9: Infrastructure as Code (IaC)**
 
 ### 9.1 ARM Templates
 
@@ -240,7 +240,7 @@ has_children: true
 
 ---
 
-# 🧩 **📌 Module 10: Azure Kubernetes Service (AKS)**
+## 🧩 **📌 Module 10: Azure Kubernetes Service (AKS)**
 
 *(Advanced DevOps)*
 
@@ -267,7 +267,7 @@ has_children: true
 
 ---
 
-# 🧩 **📌 Module 11: Data Engineering (Optional)**
+## 🧩 **📌 Module 11: Data Engineering (Optional)**
 
 *Good for AIOps / Data Engineer role*
 
@@ -279,7 +279,7 @@ has_children: true
 
 ---
 
-# 🧩 **📌 Module 12: Real-World Projects (DevOps Focus)**
+## 🧩 **📌 Module 12: Real-World Projects (DevOps Focus)**
 
 ### 🔥 **Project 1: CI/CD with Azure DevOps + App Service**
 
