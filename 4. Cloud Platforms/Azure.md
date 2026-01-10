@@ -13,10 +13,6 @@ has_children: true
 
 ## 🚀 **Azure Complete Course (A → Z) | DevOps-Friendly Roadmap**
 
-![Image](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/enterprise-integration/_images/simple-enterprise-integration.png?utm_source=chatgpt.com)
-
-![Image](https://miro.medium.com/1%2AR_Hb_aAkXZQeOgwc8r52gQ.png?utm_source=chatgpt.com)
-
 ---
 
 ## 🧩 **📌 Module 1: Azure Fundamentals (AZ-900)**
@@ -157,9 +153,6 @@ has_children: true
 
 ## 🧩 **📌 Module 6: Azure DevOps (MOST IMPORTANT)**
 
-![Image](https://learn.microsoft.com/en-us/azure/devops/pipelines/architectures/media/azure-devops-ci-cd-architecture.svg?view=azure-devops\&utm_source=chatgpt.com)
-
-![Image](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/apps/media/architecture-devops-dotnet-webapp.svg?utm_source=chatgpt.com)
 
 ### 6.1 Azure Repos
 
