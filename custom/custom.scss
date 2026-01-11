@@ -1,0 +1,49 @@
+/* ===============================
+   🔍 Search Box Enhancement
+   =============================== */
+
+.search-input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 2px solid #2563eb;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #1e40af;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.25);
+}
+
+/* Search icon */
+.search-input::placeholder {
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Search results dropdown */
+.search-results {
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  border: none;
+}
+
+/* Each result item */
+.search-result {
+  padding: 12px 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.search-result:hover {
+  background-color: #eff6ff;
+}
+
+/* Highlight matched text */
+.search-result-highlight {
+  background-color: #dbeafe;
+  color: #1e40af;
+  font-weight: 700;
+}
