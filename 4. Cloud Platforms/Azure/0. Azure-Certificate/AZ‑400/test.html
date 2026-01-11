@@ -1,0 +1,60 @@
+---
+title: "• test"
+parent: "• Azure Certificate"
+grand_parent: "• Azure"
+grand_grand_parent: "4. Cloud Platforms"
+nav_order: 3
+has_children: true
+---
+
+<h2>DevOps</h2>
+
+<button onclick="toggle('devops')">DevOps Tools</button>
+
+<div id="devops" class="hidden">
+
+  <button onclick="toggle('aws')">AWS</button>
+  <div id="aws" class="hidden">
+    <p>EC2</p>
+    <p>S3</p>
+    <p>IAM</p>
+  </div>
+
+  <button onclick="toggle('docker')">Docker</button>
+  <div id="docker" class="hidden">
+    <p>Images</p>
+    <p>Containers</p>
+    <p>Dockerfile</p>
+  </div>
+
+</div>
+
+<style>
+.hidden {
+  display: none;
+  margin-left: 20px;
+}
+
+button {
+  margin-top: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+}
+
+button:hover {
+  background-color: #eaeaea;
+}
+</style>
+
+<script>
+function toggle(id) {
+  const el = document.getElementById(id);
+  el.style.display =
+    (el.style.display === "none" || el.style.display === "")
+      ? "block"
+      : "none";
+}
+</script>
