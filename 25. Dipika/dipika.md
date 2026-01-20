@@ -6,8 +6,8 @@ permalink: /mca-fy/
 ---
 
 
-<meta http-equiv="refresh" content="0; url=https://natrajwadhai13.github.io/demo_website/">
+<meta http-equiv="refresh" content="0; url=https://dipikabhute.github.io/study_notes/">
 
 <script>
-  window.location.href = "https://natrajwadhai13.github.io/demo_website/";
+  window.location.href = "https://dipikabhute.github.io/study_notes/";
 </script>
