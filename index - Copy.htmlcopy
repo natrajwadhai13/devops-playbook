@@ -131,9 +131,9 @@ footer {
   font-size: 14px;
 }
 
-/* =====================================================
-   PORTFOLIO SECTION (CLEAN & UNIFIED)
-===================================================== */
+/* ===== PORTFOLIO GRID FIX ===== */
+
+/* ===== PORTFOLIO VISUAL FIX ===== */
 
 .portfolio-section {
   background: #f1f5f9;
@@ -144,19 +144,21 @@ footer {
   max-width: 1200px;
 }
 
-/* Section heading */
-.portfolio-section h2 {
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-header h2 {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 10px;
 }
 
-.portfolio-section > p {
+.portfolio-header p {
   color: #64748b;
-  margin-bottom: 40px;
 }
 
-/* Common card */
+/* Card look */
 .portfolio-block {
   background: #ffffff;
   border-radius: 14px;
@@ -165,38 +167,66 @@ footer {
   margin-bottom: 30px;
 }
 
-/* Profile card */
-.profile-card {
-  max-width: 420px;
-  margin: 0 auto 25px;
-}
-
-.profile-links a {
-  display: inline-block;
-  margin: 4px 6px;
-  font-size: 14px;
+/* Two-column layout */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
 /* Experience cards */
 .exp-card {
-  background: #f9fafb;
   border-left: 4px solid #2563eb;
+  padding-left: 16px;
+  margin-bottom: 18px;
+}
+
+.exp-card h4 {
+  margin-bottom: 5px;
+}
+
+/* Improve lists */
+.portfolio-block ul {
+  padding-left: 18px;
+}
+
+.portfolio-block ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.profile-links a {
+  display: inline-block;
+  margin: 4px 0;
+}
+
+.exp-card {
+  background: #f9fafb;
+  border-left: 4px solid #0d6efd;
   padding: 12px 15px;
   border-radius: 8px;
   margin-bottom: 15px;
 }
 
 .exp-card h4 {
-  font-size: 16px;
   margin-bottom: 4px;
+  font-size: 16px;
 }
 
 .exp-card span {
   font-size: 13px;
-  color: #64748b;
+  color: #666;
 }
 
-/* Flex row (Skills / Certs / Projects) */
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .portfolio-flex {
   display: flex;
   gap: 20px;
@@ -211,17 +241,7 @@ footer {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* Lists */
-.portfolio-block ul {
-  padding-left: 18px;
-}
-
-.portfolio-block ul li {
-  margin-bottom: 8px;
-  line-height: 1.6;
-}
-
-/* Responsive */
+/* Mobile friendly */
 @media (max-width: 768px) {
   .portfolio-flex {
     flex-direction: column;
@@ -399,16 +419,18 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
 
   <!-- PORTFOLIO SECTION -->
 
+
 <section class="portfolio-section" id="portfolio">
-  <div class="container text-center">
+  <div class="container">
 
-    <h2>💼 Professional Portfolio</h2>
-    <p>Showcasing my DevOps journey, skills, and achievements.</p>
+    <h2 class="text-center">💼 Professional Portfolio</h2>
+    <p class="text-center">Showcasing my DevOps journey, skills, and achievements.</p>
 
-    <!-- PROFILE + OBJECTIVE + EDUCATION -->
-    <div class="portfolio-block">
+    <!-- PROFILE + CAREER OBJECTIVE : SINGLE CENTER BLOCK -->
+    <div class="portfolio-block text-center">
 
-      <div class="profile-card">
+      <!-- PROFILE CARD (CENTER) -->
+      <div class="profile-card" style="max-width:420px; margin:0 auto 25px;">
         <h3>Natraj Wadhai</h3>
         <p>Pune, Maharashtra, India</p>
 
@@ -420,14 +442,16 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
         </div>
       </div>
 
+      <!-- CAREER OBJECTIVE (SAME BLOCK) -->
       <h3>🎯 Career Objective</h3>
-      <p style="max-width:850px; margin:0 auto 20px;">
+      <p style="max-width:850px; margin:0 auto;">
         DevOps Engineer with 6+ years of overall IT experience and strong expertise in
         Linux, CI/CD, cloud platforms, and automation. Focused on designing scalable,
         secure, and automated DevOps pipelines while continuously enhancing skills in
         AWS, Azure, Kubernetes, and cloud-native technologies.
       </p>
 
+            <!-- EDUCATION -->
       <h4>🎓 Education</h4>
       <p>
         <b>M.Tech</b> – RTM Nagpur University (2019) |
@@ -436,92 +460,109 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
 
     </div>
 
+    <!-- 👉 NEXT SECTIONS (Experience, Skills, etc.) CONTINUE BELOW -->
+
+  </div>
+</section>
+
 
 
 <!-- EXPERIENCE -->
 
 
-    <div class="portfolio-block">
-      <h3>Professional Experience</h3>
+<div class="portfolio-block">
+  <h3>Professional Experience</h3>
 
-      <div class="row">
+  <div class="row">
 
-        <div class="col-md-6">
-          <div class="exp-card">
-            <h4>DevOps Engineer – Infosys Ltd, Pune</h4>
-            <span>July 2024 – Present</span>
-            <p><b>Client:</b> Credit Suisse & UBS</p>
-          </div>
+    <!-- LEFT COLUMN (3 Experiences) -->
+    <div class="col-md-6">
 
-          <div class="exp-card">
-            <h4>Senior Linux Administrator – IDEMIA, Mumbai</h4>
-            <span>April 2024 – July 2024</span>
-            <p><b>Client:</b> Union Bank of India</p>
-          </div>
-
-          <div class="exp-card">
-            <h4>Network Specialist & Software Engineer – S2 InfoTech</h4>
-            <span>Jan 2022 – Apr 2024</span>
-            <p><b>Client:</b> MahaIT</p>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="exp-card">
-            <h4>Data Center Engineer – Pathways (Emerge 360)</h4>
-            <span>Feb 2020 – Jan 2022</span>
-            <p><b>Client:</b> Credit Suisse</p>
-          </div>
-
-          <div class="exp-card">
-            <h4>Data Center Engineer – Infiniminds Pvt Ltd</h4>
-            <span>Jan 2019 – Feb 2020</span>
-            <p><b>Client:</b> Wipro Technologies</p>
-          </div>
-        </div>
-
+      <div class="exp-card">
+        <h4>DevOps Engineer – Infosys Ltd, Pune</h4>
+        <span>July 2024 – Present</span>
+        <p><b>Client:</b> Credit Suisse & UBS</p>
       </div>
+
+      <div class="exp-card">
+        <h4>Senior Linux Administrator – IDEMIA, Mumbai</h4>
+        <span>April 2024 – July 2024</span>
+        <p><b>Client:</b> Union Bank of India</p>
+      </div>
+
+      <div class="exp-card">
+        <h4>Network Specialist & Software Engineer – S2 InfoTech, Mumbai</h4>
+        <span>Jan 2022 – Apr 2024</span>
+        <p><b>Client:</b> Maharashtra Information Technology Corporation Limited (MahaIT)</p>
+      </div>
+
     </div>
 
+    <!-- RIGHT COLUMN (2 Experiences) -->
+    <div class="col-md-6">
+
+      <div class="exp-card">
+        <h4>Data Center Engineer – Pathways Business Efficiency Services Pvt. Ltd</h4>
+        <span>Feb 2020 – Jan 2022</span>
+        <p><b>Client:</b> Credit Suisse, Pune</p>
+      </div>
+
+      <div class="exp-card">
+        <h4>Data Center Engineer – Infiniminds Pvt Ltd</h4>
+        <span>Jan 2019 – Feb 2020</span>
+        <p><b>Client:</b> Wipro Technologies, Pune</p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
 
 <!-- SKILLS + CERTIFICATIONS + PROJECTS -->
+<div class="portfolio-block">
 
+  <div class="portfolio-flex">
 
-    <div class="portfolio-block">
-      <div class="portfolio-flex">
+    <!-- TECHNICAL SKILLS -->
+    <div class="portfolio-box">
+      <h4>🛠 Technical Skills</h4>
+      <ul>
+        <li><b>Cloud:</b> AWS, Azure, GCP</li>
+        <li><b>CI/CD:</b> GitLab CI/CD, Jenkins, GitHub Actions, ArgoCD</li>
+        <li><b>Containers:</b> Docker, Kubernetes, Helm</li>
+        <li><b>IaC:</b> Terraform, Ansible</li>
+        <li><b>Monitoring:</b> Splunk, Prometheus, Grafana</li>
+        <li><b>OS & Scripting:</b> Linux, Shell, Python</li>
+      </ul>
+    </div>
 
-        <div class="portfolio-box">
-          <h4>🛠 Technical Skills</h4>
-          <ul>
-            <li><b>Cloud:</b> AWS, Azure, GCP</li>
-            <li><b>CI/CD:</b> GitLab CI/CD, Jenkins, GitHub Actions, ArgoCD</li>
-            <li><b>Containers:</b> Docker, Kubernetes, Helm</li>
-            <li><b>IaC:</b> Terraform, Ansible</li>
-            <li><b>Monitoring:</b> Splunk, Prometheus, Grafana</li>
-          </ul>
-        </div>
+    <!-- CERTIFICATIONS -->
+    <div class="portfolio-box">
+      <h4>🎓 Certifications</h4>
+      <ul>
+        <li>AZ-900 – Completed</li>
+        <li>AZ-104 – In Progress</li>
+        <li>AZ-400 – In Progress</li>
+        <li>AWS DevOps – In Progress</li>
+        <li>GCP DevOps – In Progress</li>
+      </ul>
+    </div>
 
-        <div class="portfolio-box">
-          <h4>🎓 Certifications</h4>
-          <ul>
-            <li>AZ-900 – Completed</li>
-            <li>AZ-104 – In Progress</li>
-            <li>AZ-400 – In Progress</li>
-            <li>AWS DevOps – In Progress</li>
-            <li>GCP DevOps – In Progress</li>
-          </ul>
-        </div>
+    <!-- PROJECTS -->
+    <div class="portfolio-box">
+      <h4>🚀 DevOps Projects</h4>
+      <ul>
+        <li>CI/CD pipelines using <b>GitLab CI</b>, Docker (AWS & Azure)</li>
+        <li>Kubernetes deployments with Helm, Prometheus & Grafana</li>
+        <li>Infrastructure automation using Terraform & Ansible</li>
+      </ul>
+    </div>
 
-        <div class="portfolio-box">
-          <h4>🚀 DevOps Projects</h4>
-          <ul>
-            <li>CI/CD pipelines using GitLab CI & Docker (AWS & Azure)</li>
-            <li>Kubernetes with Helm, Prometheus & Grafana</li>
-            <li>Infrastructure automation using Terraform & Ansible</li>
-          </ul>
-        </div>
+  </div>
+</div>
 
-      </div>
+  
+    
     </div>
 
   </div>
