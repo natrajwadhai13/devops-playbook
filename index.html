@@ -135,10 +135,6 @@ footer {
    PORTFOLIO SECTION (CLEAN & UNIFIED)
 ===================================================== */
 
-/* =====================================================
-   PORTFOLIO SECTION (CLEAN & UNIFIED)
-===================================================== */
-
 .portfolio-section {
   background: #f1f5f9;
   padding: 70px 0;
@@ -153,34 +149,26 @@ footer {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 10px;
-  text-align: center;
 }
 
 .portfolio-section > p {
   color: #64748b;
   margin-bottom: 40px;
-  text-align: center;
 }
 
-/* =====================================================
-   COMMON CARD
-===================================================== */
+/* Common card */
 .portfolio-block {
   background: #ffffff;
   border-radius: 14px;
   padding: 28px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   margin-bottom: 30px;
-  text-align: left; /* 🔥 IMPORTANT */
 }
 
-/* =====================================================
-   PROFILE CARD
-===================================================== */
+/* Profile card */
 .profile-card {
   max-width: 420px;
   margin: 0 auto 25px;
-  text-align: center;
 }
 
 .profile-links a {
@@ -189,9 +177,7 @@ footer {
   font-size: 14px;
 }
 
-/* =====================================================
-   EXPERIENCE CARDS
-===================================================== */
+/* Experience cards */
 .exp-card {
   background: #f9fafb;
   border-left: 4px solid #2563eb;
@@ -210,9 +196,7 @@ footer {
   color: #64748b;
 }
 
-/* =====================================================
-   FLEX ROW (SKILLS / CERTS / PROJECTS)
-===================================================== */
+/* Flex row (Skills / Certs / Projects) */
 .portfolio-flex {
   display: flex;
   gap: 20px;
@@ -225,39 +209,43 @@ footer {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  text-align: left; /* 🔥 FIX FOR DESKTOP */
 }
 
-/* Headings centered, content left */
-.portfolio-box h4 {
-  text-align: center;
-  margin-bottom: 15px;
+/* Lists */
+.portfolio-block ul {
+  padding-left: 18px;
 }
 
-/* =====================================================
-   LIST FIX (MAIN ISSUE SOLVED HERE)
-===================================================== */
-.portfolio-box ul {
-  list-style-position: outside;
-  padding-left: 20px;
-  margin: 0;
-}
-
-.portfolio-box ul li {
-  text-align: left; /* 🔥 FORCE LEFT */
+.portfolio-block ul li {
   margin-bottom: 8px;
   line-height: 1.6;
 }
 
-/* =====================================================
-   RESPONSIVE
-===================================================== */
+/* Responsive */
 @media (max-width: 768px) {
   .portfolio-flex {
     flex-direction: column;
   }
 }
 
+
+/* FIX alignment inside skill / cert / project cards */
+.portfolio-box {
+  text-align: left;          /* 🔥 force left align */
+}
+
+/* Fix UL alignment */
+.portfolio-box ul {
+  list-style-position: outside;
+  padding-left: 20px;
+  margin: 0;
+}
+
+/* Fix LI spacing */
+.portfolio-box li {
+  text-align: left;          /* 🔥 important */
+  line-height: 1.6;
+}
 
 
 </style>
@@ -436,6 +424,7 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
     <p>Showcasing my DevOps journey, skills, and achievements.</p>
 
     <!-- PROFILE + OBJECTIVE + EDUCATION -->
+
     <div class="portfolio-block">
 
       <div class="profile-card">
