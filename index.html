@@ -135,6 +135,10 @@ footer {
    PORTFOLIO SECTION (CLEAN & UNIFIED)
 ===================================================== */
 
+/* =====================================================
+   PORTFOLIO SECTION (CLEAN & UNIFIED)
+===================================================== */
+
 .portfolio-section {
   background: #f1f5f9;
   padding: 70px 0;
@@ -149,26 +153,34 @@ footer {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .portfolio-section > p {
   color: #64748b;
   margin-bottom: 40px;
+  text-align: center;
 }
 
-/* Common card */
+/* =====================================================
+   COMMON CARD
+===================================================== */
 .portfolio-block {
   background: #ffffff;
   border-radius: 14px;
   padding: 28px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   margin-bottom: 30px;
+  text-align: left; /* 🔥 IMPORTANT */
 }
 
-/* Profile card */
+/* =====================================================
+   PROFILE CARD
+===================================================== */
 .profile-card {
   max-width: 420px;
   margin: 0 auto 25px;
+  text-align: center;
 }
 
 .profile-links a {
@@ -177,7 +189,9 @@ footer {
   font-size: 14px;
 }
 
-/* Experience cards */
+/* =====================================================
+   EXPERIENCE CARDS
+===================================================== */
 .exp-card {
   background: #f9fafb;
   border-left: 4px solid #2563eb;
@@ -196,7 +210,9 @@ footer {
   color: #64748b;
 }
 
-/* Flex row (Skills / Certs / Projects) */
+/* =====================================================
+   FLEX ROW (SKILLS / CERTS / PROJECTS)
+===================================================== */
 .portfolio-flex {
   display: flex;
   gap: 20px;
@@ -209,19 +225,33 @@ footer {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: left; /* 🔥 FIX FOR DESKTOP */
 }
 
-/* Lists */
-.portfolio-block ul {
-  padding-left: 18px;
+/* Headings centered, content left */
+.portfolio-box h4 {
+  text-align: center;
+  margin-bottom: 15px;
 }
 
-.portfolio-block ul li {
+/* =====================================================
+   LIST FIX (MAIN ISSUE SOLVED HERE)
+===================================================== */
+.portfolio-box ul {
+  list-style-position: outside;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.portfolio-box ul li {
+  text-align: left; /* 🔥 FORCE LEFT */
   margin-bottom: 8px;
   line-height: 1.6;
 }
 
-/* Responsive */
+/* =====================================================
+   RESPONSIVE
+===================================================== */
 @media (max-width: 768px) {
   .portfolio-flex {
     flex-direction: column;
