@@ -1,0 +1,521 @@
+/* ===============================
+   THEME VARIABLES
+================================ */
+
+/* Light Theme (Default) */
+:root {
+  --bg-main: #f1f5f9;
+  --bg-section: #f8fafc;
+  --bg-card: #ffffff;
+
+  --text-main: #1f2937;
+  --text-muted: #64748b;
+
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+
+  --border-light: #e5e7eb;
+  --shadow-soft: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --bg-main: #020617;
+  --bg-section: #020617;
+  --bg-card: #0f172a;
+
+  --text-main: #e5e7eb;
+  --text-muted: #94a3b8;
+
+  --primary: #38bdf8;
+  --primary-dark: #0ea5e9;
+
+  --border-light: rgba(255,255,255,0.08);
+  --shadow-soft: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* ===== BASE TEMPLATE (CLEANED) ===== */
+
+@import url('https://fonts.googleapis.com/css?family=Muli:300,700|Nunito');
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+  padding-top: 70px;
+}
+
+/* Typography */
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+   color: var(--text-main);
+}
+
+p {
+ color: var(--text-muted);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+/* Navbar */
+ /*---------------------------------------
+      MENU              
+  -----------------------------------------*/
+
+  .custom-navbar {
+    background: #ffffff;
+    border-top: 5px solid #29ca8e;
+    border-bottom: 0;
+    -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .custom-navbar .navbar-brand {
+    color: #454545;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+
+  .custom-navbar .navbar-nav.navbar-nav-first {
+    margin-left: 8em;
+  }
+
+  .custom-navbar .navbar-nav.navbar-right li a {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .custom-navbar .navbar-nav.navbar-right li a .fa {
+    background: #29ca8e;
+    border-radius: 100%;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .custom-navbar .nav li a {
+    line-height: 40px;
+    color: #575757;
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+
+  .custom-navbar .navbar-nav > li > a:hover,
+  .custom-navbar .navbar-nav > li > a:focus {
+    background-color: transparent;
+  }
+
+  .custom-navbar .nav li a:hover {
+    background-color: #29ca8e;
+    color: #ffffff;
+  }
+
+  .custom-navbar .nav li.active > a {
+    background-color: #29ca8e;
+    color: #ffffff;
+  }
+
+  /* ===============================
+   THEME TOGGLE SWITCH (ICON SLIDER)
+================================ */
+
+.theme-toggle-wrapper {
+  padding: 20px 10px;
+}
+
+/* Switch container */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 26px;
+}
+
+/* Hide checkbox */
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider track */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #cbd5e1;
+  border-radius: 999px;
+  transition: 0.3s;
+}
+
+/* Knob */
+.slider::before {
+  content: "🌙";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+/* DARK MODE */
+.theme-switch input:checked + .slider {
+  background-color: var(--primary);
+}
+
+.theme-switch input:checked + .slider::before {
+  transform: translateX(26px);
+  content: "☀️";
+}
+
+
+/* ============================================
+   🔥 HERO SECTION + UNLIMITED BUBBLES
+============================================ */
+
+.hero-devops {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #050a14 0%, #0a1a28 100%);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Bubble Base Style */
+.bubble {
+  position: absolute;
+  bottom: -60px;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.40), transparent);
+  border-radius: 50%;
+  animation: rise 8s linear infinite;
+  opacity: 0.85;
+  filter: blur(1px);
+}
+
+/* Bubbles Animation */
+@keyframes rise {
+  0%   { transform: translateY(0) scale(1); opacity: 0.4; }
+  50%  { opacity: 1; }
+  100% { transform: translateY(-110vh) scale(1.4); opacity: 0; }
+}
+
+/* Content stays above bubbles */
+
+
+    .hero-devops h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      text-shadow: 0 0 20px rgba(0,234,255,0.35);
+    }
+
+
+    .hero-devops p {
+      font-size: 18px;
+      color: #cbd5e1;
+      max-width: 720px;
+      margin: 0 auto 30px;
+    }
+
+/* Hero Image Styling */
+.hero-devops img {
+  max-height: 500px;
+  width: 900px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-top: 30px;
+  box-shadow: 0 0 25px #00eaff80;
+}
+
+
+/* ============================================
+   OTHER SECTIONS
+============================================ */
+
+.devops-section {
+ background: var(--bg-section);
+  padding: 80px 0;
+}
+
+.devops-box {
+  background: var(--bg-card);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: 0.3s;
+  
+}
+.devops-box:hover { transform: translateY(-8px); }
+
+
+.devops-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 20px;         
+}
+
+
+.devops-box img {
+  height: 40px;        /* Same height for all logos */
+  width: auto;         /* Auto maintain aspect ratio */
+  object-fit: contain; /* Prevent distortion */
+  margin-bottom: 20px; /* Same spacing as <i> icons */
+  display: inline-block;
+}
+
+.study-goals {
+ background: var(--bg-section);
+  color: var(--text-muted); /* soft white */
+  padding: 80px 0;
+}
+
+.study-goals h2,
+.study-goals h4 {
+  color: var(--text-main)
+}
+
+.study-goals p {
+  color: var(--text-muted);
+}
+.LEARNING-wrapper{
+    background: var(--bg-card);
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+    padding: 28px;
+}
+
+.study-card {
+  background: rgba(255,255,255,0.15);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+footer {
+  background: #111;
+  color: #aaa;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* =====================================================
+   PORTFOLIO SECTION (CLEAN & UNIFIED)
+===================================================== */
+
+.portfolio-section {
+ background: var(--bg-section);
+  padding: 80px 0;
+}
+
+.portfolio-section .container {
+  max-width: 1200px;
+}
+
+/* Section heading */
+.portfolio-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.portfolio-section > p {
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+/* Common card */
+.portfolio-block {
+ background: var(--bg-card);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  padding: 28px;
+  margin-bottom: 30px;
+}
+
+/* Profile card */
+.profile-card {
+  max-width: 420px;
+  margin: 0 auto 25px;
+}
+
+.profile-links a {
+  display: inline-block;
+  margin: 4px 6px;
+  font-size: 14px;
+}
+
+/* Experience cards */
+.exp-card {
+ background: #f9fafb;
+  border-left: 4px solid var(--primary);
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.exp-card h4 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.exp-card span {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* Flex row (Skills / Certs / Projects) */
+.portfolio-flex {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.portfolio-box {
+  flex: 1;
+  background: var(--bg-card);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--border-light);
+  padding: 20px;
+  border-radius: 12px;
+  
+}
+
+.cert-completed {
+  color: var(--accent-success);
+  font-weight: 600;
+}
+
+.cert-progress {
+  color: var(--accent-warning);
+  font-weight: 600;
+}
+
+
+/* Lists */
+.portfolio-block ul {
+  padding-left: 18px;
+}
+
+.portfolio-block ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .portfolio-flex {
+    flex-direction: column;
+  }
+}
+
+
+/* FIX alignment inside skill / cert / project cards */
+.portfolio-box {
+  text-align: left;          /* 🔥 force left align */
+}
+
+/* Fix UL alignment */
+.portfolio-box ul {
+  list-style-position: outside;
+  padding-left: 20px;
+  margin: 0;
+}
+
+/* Fix LI spacing */
+.portfolio-box li {
+  text-align: left;          /* 🔥 important */
+  line-height: 1.6;
+}
+
+/* ================= CONTACT SECTION ================= */
+
+.contact-section {
+  /* background: linear-gradient(135deg, #05000648, #3273f4ca); */
+  background-color: #111;
+  padding: 80px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-section h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: #e5e7eb;
+}
+
+.contact-section p {
+ color:#e5e7eb;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.contact-card {
+  background: #333a4a;
+  padding: 15px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.contact-card h4 {
+ color: #e5e7eb;
+  margin-bottom: 10px;
+}
+
+.contact-card p,
+.contact-card a {
+  color: #e5e7eb;
+  font-size: 15px;
+}
+
+.contact-card a:hover {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+

@@ -6,259 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- CSS FILES -->
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/owl.carousel.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/templatemo-style.css">
+  <!-- <link rel="stylesheet" href="css/owl.carousel.css"> -->
+  <!-- <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
+  <!-- <link rel="stylesheet" href="css/templatemo-style.css"> -->
 
-<style>
-
-/* ============================================
-   🔥 HERO SECTION + UNLIMITED BUBBLES
-============================================ */
-
-.hero-devops {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(135deg, #050a14 0%, #0a1a28 100%);
-  color: white;
-  padding: 120px 0;
-  text-align: center;
-}
-
-/* Bubble Base Style */
-.bubble {
-  position: absolute;
-  bottom: -60px;
-  background: radial-gradient(circle, rgba(0, 255, 255, 0.40), transparent);
-  border-radius: 50%;
-  animation: rise 8s linear infinite;
-  opacity: 0.85;
-  filter: blur(1px);
-}
-
-/* Bubbles Animation */
-@keyframes rise {
-  0%   { transform: translateY(0) scale(1); opacity: 0.4; }
-  50%  { opacity: 1; }
-  100% { transform: translateY(-110vh) scale(1.4); opacity: 0; }
-}
-
-/* Content stays above bubbles */
-
-
-    .hero-devops h1 {
-      font-size: 48px;
-      font-weight: 700;
-      margin-bottom: 15px;
-      text-shadow: 0 0 20px rgba(0,234,255,0.35);
-    }
-
-
-    .hero-devops p {
-      font-size: 18px;
-      color: #cbd5e1;
-      max-width: 720px;
-      margin: 0 auto 30px;
-    }
-
-/* Hero Image Styling */
-.hero-devops img {
-  max-height: 500px;
-  width: 900px;
-  object-fit: cover;
-  border-radius: 15px;
-  margin-top: 30px;
-  box-shadow: 0 0 25px #00eaff80;
-}
-
-
-/* ============================================
-   OTHER SECTIONS
-============================================ */
-
-.devops-section {
-  background-color: #f4f7fa;
-  padding: 80px 0;
-}
-
-.devops-box {
-  background: white;
-  border-radius: 12px;
-  padding: 30px;
-  margin-bottom: 30px;
-  text-align: center;
-  transition: 0.3s;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-.devops-box:hover { transform: translateY(-8px); }
-
-
-.devops-box i {
-  font-size: 40px;
-  color: #007bff;
-  margin-bottom: 20px;         
-}
-
-
-.devops-box img {
-  height: 40px;        /* Same height for all logos */
-  width: auto;         /* Auto maintain aspect ratio */
-  object-fit: contain; /* Prevent distortion */
-  margin-bottom: 20px; /* Same spacing as <i> icons */
-  display: inline-block;
-}
-
-.study-goals {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #f1f5f9; /* soft white */
-  padding: 80px 0;
-}
-
-.study-goals h2,
-.study-goals h4 {
-  color: #ffffff;
-}
-
-.study-goals p {
-  color: #e5e7eb;
-}
-
-
-.study-card {
-  background: rgba(255,255,255,0.15);
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
-footer {
-  background: #111;
-  color: #aaa;
-  padding: 20px;
-  text-align: center;
-  font-size: 14px;
-}
-
-/* =====================================================
-   PORTFOLIO SECTION (CLEAN & UNIFIED)
-===================================================== */
-
-.portfolio-section {
-  background: #f1f5f9;
-  padding: 70px 0;
-}
-
-.portfolio-section .container {
-  max-width: 1200px;
-}
-
-/* Section heading */
-.portfolio-section h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.portfolio-section > p {
-  color: #64748b;
-  margin-bottom: 40px;
-}
-
-/* Common card */
-.portfolio-block {
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 28px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  margin-bottom: 30px;
-}
-
-/* Profile card */
-.profile-card {
-  max-width: 420px;
-  margin: 0 auto 25px;
-}
-
-.profile-links a {
-  display: inline-block;
-  margin: 4px 6px;
-  font-size: 14px;
-}
-
-/* Experience cards */
-.exp-card {
-  background: #f9fafb;
-  border-left: 4px solid #2563eb;
-  padding: 12px 15px;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.exp-card h4 {
-  font-size: 16px;
-  margin-bottom: 4px;
-}
-
-.exp-card span {
-  font-size: 13px;
-  color: #64748b;
-}
-
-/* Flex row (Skills / Certs / Projects) */
-.portfolio-flex {
-  display: flex;
-  gap: 20px;
-  align-items: stretch;
-}
-
-.portfolio-box {
-  flex: 1;
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-/* Lists */
-.portfolio-block ul {
-  padding-left: 18px;
-}
-
-.portfolio-block ul li {
-  margin-bottom: 8px;
-  line-height: 1.6;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .portfolio-flex {
-    flex-direction: column;
-  }
-}
-
-
-/* FIX alignment inside skill / cert / project cards */
-.portfolio-box {
-  text-align: left;          /* 🔥 force left align */
-}
-
-/* Fix UL alignment */
-.portfolio-box ul {
-  list-style-position: outside;
-  padding-left: 20px;
-  margin: 0;
-}
-
-/* Fix LI spacing */
-.portfolio-box li {
-  text-align: left;          /* 🔥 important */
-  line-height: 1.6;
-}
-
-
-</style>
 </head>
 
 
@@ -278,6 +32,15 @@ footer {
         <li><a href="#study" class="smoothScroll">Study Goals</a></li>
         <li><a href="#personal" class="smoothScroll">Personal</a></li>
         <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        <!-- THEME TOGGLE SWITCH -->
+        <li class="theme-toggle-wrapper">
+        <label class="theme-switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span>
+        </label>
+        </li>
+
+
       </ul>
     </div>
   </div>
@@ -285,9 +48,11 @@ footer {
 
 
 <!-- HERO SECTION -->
+
 <section class="hero-devops" id="home">
 
   <!-- Unlimited Bubbles Auto Generated -->
+
   <div id="bubble-container"></div>
 
   <div class="container">
@@ -300,6 +65,7 @@ footer {
 </section>
 
 <!-- JS: Unlimited Bubble Generator -->
+
 <script>
 function createBubble() {
   const bubble = document.createElement("div");
@@ -321,6 +87,8 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
 </script>
 
 </section>
+
+
   <!-- DEVOPS SECTION -->
 <section class="devops-section" id="devops">
   <div class="container text-center">
@@ -416,8 +184,6 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
           </div>
         </a>
       </div>
-
-
     </div>
     <a href="https://natrajwadhai13.github.io/devops-playbook/docs/" target="_blank" class="btn btn-primary">View All Notes</a>
   </div>
@@ -465,10 +231,7 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
 
     </div>
 
-
-
 <!-- EXPERIENCE -->
-
 
     <div class="portfolio-block">
       <h3>Professional Experience</h3>
@@ -542,8 +305,14 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
               </b>
       <span style="color:green;"> (Completed)</span>
     </li>
-            <li>AZ-104 – In Progress</li>
-            <li>AZ-400 – In Progress</li>
+            <li>
+  AZ-900 – Azure Fundamentals
+  <span class="cert-completed">(Completed)</span>
+</li>
+<li>
+  AZ-104 – Azure Administrator
+  <span class="cert-progress">(In Progress)</span>
+</li>
             <li>AWS DevOps – In Progress</li>
             <li>GCP DevOps – In Progress</li>
           </ul>
@@ -564,31 +333,17 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
   </div>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
   <!-- STUDY GOALS -->
    
 <section class="devops-section" id="study">
   <div class="container text-center">
-
+    
     <h2 class="mb-3">🚀 Study Tracker Content is in progress… </h2>
     <p class="mb-4">
       Build consistency, track progress, and master skills with a proven system.
     </p>
 
-    <!-- MAIN CTA -->
-    <a href="docs/study-success.html" class="btn btn-success btn-lg mb-5">
-      👉 Open Study Success System
-    </a>
+    
 
     <div class="row">
 
@@ -618,17 +373,25 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
           </p>
         </div>
       </div>
-
+    
     </div>
+
+    <!-- MAIN CTA -->
+
+    <a href="docs/study-success.html" class="btn btn-success btn-lg mb-5">
+      👉 Open Study Success System
+    </a>
+
   </div>
 </section>
 
 
-  <!-- PERSONAL SECTION -->
+<!-- PERSONAL SECTION -->
 <!-- PERSONAL / LEARNING JOURNEY -->
+
 <section class="study-goals" id="personal">
   <div class="container text-center">
-
+    <div class="LEARNING-wrapper">
     <h2 class="mb-3">🌱 My Learning Journey</h2>
     <p class="mb-4">
       A space to share insights, experiences, and growth beyond technology.
@@ -644,10 +407,85 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
       </p>
       <p><em>Content is in progress… stay tuned 🚀</em></p>
     </div>
-
+    </div>
   </div>
 </section>
+
+
+  <!-- CONTACT SECTION -->
+
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+
+    <h2>📬 Get in Touch</h2>
+    <p>
+      Interested in DevOps collaboration, opportunities, or discussions?  
+      Feel free to reach out.
+    </p>
+
+    <div class="contact-cards">
+
+      <div class="contact-card">
+        <h4>📧 Email</h4>
+        <p>
+          <a href="mailto:natrajwadhai@rediffmail.com">
+            natrajwadhai@rediffmail.com
+          </a>
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <h4>📞 Phone</h4>
+        <p>
+          <a href="tel:+918421027168">
+            +91 84210 27168
+          </a>
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <h4>🔗 Professional Links</h4>
+        <p>
+          <a href="https://linkedin.com/in/natraj-wadhai-311589110" target="_blank">LinkedIn</a><br>
+          <a href="https://github.com/natrajwadhai13" target="_blank">GitHub</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
 
 <footer class="text-center">
   © 2025 <strong>Natraj Wadhai</strong> — DevOps | Portfolio | Study Notes
 </footer>
+
+
+</body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("themeToggle");
+  const root = document.documentElement;
+
+  /* ---------- DEFAULT THEME ---------- */
+
+  // Always start in LIGHT mode
+  root.setAttribute("data-theme", "light");
+  toggle.checked = false;
+
+  /* ---------- TOGGLE HANDLER ---------- */
+  
+  toggle.addEventListener("change", function () {
+    if (this.checked) {
+      root.setAttribute("data-theme", "dark");
+    } else {
+      root.setAttribute("data-theme", "light");
+    }
+  });
+});
+</script>
+
+
+</html>
