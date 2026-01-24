@@ -4,8 +4,8 @@ nav_order: 1
 ---
 
 <div class="hero">
-  <h1><b>🚀 DevOps Playbook by Natraj</b></h1>
-  <p><strong> Practical notes • Interview prep • Real-world automation<strong></p>
+  <h1>🚀 DevOps Playbook by Natraj</h1>
+  <p> Practical notes • Interview prep • Real-world automation</p>
 </div>
 
 <style>
@@ -20,6 +20,7 @@ nav_order: 1
 .hero h1 {
   margin: 0;
   font-size: 2.4rem;
+  font-weight: 800;
 }
 .hero p {
   margin-top: 10px;
