@@ -39,9 +39,6 @@ nav_order: 1
   text-decoration: underline;
 }
 
-.main-content-wrap{
-  width: 80vw !important;
-}
 </style>
 
 ## 📘 About

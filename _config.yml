@@ -31,3 +31,10 @@ aux_links:
   🏠 Home: https://natrajwadhai13.github.io/devops-playbook/
   GitHub Repo: https://github.com/natrajwadhai13/devops-playbook
   Portfolio: https://natrajwadhai13.github.io/devops-playbook/#portfolio
+
+
+  defaults:
+  - scope:
+      path: "docs"
+    values:
+      body_class: wide-page
