@@ -5,12 +5,12 @@ nav_order: 1
 
 <div class="hero">
   <h1>🚀 DevOps Playbook by Natraj</h1>
-  <p>Practical notes • Interview prep • Real-world automation</p>
+  <p>   Practical notes • Interview prep • Real-world automation</p>
 </div>
 
 <style>
 .hero {
-  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  background: linear-gradient(90deg, #9796F0, #FBC7D4);
   color: white;
   padding: 35px 20px;
   border-radius: 14px;
@@ -45,9 +45,10 @@ Welcome to the **DevOps Knowledge Hub** — a curated collection of my
 hands-on notes, tools, and real-world DevOps experiences.
 
 This hub is designed for:
-- 📌 DevOps & Cloud interviews  
-- 📌 Practical learning & revision  
-- 📌 Real production-style tooling reference  
+
+- 📌 DevOps & Cloud interviews
+- 📌 Practical learning & revision
+- 📌 Real production-style tooling reference
 
 ---
 
@@ -180,13 +181,13 @@ integrating cloud, CI/CD, monitoring, and reliability engineering.
 
 ## 📂 Portfolio & Contact
 
-- 🔗 GitHub: [https://github.com/natrajwadhai13](https://github.com/natrajwadhai13)  
-- 📧 Email: [natrajwadhai13@gmail.com](natrajwadhai13@gmail.com)  
-
+- 🔗 GitHub: [https://github.com/natrajwadhai13](https://github.com/natrajwadhai13)
+- 📧 Email: [natrajwadhai13@gmail.com](natrajwadhai13@gmail.com)
 
 Coming soon:
-- Personal portfolio  
-- Resume integration  
-- Real DevOps project demos  
+
+- Personal portfolio
+- Resume integration
+- Real DevOps project demos
 
 ---
