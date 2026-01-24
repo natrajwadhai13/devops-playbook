@@ -1,6 +1,7 @@
 ---
 title: 🧠 DevOps Knowledge Hub
 nav_order: 1
+body_class: wide-page
 ---
 
 <div class="hero">

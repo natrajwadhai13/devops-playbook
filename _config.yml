@@ -9,7 +9,7 @@ color_scheme: light
 
 sass:
   style: compressed
-
+  
 just_the_docs:
   logo: "/assets/images/devops-logo.png"
   favicon_ico: "/assets/images/favicon.ico"
@@ -33,8 +33,4 @@ aux_links:
   Portfolio: https://natrajwadhai13.github.io/devops-playbook/#portfolio
 
 
-  defaults:
-  - scope:
-      path: "docs"
-    values:
-      body_class: wide-page
+
