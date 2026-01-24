@@ -38,6 +38,10 @@ nav_order: 1
 .topic-list a:hover {
   text-decoration: underline;
 }
+
+.main-content-wrap{
+  width: 80vw !important;
+}
 </style>
 
 ## 📘 About
