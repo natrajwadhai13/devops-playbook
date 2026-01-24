@@ -417,10 +417,10 @@ footer {
   
 }
 
-.cert-completed {
+/* .cert-completed {
   color: var(--accent-success);
   font-weight: 600;
-}
+} */
 
 .cert-progress {
   color: var(--accent-warning);
