@@ -383,7 +383,7 @@ footer {
 /* Experience cards */
 .exp-card {
  background: var(--bg-card);
-  border-left: 4px solid var(--primary);
+  border-left: 3px solid var(--primary);
   padding: 12px 15px;
   border-radius: 8px;
   margin-bottom: 15px;
@@ -393,11 +393,19 @@ footer {
 .exp-card h4 {
   font-size: 16px;
   margin-bottom: 4px;
+  font-weight: bold;
 }
 
 .exp-card span {
-  font-size: 13px;
-  color: #64748b;
+  font-size: 14px;
+  color: #15803d;
+  font-weight: bold;
+}
+
+.exp-card p {
+  font-size: 14px;
+  color: #30353b;
+  /* font-weight: bold; */
 }
 
 /* Flex row (Skills / Certs / Projects) */
