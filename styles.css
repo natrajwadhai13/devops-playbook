@@ -55,6 +55,7 @@ h2,h3,h4,h5,h6 {
    color: var(--text-main) !important;
 }
 
+
 p {
  color: var(--text-muted);
   font-size: 14px;
