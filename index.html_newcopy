@@ -90,26 +90,21 @@ function createBubble() {
 setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
 </script>
 
+</section>
 
 
-<!-- DEVOPS SECTION -->
-
-
+  <!-- DEVOPS SECTION -->
 <section class="devops-section" id="devops">
   <div class="container text-center">
     <h2>Popular DevOps Tools</h2>
     <p>Master the tools that power modern automation and deployment pipelines.</p>
-
     <div class="row">
 
       <div class="col-md-3 col-sm-6">
-        <a href="https://natrajwadhai13.github.io/devops-playbook/3.%20DevOps%20Core%20Tools/3.1%20Containerization/Docker/Docker.html"
-           style="text-decoration:none; color:inherit;">
+        <a href="https://natrajwadhai13.github.io/devops-playbook/3.%20DevOps%20Core%20Tools/3.1%20Containerization/Docker/Docker.html" style="text-decoration:none; color:inherit;">
           <div class="devops-box">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
-              width="40"
-              alt="Docker logo">
+        <!--  <i class="fa fa-server"></i> -->
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="40">
             <h4>Docker</h4>
             <p>Containerize applications for reliable deployments.</p>
           </div>
@@ -119,10 +114,8 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
       <div class="col-md-3 col-sm-6">
         <a href="https://natrajwadhai13.github.io/devops-playbook/3.%20DevOps%20Core%20Tools/3.2%20Orchestration/Kubernetes/0.%20Kubernetes.html">
           <div class="devops-box">
-            <img
-              src="https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg"
-              width="40"
-              alt="Kubernetes logo">
+         <!--  <i class="fa fa-server"></i> -->
+            <img src="https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg" width="40">
             <h4>Kubernetes</h4>
             <p>Orchestrate containers at scale with K8s and Helm.</p>
           </div>
@@ -130,13 +123,10 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
       </div>
 
       <div class="col-md-3 col-sm-6">
-        <a href="https://natrajwadhai13.github.io/devops-playbook/4.%20Cloud%20Platforms/AWS.html"
-           style="text-decoration:none; color:inherit;">
+        <a href="https://natrajwadhai13.github.io/devops-playbook/4.%20Cloud%20Platforms/AWS.html" style="text-decoration:none; color:inherit;">
           <div class="devops-box">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
-              width="40"
-              alt="AWS logo">
+        <!--  <i class="fa fa-server"></i> -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" width="40">
             <h4>AWS Cloud</h4>
             <p>Build and scale apps with Amazon Web Services.</p>
           </div>
@@ -144,10 +134,10 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
       </div>
 
       <div class="col-md-3 col-sm-6">
-        <a href="https://natrajwadhai13.github.io/devops-playbook/2.%20CICD%20Tools/2.%20CICD%20Tools.html"
-           style="text-decoration:none; color:inherit;">
+        <a href="https://natrajwadhai13.github.io/devops-playbook/2.%20CICD%20Tools/2.%20CICD%20Tools.html"  style="text-decoration:none; color:inherit;">
           <div class="devops-box">
-            <i class="fa fa-cogs" aria-hidden="true"></i>
+        <!--  <i class="fa fa-server"></i> -->
+            <i class="fa fa-cogs"></i>
             <h4>CI/CD Pipelines</h4>
             <p>Automate build, test, and deployment with GitLab CI/CD.</p>
           </div>
@@ -157,10 +147,8 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
       <div class="col-md-3 col-sm-6">
         <a href="https://natrajwadhai13.github.io/devops-playbook/4.%20Cloud%20Platforms/Azure.html">
           <div class="devops-box">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg"
-              width="40"
-              alt="Microsoft Azure logo">
+         <!--  <i class="fa fa-server"></i> -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg" width="40">
             <h4>Azure</h4>
             <p>Cloud platform for scalable apps, containers, and enterprise services.</p>
           </div>
@@ -170,10 +158,8 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
       <div class="col-md-3 col-sm-6">
         <a href="https://natrajwadhai13.github.io/devops-playbook/6.%20Cloud%20Automation%20Tools/6.%20Cloud%20Automation%20Tools.html">
           <div class="devops-box">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg"
-              width="40"
-              alt="Terraform logo">
+         <!--  <i class="fa fa-server"></i> -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg" width="40">
             <h4>Terraform</h4>
             <p>Infrastructure as code for automated provisioning across clouds.</p>
           </div>
@@ -183,39 +169,29 @@ setInterval(createBubble, 250);  // Creates bubble every 0.25 sec
       <div class="col-md-3 col-sm-6">
         <a href="https://natrajwadhai13.github.io/devops-playbook/9.%20Monitoring%20&%20Logging%20Tools/9.%20Monitoring%20&%20Logging%20Tools.html">
           <div class="devops-box">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/3/38/Prometheus_software_logo.svg"
-              width="40"
-              alt="Prometheus monitoring logo">
+         <!--  <i class="fa fa-server"></i> -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Prometheus_software_logo.svg" width="40">
             <h4>Monitoring Tools</h4>
             <p>Track system health, performance, and reliability in real time.</p>
           </div>
         </a>
       </div>
 
+
       <div class="col-md-3 col-sm-6">
         <a href="https://natrajwadhai13.github.io/devops-playbook/11.%20Operating%20System%20(OS)/11.%20Operating%20System%20(OS).html">
           <div class="devops-box">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg"
-              width="40"
-              alt="Linux operating system logo">
+         <!--  <i class="fa fa-server"></i> -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" width="40">
             <h4>Linux</h4>
             <p>Foundation for open-source DevOps workflows and container orchestration.</p>
           </div>
         </a>
       </div>
-
     </div>
-
-    <a href="https://natrajwadhai13.github.io/devops-playbook/docs/"
-       target="_blank"
-       class="btn btn-primary">
-      View All Notes
-    </a>
+    <a href="https://natrajwadhai13.github.io/devops-playbook/docs/" target="_blank" class="btn btn-primary">View All Notes</a>
   </div>
 </section>
-
 
 
 

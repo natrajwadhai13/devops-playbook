@@ -59,7 +59,7 @@ nav_order: 30
   - Speed Boat
 
 - **Dolphin Trip (Morning):**
-  - **Sinquerim Beach**
+  - **Sinquerim Beach** (6-7 km from Calangute Beach)
 
 =========================
 
