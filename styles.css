@@ -17,6 +17,10 @@
   --border-light: #e5e7eb;
   --shadow-soft: 0 6px 18px rgba(0,0,0,0.08);
 
+  --success: #15803d;
+
+  --warning: #d97706;
+
 }
 
 /* Dark Theme */
@@ -33,6 +37,10 @@
 
   --border-light: rgba(255,255,255,0.08);
   --shadow-soft: 0 10px 30px rgba(0,0,0,0.6);
+
+  --success: #22c55e;
+
+  --warning: #facc15;
 
 }
 
@@ -52,7 +60,8 @@ body {
 h2,h3,h4,h5,h6 {
   font-family: 'Muli', sans-serif;
   font-weight: bold;
-   color: var(--text-main) !important;
+   /* color: var(--text-main) !important; */
+  color: var(--text-main);
 }
 
 
@@ -65,11 +74,21 @@ p {
 .btn-primary {
   background-color: var(--primary);
   border-color: var(--primary);
+  color: #fff;
 }
+
 .btn-primary:hover {
   background-color: var(--primary-dark);
   border-color: var(--primary-dark);
 }
+
+
+* {
+  transition: background-color 0.25s ease, 
+              color 0.25s ease, 
+              border-color 0.25s ease;
+}
+
 
 /* Navbar */
  /*---------------------------------------
@@ -77,8 +96,10 @@ p {
   -----------------------------------------*/
 
   .custom-navbar {
-    background: #ffffff;
-    border-top: 5px solid #29ca8e;
+    /* background: #ffffff; */
+    /* border-top: 5px solid #29ca8e; */
+    background: var(--bg-card);
+    border-top: 4px solid var(--primary);
     border-bottom: 0;
     -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -304,8 +325,11 @@ p {
 }
 
 .study-goals h2,
+
+
 .study-goals h4 {
-  color: var(--text-main)
+  color: var(--text-main);
+  font-weight: bold;
 }
 
 .study-goals p {
@@ -396,6 +420,8 @@ footer {
   margin-bottom: 4px;
   font-weight: bold;
 }
+/* 
+-----------------
 
 .exp-card span {
   font-size: 14px;
@@ -405,9 +431,27 @@ footer {
 
 .exp-card p {
   font-size: 14px;
-  color: #30353b;
-  /* font-weight: bold; */
+  color: var(--success);
+  font-weight: 600;
+  /* color: #30353b; */
+  /* font-weight:
+   bold; */
 }
+*/
+
+.exp-card span {
+  font-size: 14px;
+  color: var(--success);
+  font-weight: 600;
+  font-weight: bold;
+}
+
+.exp-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
 
 /* Flex row (Skills / Certs / Projects) */
 .portfolio-flex {
@@ -431,11 +475,11 @@ footer {
   font-weight: 600;
 } */
 
-.cert-progress {
-  color: var(--accent-warning);
+/* .cert-progress {
+  color: var(--warning);
   font-weight: 600;
 }
-
+ */
 
 /* Lists */
 .portfolio-block ul {
