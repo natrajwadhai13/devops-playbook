@@ -3,6 +3,72 @@ title: 🏖 Goa Travel Planning
 nav_order: 30
 ---
 
+# Places Visited Done
+
+---
+
+## 🗓️ **Day 1 – North Goa**
+
+### 📍 **Places Visited**
+
+- **Calangute Beach** – (Sunrise at Calangute Beach)
+- **Baga Beach** (Sunset at Baga Beach)
+- **Chapora Fort** – _Dil Chahta Hai_ shooting location
+
+### 🎉 **Evening / Night**
+
+- **Dinner Cruise**
+- **Night Party** – Clubs & pubs
+
+---
+
+## 🗓️ **Day 2 – Adventure & Water Activities**
+
+- **Calangute Beach** – (Sunrise at Calangute Beach)
+
+### 🌊 **Scuba Diving & Water Sports**
+
+- **Bogmallo Beach**
+- Scuba Diving
+- Parasailing
+- Bumper Ride
+- Jet Ski Ride
+- Banana Ride
+- Speed Boat Ride
+
+### 🌙 **Evening**
+
+- **Calangute Beach (Night Visit)**
+- Shopping & local stalls
+
+---
+
+## 🗓️ **Day 3 – Nature & Culture**
+
+### 📍 **Places Visited**
+
+- **Dudhsagar Waterfalls**
+  _(85 km from Calangute Beach | 51 km from Madgaon KTC Bus Stand)_
+
+- **Panjim Church**
+  _(Famous White Church – popular photo spot)_
+
+- **Fontainhas (Latin Quarter)**
+  _(Heritage streets & colorful houses)_
+
+- **Dr. Babasaheb Ambedkar Park**
+  - Garden
+  - Relaxation
+  - Photography
+
+## - Hotel Stay – Atlanta Beach Resort (Near Calangute Beach 800m)
+
+=====================================
+
+---
+
+# Planing to Goa Places Visited
+
 ## 🌴 **GOA – 3 Days / 2 Nights Best Itinerary**
 
 ## 🗓️ **Day 1 – North Goa (Fun + Nightlife)**
