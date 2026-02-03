@@ -61,71 +61,9 @@ nav_order: 30
   - Relaxation
   - Photography
 
-## - Hotel Stay – Atlanta Beach Resort (Near Calangute Beach 800m)
-
-=====================================
+## 🏠 Hotel Stay – Atlanta Beach Resort (Near Calangute Beach 800m)
 
 ---
-
-# Planing to Goa Places Visited
-
-## 🌴 **GOA – 3 Days / 2 Nights Best Itinerary**
-
-## 🗓️ **Day 1 – North Goa (Fun + Nightlife)**
-
-### 📍 **Places to Visit**
-
-- **Calangute Beach** – Goa ka sabse popular beach
-
-( 13 km from panjim bus stand or 43 km from madgaon KTC Bus Stand)
-
-- **Baga Beach** – Beach + nightlife combo (1 km from Calangute Beach )
-
-- **Anjuna Beach** – Sunset & flea market (6.5 km from Calangute Beach )
-
-- **Chapora Fort** – _Dil Chahta Hai_ point 😍 (6.5 km from Calangute Beach or Anjuna Beach)
-
-### 🎉 **Evening / Night**
-
-- **Tito’s Lane** – Clubs & pubs
-- Club options:
-  - **Mambo’s**
-  - **Cape Town Café**
-
-👉 _Best for:_ Friends / first-time Goa visitors
-
----
-
-## 🗓️ **Day 2 – South Goa (Peace + Nature)**
-
-### 📍 **Places to Visit**
-
-- **Colva Beach** – Clean & peaceful ( 48 km from Calangute Beach 5.3 km from madgaon KTC Bus Stand)
-- **Palolem Beach** – Postcard-perfect 🌊 (82 km from Calangute Beach and 38 km km madgaon KTC Bus Stand)
-- **Basilica of Bom Jesus** – UNESCO heritage (24 km from Calangute Beach and 30 km km madgaon KTC Bus Stand)
-- **Dudhsagar Waterfalls** (85 km from Calangute Beach and 51 km km madgaon KTC Bus Stand)
-
-### 🌅 Evening
-
-- Sunset at Palolem
-- Beach shack dinner + slow music 🎶
-
-👉 _Best for:_ Couples / family / peace lovers
-
----
-
-## 🗓️ **Day 3 – Adventure + Shopping (Half Day)**
-
-### 🏄 **Activities**
-
-- **Water Sports (Baga / Calangute):**
-  - Parasailing
-  - Jet Ski
-  - Banana Ride
-  - Speed Boat
-
-- **Dolphin Trip (Morning):**
-  - **Sinquerim Beach** (6-7 km from Calangute Beach)
 
 =========================
 
@@ -275,6 +213,72 @@ nav_order: 30
 - ✔ Cash thoda rakho (small shacks)
 - ✔ Water sports ke time bargain karo
 - ✔ Weekend me clubs crowded hote hain
+
+---
+
+# Planing to Goa Places Visited
+
+## 🌴 **GOA – 3 Days / 2 Nights Best Itinerary**
+
+## 🗓️ **Day 1 – North Goa (Fun + Nightlife)**
+
+### 📍 **Places to Visit**
+
+- **Calangute Beach** – Goa ka sabse popular beach
+
+( 13 km from panjim bus stand or 43 km from madgaon KTC Bus Stand)
+
+- **Baga Beach** – Beach + nightlife combo (1 km from Calangute Beach )
+
+- **Anjuna Beach** – Sunset & flea market (6.5 km from Calangute Beach )
+
+- **Chapora Fort** – _Dil Chahta Hai_ point 😍 (6.5 km from Calangute Beach or Anjuna Beach)
+
+### 🎉 **Evening / Night**
+
+- **Tito’s Lane** – Clubs & pubs
+- Club options:
+  - **Mambo’s**
+  - **Cape Town Café**
+
+👉 _Best for:_ Friends / first-time Goa visitors
+
+---
+
+## 🗓️ **Day 2 – South Goa (Peace + Nature)**
+
+### 📍 **Places to Visit**
+
+- **Colva Beach** – Clean & peaceful ( 48 km from Calangute Beach 5.3 km from madgaon KTC Bus Stand)
+- **Palolem Beach** – Postcard-perfect 🌊 (82 km from Calangute Beach and 38 km km madgaon KTC Bus Stand)
+- **Basilica of Bom Jesus** – UNESCO heritage (24 km from Calangute Beach and 30 km km madgaon KTC Bus Stand)
+- **Dudhsagar Waterfalls** (85 km from Calangute Beach and 51 km km madgaon KTC Bus Stand)
+
+### 🌅 Evening
+
+- Sunset at Palolem
+- Beach shack dinner + slow music 🎶
+
+👉 _Best for:_ Couples / family / peace lovers
+
+---
+
+## 🗓️ **Day 3 – Adventure + Shopping (Half Day)**
+
+### 🏄 **Activities**
+
+- **Water Sports (Baga / Calangute):**
+  - Parasailing
+  - Jet Ski
+  - Banana Ride
+  - Speed Boat
+
+- **Dolphin Trip (Morning):**
+  - **Sinquerim Beach** (6-7 km from Calangute Beach)
+
+=============================
+
+---
 
 # **images**
 
