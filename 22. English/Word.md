@@ -1,5 +1,5 @@
 ---
-title: "📌 Word"
+title: "• Word"
 parent: "22. Testing"
 nav_order: 2
 has_children: true
