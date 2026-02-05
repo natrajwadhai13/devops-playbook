@@ -18,7 +18,7 @@ nav_order: 30
 ### 🎉 **Evening / Night**
 
 - **Dinner Cruise**
-- **Night Party** – Clubs & pubs
+- **Night Party** – Clubs & pubs (coral queen Cruise)
 
 ---
 
