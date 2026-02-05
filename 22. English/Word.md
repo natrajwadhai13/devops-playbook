@@ -1,6 +1,6 @@
 ---
 title: "• Word"
-parent: title: "22. English"
+parent: "22. English"
 nav_order: 2
 has_children: true
 ---
