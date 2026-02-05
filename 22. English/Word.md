@@ -1,6 +1,6 @@
 ---
 title: "• Word"
-parent: "22. Testing"
+parent: title: "22. English"
 nav_order: 2
 has_children: true
 ---
@@ -72,5 +72,3 @@ has_children: true
 | **Maybe**             | शायद          | कदाचित          | Uncertain             | Maybe we can try later.          |
 
 IMP More word need to add
-
-**Should**, **Must**, **Have to**, **Will**, ya **May**
