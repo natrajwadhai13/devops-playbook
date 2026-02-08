@@ -405,6 +405,25 @@ footer {
   font-size: 14px;
 }
 
+
+.small-tool-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-soft);
+  color: var(--text-main);
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: inline-block;
+  min-width: 110px;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+
+
 /* Experience cards */
 .exp-card {
  background: var(--bg-card);
@@ -547,7 +566,7 @@ footer {
 
 .contact-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 25px;
 }
 
