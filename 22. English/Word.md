@@ -71,4 +71,21 @@ has_children: true
 | **Sure**              | निश्चित       | नक्की           | Confirmed             | I am sure about this.            |
 | **Maybe**             | शायद          | कदाचित          | Uncertain             | Maybe we can try later.          |
 
+---
+
 IMP More word need to add
+
+Would --> केले असते / करायला आवडेल --> इच्छा, सवय, कल्पित परिस्थिती
+
+3. Would (वुड)
+
+- अर्थ:
+- "Will" चा भूतकाळ (Past form).
+- इच्छा (Willingness), सवय (Habit), किंवा कल्पित परिस्थिती (Imaginary situation) दाखवण्यासाठी.
+- उदाहरणे:
+- I would like to have a cup of tea. → मला एक कप चहा घ्यायला आवडेल.
+- When we were kids, we would play outside every evening. → आम्ही लहानपणी रोज संध्याकाळी बाहेर खेळायचो.
+- I would help you if I had time. → माझ्याकडे वेळ असता तर मी तुला मदत केली असती.
+  👉 "Would" म्हणजे केले असते / करायला आवडेल — इच्छा, सवय किंवा कल्पित परिस्थिती
+
+---

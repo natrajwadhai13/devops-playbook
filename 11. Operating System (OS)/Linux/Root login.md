@@ -2,10 +2,11 @@
 title: • Root login
 parent: • Linux
 grand_parent: 11. Operating System (OS)
-nav_order: 2
+nav_order: 3
 has_children: true
 ---
-### Root login 
+
+### Root login
 
 By default, **AWS EC2 machines (Amazon Linux / Ubuntu / RHEL, etc.) do not allow root login with password** for security reasons. Instead, AWS enforces **SSH key pair authentication**.
 But if you really want to **enable root password login**, you need to change both **SSH config** and **root password settings**.
@@ -57,15 +58,14 @@ But if you really want to **enable root password login**, you need to change bot
    ```bash
    systemctl restart sshd
 
-   for ubuntu 
-   
+   for ubuntu
+
    systemctl restart ssh
    ```
 
 6. **Update Security Group in AWS**
-
-   * Go to **EC2 Console → Security Groups → Inbound Rules**.
-   * Make sure **port 22 (SSH)** is allowed from your IP.
+   - Go to **EC2 Console → Security Groups → Inbound Rules**.
+   - Make sure **port 22 (SSH)** is allowed from your IP.
 
 7. **Login as Root with Password**
 
@@ -76,4 +76,3 @@ But if you really want to **enable root password login**, you need to change bot
    It will now ask for the root password you set.
 
 ---
-
