@@ -1,0 +1,186 @@
+---
+title: "• Kubernetes real-life interview"
+parent: "• Kubernetes"
+grand_parent: 3. DevOps Core Tools
+nav_order: 2
+has_children: true
+---
+
+- [Kubernetes/cheatsheets](https://cheatsheets.zip/kubernetes)
+
+---
+
+# 🚀 Kubernetes (kubectl) Cheat Sheet
+
+## 🔹 1. Cluster & Context
+
+```bash
+kubectl cluster-info                # Cluster details
+kubectl config view                # View config
+kubectl config current-context     # Current context
+kubectl config use-context <name>  # Switch context
+```
+
+---
+
+## 🔹 2. Nodes
+
+```bash
+kubectl get nodes
+kubectl describe node <node-name>
+kubectl top nodes                  # CPU/memory usage
+```
+
+---
+
+## 🔹 3. Pods
+
+```bash
+kubectl get pods
+kubectl get pods -o wide           # More details
+kubectl describe pod <pod-name>
+kubectl logs <pod-name>
+kubectl logs -f <pod-name>         # Live logs
+kubectl exec -it <pod-name> -- bash
+kubectl delete pod <pod-name>
+```
+
+---
+
+## 🔹 4. Namespaces
+
+```bash
+kubectl get namespaces
+kubectl create namespace <name>
+kubectl delete namespace <name>
+
+kubectl get pods -n <namespace>
+```
+
+---
+
+## 🔹 5. Deployments
+
+```bash
+kubectl get deployments
+kubectl create deployment <name> --image=<image>
+kubectl describe deployment <name>
+
+kubectl scale deployment <name> --replicas=3
+kubectl rollout status deployment <name>
+kubectl rollout undo deployment <name>
+
+kubectl delete deployment <name>
+```
+
+---
+
+## 🔹 6. Services
+
+```bash
+kubectl get svc
+kubectl expose deployment <name> --type=NodePort --port=80
+kubectl describe svc <service-name>
+kubectl delete svc <service-name>
+```
+
+---
+
+## 🔹 7. ConfigMaps & Secrets
+
+```bash
+kubectl create configmap <name> --from-literal=key=value
+kubectl get configmaps
+
+kubectl create secret generic <name> --from-literal=key=value
+kubectl get secrets
+```
+
+---
+
+## 🔹 8. Files (YAML Apply)
+
+```bash
+kubectl apply -f file.yaml
+kubectl create -f file.yaml
+kubectl delete -f file.yaml
+kubectl get all -f file.yaml
+```
+
+---
+
+## 🔹 9. Describe & Debug
+
+```bash
+kubectl describe <resource> <name>
+kubectl get events
+kubectl top pods
+```
+
+---
+
+## 🔹 10. Port Forwarding
+
+```bash
+kubectl port-forward pod/<pod-name> 8080:80
+kubectl port-forward svc/<service-name> 8080:80
+```
+
+---
+
+## 🔹 11. Labels & Selectors
+
+```bash
+kubectl get pods --show-labels
+kubectl label pod <pod-name> env=prod
+kubectl get pods -l env=prod
+```
+
+---
+
+## 🔹 12. Quick Shortcuts (Very Useful 🔥)
+
+```bash
+kubectl get po      # pods
+kubectl get svc     # services
+kubectl get deploy  # deployments
+kubectl get ns      # namespaces
+kubectl get all
+```
+
+---
+
+## 🔹 13. Dry Run & Output
+
+```bash
+kubectl run nginx --image=nginx --dry-run=client -o yaml
+kubectl get pod <name> -o yaml
+kubectl get pod <name> -o json
+```
+
+---
+
+## 🔹 14. Delete Everything (Careful ⚠️)
+
+```bash
+kubectl delete all --all
+```
+
+---
+
+# 💡 Pro Tips (Important for Jobs)
+
+* Always learn **YAML-based deployments** (very important in interviews)
+* Use **aliases**:
+
+```bash
+alias k=kubectl
+```
+
+* Practice on:
+
+  * Minikube
+  * Kind (Kubernetes in Docker)
+
+---
+
