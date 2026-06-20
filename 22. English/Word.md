@@ -89,3 +89,19 @@ Would --> केले असते / करायला आवडेल --> इ
   👉 "Would" म्हणजे केले असते / करायला आवडेल — इच्छा, सवय किंवा कल्पित परिस्थिती
 
 ---
+
+pending
+
+will /shall
+have/has
+had
+will have
+have to / has to
+am/is/are + to
+had to
+will have to
+was / where to
+would , would like to
+would have + v3
+have / has v3
+had + v3
