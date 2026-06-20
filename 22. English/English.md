@@ -4,10 +4,6 @@ nav_order: 23
 has_children: true
 ---
 
-Ye bahut achha idea hai. Aap GitHub par **"Complete English for IT Professionals (Marathi/Hindi to English)"** naam se repository bana sakte ho. Iska focus grammar + speaking + office communication + DevOps communication hona chahiye.
-
-Repository structure kuch is tarah rakho:
-
 # English Learning Roadmap for IT Professionals
 
 ## 1. English Basics
