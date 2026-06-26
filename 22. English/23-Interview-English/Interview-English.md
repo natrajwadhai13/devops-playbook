@@ -28,18 +28,6 @@ Good Interview English helps you:
 
 ---
 
-## Hindi Meaning
-
-Interview English वह अंग्रेज़ी है जो नौकरी के इंटरव्यू में उपयोग की जाती है।
-
----
-
-## Marathi Meaning
-
-Interview English म्हणजे नोकरीच्या मुलाखतीत वापरली जाणारी इंग्रजी.
-
----
-
 # Most Important Interview Rule
 
 Interviewers do NOT expect perfect English.
@@ -70,7 +58,6 @@ Tell me about yourself.
 
 ## Sample Answer (For Natraj)
 
-```text id="s1n7p4"
 Good morning.
 
 My name is Natraj Wadhai.
@@ -90,6 +77,7 @@ I am passionate about DevOps and automation.
 I am looking for an opportunity to grow my technical skills and take on more challenging responsibilities.
 
 Thank you.
+
 ```
 
 ---
@@ -102,7 +90,7 @@ Thank you.
 
 ### Answer Structure
 
-```text id="q4m8v2"
+
 Name
 
 Location
@@ -122,11 +110,11 @@ Career Goal
 
 ### Sample Answer
 
-```text id="k7t5p3"
 I am grateful for my current organization.
 
 However, I am looking for opportunities to work on more advanced DevOps projects, improve my technical skills, and grow professionally.
-```
+
+````
 
 ---
 
@@ -142,7 +130,7 @@ I am a quick learner and a team player.
 I have worked on production support, deployments, troubleshooting, and automation tasks.
 
 I believe my skills and experience can contribute to the success of your team.
-```
+````
 
 ---
 
@@ -677,11 +665,11 @@ Career Goal
 
 ### Sample Answer
 
-```text id="k7t5p3"
 I am grateful for my current organization.
 
 However, I am looking for opportunities to work on more advanced DevOps projects, improve my technical skills, and grow professionally.
-```
+
+````
 
 ---
 
@@ -697,7 +685,7 @@ I am a quick learner and a team player.
 I have worked on production support, deployments, troubleshooting, and automation tasks.
 
 I believe my skills and experience can contribute to the success of your team.
-```
+````
 
 ---
 
@@ -715,8 +703,8 @@ I believe my skills and experience can contribute to the success of your team.
 
 ### Example
 
-```text id="m2p6k8"
 My strengths are problem-solving, quick learning, and troubleshooting production issues.
+
 ```
 
 ---
@@ -733,7 +721,7 @@ Never say:
 
 ### Better Answer
 
-```text id="r8v3t5"
+
 I sometimes spend extra time analyzing problems because I want to ensure the best solution.
 
 However, I am continuously improving my decision-making skills.
@@ -749,10 +737,11 @@ However, I am continuously improving my decision-making skills.
 
 ### Sample Answer
 
-```text id="h5k9m2"
+```bash
 Currently, I am working as a DevOps Engineer at Infosys.
 
 I manage Linux servers, support deployment activities, monitor applications, troubleshoot production issues, and work with CI/CD pipelines and cloud technologies.
+
 ```
 
 ---
@@ -761,7 +750,7 @@ I manage Linux servers, support deployment activities, monitor applications, tro
 
 ### Sample Answer
 
-```text id="g4n8q6"
+```bash
 My daily responsibilities include server monitoring, deployment support, issue investigation, log analysis, and infrastructure maintenance.
 ```
 
@@ -777,7 +766,7 @@ What is Linux?
 
 ### Answer
 
-```text id="v7p3m1"
+```bash
 Linux is an open-source operating system widely used for servers, cloud computing, and enterprise applications.
 ```
 
@@ -789,7 +778,7 @@ What is Docker?
 
 ### Answer
 
-```text id="z6t2k4"
+```bash
 Docker is a containerization platform used to package applications and their dependencies into containers.
 ```
 
@@ -801,7 +790,7 @@ What is Kubernetes?
 
 ### Answer
 
-```text id="w8m5n9"
+```bash
 Kubernetes is a container orchestration platform used to manage, scale, and automate containerized applications.
 ```
 
@@ -813,7 +802,7 @@ What is CI/CD?
 
 ### Answer
 
-```text id="j3q7p2"
+```bash
 CI/CD stands for Continuous Integration and Continuous Deployment.
 
 It helps automate software build, testing, and deployment processes.
@@ -831,7 +820,7 @@ What will you do if a server goes down?
 
 ### Sample Answer
 
-```text id="f2k8n4"
+```bash
 First, I would check monitoring alerts and logs.
 
 Then, I would identify the root cause.
@@ -849,7 +838,7 @@ How do you handle production issues?
 
 ### Sample Answer
 
-```text id="u9m4q7"
+```bash
 I remain calm and follow a structured troubleshooting approach.
 
 I analyze logs, identify the root cause, implement a fix, and communicate updates to stakeholders.
@@ -865,7 +854,7 @@ I analyze logs, identify the root cause, implement a fix, and communicate update
 
 ### Sample Answer
 
-```text id="c7t5m3"
+```bash
 I stay focused, prioritize tasks, and communicate clearly with the team.
 
 This helps me handle pressure effectively.
@@ -877,7 +866,7 @@ This helps me handle pressure effectively.
 
 ### Sample Answer
 
-```text id="n6q2v8"
+```bash
 I listen to different viewpoints, discuss solutions professionally, and focus on achieving the best outcome for the project.
 ```
 

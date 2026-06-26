@@ -633,3 +633,25 @@ Example:
 ✅ I deployed the application successfully.
 
 Isse aapki interview aur office English dono professional lagegi.
+
+
+===========================
+
+
+Daily Routine
+
+
+| English       | Hindi         | Marathi        |
+| ------------- | ------------- | -------------- |
+| Wake up       | जागना         | उठणे           |
+| Freshen up    | तरोताज़ा होना | ताजेतवाने होणे |
+| Bathroom      | बाथरूम        | बाथरूम         |
+| Fenugreek     | मेथी          | मेथी           |
+| Rest          | आराम करना     | विश्रांती घेणे |
+| Work out      | व्यायाम करना  | व्यायाम करणे   |
+| Breakfast     | नाश्ता        | नाश्ता         |
+| Shower        | नहाना         | आंघोळ करणे     |
+| Get ready     | तैयार होना    | तयार होणे      |
+| Return home   | घर लौटना      | घरी परतणे      |
+| Go for a walk | टहलने जाना    | चालायला जाणे   |
+| Dinner        | रात का खाना   | रात्रीचे जेवण  |

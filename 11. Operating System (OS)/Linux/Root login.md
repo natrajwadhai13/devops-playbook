@@ -2,7 +2,7 @@
 title: • Root login
 parent: • Linux
 grand_parent: 11. Operating System (OS)
-nav_order: 3
+nav_order: 1.2
 has_children: true
 ---
 
