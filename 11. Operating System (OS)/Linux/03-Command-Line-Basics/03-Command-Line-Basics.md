@@ -6,16 +6,6 @@ nav_order: 3
 has_children: true
 ---
 
----
-
-title: Command Line Basics
-parent: Linux
-grand_parent: 11. Operating System (OS)
-nav_order: 3
-has_children: true
-
----
-
 # Linux Command Line Basics
 
 ## Overview
@@ -117,6 +107,7 @@ Used to search files or text.
 find
 locate
 grep
+egrep or grep -E
 ```
 
 ---
@@ -200,8 +191,6 @@ or
 - Learning basic commands is the foundation for Linux, Cloud, and DevOps.
 - Practice commands daily to build confidence before moving to advanced topics.
 
-
-
 ## File Commands
 
 ```bash
@@ -222,7 +211,7 @@ tree
 
 ```bash
 grep
-egrep
+egrep or grep -E
 awk
 sed
 sort
@@ -241,9 +230,6 @@ gunzip
 tar
 xz
 ```
-
-
-
 
 ========================================
 
