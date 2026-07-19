@@ -1,7 +1,7 @@
 ---
 title: "• Power Shell"
 parent: "5. Scripting Languages"
-nav_order: 5
+nav_order: 4
 has_children: true
 ---
 
@@ -19,17 +19,17 @@ Here’s a **Windows PowerShell Roadmap for DevOps Engineers**, especially usefu
 
 #### 🎯 Outcome:
 
-* Run simple scripts, use loops and conditionals, manage files and processes
+- Run simple scripts, use loops and conditionals, manage files and processes
 
 #### ✅ Topics:
 
-* PowerShell Console vs ISE vs VSCode
-* Cmdlets (`Get-Help`, `Get-Command`, `Get-Service`, etc.)
-* Variables: `$var`, data types
-* Operators: `-eq`, `-ne`, `-gt`, `-like`
-* Conditional statements: `if`, `else`, `switch`
-* Loops: `for`, `foreach`, `while`
-* Functions: `function my-func {}`
+- PowerShell Console vs ISE vs VSCode
+- Cmdlets (`Get-Help`, `Get-Command`, `Get-Service`, etc.)
+- Variables: `$var`, data types
+- Operators: `-eq`, `-ne`, `-gt`, `-like`
+- Conditional statements: `if`, `else`, `switch`
+- Loops: `for`, `foreach`, `while`
+- Functions: `function my-func {}`
 
 #### 🧪 Example:
 
@@ -48,16 +48,16 @@ foreach ($s in $services) {
 
 #### 🎯 Outcome:
 
-* Automate system administration tasks
+- Automate system administration tasks
 
 #### ✅ Topics:
 
-* File operations: `Get-Content`, `Set-Content`, `Out-File`, `Copy-Item`, `Remove-Item`
-* Process management: `Get-Process`, `Stop-Process`, `Start-Process`
-* Scheduled tasks: `Get-ScheduledTask`, `Register-ScheduledTask`
-* Services: `Start-Service`, `Stop-Service`, `Restart-Service`
-* Registry: `Get-Item`, `Set-Item`
-* Environment Variables: `$env:PATH`
+- File operations: `Get-Content`, `Set-Content`, `Out-File`, `Copy-Item`, `Remove-Item`
+- Process management: `Get-Process`, `Stop-Process`, `Start-Process`
+- Scheduled tasks: `Get-ScheduledTask`, `Register-ScheduledTask`
+- Services: `Start-Service`, `Stop-Service`, `Restart-Service`
+- Registry: `Get-Item`, `Set-Item`
+- Environment Variables: `$env:PATH`
 
 #### 🧪 Example:
 
@@ -71,16 +71,16 @@ Get-ChildItem C:\Logs -Recurse | Where-Object { $_.Extension -eq ".log" } | Remo
 
 #### 🎯 Outcome:
 
-* Use PowerShell in DevOps CI/CD pipelines
+- Use PowerShell in DevOps CI/CD pipelines
 
 #### ✅ Topics:
 
-* Git integration: `git clone`, `git status` (via CLI)
-* Invoke REST APIs: `Invoke-RestMethod`, `Invoke-WebRequest`
-* Work with JSON/YAML: `ConvertTo-Json`, `ConvertFrom-Json`
-* Automate tasks in Jenkins pipeline using PowerShell scripts
-* Use `psake` or PowerShell in CI/CD tools (Jenkins, Azure DevOps)
-* Install software: `winget`, `choco`, `Install-Package`
+- Git integration: `git clone`, `git status` (via CLI)
+- Invoke REST APIs: `Invoke-RestMethod`, `Invoke-WebRequest`
+- Work with JSON/YAML: `ConvertTo-Json`, `ConvertFrom-Json`
+- Automate tasks in Jenkins pipeline using PowerShell scripts
+- Use `psake` or PowerShell in CI/CD tools (Jenkins, Azure DevOps)
+- Install software: `winget`, `choco`, `Install-Package`
 
 #### 🧪 Example (REST API call):
 
@@ -95,15 +95,15 @@ $response.name
 
 #### 🎯 Outcome:
 
-* Manage cloud resources (especially Azure) using PowerShell
+- Manage cloud resources (especially Azure) using PowerShell
 
 #### ✅ Topics:
 
-* Azure PowerShell Module (`Az`): `Connect-AzAccount`, `Get-AzVM`, etc.
-* AWS PowerShell Tools: `Get-AWSEC2Instance`, etc.
-* Create/modify VMs, storage accounts, network interfaces
-* Run PowerShell scripts in Terraform `provisioners`
-* Automation scripts for Windows Server setup (IIS, .NET, roles)
+- Azure PowerShell Module (`Az`): `Connect-AzAccount`, `Get-AzVM`, etc.
+- AWS PowerShell Tools: `Get-AWSEC2Instance`, etc.
+- Create/modify VMs, storage accounts, network interfaces
+- Run PowerShell scripts in Terraform `provisioners`
+- Automation scripts for Windows Server setup (IIS, .NET, roles)
 
 #### 🧪 Azure Example:
 
@@ -129,11 +129,11 @@ Get-AzResourceGroup
 
 ## 📚 Learning Resources
 
-* 📘 [Microsoft PowerShell Docs](https://docs.microsoft.com/en-us/powershell/)
-* 📘 [SS64 PowerShell Reference](https://ss64.com/ps/)
-* 💻 [PowerShell Gallery](https://www.powershellgallery.com/)
-* 📺 YouTube: "PowerShell for Beginners – Full Course"
-* 🎮 Practice: [Try PowerShell Online](https://aka.ms/psconsole)
+- 📘 [Microsoft PowerShell Docs](https://docs.microsoft.com/en-us/powershell/)
+- 📘 [SS64 PowerShell Reference](https://ss64.com/ps/)
+- 💻 [PowerShell Gallery](https://www.powershellgallery.com/)
+- 📺 YouTube: "PowerShell for Beginners – Full Course"
+- 🎮 Practice: [Try PowerShell Online](https://aka.ms/psconsole)
 
 ---
 
@@ -151,9 +151,8 @@ Get-AzResourceGroup
 
 ## 🧠 Best Practices
 
-* Always use `-WhatIf` before executing changes
-* Write reusable scripts with parameters (`param()`)
-* Use logging (`Start-Transcript`)
-* Comment your code generously
-* Use modules for organization
-
+- Always use `-WhatIf` before executing changes
+- Write reusable scripts with parameters (`param()`)
+- Use logging (`Start-Transcript`)
+- Comment your code generously
+- Use modules for organization

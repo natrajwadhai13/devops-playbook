@@ -1,10 +1,9 @@
 ---
 title: "Groovy"
-nav_order: 4
+nav_order: 5
 parent: "• Groovy"
 grand_parent: "5. Scripting Languages"
 ---
-
 
 Here is a **Groovy Roadmap for DevOps Engineers**, tailored to your background (Linux, Jenkins, Git, Docker, AWS, Ansible, etc.). Groovy is essential for mastering **Jenkins pipelines**, especially when building complex CI/CD automation.
 
@@ -20,19 +19,19 @@ Here is a **Groovy Roadmap for DevOps Engineers**, tailored to your background (
 
 ### 🎯 Outcomes:
 
-* Understand Groovy syntax
-* Write simple scripts and functions
+- Understand Groovy syntax
+- Write simple scripts and functions
 
 ---
 
 ### ✅ Topics to Learn:
 
-* Variables & Data Types (`def`, `int`, `String`, `List`, `Map`)
-* Conditionals: `if`, `else`
-* Loops: `for`, `each`, `while`
-* Functions (`def myFunc()`)
-* String interpolation (`"Hello, $name"`)
-* Closures (very common in Jenkins)
+- Variables & Data Types (`def`, `int`, `String`, `List`, `Map`)
+- Conditionals: `if`, `else`
+- Loops: `for`, `each`, `while`
+- Functions (`def myFunc()`)
+- String interpolation (`"Hello, $name"`)
+- Closures (very common in Jenkins)
 
 ---
 
@@ -56,11 +55,10 @@ println(greet("DevOps"))
 
 ## 🔧 Tools:
 
-* Run Groovy in:
-
-  * [https://groovyconsole.appspot.com](https://groovyconsole.appspot.com)
-  * Jenkins "Script Console" (for testing inside Jenkins)
-  * Local machine with `groovy` installed
+- Run Groovy in:
+  - [https://groovyconsole.appspot.com](https://groovyconsole.appspot.com)
+  - Jenkins "Script Console" (for testing inside Jenkins)
+  - Local machine with `groovy` installed
 
 ---
 
@@ -68,8 +66,8 @@ println(greet("DevOps"))
 
 ### 🎯 Outcomes:
 
-* Write Groovy-based Jenkinsfiles
-* Use shared libraries and custom functions
+- Write Groovy-based Jenkinsfiles
+- Use shared libraries and custom functions
 
 ---
 
@@ -115,10 +113,10 @@ node {
 
 ### ✅ Learn:
 
-* `node`, `stage`, `steps`, `script`, `parallel`
-* Defining and calling functions
-* Using `params`, `environment` variables
-* Handling user input (`input` step)
+- `node`, `stage`, `steps`, `script`, `parallel`
+- Defining and calling functions
+- Using `params`, `environment` variables
+- Handling user input (`input` step)
 
 ---
 
@@ -126,18 +124,18 @@ node {
 
 ### 🎯 Outcomes:
 
-* Build real pipelines using loops, maps, conditionals
-* Debug Jenkinsfile errors confidently
+- Build real pipelines using loops, maps, conditionals
+- Debug Jenkinsfile errors confidently
 
 ---
 
 ### ✅ Advanced Topics:
 
-* Shared Libraries (create your own)
-* DSL in Jenkins
-* Parallel execution
-* Try/catch for error handling
-* Using JSON/YAML in Groovy
+- Shared Libraries (create your own)
+- DSL in Jenkins
+- Parallel execution
+- Try/catch for error handling
+- Using JSON/YAML in Groovy
 
 ---
 
@@ -164,20 +162,20 @@ pipeline {
 
 ## 📘 Groovy vs Bash vs Python (for DevOps)
 
-| Use Case          | Groovy | Bash   | Python        |
-| ----------------- | ------ | ------ | ------------- |
+| Use Case          | Groovy  | Bash    | Python        |
+| ----------------- | ------- | ------- | ------------- |
 | Jenkins pipelines | ✅ Best | ❌ Poor | ⚠️ Not native |
-| Linux scripting   | ⚠️ Ok  | ✅ Best | ✅ Good        |
-| APIs/JSON         | ✅ Good | ❌ Poor | ✅ Best        |
+| Linux scripting   | ⚠️ Ok   | ✅ Best | ✅ Good       |
+| APIs/JSON         | ✅ Good | ❌ Poor | ✅ Best       |
 
 ---
 
 ## 🧠 Best Practices
 
-* Use `echo` for debugging pipelines
-* Modularize pipeline logic with shared libs
-* Validate Groovy using Jenkins Script Console
-* Use `@Library` for shared pipelines in large teams
+- Use `echo` for debugging pipelines
+- Modularize pipeline logic with shared libs
+- Validate Groovy using Jenkins Script Console
+- Use `@Library` for shared pipelines in large teams
 
 ---
 
@@ -191,7 +189,6 @@ pipeline {
 
 Would you like:
 
-* Sample **Jenkinsfiles** (scripted/declarative)?
-* A **Groovy cheat sheet PDF**?
-* Guidance on setting up a **shared library** in Jenkins?
-
+- Sample **Jenkinsfiles** (scripted/declarative)?
+- A **Groovy cheat sheet PDF**?
+- Guidance on setting up a **shared library** in Jenkins?
