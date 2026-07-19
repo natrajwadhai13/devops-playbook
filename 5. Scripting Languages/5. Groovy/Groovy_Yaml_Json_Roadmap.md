@@ -1,7 +1,7 @@
 ---
 title: "• Groovy"
 parent: "5. Scripting Languages"
-nav_order: 3
+nav_order: 4
 has_children: true
 ---
 
@@ -26,7 +26,7 @@ Here is a detailed **Groovy, YAML, and JSON Roadmap** for DevOps engineers and a
 | Introduction | What is Groovy?              | What is YAML?                   | What is JSON?              |
 | Basic Syntax | Variables, loops, conditions | Indentation, key-value pairs    | Key-value, arrays, nesting |
 | Data Types   | Strings, lists, maps         | Strings, numbers, booleans      | Strings, arrays, objects   |
-| Comments     | `//`, `/* */`                | `#`                             | ❌ Not supported            |
+| Comments     | `//`, `/* */`                | `#`                             | ❌ Not supported           |
 | Tools        | GroovyConsole, Jenkins       | Any YAML parser (online/VSCode) | Postman, JSONLint          |
 
 ✅ **Goal**: Understand the structure and parse/modify basic examples.
