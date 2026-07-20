@@ -8,24 +8,16 @@ has_children: true
 
 # Module 4 – File Permissions
 
-- chmod
-- chown
-- chgrp
-- umask
-- Sticky Bit
-- SGID
-- SUID
-- ACL
+- 1. File Permissions
+- 2. Modifying Permissions
+- 3. Ownership Permissions
+- 4. Umask
+- 5. Setuid
+- 6. Setgid
+- 7. Process Permissions
+- 8. The Sticky Bit
 
----
-
----
-
-title: File Permissions
-parent: Linux
-grand_parent: 11. Operating System (OS)
-nav_order: 5
-has_children: true
+- (chmod, chown, chgrp, umask, Sticky Bit, SGID, SUID, ACL)
 
 ---
 
