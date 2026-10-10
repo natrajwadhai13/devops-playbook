@@ -183,6 +183,11 @@ has_children: true
 <a id="real-world-projects"></a>
 ## 🧩 **📌 Module 12: Real-World Projects (DevOps Focus)**
 
+
+### 🔥NexCart — End-to-End Azure DevOps Project 
+
+(Azure-based DevOps implementation using GitLab CI/CD, AKS, ACR, Key Vault and Azure monitoring)
+
 ### 🔥 **Project 1: CI/CD with Azure DevOps + App Service**
 ### 🔥 **Project 2: ACR + AKS + Helm Deployment**
 ### 🔥 **Project 3: Terraform to deploy entire Infra**
