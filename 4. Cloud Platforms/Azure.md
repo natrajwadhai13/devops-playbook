@@ -31,13 +31,13 @@ has_children: true
 
 ## 🧩 1. Azure Fundamentals
 
-**Cloud:** IaaS | PaaS | SaaS | Public/Private/Hybrid | Scalability | Elasticity | HA | Regions | Availability Zones | Resource Groups
+**Cloud:** IaaS, PaaS, SaaS, Public/Private/Hybrid, Scalability, Elasticity, HA, Regions, Availability Zones, Resource Groups
 
-**Core:** Subscription | Management Groups | Azure Portal | CLI | PowerShell | Azure Resource Manager
+**Core:** Subscription, Management Groups, Azure Portal, CLI, PowerShell, Azure Resource Manager
 
-**Services:** VM | VMSS | App Service | Functions | VNet | Storage | Azure SQL | ACR | AKS
+**Services:** VM, VMSS, App Service, Functions, VNet, Storage, Azure SQL, ACR, AKS
 
-**Governance:** RBAC | Azure Policy | Tags | Locks | Cost Management
+**Governance:** RBAC, Azure Policy, Tags, Locks, Cost Management
 
 ---
 
@@ -45,13 +45,13 @@ has_children: true
 
 ## 🧩 2. Azure Compute
 
-**VM:** VM types | Images | Sizes | Disks | SSH/RDP | Extensions | Custom Script | Managed Disks
+**VM:** VM Types, Images, Sizes, Disks, SSH/RDP, Extensions, Custom Script, Managed Disks
 
-**Availability:** Availability Sets | Availability Zones | VMSS | Autoscaling
+**Availability:** Availability Sets, Availability Zones, VMSS, Autoscaling
 
-**App Service:** Web App | App Service Plan | Deployment Slots | Scaling | Custom Domain | SSL | CI/CD
+**App Service:** Web App, App Service Plan, Deployment Slots, Scaling, Custom Domain, SSL, CI/CD
 
-**Containers:** ACI | ACR | Container Images | Registry Authentication | Image Scanning
+**Containers:** ACI, ACR, Container Images, Registry Authentication, Image Scanning
 
 ---
 
@@ -59,15 +59,15 @@ has_children: true
 
 ## 🧩 3. Azure Networking ⭐
 
-**VNet:** CIDR | Public/Private IP | Subnets | NSG | Route Tables | DNS
+**VNet:** CIDR, Public/Private IP, Subnets, NSG, Route Tables, DNS
 
-**Connectivity:** VNet Peering | Private Endpoint | Service Endpoint | VPN Gateway | ExpressRoute
+**Connectivity:** VNet Peering, Private Endpoint, Service Endpoint, VPN Gateway, ExpressRoute
 
-**Traffic:** Load Balancer | Application Gateway | WAF | Traffic Manager | Front Door
+**Traffic:** Load Balancer, Application Gateway, WAF, Traffic Manager, Front Door
 
-**Security:** Azure Firewall | Bastion | DDoS Protection
+**Security:** Azure Firewall, Bastion, DDoS Protection
 
-**Troubleshooting:** NSG rules | Routes | DNS | Ports | `curl` | `nslookup` | `traceroute`
+**Troubleshooting:** NSG Rules, Routes, DNS, Ports, `curl`, `nslookup`, `traceroute`
 
 ---
 
@@ -75,15 +75,15 @@ has_children: true
 
 ## 🧩 4. Azure Storage & Database
 
-**Storage:** Blob | File | Queue | Table | Storage Account | Access Tiers | Lifecycle Management
+**Storage:** Blob, File, Queue, Table, Storage Account, Access Tiers, Lifecycle Management
 
-**Redundancy:** LRS | ZRS | GRS | GZRS
+**Redundancy:** LRS, ZRS, GRS, GZRS
 
-**Security:** Encryption | SAS | Access Keys | RBAC | Private Endpoint
+**Security:** Encryption, SAS, Access Keys, RBAC, Private Endpoint
 
-**Database:** Azure SQL | PostgreSQL | MySQL | Cosmos DB | Azure Cache for Redis
+**Database:** Azure SQL, PostgreSQL, MySQL, Cosmos DB, Azure Cache for Redis
 
-**DevOps:** Backup | Restore | Migration | Connection Strings | Secret Management
+**DevOps:** Backup, Restore, Migration, Connection Strings, Secret Management
 
 ---
 
@@ -91,13 +91,13 @@ has_children: true
 
 ## 🧩 5. Azure Identity & Security ⭐
 
-**Identity:** Microsoft Entra ID | Users | Groups | RBAC | Service Principal | Managed Identity
+**Identity:** Microsoft Entra ID, Users, Groups, RBAC, Service Principal, Managed Identity
 
-**Security:** Key Vault | Secrets | Certificates | Keys | Rotation | Conditional Access
+**Security:** Key Vault, Secrets, Certificates, Keys, Rotation, Conditional Access
 
-**DevSecOps:** Defender for Cloud | Vulnerability Scanning | SAST | Dependency Scan | Container Scan | Trivy | SonarQube
+**DevSecOps:** Defender for Cloud, Vulnerability Scanning, SAST, Dependency Scan, Container Scan, Trivy, SonarQube
 
-**Best Practice:** Least Privilege | No Hardcoded Secrets | Managed Identity | Private Access
+**Best Practice:** Least Privilege, No Hardcoded Secrets, Managed Identity, Private Access
 
 ---
 
@@ -105,23 +105,23 @@ has_children: true
 
 ## 🧩 6. Azure DevOps & CI/CD ⭐⭐⭐⭐⭐
 
-**Repos:** Git | Branching Strategy | PR | Branch Policies | Merge | Rebase | Tags
+**Repos:** Git, Branching Strategy, PR, Branch Policies, Merge, Rebase, Tags
 
-**Pipelines:** YAML | Stages | Jobs | Steps | Variables | Parameters | Conditions | Templates
+**Pipelines:** YAML, Stages, Jobs, Steps, Variables, Parameters, Conditions, Templates
 
-**CI:** Build | Unit Test | SonarQube | Docker Build | ACR Push
+**CI:** Build, Unit Test, SonarQube, Docker Build, ACR Push
 
-**CD:** Dev → QA → UAT → Prod | Approvals | Environments | Gates | Rollback
+**CD:** Dev → QA → UAT → Prod, Approvals, Environments, Gates, Rollback
 
-**Agents:** Microsoft-hosted | Self-hosted | Agent Pools | Permissions
+**Agents:** Microsoft-hosted, Self-hosted, Agent Pools, Permissions
 
-**Artifacts:** Azure Artifacts | Maven | npm | NuGet
+**Artifacts:** Azure Artifacts, Maven, npm, NuGet
 
-**Deployment:** VM | App Service | ACR | AKS | Helm
+**Deployment:** VM, App Service, ACR, AKS, Helm
 
-**Strategies:** Rolling | Blue/Green | Canary
+**Strategies:** Rolling, Blue/Green, Canary
 
-**Troubleshooting:** Pipeline Failure | Agent Issue | Authentication | Deployment Failure
+**Troubleshooting:** Pipeline Failure, Agent Issue, Authentication, Deployment Failure
 
 ---
 
@@ -129,17 +129,17 @@ has_children: true
 
 ## 🧩 7. Infrastructure as Code ⭐⭐⭐⭐⭐
 
-**Terraform:** Provider | Resources | Variables | Outputs | Locals | Modules | tfvars
+**Terraform:** Provider, Resources, Variables, Outputs, Locals, Modules, tfvars
 
-**State:** State File | Remote Backend | Azure Storage Backend | State Locking
+**State:** State File, Remote Backend, Azure Storage Backend, State Locking
 
-**Workflow:** `init` | `validate` | `plan` | `apply` | `destroy`
+**Workflow:** `init`, `validate`, `plan`, `apply`, `destroy`
 
-**Azure:** VNet | VM | NSG | ACR | AKS | Key Vault | Storage
+**Azure:** VNet, VM, NSG, ACR, AKS, Key Vault, Storage
 
-**Best Practices:** Modules | Remote State | Secrets | Git | Environment Separation
+**Best Practices:** Modules, Remote State, Secrets, Git, Environment Separation
 
-**Other:** ARM Templates | Bicep — basic awareness
+**Other:** ARM Templates, Bicep — Basic Awareness
 
 ---
 
@@ -147,25 +147,25 @@ has_children: true
 
 ## 🧩 8. Azure Kubernetes Service (AKS) ⭐⭐⭐⭐⭐
 
-**Architecture:** Control Plane | Node Pools | System/User Pools | VM Sizes
+**Architecture:** Control Plane, Node Pools, System/User Pools, VM Sizes
 
-**Networking:** Azure CNI | Kubenet | Service | Ingress | DNS | Network Policies
+**Networking:** Azure CNI, Kubenet, Service, Ingress, DNS, Network Policies
 
-**Workloads:** Pods | Deployments | ReplicaSets | StatefulSets | ConfigMaps | Secrets
+**Workloads:** Pods, Deployments, ReplicaSets, StatefulSets, ConfigMaps, Secrets
 
-**Storage:** PV | PVC | StorageClass | Azure Disk | Azure Files
+**Storage:** PV, PVC, StorageClass, Azure Disk, Azure Files
 
-**Scaling:** HPA | Cluster Autoscaler | Node Scaling
+**Scaling:** HPA, Cluster Autoscaler, Node Scaling
 
-**Deployment:** ACR → AKS | Helm | Azure Pipelines | GitHub Actions | GitLab CI/CD
+**Deployment:** ACR → AKS, Helm, Azure Pipelines, GitHub Actions, GitLab CI/CD
 
-**Ingress:** NGINX | Application Gateway | TLS/SSL | Certificates
+**Ingress:** NGINX, Application Gateway, TLS/SSL, Certificates
 
-**Security:** RBAC | Workload Identity | Key Vault CSI Driver | Network Policies
+**Security:** RBAC, Workload Identity, Key Vault CSI Driver, Network Policies
 
-**Production:** Rolling Update | Rollback | PDB | Affinity | Taints/Tolerations
+**Production:** Rolling Update, Rollback, PDB, Affinity, Taints/Tolerations
 
-**Troubleshooting:** Pending | CrashLoopBackOff | OOMKilled | ImagePullBackOff | 404/502/503 | Node Issues
+**Troubleshooting:** Pending, CrashLoopBackOff, OOMKilled, ImagePullBackOff, 404/502/503, Node Issues
 
 ---
 
@@ -173,17 +173,17 @@ has_children: true
 
 ## 🧩 9. Monitoring & Observability ⭐⭐⭐⭐⭐
 
-**Azure Monitor:** Metrics | Alerts | Action Groups | Dashboards
+**Azure Monitor:** Metrics, Alerts, Action Groups, Dashboards
 
-**Log Analytics:** Workspace | KQL | Queries | Logs | Workbooks
+**Log Analytics:** Workspace, KQL, Queries, Logs, Workbooks
 
-**Application Insights:** Application Logs | Requests | Dependencies | Tracing | Availability
+**Application Insights:** Application Logs, Requests, Dependencies, Tracing, Availability
 
-**Infrastructure:** VM Insights | AKS Container Insights | Network Monitoring
+**Infrastructure:** VM Insights, AKS Container Insights, Network Monitoring
 
-**Cloud-Native:** Azure Managed Prometheus | Grafana | OpenTelemetry
+**Cloud-Native:** Azure Managed Prometheus, Grafana, OpenTelemetry
 
-**Alerting:** CPU | Memory | Disk | Pod Restart | HTTP 5xx | Application Errors
+**Alerting:** CPU, Memory, Disk, Pod Restart, HTTP 5xx, Application Errors
 
 ---
 
@@ -191,17 +191,17 @@ has_children: true
 
 ## 🧩 10. HA, DR, Backup & Scaling ⭐⭐⭐⭐⭐
 
-**HA:** Availability Zones | VMSS | Load Balancer | Application Gateway
+**HA:** Availability Zones, VMSS, Load Balancer, Application Gateway
 
-**Backup:** Azure Backup | Recovery Services Vault | VM Backup | Storage Backup
+**Backup:** Azure Backup, Recovery Services Vault, VM Backup, Storage Backup
 
-**DR:** Azure Site Recovery | Region Failover | Replication
+**DR:** Azure Site Recovery, Region Failover, Replication
 
-**AKS:** Cluster Backup | Persistent Data Backup | ACR Image Retention
+**AKS:** Cluster Backup, Persistent Data Backup, ACR Image Retention
 
-**Concepts:** RPO | RTO | Backup Policy | Restore Testing | DR Runbook
+**Concepts:** RPO, RTO, Backup Policy, Restore Testing, DR Runbook
 
-**Scaling:** VMSS Autoscale | App Service Autoscale | AKS HPA | Cluster Autoscaler
+**Scaling:** VMSS Autoscale, App Service Autoscale, AKS HPA, Cluster Autoscaler
 
 ---
 
@@ -209,15 +209,15 @@ has_children: true
 
 ## 🧩 11. Production Troubleshooting ⭐⭐⭐⭐⭐
 
-**VM:** CPU | Memory | Disk | Process | Service | SSH/RDP | Boot Issues
+**VM:** CPU, Memory, Disk, Process, Service, SSH/RDP, Boot Issues
 
-**Network:** DNS | NSG | Routes | Ports | Load Balancer | App Gateway | Private Endpoint
+**Network:** DNS, NSG, Routes, Ports, Load Balancer, App Gateway, Private Endpoint
 
-**Application:** 4xx | 5xx | Timeout | SSL | Connection Refused | Dependency Failure
+**Application:** 4xx, 5xx, Timeout, SSL, Connection Refused, Dependency Failure
 
-**AKS:** Pod | Node | Deployment | Service | Ingress | DNS | Storage | Scaling
+**AKS:** Pod, Node, Deployment, Service, Ingress, DNS, Storage, Scaling
 
-**Pipeline:** Build Failure | Agent | Credentials | ACR Login | Deployment | Rollback
+**Pipeline:** Build Failure, Agent, Credentials, ACR Login, Deployment, Rollback
 
 **Method:** Monitor → Logs → Metrics → Network → Application → Root Cause → Fix → Prevent
 
@@ -227,11 +227,11 @@ has_children: true
 
 ## 🧩 12. Serverless
 
-**Azure Functions:** HTTP | Timer | Blob | Queue | Event Triggers | Bindings | Durable Functions
+**Azure Functions:** HTTP, Timer, Blob, Queue, Event Triggers, Bindings, Durable Functions
 
-**DevOps:** CI/CD | Configuration | Managed Identity | Key Vault | Monitoring
+**DevOps:** CI/CD, Configuration, Managed Identity, Key Vault, Monitoring
 
-**Use Cases:** Automation | Scheduled Jobs | Notifications | Event Processing
+**Use Cases:** Automation, Scheduled Jobs, Notifications, Event Processing
 
 ---
 
@@ -239,11 +239,11 @@ has_children: true
 
 ## 🧩 13. Cost & Governance
 
-**Governance:** Management Groups | Subscriptions | Resource Groups | Azure Policy | RBAC | Locks | Tags
+**Governance:** Management Groups, Subscriptions, Resource Groups, Azure Policy, RBAC, Locks, Tags
 
-**Cost:** Cost Management | Budgets | Alerts | Right-Sizing | Autoscaling | Reserved Instances | Savings Plans
+**Cost:** Cost Management, Budgets, Alerts, Right-Sizing, Autoscaling, Reserved Instances, Savings Plans
 
-**Best Practices:** Remove Unused Resources | Storage Lifecycle | VM Optimization | AKS Cost Optimization
+**Best Practices:** Remove Unused Resources, Storage Lifecycle, VM Optimization, AKS Cost Optimization
 
 ---
 
@@ -269,10 +269,12 @@ has_children: true
 
 ## 🧩 15. Optional Azure Services
 
-**Data:** Data Factory | Databricks | Synapse | Data Lake
+**Data:** Data Factory, Databricks, Synapse, Data Lake
 
-**Messaging:** Service Bus | Event Grid | Event Hubs
+**Messaging:** Service Bus, Event Grid, Event Hubs
 
-**Advanced:** Front Door | API Management | Logic Apps | Azure Automation
+**Advanced:** Front Door, API Management, Logic Apps, Azure Automation
 
-**Focus:** Understand architecture + use cases; deep hands-on only when required.
+**Focus:** Understand Architecture + Use Cases, Deep Hands-on only when required.
+
+---
