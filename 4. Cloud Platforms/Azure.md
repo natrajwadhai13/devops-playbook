@@ -5,191 +5,274 @@ nav_order: 2
 has_children: true
 ---
 
+# 🚀 Azure DevOps Roadmap
 
-## 🚀 **Azure  DevOps-Friendly Roadmap**
+**Focus:** Azure + DevOps + Production + Interview Preparation
 
-- [1. Azure Fundamentals (AZ-900)](#azure-fundamentals)
-- [2. Azure Compute Deep Dive](#azure-compute)
+- [1. Azure Fundamentals](#azure-fundamentals)
+- [2. Azure Compute](#azure-compute)
 - [3. Azure Networking](#azure-networking)
 - [4. Azure Storage & Database](#azure-storage-database)
-- [5. Azure Monitoring & Logs](#azure-monitoring-logs)
-- [6. Azure DevOps (MOST IMPORTANT)](#azure-devops)
-- [7. Serverless (Azure Functions)](#azure-functions)
-- [8. Azure Identity & Security (AZ-500)](#azure-identity-security)
-- [9. Infrastructure as Code (IaC)](#infrastructure-as-code)
-- [10. Azure Kubernetes Service (AKS)](#azure-kubernetes)
-- [11. Data Engineering (Optional)](#data-engineering)
-- [12. Real-World Projects (DevOps Focus)](#real-world-projects)
-
-
-- [GitHub Repo URL](https://github.com/natrajwadhai13/Azure-zero-to-hero.git)
-
-- [Youtube URL complete Azure cource "Abhishek.Veeramalla"](https://www.youtube.com/watch?v=10jm7Waan8M&list=PLdpzxOOAlwvIcxgCUyBHVOcWs0Krjx9xR)
-
+- [5. Azure Identity & Security](#azure-identity-security)
+- [6. Azure DevOps & CI/CD](#azure-devops)
+- [7. Infrastructure as Code](#infrastructure-as-code)
+- [8. Azure Kubernetes Service (AKS)](#azure-kubernetes)
+- [9. Monitoring & Observability](#azure-monitoring)
+- [10. HA, DR, Backup & Scaling](#azure-ha-dr)
+- [11. Production Troubleshooting](#azure-troubleshooting)
+- [12. Serverless](#azure-functions)
+- [13. Cost & Governance](#azure-governance)
+- [14. Real-World DevOps Projects](#real-world-projects)
+- [15. Optional Azure Services](#azure-optional)
 
 ---
+
 <a id="azure-fundamentals"></a>
 
-## 🧩 **📌 Module 1: Azure Fundamentals (AZ-900)**
-*Cloud basics + Azure core services*
+## 🧩 1. Azure Fundamentals
 
-### 1.1 Cloud Concepts
-* Cloud models: IaaS, PaaS, SaaS | Public, Private, Hybrid | Scalability, elasticity, HA | Regions, Zones, Resource Groups
+**Cloud:** IaaS | PaaS | SaaS | Public/Private/Hybrid | Scalability | Elasticity | HA | Regions | Availability Zones | Resource Groups
 
-### 1.2 Core Azure Services
-* **Azure Compute:** VM, VM Scale Sets, App Service, Functions (Serverless) | **Azure Networking:** VNet, Subnets, NSG, Load Balancer, VPN Gateway, ExpressRoute | **Azure Storage:** Blob, File, Queue, Table, Access tiers (Hot/Cool/Archive)
+**Core:** Subscription | Management Groups | Azure Portal | CLI | PowerShell | Azure Resource Manager
 
-### 1.3 Identity & Access
-* Azure AD, RBAC, Users, Groups, Roles
+**Services:** VM | VMSS | App Service | Functions | VNet | Storage | Azure SQL | ACR | AKS
 
-### 1.4 Governance & Compliance
-* Policies, Tags, Cost Management, Blueprints
+**Governance:** RBAC | Azure Policy | Tags | Locks | Cost Management
 
 ---
 
 <a id="azure-compute"></a>
-## 🧩 **📌 Module 2: Azure Compute Deep Dive**
-*For DevOps & Application Deployment*
 
-### 2.1 Virtual Machines
-* Image types | VM sizing | Availability Sets / Zones | Extensions & custom scripts
+## 🧩 2. Azure Compute
 
-### 2.2 Azure App Service
-* Web App | Deployment Slots | Scaling | CI/CD with GitHub/Labs
+**VM:** VM types | Images | Sizes | Disks | SSH/RDP | Extensions | Custom Script | Managed Disks
 
-### 2.3 Azure Container Services
-* Azure Container Instances | Container Registry (ACR) | Azure Kubernetes Services (AKS) | Node pools | Networking | Helm | Ingress Controller
+**Availability:** Availability Sets | Availability Zones | VMSS | Autoscaling
+
+**App Service:** Web App | App Service Plan | Deployment Slots | Scaling | Custom Domain | SSL | CI/CD
+
+**Containers:** ACI | ACR | Container Images | Registry Authentication | Image Scanning
 
 ---
 
 <a id="azure-networking"></a>
-## 🧩 **📌 Module 3: Azure Networking**
 
-### 3.1 Virtual Network Concepts
-* IP Addressing | Subnetting | VNet peering | Service Endpoints
+## 🧩 3. Azure Networking ⭐
 
-### 3.2 Load Balancers
-* Internal vs External | Application Gateway (WAF) | Traffic Manager
+**VNet:** CIDR | Public/Private IP | Subnets | NSG | Route Tables | DNS
 
-### 3.3 Firewall & Security
-* Azure Firewall | DDoS Protection | Bastion Host
+**Connectivity:** VNet Peering | Private Endpoint | Service Endpoint | VPN Gateway | ExpressRoute
+
+**Traffic:** Load Balancer | Application Gateway | WAF | Traffic Manager | Front Door
+
+**Security:** Azure Firewall | Bastion | DDoS Protection
+
+**Troubleshooting:** NSG rules | Routes | DNS | Ports | `curl` | `nslookup` | `traceroute`
 
 ---
 
 <a id="azure-storage-database"></a>
-## 🧩 **📌 Module 4: Azure Storage & Database**
 
-### 4.1 Storage
-* Blob static hosting | Lifecycle policies | Encryption & backup
+## 🧩 4. Azure Storage & Database
 
-### 4.2 Databases
-* Azure SQL | MySQL/PostgreSQL Flexible Server | Cosmos DB (NoSQL) | Redis Cache
+**Storage:** Blob | File | Queue | Table | Storage Account | Access Tiers | Lifecycle Management
 
----
+**Redundancy:** LRS | ZRS | GRS | GZRS
 
-<a id="azure-monitoring-logs"></a>
-## 🧩 **📌 Module 5: Azure Monitoring & Logs**
+**Security:** Encryption | SAS | Access Keys | RBAC | Private Endpoint
 
-### 5.1 Monitoring
-* Azure Monitor | Metrics & Alerts | Dashboards
+**Database:** Azure SQL | PostgreSQL | MySQL | Cosmos DB | Azure Cache for Redis
 
-### 5.2 Log Analytics
-* KQL basics | Insights (VM, AKS, AppService)
-
-### 5.3 Application Insights
-* Tracing | Dependency Map | Custom logs
-
----
-
-<a id="azure-devops"></a>
-## 🧩 **📌 Module 6: Azure DevOps (MOST IMPORTANT)**
-
-### 6.1 Azure Repos
-* Git repositories | Branch strategy | PR policies
-
-### 6.2 Azure Pipelines (CI/CD)
-* Build pipelines | Release pipelines | YAML pipelines | Agents self-hosted & Microsoft-hosted | Multi-stage pipelines (CI → CD → Prod)
-
-### 6.3 Azure Artifacts
-* Packages (npm, NuGet, Maven)
-
-### 6.4 Azure Boards
-* Epics, Features, User Stories | Sprints | Kanban
-
-### 6.5 Azure Test Plans
-* Manual + Automation test integration
-
----
-
-<a id="azure-functions"></a>
-## 🧩 **📌 Module 7: Serverless (Azure Functions)**
-
-### 7.1 Function App Basics
-* Triggers (HTTP, Timer, Blob, Queue) | Bindings | Durable Functions
-
-### 7.2 Real Use Cases
-* Cron jobs | Auto email notifications | Automated backups
+**DevOps:** Backup | Restore | Migration | Connection Strings | Secret Management
 
 ---
 
 <a id="azure-identity-security"></a>
-## 🧩 **📌 Module 8: Azure Identity & Security (AZ-500)**
 
-### 8.1 Identity
-* AD Connect | Managed Identity | Conditional Access
+## 🧩 5. Azure Identity & Security ⭐
 
-### 8.2 Security
-* Defender for Cloud | Key Vault | Encryption | Secrets rotation
+**Identity:** Microsoft Entra ID | Users | Groups | RBAC | Service Principal | Managed Identity
+
+**Security:** Key Vault | Secrets | Certificates | Keys | Rotation | Conditional Access
+
+**DevSecOps:** Defender for Cloud | Vulnerability Scanning | SAST | Dependency Scan | Container Scan | Trivy | SonarQube
+
+**Best Practice:** Least Privilege | No Hardcoded Secrets | Managed Identity | Private Access
+
+---
+
+<a id="azure-devops"></a>
+
+## 🧩 6. Azure DevOps & CI/CD ⭐⭐⭐⭐⭐
+
+**Repos:** Git | Branching Strategy | PR | Branch Policies | Merge | Rebase | Tags
+
+**Pipelines:** YAML | Stages | Jobs | Steps | Variables | Parameters | Conditions | Templates
+
+**CI:** Build | Unit Test | SonarQube | Docker Build | ACR Push
+
+**CD:** Dev → QA → UAT → Prod | Approvals | Environments | Gates | Rollback
+
+**Agents:** Microsoft-hosted | Self-hosted | Agent Pools | Permissions
+
+**Artifacts:** Azure Artifacts | Maven | npm | NuGet
+
+**Deployment:** VM | App Service | ACR | AKS | Helm
+
+**Strategies:** Rolling | Blue/Green | Canary
+
+**Troubleshooting:** Pipeline Failure | Agent Issue | Authentication | Deployment Failure
 
 ---
 
 <a id="infrastructure-as-code"></a>
-## 🧩 **📌 Module 9: Infrastructure as Code (IaC)**
 
-### 9.1 ARM Templates
-* Parameter files | Deployment modes
+## 🧩 7. Infrastructure as Code ⭐⭐⭐⭐⭐
 
-### 9.2 Terraform on Azure
-* Provider setup | tfvars | Storage backend | Best practices
+**Terraform:** Provider | Resources | Variables | Outputs | Locals | Modules | tfvars
+
+**State:** State File | Remote Backend | Azure Storage Backend | State Locking
+
+**Workflow:** `init` | `validate` | `plan` | `apply` | `destroy`
+
+**Azure:** VNet | VM | NSG | ACR | AKS | Key Vault | Storage
+
+**Best Practices:** Modules | Remote State | Secrets | Git | Environment Separation
+
+**Other:** ARM Templates | Bicep — basic awareness
 
 ---
 
 <a id="azure-kubernetes"></a>
-## 🧩 **📌 Module 10: Azure Kubernetes Service (AKS)**
-*Advanced DevOps*
 
-### 10.1 AKS Components
-* Control Plane | Node Pools | CNI vs Kubenet
+## 🧩 8. Azure Kubernetes Service (AKS) ⭐⭐⭐⭐⭐
 
-### 10.2 Deployment
-* Deployment, Services, Ingress | Horizontal Pod Autoscaler
+**Architecture:** Control Plane | Node Pools | System/User Pools | VM Sizes
 
-### 10.3 CI/CD Integration
-* GitHub Actions → ACR → AKS | Azure Pipelines → ACR → AKS
+**Networking:** Azure CNI | Kubenet | Service | Ingress | DNS | Network Policies
 
-### 10.4 Observability
-* Prometheus + Grafana | Container Insights
+**Workloads:** Pods | Deployments | ReplicaSets | StatefulSets | ConfigMaps | Secrets
+
+**Storage:** PV | PVC | StorageClass | Azure Disk | Azure Files
+
+**Scaling:** HPA | Cluster Autoscaler | Node Scaling
+
+**Deployment:** ACR → AKS | Helm | Azure Pipelines | GitHub Actions | GitLab CI/CD
+
+**Ingress:** NGINX | Application Gateway | TLS/SSL | Certificates
+
+**Security:** RBAC | Workload Identity | Key Vault CSI Driver | Network Policies
+
+**Production:** Rolling Update | Rollback | PDB | Affinity | Taints/Tolerations
+
+**Troubleshooting:** Pending | CrashLoopBackOff | OOMKilled | ImagePullBackOff | 404/502/503 | Node Issues
 
 ---
 
-<a id="data-engineering"></a>
-## 🧩 **📌 Module 11: Data Engineering (Optional)**
-*Good for AIOps / Data Engineer role*
+<a id="azure-monitoring"></a>
 
-* Azure Data Factory | Databricks | Synapse | Event Hub | Data Lake
+## 🧩 9. Monitoring & Observability ⭐⭐⭐⭐⭐
+
+**Azure Monitor:** Metrics | Alerts | Action Groups | Dashboards
+
+**Log Analytics:** Workspace | KQL | Queries | Logs | Workbooks
+
+**Application Insights:** Application Logs | Requests | Dependencies | Tracing | Availability
+
+**Infrastructure:** VM Insights | AKS Container Insights | Network Monitoring
+
+**Cloud-Native:** Azure Managed Prometheus | Grafana | OpenTelemetry
+
+**Alerting:** CPU | Memory | Disk | Pod Restart | HTTP 5xx | Application Errors
+
+---
+
+<a id="azure-ha-dr"></a>
+
+## 🧩 10. HA, DR, Backup & Scaling ⭐⭐⭐⭐⭐
+
+**HA:** Availability Zones | VMSS | Load Balancer | Application Gateway
+
+**Backup:** Azure Backup | Recovery Services Vault | VM Backup | Storage Backup
+
+**DR:** Azure Site Recovery | Region Failover | Replication
+
+**AKS:** Cluster Backup | Persistent Data Backup | ACR Image Retention
+
+**Concepts:** RPO | RTO | Backup Policy | Restore Testing | DR Runbook
+
+**Scaling:** VMSS Autoscale | App Service Autoscale | AKS HPA | Cluster Autoscaler
+
+---
+
+<a id="azure-troubleshooting"></a>
+
+## 🧩 11. Production Troubleshooting ⭐⭐⭐⭐⭐
+
+**VM:** CPU | Memory | Disk | Process | Service | SSH/RDP | Boot Issues
+
+**Network:** DNS | NSG | Routes | Ports | Load Balancer | App Gateway | Private Endpoint
+
+**Application:** 4xx | 5xx | Timeout | SSL | Connection Refused | Dependency Failure
+
+**AKS:** Pod | Node | Deployment | Service | Ingress | DNS | Storage | Scaling
+
+**Pipeline:** Build Failure | Agent | Credentials | ACR Login | Deployment | Rollback
+
+**Method:** Monitor → Logs → Metrics → Network → Application → Root Cause → Fix → Prevent
+
+---
+
+<a id="azure-functions"></a>
+
+## 🧩 12. Serverless
+
+**Azure Functions:** HTTP | Timer | Blob | Queue | Event Triggers | Bindings | Durable Functions
+
+**DevOps:** CI/CD | Configuration | Managed Identity | Key Vault | Monitoring
+
+**Use Cases:** Automation | Scheduled Jobs | Notifications | Event Processing
+
+---
+
+<a id="azure-governance"></a>
+
+## 🧩 13. Cost & Governance
+
+**Governance:** Management Groups | Subscriptions | Resource Groups | Azure Policy | RBAC | Locks | Tags
+
+**Cost:** Cost Management | Budgets | Alerts | Right-Sizing | Autoscaling | Reserved Instances | Savings Plans
+
+**Best Practices:** Remove Unused Resources | Storage Lifecycle | VM Optimization | AKS Cost Optimization
 
 ---
 
 <a id="real-world-projects"></a>
-## 🧩 **📌 Module 12: Real-World Projects (DevOps Focus)**
 
+## 🧩 14. Real-World DevOps Projects ⭐⭐⭐⭐⭐
 
-### 🔥NexCart — End-to-End Azure DevOps Project 
+### 🔥 NexCart — End-to-End Azure DevOps
 
-(Azure-based DevOps implementation using GitLab CI/CD, AKS, ACR, Key Vault and Azure monitoring)
+**GitLab → CI/CD → Docker → ACR → AKS → Helm → Key Vault → Managed Identity → Terraform → Monitoring → Backup → HA/DR**
 
-### 🔥 **Project 1: CI/CD with Azure DevOps + App Service**
-### 🔥 **Project 2: ACR + AKS + Helm Deployment**
-### 🔥 **Project 3: Terraform to deploy entire Infra**
-### 🔥 **Project 4: Serverless automation with Functions**
-### 🔥 **Project 5: Monitoring setup (Log Analytics + Alerts)**
+**Project 1:** Azure DevOps CI/CD → App Service  
+**Project 2:** Docker → ACR → AKS → Helm  
+**Project 3:** Terraform → Complete Azure Infrastructure  
+**Project 4:** Key Vault → Managed Identity → Secret Rotation  
+**Project 5:** Azure Monitor → Log Analytics → Prometheus/Grafana  
+**Project 6:** AKS → Backup → HA → DR  
+**Project 7:** Production Incident → Troubleshooting → RCA
+
+---
+
+<a id="azure-optional"></a>
+
+## 🧩 15. Optional Azure Services
+
+**Data:** Data Factory | Databricks | Synapse | Data Lake
+
+**Messaging:** Service Bus | Event Grid | Event Hubs
+
+**Advanced:** Front Door | API Management | Logic Apps | Azure Automation
+
+**Focus:** Understand architecture + use cases; deep hands-on only when required.

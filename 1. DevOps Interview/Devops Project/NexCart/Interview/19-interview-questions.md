@@ -319,13 +319,7 @@ kubectl describe pod <pod> -n nexcart
 Check:
 
 ```text
-Image name
-Image tag
-ACR repository
-ACR permissions
-AKS identity
-Network connectivity
-Image existence
+Image name -> Image tag -> ACR repository  -> ACR permissions -> AKS identity -> Network connectivity -> Image existence
 ```
 
 ---
@@ -335,16 +329,6 @@ Image existence
 ### Q22. Explain the difference between Pod, Deployment and Service.
 
 > A Pod runs containers. A Deployment manages the desired number and lifecycle of Pods. A Service provides a stable network endpoint for accessing those Pods.
-
-```text
-Deployment
-    |
-    v
-Pods
-    |
-    v
-Service
-```
 
 ---
 
