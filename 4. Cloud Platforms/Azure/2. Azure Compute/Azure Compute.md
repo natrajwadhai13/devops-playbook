@@ -1,5 +1,5 @@
 ---
-title: "• Core Azure Services"
+title: "• Azure Compute"
 parent: "• Azure"
 grand_parent: "4. Cloud Platforms"
 nav_order: 2
