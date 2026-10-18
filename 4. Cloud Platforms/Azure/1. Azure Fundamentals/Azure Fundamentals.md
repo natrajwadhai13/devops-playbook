@@ -1,5 +1,5 @@
 ---
-title: "• Cloud Concepts"
+title: "• Azure Fundamentals"
 parent: "• Azure"
 grand_parent: "4. Cloud Platforms"
 nav_order: 1
