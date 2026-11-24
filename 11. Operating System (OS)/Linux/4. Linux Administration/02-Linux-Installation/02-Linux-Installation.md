@@ -1,6 +1,7 @@
 ---
-title: • 02-Linux-Installation
-parent: • Linux
+title: 02. Linux-Installation
+parent: • Linux Administration
+grand_parent: • Linux
 grand_parent: 11. Operating System (OS)
 nav_order: 2
 has_children: true

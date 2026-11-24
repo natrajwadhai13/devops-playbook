@@ -1,6 +1,7 @@
 ---
-title: • 04-Linux-File-System
-parent: • Linux
+title: 04. Linux-File-System
+parent: • Linux Administration
+grand_parent: • Linux
 grand_parent: 11. Operating System (OS)
 nav_order: 4
 has_children: true
