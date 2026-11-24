@@ -2,7 +2,7 @@
 title: 06. Users-and-Groups
 parent: • Linux Administration
 grand_parent: • Linux
-grand_parent: 11. Operating System (OS)
+grand_grand_parent: 11. Operating System (OS)
 nav_order: 6
 has_children: true
 ---

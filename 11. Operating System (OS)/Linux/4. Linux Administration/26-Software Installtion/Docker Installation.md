@@ -1,11 +1,13 @@
 ---
 title: • Docker installation
 parent: 26. Software Installtion
-grand_parent: • Linux
-grand_grand_parent: 11. Operating System (OS)
+grand_parent: • Linux Administration
+grand_grand_parent: • Linux
+grand_grand_grand_parent: 11. Operating System (OS)
 nav_order: 1
 has_children: true
 ---
+
 
 👍 **Amazon Linux 2023 (AL2023)**
 

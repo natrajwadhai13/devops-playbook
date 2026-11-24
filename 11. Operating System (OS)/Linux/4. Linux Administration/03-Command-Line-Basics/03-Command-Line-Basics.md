@@ -2,7 +2,7 @@
 title: 03. Command-Line-Basics
 parent: • Linux Administration
 grand_parent: • Linux
-grand_parent: 11. Operating System (OS)
+grand_grand_parent: 11. Operating System (OS)
 nav_order: 3
 has_children: true
 ---
