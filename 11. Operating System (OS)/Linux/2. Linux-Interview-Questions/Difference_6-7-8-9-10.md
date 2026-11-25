@@ -1,5 +1,5 @@
 ---
-title: "Difference RHEL"
+title: "• Difference RHEL"
 parent: "• Linux-Interview-QA"
 grand_parent: • Linux
 grand_grand_parent: 11. Operating System (OS)
@@ -8,7 +8,6 @@ has_children: true
 ---
 
 # **Difference Between RHEL 6, 7, 8, 9 and 10**
-
 
 ## **1. Major Version Comparison**
 
@@ -27,8 +26,6 @@ has_children: true
 | Logging            | rsyslog            | rsyslog + journald | rsyslog + journald | rsyslog + journald | rsyslog + journald |
 
 Kernel versions are original major-release baselines, not current running kernel versions. Python refers to the default implementation, not every available version.&#x20;
-
-
 
 ## **2. Important Changes Between Versions**
 
@@ -65,7 +62,7 @@ Kernel versions are original major-release baselines, not current running kernel
 - Network team (teamd) removed; use bonding instead.
 - RHEL Lightspeed AI command-line assistant available.
 
-[image](https://www.google.com/s2/favicons?domain=https://docs.redhat.com\&sz=32)
+[image](https://www.google.com/s2/favicons?domain=https://docs.redhat.com&sz=32)
 
 Red Hat Documentation+3
 
@@ -156,5 +153,3 @@ cgroups v2, OpenSSL 3, Python 3.9
 **RHEL 10**
 
 DNF 5, Python 3.12, cgroups v2 only, Lightspeed AI
-
-
