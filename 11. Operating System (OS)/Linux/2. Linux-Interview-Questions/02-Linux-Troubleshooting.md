@@ -1,5 +1,5 @@
 ---
-title: "• Linux-Troubleshooting"
+title: "• Troubleshooting"
 parent: "• Linux-Interview-QA"
 grand_parent: • Linux
 grand_grand_parent: 11. Operating System (OS)
